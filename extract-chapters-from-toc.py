@@ -1,12 +1,19 @@
-import pymupdf  # PyMuPDF
+import fitz  # PyMuPDF
 import re 
+import pymupdf4llm
+import pathlib
+
+
+BOOK = "linux2"
+pathlib.Path('test books/output/'+ BOOK + '/chapters/').mkdir(parents=True, exist_ok=True) 
+pathlib.Path('test books/output/'+BOOK+ '/markdown_chapters/').mkdir(parents=True, exist_ok=True) 
 
 def sanitize_filename(filename):
     return re.sub(r'[^a-zA-Z0-9_]', '_', filename)
 
 
 def get_table_of_contents(pdf_path):
-    doc = pymupdf.open(pdf_path)
+    doc = fitz.open(pdf_path)
     toc = doc.get_toc()
     level1_toc = []
     if toc:
@@ -26,7 +33,7 @@ def get_table_of_contents(pdf_path):
         return []
 
 def extract_chapters_from_toc(pdf_path, level1_toc):
-    doc = pymupdf.open(pdf_path)
+    doc = fitz.open(pdf_path)
     chapters = []  
     print(toc)
 
@@ -43,35 +50,41 @@ def extract_chapters_from_toc(pdf_path, level1_toc):
         
         chapter_page_count = chapter_end_page - chapter_start_page        
         print(f" Başlik: {title}, Start: {chapter_start_page} End: {chapter_end_page} Page count: {chapter_page_count} ") # [start, end)
-        
+        # Create a new PDF document for the chapter
+        chapter_doc = fitz.open()
+
         chapter_text = ""
         for page_num in range(chapter_start_page - 1, chapter_end_page - 1) if chapter_page_count != 0 else range(chapter_start_page -1, chapter_end_page): 
             page = doc[page_num]
             chapter_text += page.get_text("text") + "\n"
+            chapter_doc.insert_pdf(doc, from_page=page_num, to_page=page_num)
+        chapter_filename = sanitize_filename(title) + ".pdf"
+        chapter_path = f"test books/output/{BOOK}/chapters/"
+        chapter_doc.save(chapter_path + chapter_filename)
+        chapter_doc.close()  
+        print(f"{title} chapter saved as '{chapter_filename}'")
 
         chapters.append({
             "title": title,
-            "text": chapter_text.strip()
+            "text": chapter_text.strip(),
+            "path": chapter_filename
         })
-        
-        filename = sanitize_filename(title) + ".txt"
-        with open(filename, "w", encoding="utf-8") as file:
-            file.write(chapter_text.strip())
-        print(f"{title} bölümü '{filename}' dosyasına kaydedildi.")
-
     doc.close()
     return chapters
 
+def chapter_doc_to_markdown(filename):
+    path = f"test books/output/{BOOK}/chapters/"
+    md_text = pymupdf4llm.to_markdown(path + filename + ".pdf")
+    pathlib.Path(f"test books/output/{BOOK}/markdown_chapters/{filename}.md").write_bytes(md_text.encode())
 
-    
 
-# Kullanım
-pdf_path = "test books/linuxbook.pdf"
+
+pdf_path = f"test books/{BOOK}.pdf"
 toc = get_table_of_contents(pdf_path)
 
 if toc: 
     chapters = extract_chapters_from_toc(pdf_path,toc)
 
-#Bölümleri yazdır
 for i, chapter in enumerate(chapters):
-    print(f"Bölüm {i + 1}: {chapter['title']}\n{'=' * 40}\n{chapter['text'][:500]}...\n")
+    print(f"Bölüm {i + 1}: {chapter['title']}\n{'=' * 40}\n{chapter['text'][10:]}... \n path= {chapter['path']}")
+    chapter_doc_to_markdown(chapter['path'][:-4])
