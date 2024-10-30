@@ -54,17 +54,28 @@ def download_human_subtitles(video_url, languages=['en', 'tr']):
         'writesubtitles': True,             # Download subtitles
         'subtitleslangs': languages,        # Specify languages to download
         'subtitlesformat': 'vtt',           # Set subtitle format to .vtt
-        'skip_download': True,              # Skip downloading the video
+        'skip_download': False,              # Download the audio
+        'format': 'm4a/bestaudio/best',
         'writeautomaticsub': False,         # Do not download auto-generated subtitles
-        'outtmpl': '%(id)s.%(ext)s',       # Specify output template to save subtitle
-        'quiet': True,                      # Suppress output
-        'postprocessors': [{                 # Postprocess to convert to .srt if .vtt is downloaded
+        'outtmpl': {
+            'default': 'audio_downloaded.%(ext)s',    # Name for audio file
+            'subtitle':  '%(title)s.%(ext)s',          # Name for subtitles file
+        },
+        'postprocessors': [
+        {  # Extract audio using ffmpeg
+                    'key': 'FFmpegExtractAudio',
+                    'preferredcodec': 'm4a',
+        },
+        {                 # Postprocess to convert to .srt if .vtt is downloaded
             'key': 'FFmpegSubtitlesConvertor',
             'format': 'vtt',
-        }],
-
+        },
+        ],
+        #'quiet': True,                      # Suppress output
     }
-    
+
+    print(ydl_opts['outtmpl'])
+
     # Variable to hold the subtitle file name
     subtitle_file = None
 
@@ -72,10 +83,13 @@ def download_human_subtitles(video_url, languages=['en', 'tr']):
         ydl.download([video_url])
         info_dict = ydl.extract_info(video_url, download=False)
         video_id = info_dict['id']
+        video_title = info_dict['title']
+
+        
         for lang in languages:
-            subtitle_file = f"{video_id}.{lang}.vtt"
+            subtitle_file = f"{video_title}.{lang}.vtt"
             print(subtitle_file)
-            if os.path.isfile(subtitle_file):
+            if os.path.isfile(subtitle_file): # Find the subtitle file's path and check if it exists.
                 print("Exist")
                 with open(subtitle_file, 'r', encoding='utf-8') as f:
                     raw_subtitles = f.read().strip()
@@ -84,9 +98,9 @@ def download_human_subtitles(video_url, languages=['en', 'tr']):
                 print(f"Video subtitles with {subtitle_file} does not exist.")
         print("Video does not have subtitles with the languages selected!")
         return ""
-
+ 
 
 # Kullanım örneği
-video_url = "https://www.youtube.com/watch?v=XsuouINoR1M"
+video_url = "https://www.youtube.com/watch?v=OTNe0eV8418"
 subtitles = download_human_subtitles(video_url, languages=['tr', 'en'])
 print(subtitles)
