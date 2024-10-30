@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import asyncio
+import re
 import whisper
 import yt_dlp
 import os 
@@ -13,22 +13,36 @@ class VideoTranscriber:
         PATH = os.getcwd()
         audio_download_directory = PATH + "\\test videos\\output\\audios"
         transcripts_path = PATH + "\\test videos\\output\\transcripts"
+        subtitles_path = PATH + "\\test videos\\output\\subtitles"
 
         def __init__(self, video: Video):
             self.video = video
             
         def start(self):
             self.download_video(self.video)
-            self.transcribe_video(self.video)
 
-        def download_video(self, video: Video):
+        def download_video(self, video: Video, languages=['tr', 'en']):
             ydl_opts = {
-                'outtmpl': os.path.join(self.audio_download_directory, '%(title)s.%(ext)s'),
+                'writesubtitles': True,             # Download subtitles
+                'subtitleslangs': languages,        # Specify languages to download
+                'subtitlesformat': 'vtt',           # Set subtitle format to .vtt
+                'skip_download': False,              # Download the audio
                 'format': 'm4a/bestaudio/best',
-                'postprocessors': [{  # Extract audio using ffmpeg
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'm4a',
-                }]
+                'writeautomaticsub': False,         # Do not download auto-generated subtitles
+                'outtmpl': {
+                    'default': os.path.join(self.audio_download_directory, '%(title)s.%(ext)s'),    # Name for audio file
+                    'subtitle': os.path.join(self.subtitles_path, '%(title)s.%(ext)s'),          # Name for subtitles file
+                },
+                'postprocessors': [
+                {  # Extract audio using ffmpeg
+                            'key': 'FFmpegExtractAudio',
+                            'preferredcodec': 'm4a',
+                },
+                {# Postprocess to convert to .vtt if .srt is downloaded
+                    'key': 'FFmpegSubtitlesConvertor',
+                    'format': 'vtt',
+                }],
+                #'quiet': True,                      # Suppress output
             }
 
             print(ydl_opts['outtmpl'])
@@ -93,7 +107,72 @@ class VideoTranscriber:
                     print(f'Failed to download {url}. Error: {e}')
                     video.status = "Download failed."
             print(f"After Download metod Url={url}, title_with_ext: {title_with_ext}")
+            
+            def clean_subtitles(subtitle_text):
+                """
+                This function takes subtitle text as input, removes the timestamp numbers,
+                the header line, and returns a continuous text.
+
+                Parameters:
+                subtitle_text (str): The raw subtitle text.
+
+                Returns:
+                str: The cleaned continuous text.
+                """
+                # Split the text into lines
+                lines = subtitle_text.splitlines()
+                
+                # Remove the first line if it contains the header information
+                if lines and 'WEBVTT' in lines[0]:
+                    lines.pop(0)  # Remove the header line
+                if 'Kind: captions' in lines[0]: 
+                    lines.pop(0)
+                if 'Language:' in lines[0]:
+                    lines.pop(0)
+
+                # Join the remaining lines into a single string
+                cleaned_text = ' '.join(lines)
+
+                # Regular expression to remove timestamps
+                cleaned_text = re.sub(r'\d{2}:\d{2}:\d{2}\.\d{3} --> \d{2}:\d{2}:\d{2}\.\d{3}', '', cleaned_text)
+                
+                # Remove HTML entities like &nbsp;
+                cleaned_text = re.sub(r'&nbsp;', ' ', cleaned_text)
+
+                # Replace multiple spaces with a single space and strip leading/trailing spaces
+                cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
+                
+                return cleaned_text
+
+            # if the video has human subtitles skip the transcribing part. 
+            for lang in languages:
+                subtitle_name = f"{video.title}.{lang}.vtt"
+                subtitle_file = self.subtitles_path + "\\" + subtitle_name
+                print(subtitle_file)
+                if os.path.isfile(subtitle_file): # Find the subtitle file's path and check if it exists.
+                    print("Exist")
+                    with open(subtitle_file, 'r', encoding='utf-8') as f:
+                        raw_subtitles = f.read().strip()
+                        transcript =  clean_subtitles(raw_subtitles)
+                        video.transcript = transcript     
+                    self.save_transcript(video, video.transcript)
+                    video.transcript_from = "from_subtitles"
+                    return video
+                else:
+                    print(f"Video subtitles with {subtitle_file} does not exist.")
+            print("Video does not have subtitles with the languages selected!")
+            self.transcribe_video(self.video)
             return video
+
+        def save_transcript(self, video: Video, transcript_text):
+            transcript_path = self.transcripts_path + "\\" + video.title +".txt"
+            video.transcript = transcript_text
+            video.transcript_path = transcript_path
+            video.is_transcribed = True
+            video.status = "Transcribed."
+            with open(transcript_path, "w", encoding="utf-8") as file: 
+                file.write(transcript_text)
+            print(f"\nTranscript is saved to {transcript_path}")
 
         def transcribe_video(self, video: Video):
             print("\n-------------")
@@ -109,21 +188,11 @@ class VideoTranscriber:
             start_time = PyDateTime.strptime(start_time_str, '%Y-%m-%d %H:%M:%S')
             end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))
             end_time= PyDateTime.strptime(end_time_str, '%Y-%m-%d %H:%M:%S')
-
-
             video.transcribing_start_date = start_time
             video.transcribing_end_date = end_time 
             video.transcribing_time = download_time
-
-            transcript_path = self.transcripts_path + "\\" + video.title +".txt"
-
-            video.transcript = transcript_text
-            video.transcript_path = transcript_path
-            video.is_transcribed = True
-            video.status = "Transcribed."
-        
-            with open(transcript_path, "w", encoding="utf-8") as file: 
-                file.write(transcript_text)
-            print(f"\nTranscript is saved to {transcript_path}")
+            self.save_transcript(video, transcript_text)
+            video.transcript_from = "whisper"
             return transcript_text
+        
         

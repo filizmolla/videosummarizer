@@ -69,16 +69,18 @@ class Video(Base):
     date_uploaded: Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
     download_start_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     download_end_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-    download_time: Mapped[Optional[int]]
+    download_time: Mapped[Optional[int]] 
     transcribing_start_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     transcribing_end_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     transcribing_time: Mapped[Optional[int]]
+    transcript_from: Mapped[Optional[str]]
     created_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
     updated_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), onupdate=func.now(), nullable=False)
     is_summarized: Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
     is_transcribed: Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
     status : Mapped[Optional[str]] = mapped_column(default="Pending.") # Pending / Done 
-
+    subtitles_human: Mapped[Optional[str]]
+    
     summaries: Mapped[List["Summary"]] = relationship(back_populates="video", cascade="all, delete-orphan", lazy='select')
 
     def __repr__(self) -> str:
