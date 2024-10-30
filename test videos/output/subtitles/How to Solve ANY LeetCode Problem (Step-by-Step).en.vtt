@@ -1,0 +1,592 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.800 --> 00:00:03.680
+LeetCode is the bane of many&nbsp;
+wannabe software engineers,&nbsp;&nbsp;
+
+00:00:03.680 --> 00:00:07.560
+as these are the questions asked in&nbsp;
+interviews for most tech companies.
+
+00:00:07.560 --> 00:00:10.880
+The truth is, you don’t need to&nbsp;
+solve 1000+ LeetCode questions&nbsp;&nbsp;
+
+00:00:10.880 --> 00:00:14.600
+to ace your interviews. All you&nbsp;
+need is a systematic approach,&nbsp;&nbsp;
+
+00:00:14.600 --> 00:00:19.440
+and you can solve any problem. Using this&nbsp;
+approach, myself, along with many other&nbsp;&nbsp;
+
+00:00:19.440 --> 00:00:24.800
+engineers I know have landed jobs at FAANG&nbsp;
+companies with less than 100 problems solved.
+
+00:00:24.800 --> 00:00:26.840
+Every LeetCode or interview question can be&nbsp;&nbsp;
+
+00:00:26.840 --> 00:00:31.240
+broken down into simple steps - no&nbsp;
+matter how complicated it seems!
+
+00:00:31.240 --> 00:00:34.960
+Today, we’re going to go through those steps so&nbsp;
+that you can tackle any problem you’re faced with,&nbsp;&nbsp;
+
+00:00:34.960 --> 00:00:38.680
+even if it seems impossible. I’ll&nbsp;
+explain the exact steps you need&nbsp;&nbsp;
+
+00:00:38.680 --> 00:00:42.960
+to follow, how to figure out what data&nbsp;
+structure/algorithm to use, and I’ll even&nbsp;&nbsp;
+
+00:00:42.960 --> 00:00:48.120
+solve a popular hard LeetCode question as&nbsp;
+we go, showing you these steps in action.
+
+00:00:48.120 --> 00:00:51.200
+The first step is to simplify the problem. Most&nbsp;&nbsp;
+
+00:00:51.200 --> 00:00:55.160
+LeetCode questions have lots of fluff&nbsp;
+that’s hiding what actually matters.
+
+00:00:55.160 --> 00:01:00.040
+The truth is, all LeetCode questions are&nbsp;
+the same in nature: You’re given inputs,&nbsp;&nbsp;
+
+00:01:00.040 --> 00:01:03.080
+and you need to change them&nbsp;
+into the expected outputs.
+
+00:01:03.080 --> 00:01:07.000
+After reading any question, you should be&nbsp;
+able to repeat the problem to yourself,&nbsp;&nbsp;
+
+00:01:07.000 --> 00:01:12.920
+or out loud if it’s to an interviewer, in the&nbsp;
+following structure: “The inputs are these”,&nbsp;&nbsp;
+
+00:01:12.920 --> 00:01:17.920
+“we do this to the inputs”, and&nbsp;
+“we get this as the output”.
+
+00:01:17.920 --> 00:01:20.720
+If you’re struggling to understand&nbsp;
+how the inputs become the outputs,&nbsp;&nbsp;
+
+00:01:20.720 --> 00:01:26.640
+manually walk through a test case - this often&nbsp;
+makes it clear what exactly is happening.
+
+00:01:26.640 --> 00:01:31.200
+Also, if it’s a real interview, ask lots&nbsp;
+of questions! You’re actually given bonus&nbsp;&nbsp;
+
+00:01:31.200 --> 00:01:36.080
+marks for asking clarifying questions,&nbsp;
+so don’t be afraid to ask. In particular,&nbsp;&nbsp;
+
+00:01:36.080 --> 00:01:40.040
+make sure you catch the edge cases -&nbsp;
+these are situations that might have&nbsp;&nbsp;
+
+00:01:40.040 --> 00:01:44.280
+a unique or unclear way of handling, and&nbsp;
+interviewers expect you to catch these.
+
+00:01:44.280 --> 00:01:44.800
+---
+
+00:01:44.800 --> 00:01:49.080
+Let’s put this step into action for&nbsp;
+starting our LC problem, Word Ladder.
+
+00:01:49.080 --> 00:01:55.520
+- **Simplify:** The inputs are two strings,&nbsp;
+`beginWord` and `endWord`. We change one&nbsp;&nbsp;
+
+00:01:55.520 --> 00:01:59.160
+letter at a time in the `beginWord` to&nbsp;
+change it into a word in our `wordList`,&nbsp;&nbsp;
+
+00:01:59.160 --> 00:02:02.880
+until we reach our `endWord`.&nbsp;
+Our output is an integer,&nbsp;&nbsp;
+
+00:02:02.880 --> 00:02:07.160
+representing how many words it took to get&nbsp;
+from `beginWord` to `endWord`, unless this&nbsp;&nbsp;
+
+00:02:07.160 --> 00:02:12.760
+was impossible, in which case our output is 0.
+- **Test Case:** For our test case, we have our&nbsp;&nbsp;
+
+00:02:12.760 --> 00:02:18.680
+starting word as hit, and our ending word as&nbsp;
+cog. Let’s change one letter of our beginning&nbsp;&nbsp;
+
+00:02:18.680 --> 00:02:26.560
+word to get another word in the word list. Hit&nbsp;
+becomes hot. Now let’s change it again - now hot&nbsp;&nbsp;
+
+00:02:26.560 --> 00:02:31.480
+becomes dot. As we keep doing this, you can&nbsp;
+see we’re progressing through our wordList&nbsp;&nbsp;
+
+00:02:31.480 --> 00:02:38.583
+changing one letter at a time, and finally, we&nbsp;
+get to the end word, cog, after 5 total words.&nbsp;
+
+00:02:38.583 --> 00:02:40.760
+- **Questions**: Now, here are&nbsp;
+some clarifying questions we&nbsp;&nbsp;
+
+00:02:40.760 --> 00:02:45.980
+might ask an interviewer to get more insight.
+- Is `endWord` guaranteed to be in the word list?&nbsp;
+
+00:02:45.980 --> 00:02:50.040
+- Are the words case sensitive?
+- **Edge Cases**: Lastly, these are some&nbsp;&nbsp;
+
+00:02:50.040 --> 00:02:55.160
+edge cases we should get clarification on.
+- If `beginWord` equals `endWord`,&nbsp;&nbsp;
+
+00:02:55.160 --> 00:03:02.080
+is the length 1, or do we return 0?
+- If the word list is empty, do we return 0?
+
+00:03:02.080 --> 00:03:06.280
+Now that we know how what we’re solving,&nbsp;
+let’s figure out how to solve it.
+
+00:03:06.280 --> 00:03:10.920
+LeetCode is just pattern recognition.&nbsp;
+Most LeetCode problems can be solved&nbsp;&nbsp;
+
+00:03:10.920 --> 00:03:14.640
+using the same data structures&nbsp;
+and algorithms. All you need to&nbsp;&nbsp;
+
+00:03:14.640 --> 00:03:18.040
+do is figure out which one you&nbsp;
+should use for a given problem.
+
+00:03:18.040 --> 00:03:23.280
+Now, before you do this, you need to be&nbsp;
+familiar with 2 concepts: Big O notation,&nbsp;&nbsp;
+
+00:03:23.280 --> 00:03:27.800
+and data structures &amp; algorithms. I&nbsp;
+have 3 great videos for these concepts,&nbsp;&nbsp;
+
+00:03:27.800 --> 00:03:29.760
+which I would check out&nbsp;
+now if you’re not familiar.
+
+00:03:30.920 --> 00:03:37.280
+**Step 1.** If you’re a beginner, start out by&nbsp;
+explaining the most straightforward solution.&nbsp;&nbsp;
+
+00:03:37.280 --> 00:03:44.040
+By this, I mean literally walk through the most&nbsp;
+obvious answer, even if it’s not efficient. You&nbsp;&nbsp;
+
+00:03:44.040 --> 00:03:50.480
+don’t need to code it, but identify what the time&nbsp;
+and space complexities would be. From doing this,&nbsp;&nbsp;
+
+00:03:50.480 --> 00:03:55.840
+you’ll often see places that can be simplified,&nbsp;
+and a better solution may pop into your head.
+
+00:03:56.640 --> 00:04:00.120
+**Step 2.** Now, let’s find the optimal solution.&nbsp;&nbsp;
+
+00:04:00.120 --> 00:04:06.120
+We need to identify the data structure and&nbsp;
+algorithm we should use for this problem. Firstly,&nbsp;&nbsp;
+
+00:04:06.120 --> 00:04:11.800
+check to see if the problem provides constraints&nbsp;
+- often this can give away what you should use.
+
+00:04:11.800 --> 00:04:16.200
+- For example, if a problem has&nbsp;
+a time complexity of O(log(n)),&nbsp;&nbsp;
+
+00:04:17.560 --> 00:04:22.440
+there is one specific algorithm that&nbsp;
+accomplishes this: binary search.
+
+00:04:22.440 --> 00:04:26.600
+If there’s no obvious hints in the problem,&nbsp;
+you’ll need to use the context of the problem&nbsp;&nbsp;
+
+00:04:26.600 --> 00:04:32.800
+to identify the pattern. Luckily, the sponsor of&nbsp;
+today’s video, AlgoMonster, has a completely FREE&nbsp;&nbsp;
+
+00:04:32.800 --> 00:04:38.240
+flowchart you can use to identify what pattern&nbsp;
+to use. You can use this while solving LeetCode&nbsp;&nbsp;
+
+00:04:38.240 --> 00:04:42.320
+problems to learn what to look for, and as you&nbsp;
+get more familiar, you’ll have the entire thing&nbsp;&nbsp;
+
+00:04:42.320 --> 00:04:47.840
+committed to memory. AlgoMonster also offers&nbsp;
+content for learning how to master every single&nbsp;&nbsp;
+
+00:04:47.840 --> 00:04:53.120
+pattern, which you can get for $7/month right now,&nbsp;
+which will be more than covered in just an hour&nbsp;&nbsp;
+
+00:04:53.120 --> 00:04:59.000
+or two of work as a full-time software engineer!&nbsp;
+Try AlgoMonster’s free flowchart today using the&nbsp;&nbsp;
+
+00:04:59.000 --> 00:05:05.240
+link in my description, and use code BAGEL for an&nbsp;
+extra 10% off their full interview prep content.
+
+00:05:05.240 --> 00:05:09.080
+Let’s apply this to our LeetCode problem,&nbsp;
+starting with the straightforward solution,&nbsp;&nbsp;
+
+00:05:09.080 --> 00:05:12.330
+and then finding the optimal solution.
+
+00:05:12.330 --> 00:05:14.560
+- **Brute Force Approach**:
+- Starting from `beginWord`, generate&nbsp;&nbsp;
+
+00:05:14.560 --> 00:05:20.000
+all possible single-letter transformations, and&nbsp;
+recursively continue this for each new word,&nbsp;&nbsp;
+
+00:05:20.000 --> 00:05:23.280
+until we reach `endWord`.
+- I’m not even going to&nbsp;&nbsp;
+
+00:05:23.280 --> 00:05:29.720
+type this approach out because it’s clearly&nbsp;
+not efficient. How inefficient is it? Well,&nbsp;&nbsp;
+
+00:05:29.720 --> 00:05:35.000
+for starters, we know that each word can be&nbsp;
+transformed 25 different ways, for each letter&nbsp;&nbsp;
+
+00:05:35.000 --> 00:05:42.720
+of the alphabet except itself. This means&nbsp;
+each word has 25*L transformations. Then,&nbsp;&nbsp;
+
+00:05:42.720 --> 00:05:47.400
+we also know we have to do this for each word&nbsp;
+in the `wordList`, which we can represent as&nbsp;&nbsp;
+
+00:05:47.400 --> 00:05:53.260
+N. Therefore, our time and space complexities&nbsp;
+for the straightforward approach are O(25L)^N.&nbsp;
+
+00:05:53.260 --> 00:05:58.760
+- **Identify the Pattern**:
+- Now let’s move on to the optimal approach,&nbsp;&nbsp;
+
+00:05:58.760 --> 00:06:06.000
+and start by finding the right algorithm to use.
+- Let’s use the flowchart. Firstly,&nbsp;&nbsp;
+
+00:06:06.000 --> 00:06:11.360
+is it a graph problem? Well, if a problem&nbsp;
+can be represented as nodes and connections,&nbsp;&nbsp;
+
+00:06:11.360 --> 00:06:17.280
+or has some element of pathfinding, it is&nbsp;
+likely a graph. So we can say YES to this.&nbsp;
+
+00:06:17.280 --> 00:06:23.160
+- Now, is it a tree? According to this&nbsp;
+flowchart, if the problem mentions roots&nbsp;&nbsp;
+
+00:06:23.160 --> 00:06:29.360
+or leaves it’s a tree - otherwise, it’s&nbsp;
+probably not. So we can say NO to this.&nbsp;
+
+00:06:29.360 --> 00:06:36.720
+- Now, is the problem related to directed&nbsp;
+acyclic graphs? According to the flowchart,&nbsp;&nbsp;
+
+00:06:36.720 --> 00:06:43.000
+a directed graph has a clear sense of direction&nbsp;
+implied. Well for our problem, do letters have&nbsp;&nbsp;
+
+00:06:43.000 --> 00:06:49.720
+any direction between them? No, they don’t.&nbsp;
+We could easily change an A into a B, and vice&nbsp;&nbsp;
+
+00:06:49.720 --> 00:06:57.200
+versa. Therefore, we can say NO to this as well.
+- Is the problem related to shortest paths? This&nbsp;&nbsp;
+
+00:06:57.200 --> 00:07:01.520
+one is pretty clear with our question -&nbsp;
+we are looking for the shortest path to&nbsp;&nbsp;
+
+00:07:01.520 --> 00:07:09.800
+get from `beginWord` to `endWord`. So, YES.
+- Lastly, is the graph weighted? According to&nbsp;&nbsp;
+
+00:07:09.800 --> 00:07:14.720
+the flowchart, if the edges between words&nbsp;
+have the same values, it is unweighted.&nbsp;&nbsp;
+
+00:07:14.720 --> 00:07:19.360
+In our case, every transformation of&nbsp;
+a letter counts as 1 transformation,&nbsp;&nbsp;
+
+00:07:19.360 --> 00:07:25.560
+so it is unweighted. Now we can clearly&nbsp;
+see what algorithm we should use: BFS.
+
+00:07:27.480 --> 00:07:31.160
+At this point, you’ve identified the&nbsp;
+pattern you need to use. The hard part&nbsp;&nbsp;
+
+00:07:31.160 --> 00:07:36.960
+is done. All you need to do now is put this&nbsp;
+pattern into action for this question. This&nbsp;&nbsp;
+
+00:07:36.960 --> 00:07:41.520
+is where practicing the various patterns&nbsp;
+becomes useful; over time you’ll realize&nbsp;&nbsp;
+
+00:07:41.520 --> 00:07:46.760
+that 90% of the question is just the same&nbsp;
+code you’ve used for other similar questions.
+
+00:07:46.760 --> 00:07:50.720
+This is best illustrated with&nbsp;
+our problem, Word Ladder.
+
+00:07:50.720 --> 00:07:55.760
+We know now that we are using BFS&nbsp;
+to solve this problem. If you’re not&nbsp;&nbsp;
+
+00:07:55.760 --> 00:08:00.640
+familiar with BFS, I’ve put the default&nbsp;
+implementation on screen for you to see.
+
+00:08:00.640 --> 00:08:06.640
+For our use case, we only need to make&nbsp;
+slight tweaks to this algorithm. Firstly,&nbsp;&nbsp;
+
+00:08:06.640 --> 00:08:12.080
+our starting node is just our starting word.&nbsp;
+Also, on top of keeping track of each word,&nbsp;&nbsp;
+
+00:08:12.080 --> 00:08:17.560
+we also need to keep track of how many&nbsp;
+transformations we’ve already made.
+
+00:08:17.560 --> 00:08:23.720
+As we go through each word in our queue, we&nbsp;
+want to attempt to transform it. To do this,&nbsp;&nbsp;
+
+00:08:23.720 --> 00:08:29.440
+we need to go through each letter in our current&nbsp;
+word, and replacing it with every possible letter.
+
+00:08:30.200 --> 00:08:33.160
+Now, this will mean we are&nbsp;
+trying tons of new words,&nbsp;&nbsp;
+
+00:08:33.160 --> 00:08:37.240
+but we can actually rule out&nbsp;
+almost all of them right away.
+
+00:08:37.240 --> 00:08:42.200
+We only care about a transformed&nbsp;
+word if it fulfils three conditions:
+
+00:08:42.200 --> 00:08:49.160
+1. If it is a different word than we&nbsp;
+currently have, AKA not the exact same word&nbsp;
+
+00:08:49.160 --> 00:08:55.520
+2. If it exists in our word list
+3. If we have not yet seen it
+
+00:08:55.520 --> 00:09:02.680
+If all of these are true, then we need to check -&nbsp;
+is this new word our end word? If it is, we just&nbsp;&nbsp;
+
+00:09:02.680 --> 00:09:08.800
+add 1 to our current number of transformations&nbsp;
+and boom, that’s our solution. If it’s not our&nbsp;&nbsp;
+
+00:09:08.800 --> 00:09:14.680
+end word, it must be a different word in our&nbsp;
+word list, so we now want to add this word to&nbsp;&nbsp;
+
+00:09:14.680 --> 00:09:20.920
+our queue to go through next, and increase our&nbsp;
+level by 1. Don’t forget to also add it to our&nbsp;&nbsp;
+
+00:09:20.920 --> 00:09:27.440
+visited set so we don’t try it again if another&nbsp;
+word can be transformed into this one again.
+
+00:09:27.440 --> 00:09:29.800
+Now it’s time to code! at this point, you&nbsp;
+should be done most of the hard work - just&nbsp;&nbsp;
+
+00:09:29.800 --> 00:09:33.880
+translate your implementation plan&nbsp;
+to code and you’re good to go.
+
+00:09:33.880 --> 00:09:37.760
+If you forget some syntax, don’t&nbsp;
+worry! In a real interview,&nbsp;&nbsp;
+
+00:09:37.760 --> 00:09:41.720
+interviewers are usually good about letting&nbsp;
+you look at documentation or giving you&nbsp;&nbsp;
+
+00:09:41.720 --> 00:09:47.800
+some help. It’s getting the approach&nbsp;
+that matters, not memorizing syntax.
+
+00:09:47.800 --> 00:09:51.600
+For our problem, I’ve actually mostly&nbsp;
+done the coding as I’ve explained my&nbsp;&nbsp;
+
+00:09:51.600 --> 00:09:56.640
+implementation - which is great! Now we can run&nbsp;
+it, and see that everything runs as expected.
+
+00:09:56.640 --> 00:09:57.240
+---
+
+00:09:57.240 --> 00:10:02.400
+Optimally, after you’re done, your&nbsp;
+code runs perfectly. But if not,&nbsp;&nbsp;
+
+00:10:02.400 --> 00:10:06.440
+don’t fret! Let’s take some time to debug next.
+
+00:10:06.440 --> 00:10:12.400
+“My code ran perfectly and every test&nbsp;
+passed!” - said no programmer ever
+
+00:10:12.400 --> 00:10:16.840
+There are two types of errors that can&nbsp;
+occur after you try to run your code.
+
+00:10:16.840 --> 00:10:20.480
+If your code doesn’t even&nbsp;
+run - it’s a syntax error,&nbsp;&nbsp;
+
+00:10:20.480 --> 00:10:25.720
+which is easily fixable, just read&nbsp;
+the error log and make the change.
+
+00:10:25.720 --> 00:10:29.520
+If your code runs, but tests&nbsp;
+fail - it’s an implementation&nbsp;&nbsp;
+
+00:10:29.520 --> 00:10:31.960
+error, which requires a bit more digging.
+
+00:10:31.960 --> 00:10:38.000
+- Firstly, how many tests are&nbsp;
+failing? if it’s only one or two,&nbsp;&nbsp;
+
+00:10:38.000 --> 00:10:44.600
+they’re likely edge cases you forgot about -&nbsp;
+just make the fix to account for this edge case&nbsp;
+
+00:10:44.600 --> 00:10:48.920
+- If multiple tests are failing, then you’ve&nbsp;
+made a mistake with your implementation&nbsp;
+
+00:10:48.920 --> 00:10:53.680
+- To fix this, the first thing to do is&nbsp;
+manually walk the test case through your&nbsp;&nbsp;
+
+00:10:53.680 --> 00:10:58.600
+code. run through your code line by line, and walk&nbsp;
+through what it’s actually doing to the input.&nbsp;&nbsp;
+
+00:10:58.600 --> 00:11:03.560
+Most of the time, you’ll catch the mistake here.
+- If you still haven’t caught it, you need to&nbsp;&nbsp;
+
+00:11:03.560 --> 00:11:08.560
+figure out where something is going wrong.&nbsp;
+Try adding print or logging statements to&nbsp;&nbsp;
+
+00:11:08.560 --> 00:11:14.200
+different parts of your code and seeing what&nbsp;
+the inputs/outputs are at that point - this&nbsp;&nbsp;
+
+00:11:14.200 --> 00:11:18.840
+can show you what exactly is wrong,&nbsp;
+and now all you need to do it figure&nbsp;&nbsp;
+
+00:11:18.840 --> 00:11:24.320
+out why it’s not what you’re expecting
+- Debugging is probably the hardest part&nbsp;&nbsp;
+
+00:11:24.320 --> 00:11:29.240
+of solving any coding question - finding the&nbsp;
+approach is easy once you’ve practiced enough,&nbsp;&nbsp;
+
+00:11:29.800 --> 00:11:36.000
+but inevitably, little errors always pop&nbsp;
+up. the key is to practice lots - you’ll&nbsp;&nbsp;
+
+00:11:36.000 --> 00:11:39.040
+start to become familiar with&nbsp;
+common mistakes that can be made
+
+00:11:40.800 --> 00:11:44.440
+That’s it! Press submit if you’re on&nbsp;
+LeetCode, or run your code with your&nbsp;&nbsp;
+
+00:11:44.440 --> 00:11:48.360
+interviewer, and you’re done! If you&nbsp;
+follow this step-by-step approach,&nbsp;&nbsp;
+
+00:11:48.360 --> 00:11:51.720
+combined with getting familiar with&nbsp;
+data structures and algorithms,&nbsp;&nbsp;
+
+00:11:51.720 --> 00:11:55.160
+you will be able to solve any LeetCode&nbsp;
+question and any interview question.
+
+00:11:57.400 --> 00:12:02.080
+Thanks so much for watching this video! If you&nbsp;
+liked this, and want to see more content like it,&nbsp;&nbsp;
+
+00:12:02.080 --> 00:12:05.880
+make sure to hit the subscribe button and hit&nbsp;
+the notification bell to stay up to date on&nbsp;&nbsp;
+
+00:12:05.880 --> 00:12:10.240
+the latest uploads. If you want to learn&nbsp;
+more about data structures and algorithms,&nbsp;&nbsp;
+
+00:12:10.240 --> 00:12:29.160
+go check out these videos. I’ll&nbsp;
+see you all in the next video!
+
