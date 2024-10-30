@@ -1,0 +1,103 @@
+### Top 7 Data Structures for Interviews Explained SIMPLY
+
+#### Overview
+- **Purpose**: Discuss the seven most important data structures.
+- **Importance**: Essential for coding interviews, computer science classes, and building projects.
+- **Structure**: Presented from easiest to hardest for beginners.
+- **Time Complexity**: Shown on screen for those interested.
+
+---
+
+#### 1. Arrays
+- **Definition**: Ordered collections of data, typically of a similar type (e.g., integers, strings).
+- **Real-life Example**: Storing temperatures for the next five days.
+- **Common Uses**: Used frequently in programming.
+- **Advantages**:
+  - Easy to find any element using an index (zero-based indexing).
+- **Disadvantages**:
+  - Slightly harder to insert or delete elements.
+- **Memory Storage**:
+  - Stored in contiguous memory.
+  - Inserting in the middle requires shifting elements or reallocating memory.
+- **Summary**: 
+  - **Good for**: Reading elements.
+  - **Less efficient for**: Insertion or deletion.
+
+---
+
+#### 2. Linked Lists
+- **Definition**: Ordered lists of data elements, but stored differently than arrays.
+- **Storage**: Each element has a pointer to the next element, allowing non-contiguous storage.
+- **Advantages**:
+  - Fast insertion and deletion.
+- **Disadvantages**:
+  - Slower reading of elements (must traverse from the beginning).
+- **Summary**:
+  - **Good for**: Inserting and deleting elements.
+  - **Less efficient for**: Reading elements.
+
+---
+
+#### 3. Hash Maps
+- **Definition**: Similar to arrays but with customizable keys (key-value pairs).
+- **Characteristics**:
+  - Unordered.
+  - Fast for inserting, removing, and searching elements.
+- **Real-life Example**: Storing capital cities with countries as keys.
+- **Other Names**: Hash tables, dictionaries (in Python).
+- **Summary**: 
+  - **Good for**: Quick searching using custom keys.
+
+---
+
+#### 4. Stacks
+- **Definition**: Data structure resembling a stack of plates (Last In, First Out - LIFO).
+- **Common Operations**:
+  - **Push**: Add a new element to the top.
+  - **Pop**: Remove the topmost element.
+  - **Peak**: View the topmost element.
+- **Use Cases**: Suitable for scenarios where the last element added is the first to be removed.
+
+---
+
+#### 5. Queues
+- **Definition**: Data structure resembling a lineup (First In, First Out - FIFO).
+- **Common Operations**:
+  - **NQ (Enqueue)**: Add a new element to the back.
+  - **DQ (Dequeue)**: Remove the front element.
+  - **Front**: View the frontmost element.
+- **Use Cases**: Frequently used in real-world programming (e.g., YouTube playlists).
+
+---
+
+#### 6. Trees
+- **Definition**: Data structures that resemble trees, consisting of nodes connected by edges.
+- **Key Concepts**:
+  - **Root Node**: The first node in a tree.
+  - **Parent-Child Relationship**: Nodes can have parent and child nodes.
+- **Binary Trees**: Each parent node has up to two children.
+- **Binary Search Trees**: 
+  - Left children are less than the parent node.
+  - Right children are greater than the parent node.
+- **Real-life Example**: Number guessing game; eliminates half of the possibilities with each guess.
+- **Practical Example**: Digital dictionary for quick word lookup.
+
+---
+
+#### 7. Graphs
+- **Definition**: Models for a set of connections, made up of nodes and edges.
+- **Characteristics**:
+  - Less restrictive than trees; nodes can connect to any number of neighbors.
+  - Can be directed or undirected.
+  - May contain cycles and weighted edges.
+- **Complexity**: Considered one of the hardest data structures to learn.
+- **Use Case Example**: 
+  - Running errands represented as a graph to calculate the shortest route.
+  - Real-life application: Uber optimizing waiting times for riders.
+
+---
+
+#### Conclusion
+- **Engagement**: Encouragement to comment and like for more content on data structures.
+- **Gratitude**: Thanks for support and celebrating reaching 1000 subscribers.
+- **Commitment**: Promise to improve content quality and quantity.
