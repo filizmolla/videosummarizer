@@ -6,6 +6,7 @@ from time import localtime, strftime
 from datetime import datetime as PyDateTime
 from models import Video, Summary
 import google.generativeai as genai 
+import json
 
 
 class VideoSummarizer:
@@ -47,7 +48,9 @@ class VideoSummarizer:
         print("#######################################")
         print(self.user_prompt.format(title=video.title, transcript=video.transcript))
         print(video)
+        
         response = self.client.generate_content(self.user_prompt.format(title=video.title, transcript=video.transcript))
+
         summary = ""
         try:
             if hasattr(response, 'text') and response.text is not None:
@@ -66,8 +69,6 @@ class VideoSummarizer:
             print(f"Unexpected error for {video.title}: {e}")
  
 
-        #summary = response.text
-
         print(response.usage_metadata)
         end_time = time.time()
         summary_time = end_time - start_time 
@@ -76,8 +77,12 @@ class VideoSummarizer:
             
         s = Summary(title=video.title, summary_text=summary)
         s.summary_time = summary_time 
-        s.gpt_information = self.model_name
-
+        s.gpt_model_name = self.model_name
+        gpt_info = genai.get_model(f"models/{self.model_name}") 
+        s.gpt_information = json.dumps(gpt_info.__dict__)
+        s.gpt_input_token_count = gpt_info.input_token_limit
+        s.gpt_output_token_count = gpt_info.output_token_limit
+       
         start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
         s.summary_start_date = PyDateTime.strptime(start_time_str, '%Y-%m-%d %H:%M:%S')
         end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))

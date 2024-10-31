@@ -31,11 +31,17 @@ class Summary(Base):
     title: Mapped[Optional[str]] 
     summary_text: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
     gpt_information: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
-    
+    gpt_model_name: Mapped[Optional[str]]
+    gpt_input_token_count: Mapped[Optional[str]]
+    gpt_output_token_count: Mapped[Optional[str]]
+
     summary_path: Mapped[Optional[str]] 
     summary_start_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     summary_end_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     summary_time: Mapped[Optional[int]] 
+    summary_token_count: Mapped[Optional[int]]
+    summary_word_count: Mapped[Optional[int]]
+    summary_char_count: Mapped[Optional[int]]
     created_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
     updated_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), onupdate=func.now(), nullable=False)
 
@@ -65,15 +71,18 @@ class Video(Base):
     audio_path: Mapped[Optional[str]]
     transcript: Mapped[Optional[str]] = mapped_column(Text, nullable=True)  # can hold arbitrarily long string
     transcript_path: Mapped[Optional[str]] 
-
-    date_uploaded: Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
-    download_start_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-    download_end_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-    download_time: Mapped[Optional[int]] 
     transcribing_start_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     transcribing_end_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
     transcribing_time: Mapped[Optional[int]]
     transcript_from: Mapped[Optional[str]]
+    transcript_word_count: Mapped[Optional[int]]
+    transcript_token_count: Mapped[Optional[int]]
+    transcript_character_count: Mapped[Optional[int]]
+
+    date_uploaded: Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
+    download_start_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
+    download_end_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
+    download_time: Mapped[Optional[int]]
     created_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
     updated_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), onupdate=func.now(), nullable=False)
     is_summarized: Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)

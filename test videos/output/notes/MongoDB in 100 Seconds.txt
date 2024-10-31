@@ -1,0 +1,41 @@
+**MongoDB in 100 Seconds**
+
+**Overview:**
+
+* MongoDB: World's most advanced and popular document-oriented database.
+* Created in 2007 to address scalability and flexibility issues faced by DoubleClick.
+
+**Key Features:**
+
+* Stores data in JSON-like documents organized into collections.
+* Optional predefined schema for collections allows for rapid data structure evolution.
+* Data that is frequently accessed together is stored in the same place.
+* Fast read operations due to elimination of joins.
+* Easy horizontal scaling via sharding.
+* Documents are self-contained, facilitating work in distributed systems.
+
+**Data Structure:**
+
+* Documents have unique object IDs.
+* Fields within documents can contain various data types.
+
+**Query API:**
+
+* Basic read and write operations, complex queries, and transformations.
+* Secondary indexes optimize common queries.
+* Geospatial queries find documents near geographic locations.
+* Data aggregation pipelines group and reduce documents.
+
+**Deployment Options:**
+
+* Free to use and self-hostable.
+* MongoDB Atlas:
+    * Free tier for quick start.
+    * Automatic scaling.
+    * UI for data interaction.
+    * Features such as full-text search, serverless option, and triggers.
+* Realm: Firebase-like platform for real-time data synchronization with front-end applications.
+
+**Call to Action:**
+
+* Comment to request a full tutorial.

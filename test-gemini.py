@@ -21,7 +21,7 @@ genai.configure(api_key=api_key)
 model_name ="gemini-pro"
 model = genai.GenerativeModel(model_name)
 print_model_information(model_name)
-
+exit()
 question = """    
 Please Present this transcript in a more readable manner using lists, bullet points etc.
     Highlight any any actionable advice, references to research, examples, or specific techniques mentioned.
@@ -41,7 +41,8 @@ answer = response.text
 print(question)
 print("-------------------------------------\n")
 print(answer)
-print(response.usage_metadata)
+x, y  = response.usage_metadata
+print()
 
 
 

@@ -10,7 +10,7 @@ def summarize(video):
     summarizer.start()
 
 if __name__ == "__main__":    
-    v = Video(url="https://www.youtube.com/watch?v=K56nNuBEd0c")
+    v = Video(url="https://www.youtube.com/watch?v=aAy-B6KPld8")
     summarize(v)
     print(v)
     for field, value in v.__dict__.items():

@@ -1,0 +1,296 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.040 --> 00:00:06.400
+SQL is a key data skill but where do you learn&nbsp;
+it how do you learn it and what are the important&nbsp;&nbsp;
+
+00:00:06.400 --> 00:00:12.400
+topics I know it's extremely intimidating&nbsp;
+even thinking about what is the first step&nbsp;&nbsp;
+
+00:00:12.400 --> 00:00:18.640
+especially because I came from a non-technical&nbsp;
+background when I was first learning SQL but&nbsp;&nbsp;
+
+00:00:18.640 --> 00:00:25.080
+sight now that I've been using SQL for many years&nbsp;
+as a data professional I know the more efficient&nbsp;&nbsp;
+
+00:00:25.080 --> 00:00:30.760
+and easier way to learn SQL and I will walk you&nbsp;
+through the exact steps that I would take if I'm&nbsp;&nbsp;
+
+00:00:30.760 --> 00:00:37.560
+learning SQL today first off let me get started&nbsp;
+with what is SQL SQL stands for structured query&nbsp;&nbsp;
+
+00:00:37.560 --> 00:00:45.160
+language and it allows you to interact with data&nbsp;
+for example with this statement of Select * from&nbsp;&nbsp;
+
+00:00:45.160 --> 00:00:51.560
+table where number is greater than five this&nbsp;
+is just saying give me all the data from the&nbsp;&nbsp;
+
+00:00:51.560 --> 00:00:57.440
+table where the numbers are greater than five&nbsp;
+so it's very much like simple English and it's&nbsp;&nbsp;
+
+00:00:57.440 --> 00:01:02.360
+something that I really believe you can pick&nbsp;
+up without a computer science background now&nbsp;&nbsp;
+
+00:01:02.360 --> 00:01:11.400
+why should you learn SQL can't AI do it yes AI can&nbsp;
+code but SQL is still very much a required skill&nbsp;&nbsp;
+
+00:01:11.400 --> 00:01:19.800
+set on many job listings including data analyst&nbsp;
+data scientist data engineer project manager so&nbsp;&nbsp;
+
+00:01:19.800 --> 00:01:25.440
+if you're interested in any of these job titles&nbsp;
+SQL is a skill that you should start learning in&nbsp;&nbsp;
+
+00:01:25.440 --> 00:01:31.280
+fact according to stack overflow survey from last&nbsp;
+year SQL Remains the third most used programming&nbsp;&nbsp;
+
+00:01:31.280 --> 00:01:37.440
+language across professional developers and&nbsp;
+employers value not just your ability to use&nbsp;&nbsp;
+
+00:01:37.440 --> 00:01:45.200
+SQL but your ability to use it to be able to draw&nbsp;
+insights to make business decisions as Reddit user&nbsp;&nbsp;
+
+00:01:45.200 --> 00:01:52.240
+mamertine best puts it I'm not paid because I can&nbsp;
+write SQL I'm paid because I can understand data&nbsp;&nbsp;
+
+00:01:52.240 --> 00:01:57.480
+employers are looking for you to not just use&nbsp;
+SQL but your ability to critically think about&nbsp;&nbsp;
+
+00:01:57.480 --> 00:02:03.880
+data and learning SQL will help you start doing&nbsp;
+this now that we know SQL is fundamental how&nbsp;&nbsp;
+
+00:02:03.880 --> 00:02:10.520
+would I learn it these are the three steps that&nbsp;
+I would take step one choose an environment SQL&nbsp;&nbsp;
+
+00:02:10.520 --> 00:02:18.720
+is used within a specific environment called&nbsp;
+database management system dbms and each dbms&nbsp;&nbsp;
+
+00:02:18.720 --> 00:02:25.320
+has its own flavor of SQL according to stack&nbsp;
+Overflow survey where over 90,000 professional&nbsp;&nbsp;
+
+00:02:25.320 --> 00:02:33.560
+developers responded they said that the three&nbsp;
+most commonly used dbms's are postgresSQL mySQL&nbsp;&nbsp;
+
+00:02:34.480 --> 00:02:39.880
+SQLlight and I'll make sure I include the links&nbsp;
+to these descriptions below so that you can start&nbsp;&nbsp;
+
+00:02:39.880 --> 00:02:44.400
+downloading them now what's the difference between&nbsp;
+these three and which one should you choose on the&nbsp;&nbsp;
+
+00:02:44.400 --> 00:02:50.880
+list well it really doesn't matter I would say&nbsp;
+the syntax is very similar across all three and&nbsp;&nbsp;
+
+00:02:50.880 --> 00:02:56.240
+they are all open source and free to download&nbsp;
+so I wouldn't be too concerned about which one&nbsp;&nbsp;
+
+00:02:56.240 --> 00:03:03.080
+to choose because you really can't go wrong but in&nbsp;
+my experience I've used postgresSQL and Microsoft&nbsp;&nbsp;
+
+00:03:03.080 --> 00:03:08.920
+SQL server and I really did not have any trouble&nbsp;
+transitioning between them so I would just say&nbsp;&nbsp;
+
+00:03:08.920 --> 00:03:14.680
+pick one and then move on to step two I'll also&nbsp;
+mention that if you don't prefer to download any&nbsp;&nbsp;
+
+00:03:14.680 --> 00:03:22.280
+software onto your laptop there are always cloud&nbsp;
+databases as an option which are on AWS Google&nbsp;&nbsp;
+
+00:03:22.280 --> 00:03:28.920
+cloud and Microsoft Azure they have limited free&nbsp;
+options as well so check that out step two learn&nbsp;&nbsp;
+
+00:03:28.920 --> 00:03:35.960
+the basics quickly in this step I am not going&nbsp;
+to try to memorize all the syntax or learn all&nbsp;&nbsp;
+
+00:03:35.960 --> 00:03:42.400
+of it as much as possible because there is&nbsp;
+a lot of SQL syntaxes and nobody memorizes&nbsp;&nbsp;
+
+00:03:42.400 --> 00:03:48.200
+them what I do want to focus on is learning the&nbsp;
+fundamentals and by fundamentals I mean what is&nbsp;&nbsp;
+
+00:03:48.200 --> 00:03:55.080
+a database what is a relational database what is&nbsp;
+SQL and what is its uses then I want to focus on&nbsp;&nbsp;
+
+00:03:55.080 --> 00:04:02.200
+the SQL syntax and structure this includes some&nbsp;
+of the statements like earlier select from where&nbsp;&nbsp;
+
+00:04:02.200 --> 00:04:10.040
+as well as the crud operations which stands for&nbsp;
+create read update and delete and how am I going&nbsp;&nbsp;
+
+00:04:10.040 --> 00:04:17.080
+to learn this well SQL is best learned by doing&nbsp;
+and research shows that when you passively learn&nbsp;&nbsp;
+
+00:04:17.080 --> 00:04:25.400
+you only retain about 20% of it whereas Active&nbsp;
+Learning allows you to retain about 75% to 90%&nbsp;&nbsp;
+
+00:04:25.400 --> 00:04:31.920
+of the information Interactive Learning is really&nbsp;
+important when learning SQL and that's why I chose&nbsp;&nbsp;
+
+00:04:31.920 --> 00:04:38.680
+DataCamp when I was first learning SQL because the&nbsp;
+platform is very interactive and it allows you to&nbsp;&nbsp;
+
+00:04:38.680 --> 00:04:44.960
+code directly within their platform DataCamp is&nbsp;
+sponsoring this video and I'm so excited to tell&nbsp;&nbsp;
+
+00:04:44.960 --> 00:04:51.400
+you about their SQL associate certification the&nbsp;
+certification tests not only your SQL skills for&nbsp;&nbsp;
+
+00:04:51.400 --> 00:04:58.400
+practice but also it includes a learning path so&nbsp;
+that you can start learning the fundamentals and&nbsp;&nbsp;
+
+00:04:58.400 --> 00:05:04.920
+get started with the guided courses of learning&nbsp;
+to practice SQL hands-on the SQL associate&nbsp;&nbsp;
+
+00:05:04.920 --> 00:05:10.880
+certification is a great way to prove your skills&nbsp;
+and level up your SQL abilities and I'm really&nbsp;&nbsp;
+
+00:05:10.880 --> 00:05:17.840
+excited to share that DataCamp is offering 25% off&nbsp;
+using my link in the description so make sure you&nbsp;&nbsp;
+
+00:05:17.840 --> 00:05:25.600
+take advantage of this offer and check it out now&nbsp;
+on to step three learn SQL in context not syntax&nbsp;&nbsp;
+
+00:05:25.600 --> 00:05:31.160
+the wrong way to learn SQL is by memorizing all&nbsp;
+the syntax this this will only teach you how to&nbsp;&nbsp;
+
+00:05:31.160 --> 00:05:37.760
+query the data but not actually understand it how&nbsp;
+I would start learning SQL in context is to start&nbsp;&nbsp;
+
+00:05:37.760 --> 00:05:45.440
+with a familiar small dataset like my credit card&nbsp;
+statement with about 20 to 30 rows of data I'll&nbsp;&nbsp;
+
+00:05:45.440 --> 00:05:52.080
+then analyze it and try to answer questions like&nbsp;
+what is my spending habit and that will teach me&nbsp;&nbsp;
+
+00:05:52.080 --> 00:05:59.840
+how to load data how to create a data table and&nbsp;
+then be able to order my data set and start doing&nbsp;&nbsp;
+
+00:05:59.840 --> 00:06:06.280
+a lot of what a data analyst would do and start&nbsp;
+writing my own queries and as I do this these&nbsp;&nbsp;
+
+00:06:06.280 --> 00:06:12.480
+are the topics I would progress from beginner to&nbsp;
+advanced SQL so how much SQL should you know the&nbsp;&nbsp;
+
+00:06:12.480 --> 00:06:19.480
+answer really depends on what your role is if&nbsp;
+you're a project manager a beginner level SQL&nbsp;&nbsp;
+
+00:06:19.480 --> 00:06:26.960
+is enough to be self-sufficient and be able to&nbsp;
+do your own queries and gather your own data but&nbsp;&nbsp;
+
+00:06:26.960 --> 00:06:35.400
+if you're looking for a more data heavy like a&nbsp;
+data analyst or a data scientist but more junior&nbsp;&nbsp;
+
+00:06:35.400 --> 00:06:43.080
+I would say a beginner to intermediate level&nbsp;
+is enough and that is about the level that a&nbsp;&nbsp;
+
+00:06:43.080 --> 00:06:51.440
+technical interview will be for SQL and then for&nbsp;
+advanced SQL I would say that's really for more&nbsp;&nbsp;
+
+00:06:51.440 --> 00:06:58.360
+senior level data roles as well as data Engineers&nbsp;
+who are more heavy on the data infrastructure side&nbsp;&nbsp;
+
+00:06:58.360 --> 00:07:03.960
+my tip for learning SQL goal is to continue&nbsp;
+practicing it in context because this will&nbsp;&nbsp;
+
+00:07:03.960 --> 00:07:10.320
+solidify your knowledge as well as give you the&nbsp;
+confidence in your abilities there's a concept&nbsp;&nbsp;
+
+00:07:10.320 --> 00:07:17.120
+called curve of forgetting which relates to the&nbsp;
+idea of how we retain information on day one we&nbsp;&nbsp;
+
+00:07:17.120 --> 00:07:24.720
+remember about 100% of what we learned but on day&nbsp;
+30 we only remember about 2% to 3% however when&nbsp;&nbsp;
+
+00:07:24.720 --> 00:07:30.520
+we expose ourselves to the same information&nbsp;
+daily whether it be 10 minutes minutes even&nbsp;&nbsp;
+
+00:07:30.520 --> 00:07:38.080
+2 to 4 minutes as time progresses we tend to get&nbsp;
+closer to the 100% mark of what we retain and this&nbsp;&nbsp;
+
+00:07:38.080 --> 00:07:44.960
+concept very much applies to learning SQL it's not&nbsp;
+a skill that you can learn in a day but it is a&nbsp;&nbsp;
+
+00:07:44.960 --> 00:07:51.720
+skill that as you practice you will get good at it&nbsp;
+and you will retain it so have the confidence and&nbsp;&nbsp;
+
+00:07:51.720 --> 00:07:57.320
+continue to practice your SQL skills if you found&nbsp;
+this video helpful please like and subscribe to&nbsp;&nbsp;
+
+00:07:57.320 --> 00:08:04.880
+the channel and watch my next video where I give&nbsp;
+my honest advice about data analysts and I have&nbsp;&nbsp;
+
+00:08:04.880 --> 00:08:09.880
+way more tips over there to get you started thank&nbsp;
+you so much and I will see you on the next one
+
