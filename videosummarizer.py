@@ -45,12 +45,20 @@ class VideoSummarizer:
     def summarize(self, video: Video):
         start_time = time.time()
         print("#######################################")
-        print(self.user_prompt)
-
+        print(self.user_prompt.format(title=video.title, transcript=video.transcript))
+        print(video)
         response = self.client.generate_content(self.user_prompt.format(title=video.title, transcript=video.transcript))
 
-        summary = response.text
-        
+        if hasattr(response, 'text') and response.text is not None:
+            summary = response.text
+            print(f"Summary for {video.title}: {summary}")
+        else:
+            # Handle case when no valid Part is returned
+            print(f"No valid summary returned for {video.title}. Reason: {response.get('finish_reason', 'Unknown')}")
+            summary = "No valid summary."
+
+        #summary = response.text
+
         print(response.usage_metadata)
         end_time = time.time()
         summary_time = end_time - start_time 
