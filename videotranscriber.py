@@ -87,10 +87,7 @@ class VideoTranscriber:
                     end_time = time.time() 
                     download_time = end_time - start_time
                     print(f"Download completed in {download_time:.2f} seconds.")
-                    start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
-                    start_time = PyDateTime.strptime(start_time_str, '%Y-%m-%d  %H:%M:%S')
-                    end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))
-                    end_time = PyDateTime.strptime(end_time_str, '%Y-%m-%d %H:%M:%S')
+                    start_time, end_time = self.format_time(start_time, end_time)
 
                     video.download_start_datetime = start_time
                     video.download_end_datetime = end_time 
@@ -164,6 +161,13 @@ class VideoTranscriber:
             self.transcribe_video(self.video)
             return video
 
+        def format_time(self, start_time, end_time):
+            start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
+            start_time = PyDateTime.strptime(start_time_str, '%Y-%m-%d  %H:%M:%S')
+            end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))
+            end_time = PyDateTime.strptime(end_time_str, '%Y-%m-%d %H:%M:%S')
+            return start_time, end_time
+
         def save_transcript(self, video: Video, transcript_text):
             transcript_path = self.transcripts_path + "\\" + video.title +".txt"
             video.transcript = transcript_text
@@ -184,10 +188,7 @@ class VideoTranscriber:
             end_time = time.time() 
             download_time = end_time - start_time
             print(f"\nTranscribing completed in {download_time:.2f} seconds.")
-            start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
-            start_time = PyDateTime.strptime(start_time_str, '%Y-%m-%d %H:%M:%S')
-            end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))
-            end_time= PyDateTime.strptime(end_time_str, '%Y-%m-%d %H:%M:%S')
+            start_time, end_time = self.format_time(start_time, end_time)
             video.transcribing_start_date = start_time
             video.transcribing_end_date = end_time 
             video.transcribing_time = download_time
