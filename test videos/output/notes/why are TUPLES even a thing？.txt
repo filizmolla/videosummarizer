@@ -1,0 +1,35 @@
+**Why Tuples Exist**
+
+**Key Points:**
+
+* Tuples are immutable (unchangeable) data structures, while lists are mutable.
+* Tuples are faster than lists because they are stored in one block of memory.
+* Tuples are useful for storing data that is not likely to change or for grouping different types of data.
+
+**Demonstration:**
+
+Using the timeit module, the video demonstrates that creating a million tuples takes 0.13 seconds, while creating a million lists takes 1.43 seconds.
+
+**Use Cases for Tuples:**
+
+* Storing data that is not likely to change (e.g., names of countries).
+* Grouping different types of data (e.g., a tuple containing a YouTuber's name, subscriber count, and video types).
+* SQL libraries in Python often return tuples when using fetch methods.
+* Read-once data or function returns for faster loading speed.
+
+**Interesting Features of Tuples:**
+
+* Tuples can be unpacked into multiple variables in a single line of code.
+* Tuples can be created without using parentheses (by separating elements with commas).
+* Tuples can contain lists and other tuples, creating complex data structures.
+
+**Specific Techniques:**
+
+* **Immutable vs. Mutable:** Lists can be changed, while tuples cannot.
+* **Storage:** Tuples are stored in one block of memory, while lists are stored in two blocks of memory.
+* **Unpacking a Tuple:** Use the assignment operator to assign tuple elements to multiple variables at once.
+* **Creating Tuples Without Parentheses:** Simply separate tuple elements with commas.
+
+**References:**
+
+* Stack Overflow: https://stackoverflow.com/questions/1371461/why-are-tuples-immutable

@@ -9,7 +9,7 @@ def summarize_video_list(video_list):
         summarize(video)
         
 if __name__ == "__main__":    
-    vl_str = """https://www.youtube.com/watch?v=orJSJGHjBLI
+    vl_str = """https://www.youtube.com/watch?v=UbDyjIIGaxQ
     """
     vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
 

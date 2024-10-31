@@ -81,6 +81,10 @@ class Video(Base):
     status : Mapped[Optional[str]] = mapped_column(default="Pending.") # Pending / Done 
     subtitles_human: Mapped[Optional[str]]
     
+    playlist_id: Mapped[Optional[str]]
+    playlist_order: Mapped[Optional[int]]
+    is_in_playlist: Mapped[Optional[Boolean]]= mapped_column(Boolean, default=False)
+
     summaries: Mapped[List["Summary"]] = relationship(back_populates="video", cascade="all, delete-orphan", lazy='select')
 
     def __repr__(self) -> str:

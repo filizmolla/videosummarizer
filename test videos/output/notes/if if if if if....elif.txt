@@ -1,0 +1,50 @@
+**Nested If Statements and Elif**
+
+**Introduction**
+
+* Control the flow of Python programming based on conditions.
+* Introduce new concepts of nesting and elseif (elif) statements.
+
+**Handling Evil Customers**
+
+* Ask customers if they are evil (Ben).
+* If evil (Ben), kick them out.
+* Otherwise, welcome them.
+
+**Nesting If Statements**
+
+* Nested if statements allow for multiple conditions to be checked in order.
+* The outer if statement checks if the customer's name is Ben.
+* The inner if statement checks if the evil status is "yes".
+
+**Elif (Else if) Statements**
+
+* Elif statements allow for multiple conditions to be checked sequentially.
+* If the first condition is false, the elif statement checks the next condition.
+* In this example, the elif statement checks if the customer's name is Ben but not evil.
+
+**Conditional Statements Summary**
+
+* If: Checks if a condition is true.
+* Else: Executes code if the if condition is false.
+* Elif (else if): Checks if another condition is true if the if condition is false.
+
+**Nested Elif Statements**
+
+* Multiple elif statements can be nested within each other.
+* This allows for complex conditions to be checked in a sequential order.
+
+**Menu Pricing**
+
+* Different items on the menu have different prices.
+* Use elif statements to set the price based on the ordered item.
+
+**Challenge Lab**
+
+* Create a program that adds extra whipped cream to lattes and increases the price accordingly.
+
+**Tips and Resources**
+
+* Use different colors to highlight if, else, and elif statements in code.
+* Check the It pro TV website for resources on IT certifications.
+* Use the code "networkchuck" for a 30% discount on It pro TV.

@@ -1,0 +1,40 @@
+## If-Else Statements in Python
+
+**Key Concepts:**
+
+* **If statements:** Conditional statements that execute code only if a certain condition is true.
+* **Else statements:** Alternative code to execute if the condition in the if statement is false.
+* **Comparison operators:** Mathematical symbols that compare values, such as greater than (>) or equal to (==).
+* **Indentation:** Python uses indentation to group code blocks, indicating which code belongs to which statement.
+
+**Steps to Use If-Else Statements:**
+
+1. Start with the `if` statement and a condition to evaluate.
+2. Indent the code to be executed if the condition is true.
+3. Add an `else` statement and indent the code to be executed if the condition is false.
+
+**Examples and Techniques:**
+
+* **Preventing "Evil Ben" from entering a coffee shop:**
+    * Use an if statement to check if the person's name is "Ben".
+    * If true, print a message unwelcome Ben.
+    * If false, print a welcome message.
+* **Using Comparison Operators:**
+    * Greater than (`>`): `if 4 > 3:`
+    * Less than (`<`): `if 2 < 3:`
+    * Equal to (`==`): `if me == "network Chuck":`
+* **Preventing Errors:**
+    * Ensure proper indentation.
+    * Use comparison operators correctly.
+    * Define variables before using them in comparison operators.
+
+**Additional Resources:**
+
+* [Challenge Lab 1](link not provided in transcript)
+* [Challenge Lab 2](link not provided in transcript)
+* [Video Walkthrough](link not provided in transcript)
+
+**Sponsor:**
+
+* **ITProTV:** Platform for IT training and career advancement.
+    * Use code "networkChuck" to get 30% off.

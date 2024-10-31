@@ -1,0 +1,579 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.820
+Python Tules, why are you even a thing?
+
+00:00:02.850 --> 00:00:06.240
+Because you're pretty much the same as
+a list. Like almost exactly the same.
+
+00:00:06.330 --> 00:00:09.540
+Watch this. Here's how I create a
+list and here's how you create a tule.
+
+00:00:09.630 --> 00:00:12.450
+They're exactly the same. Come
+on. I mean, I know to create them,
+
+00:00:12.450 --> 00:00:15.270
+I had to use a bracket to create a
+list. Opening, closing. Beyond that,
+
+00:00:15.270 --> 00:00:19.230
+they're the same. They hold an ordered
+list of data strings, integers.
+
+00:00:19.260 --> 00:00:22.260
+Why is Python doing this to us? Just
+to be confusing, to be difficult.
+
+00:00:22.380 --> 00:00:25.470
+Cause I only ever use list. I
+never used Tules. So in this video,
+
+00:00:25.530 --> 00:00:28.320
+I wanna go on a journey. I want
+to figure out why is there a tule?
+
+00:00:28.320 --> 00:00:31.170
+Why is it even a thing? Why does it
+exist? It's gonna be a small journey,
+
+00:00:31.230 --> 00:00:32.910
+I think. Get your coffee
+ready. Let's do this
+
+00:00:37.980 --> 00:00:41.100
+Now, just to show you I'm not crazy. Let
+me print the type of these data types.
+
+00:00:42.000 --> 00:00:46.680
+We're on that code and bam, I
+told you class list class tule.
+
+00:00:46.710 --> 00:00:49.500
+So I googled it, ask chat,
+G p T and ask my discord.
+
+00:00:49.500 --> 00:00:53.460
+And there's one key difference
+between a list and a tule immutable.
+
+00:00:53.620 --> 00:00:56.400
+You can't mute Tules,
+but you can mute lists.
+
+00:00:57.930 --> 00:01:01.110
+But now I'm talking about tules and
+you can hear me Immutable, not mutable.
+
+00:01:01.140 --> 00:01:03.960
+All right Nick. So what I wanna do
+there is like do a mute thing. &lt;laugh&gt;,
+
+00:01:04.830 --> 00:01:06.450
+it's stupid, but we should play with it.
+
+00:01:06.450 --> 00:01:09.510
+So it turns out immutable is just a
+fancy word for you can't change it.
+
+00:01:09.600 --> 00:01:13.140
+Whereas mutable means you can
+change it. So a list you can change.
+
+00:01:13.170 --> 00:01:15.480
+So let's try it out. Let's
+change a value in our list.
+
+00:01:15.510 --> 00:01:20.250
+We'll change Bernard to Chuck.
+We'll say index zero equals chuck.
+
+00:01:20.250 --> 00:01:22.840
+And we'll print that list to see
+what it looks like. Nailed it.
+
+00:01:22.840 --> 00:01:25.770
+It changed mutable. Let's try to
+change our two pull, same process.
+
+00:01:25.770 --> 00:01:29.760
+Call the zero index and have that equal
+chuck and we'll try to print it out and
+
+00:01:29.850 --> 00:01:32.520
+can't do it. It's immutable.
+Can't touch this. Sorry,
+
+00:01:32.950 --> 00:01:36.210
+I had to do it so we could stop
+there. Video over. Case closed.
+
+00:01:38.250 --> 00:01:40.950
+But if you're like me, you might
+be wondering, so what &lt;laugh&gt;,
+
+00:01:41.010 --> 00:01:43.410
+so what if you can't change?
+I still don't see the reason,
+
+00:01:43.560 --> 00:01:46.800
+the use case because it still seems
+like we're trying to overcomplicate
+
+00:01:46.805 --> 00:01:49.500
+something that should be very
+simple. Just make it a list.
+
+00:01:49.650 --> 00:01:52.200
+The list does everything. So
+I dove deeper. But real quick,
+
+00:01:52.200 --> 00:01:54.390
+before we overcomplicate
+things with twos and lists,
+
+00:01:54.420 --> 00:01:57.990
+let me tell you something that's not
+complicated. Sponsor this video. Three cx.
+
+00:01:57.990 --> 00:02:00.960
+Three CX is something you wanna play with
+because having you always wanted your
+
+00:02:00.960 --> 00:02:04.080
+own phone system. Yes you have.
+You're about to get one for free.
+
+00:02:04.110 --> 00:02:06.690
+Three CX has a new thing.
+It's called three CX Startup.
+
+00:02:06.690 --> 00:02:09.180
+Now in the phone system world,
+things can get pretty complex.
+
+00:02:09.210 --> 00:02:11.460
+Like it was my whole job if
+that's how much of a pain it was.
+
+00:02:11.460 --> 00:02:14.820
+But here you get the whole shebang,
+live chat, video chat, a phone system,
+
+00:02:14.820 --> 00:02:17.280
+and it's in the cloud. Like
+legit. They're doing this now,
+
+00:02:17.280 --> 00:02:20.700
+I don't know how they can do this, but
+it's free forever for up to 10 users.
+
+00:02:20.850 --> 00:02:22.350
+&lt;laugh&gt;, like seriously,
+just try this out.
+
+00:02:22.350 --> 00:02:25.050
+It's really fun putting your own phone
+system right now, take you five minutes.
+
+00:02:25.110 --> 00:02:27.720
+Nothing makes you feel more professional
+than having a live chat on your
+
+00:02:27.720 --> 00:02:28.230
+website.
+
+00:02:28.230 --> 00:02:31.890
+Let's say you're a person in it and you
+wanna have a killer resume portfolio
+
+00:02:31.890 --> 00:02:34.260
+website. Imagine if you
+had live chat on there,
+
+00:02:34.680 --> 00:02:37.230
+&lt;laugh&gt; and a recruiter could come on
+your website and just start chatting with
+
+00:02:37.230 --> 00:02:38.280
+you. I did this just now.
+
+00:02:38.340 --> 00:02:40.800
+Now it took me about five minutes
+to set up my cloud phone system.
+
+00:02:40.800 --> 00:02:41.790
+It's kind of stupid easy.
+
+00:02:41.850 --> 00:02:45.630
+And then adding my live chat to WordPress
+took just a few moments. Check it out.
+
+00:02:45.780 --> 00:02:47.940
+Do you see that at the
+bottom right chat icon?
+
+00:02:48.300 --> 00:02:51.600
+Because they have a WordPress
+plugin and it took no time at all.
+
+00:02:51.605 --> 00:02:54.510
+I keep saying that, but that's
+literally what it took. Say, hey,
+
+00:02:54.720 --> 00:02:59.250
+tell me about Tules. And then bam,
+looking back at my three CX web client,
+
+00:02:59.290 --> 00:03:00.490
+there's the chat right there.
+
+00:03:00.790 --> 00:03:04.210
+Tules are stupid and I'm helping
+my client learn about Tules.
+
+00:03:04.240 --> 00:03:06.580
+They don't only have a web client,
+they've got a client for your phone,
+
+00:03:06.640 --> 00:03:10.180
+Android and iOS. They've got a desktop
+client. It's stupid how awesome this is.
+
+00:03:10.180 --> 00:03:13.060
+And it's kind of crazy. They're giving
+it away for free for up to 10 users.
+
+00:03:13.120 --> 00:03:17.260
+Check it out. Link below. Anyways,
+back to Tules and how stupid they are.
+
+00:03:17.500 --> 00:03:19.270
+I'm just kidding. They're actually
+pretty cool. That's what I learned.
+
+00:03:19.420 --> 00:03:22.120
+I asked Google again and I asked my
+discord, and here's what I learned.
+
+00:03:22.120 --> 00:03:23.230
+Two things. Number one,
+
+00:03:23.350 --> 00:03:28.330
+the fact that TU pulls are mutable
+means they're faster than lists.
+
+00:03:28.360 --> 00:03:31.210
+Like let me show you demonstration
+time using a tool called time it.
+
+00:03:31.210 --> 00:03:34.420
+We're gonna see how fast Python
+can create. How many I eight,
+
+00:03:34.840 --> 00:03:36.430
+how many zeros are here?
+
+00:03:36.550 --> 00:03:41.290
+1 million list and 1 million Tules. Ready,
+
+00:03:41.350 --> 00:03:43.870
+set, go. The results
+are in and it's obvious,
+
+00:03:43.870 --> 00:03:47.920
+1.43 seconds for a list and
+0.13 seconds for a tule.
+
+00:03:48.040 --> 00:03:49.510
+Dude that made a list cry.
+
+00:03:49.540 --> 00:03:52.510
+But now I'm sure you're wondering
+why is a tule faster than a list?
+
+00:03:52.510 --> 00:03:55.210
+They're doing the same thing, right?
+No, and it's back to mutability.
+
+00:03:55.270 --> 00:03:58.540
+Our favorite word and it has to do with
+storage. Because a list is mutable,
+
+00:03:58.540 --> 00:03:59.260
+you can change it.
+
+00:03:59.260 --> 00:04:03.790
+It's stored in two blocks of memory
+to allow for new data change data.
+
+00:04:03.820 --> 00:04:07.540
+Whereas a tuple, it's stored in one
+block of memory, it's not gonna change.
+
+00:04:07.545 --> 00:04:09.250
+And now I know in our example,
+
+00:04:09.250 --> 00:04:12.550
+this little millisecond difference in
+time doesn't seem like a big thing.
+
+00:04:12.550 --> 00:04:16.840
+But in large, bulky programs, I could
+be time save, money, save, it's okay.
+
+00:04:16.930 --> 00:04:20.110
+At this point I'm kind of convinced
+I get it. Two pools are pretty cool.
+
+00:04:20.140 --> 00:04:21.490
+They're fast and I like fast.
+
+00:04:21.490 --> 00:04:24.250
+But now on to 0.2 as to why we
+use two pools and that's why.
+
+00:04:24.550 --> 00:04:27.010
+Why do we use two pools?
+What's the use case?
+
+00:04:27.040 --> 00:04:29.740
+When am I going to need data that
+can be changed? And for that,
+
+00:04:29.740 --> 00:04:33.160
+I asked Google and my Discord
+and I got fantastic answers.
+
+00:04:33.220 --> 00:04:35.200
+I found a really great
+answer on Stack Overflow.
+
+00:04:35.290 --> 00:04:39.040
+And it has to do with the types of data
+you might want to store in a list versus
+
+00:04:39.040 --> 00:04:42.160
+a two and a list. You wanna store
+what's called homogenous data.
+
+00:04:42.250 --> 00:04:44.980
+That's just kind of fun to say. Go ahead
+and say it homogenous. For example,
+
+00:04:44.980 --> 00:04:48.910
+a list of names, all strings, the
+same type of data, list of coffees,
+
+00:04:48.970 --> 00:04:49.990
+list of YouTubers,
+
+00:04:50.020 --> 00:04:53.500
+these are examples of data within a
+list that we might add to change remove.
+
+00:04:53.500 --> 00:04:57.340
+But in Tules you might use
+he hetero heterogeneous data.
+
+00:04:57.760 --> 00:04:58.570
+I can't say that.
+
+00:04:58.570 --> 00:05:02.440
+So I might have one tule called YouTuber
+and it would contain data about a
+
+00:05:02.440 --> 00:05:05.770
+YouTuber name subscriber count. How
+many does John Hammond have now? Woo.
+
+00:05:05.770 --> 00:05:09.880
+519,000. Way to go, John Hammond.
+And the types of videos he makes,
+
+00:05:10.150 --> 00:05:12.280
+packing heterogeneous data.
+
+00:05:12.280 --> 00:05:14.890
+Did I say it right The first time or
+second time that felt really good.
+
+00:05:15.100 --> 00:05:18.280
+It's all different, but it's all
+data pertaining to a certain YouTube.
+
+00:05:18.280 --> 00:05:20.440
+Basically it's how we're grouping
+our different types of data.
+
+00:05:20.440 --> 00:05:22.450
+And when you're working with
+SQL Libraries in Python,
+
+00:05:22.450 --> 00:05:24.160
+you're actually kind
+of forced to use tules,
+
+00:05:24.220 --> 00:05:26.860
+the option return tules when
+you use things like fetch one,
+
+00:05:27.190 --> 00:05:30.880
+fetch all and similar methods and
+thank you Labret and My Discord.
+
+00:05:30.910 --> 00:05:33.760
+And by the way, if you haven't joined
+my Discord, check it out. Super helpful.
+
+00:05:33.765 --> 00:05:36.400
+Amazing people in there that'll help
+you on your Python learning journey.
+
+00:05:36.520 --> 00:05:40.300
+And Grau also points out that you wanna
+use a tuple for kind of read once data
+
+00:05:40.300 --> 00:05:43.300
+quick stuff and function returns
+for faster loading speed.
+
+00:05:43.450 --> 00:05:46.180
+We'll talk more about functions
+later. It's okay, I get it.
+
+00:05:46.390 --> 00:05:50.860
+Tules have their place. They're a thing.
+I might start using them, probably not,
+
+00:05:50.860 --> 00:05:51.850
+but they're also kind of weird.
+
+00:05:51.880 --> 00:05:53.620
+I'm gonna show you some weird things
+you can do with them. Actually,
+
+00:05:53.620 --> 00:05:56.800
+this one's kind of cool. You can
+unpack a tule. So for example,
+
+00:05:56.805 --> 00:05:58.610
+let's have this two bowl here.
+I'll call it network Chuck.
+
+00:05:58.610 --> 00:06:02.660
+I'll highly equal my name, my
+age, and my favorite drink coffee.
+
+00:06:02.780 --> 00:06:05.960
+I can unpack this and assign it
+to multiple variables all at once.
+
+00:06:05.960 --> 00:06:10.220
+By doing this, I'll create three
+variables, name, age, drink,
+
+00:06:10.670 --> 00:06:13.130
+and half that equal the
+two bowl network, Chuck.
+
+00:06:13.310 --> 00:06:16.910
+And that legit made three
+separate variables that
+unpack it as long as you have
+
+00:06:16.910 --> 00:06:20.060
+them in the correct order. Let me print
+all of them real quick. Print name,
+
+00:06:20.420 --> 00:06:24.860
+print, age, and print and
+drink. It's pretty cool, right?
+
+00:06:24.860 --> 00:06:27.200
+Which by the way, you can
+do the same thing with list.
+
+00:06:27.410 --> 00:06:30.770
+So just now you know it's not unique to
+Tules, but I hadn't talked about it yet.
+
+00:06:30.800 --> 00:06:33.230
+I wanted to show it to you. Now
+also, tules are kind of weird.
+
+00:06:33.260 --> 00:06:35.090
+You probably saw this coming
+cuz they have a weird name.
+
+00:06:35.180 --> 00:06:37.760
+So tuple and I don't even know how to
+say it, right, is it Tule or a tule?
+
+00:06:37.760 --> 00:06:39.800
+I don't know. Comment below.
+You probably don't know this.
+
+00:06:39.800 --> 00:06:43.200
+You don't actually need to use
+parentheses to make a tule. &lt;laugh&gt;.
+
+00:06:43.205 --> 00:06:45.520
+Seriously watch this.
+Totally. A tule, someone.
+
+00:06:45.520 --> 00:06:48.230
+I'm gonna name this thing equals
+swan. And then to make it a tule,
+
+00:06:48.290 --> 00:06:50.300
+I don't need parenthesis. All
+I have to do is just add a com.
+
+00:06:50.330 --> 00:06:53.520
+I want you to need more than one
+piece of data. &lt;laugh&gt; watch.
+
+00:06:54.320 --> 00:06:58.430
+If I print the type of that data, it's
+a tule &lt;laugh&gt;, which is so weird.
+
+00:06:58.610 --> 00:07:01.100
+So you actually need parenthesis.
+All you need is a comma. Like, Hey,
+
+00:07:01.105 --> 00:07:04.730
+I've got multiple pieces of data.
+Psych &lt;laugh&gt;. So uh, it's weird.
+
+00:07:04.730 --> 00:07:07.730
+And there's more weird things. You
+can easily turn a tule into a list.
+
+00:07:07.730 --> 00:07:09.890
+Listen to a tule. You can
+put a list inside a tule.
+
+00:07:09.960 --> 00:07:12.710
+You can put a tule inside a list. You
+can put a list inside a tule instead,
+
+00:07:12.710 --> 00:07:15.120
+a tule inside a, inside a list,
+inside a tule, inside a list.
+
+00:07:17.690 --> 00:07:22.580
+And finally, let's make one more
+tubal stuff you have to do. Like,
+
+00:07:22.760 --> 00:07:25.790
+comment, subscribe, and look.
+That's a tule. It's immutable.
+
+00:07:25.795 --> 00:07:27.480
+You can't change it. Now you have to do.
+

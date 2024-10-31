@@ -1,0 +1,1518 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.090 --> 00:00:02.370
+Just when you thought that
+Python couldn't get any cooler,
+
+00:00:02.460 --> 00:00:06.510
+you find out it includes numbers and
+math. Yes. Are you kidding me? No.
+
+00:00:06.510 --> 00:00:07.343
+Seriously.
+
+00:00:07.470 --> 00:00:10.650
+It kind of had me worried there for a
+sec because I wasn't a big fan of math in
+
+00:00:10.650 --> 00:00:14.810
+school and math. Wasn't a big fan
+of me. I, uh, I wasn't good at
+
+00:00:22.860 --> 00:00:24.780
+You. Don't have to be good
+at math to learn Python.
+
+00:00:24.840 --> 00:00:26.910
+And the math I'm talking
+about is like stupid, simple,
+
+00:00:26.910 --> 00:00:28.950
+like one plus two equals four simple.
+
+00:00:28.980 --> 00:00:31.230
+And it's this simple math that we're
+going to learn here in this video that
+
+00:00:31.230 --> 00:00:34.710
+makes Python so powerful. Maybe
+math, wasn't fun for you in school,
+
+00:00:34.710 --> 00:00:38.070
+but it's about to get lit with Python.
+Trust me. It's going to be awesome.
+
+00:00:38.130 --> 00:00:41.160
+So here we go. This is episode
+three of my free Python series,
+
+00:00:41.160 --> 00:00:45.540
+where I'm going to teach you everything
+you need to know to become dangerous in
+
+00:00:45.540 --> 00:00:49.650
+Python episode one and two, we covered
+some stuff like strings and variables,
+
+00:00:49.770 --> 00:00:52.260
+and we had like seven cups of
+coffee or was that just me?
+
+00:00:52.320 --> 00:00:53.460
+I hope you joined me in that.
+
+00:00:53.550 --> 00:00:56.970
+And now we're going to build on that
+knowledge and have even more coffee.
+
+00:00:57.240 --> 00:01:00.780
+So let's dive right in, but first, what
+do you need? Well, if you're new here,
+
+00:01:00.930 --> 00:01:03.180
+you need nothing. I've
+got a free Python lab.
+
+00:01:03.210 --> 00:01:04.380
+Check that link in the description.
+
+00:01:04.410 --> 00:01:06.900
+You can start coding right now
+from your browser or even man,
+
+00:01:06.900 --> 00:01:10.080
+your stinking phone. And also you're
+going to need coffee. It's just required,
+
+00:01:12.870 --> 00:01:13.770
+Never checked out coffee.
+
+00:01:13.800 --> 00:01:16.800
+And also a massive shout out to
+the sponsor of this entire series.
+
+00:01:16.800 --> 00:01:19.920
+In that reason, it can be free
+here on YouTube. It pro TV.
+
+00:01:20.100 --> 00:01:24.690
+I use it pro TV to learn everything in
+it from Linux to networking, to hacking.
+
+00:01:24.690 --> 00:01:26.280
+And you guessed it by thoughts.
+
+00:01:26.340 --> 00:01:30.660
+So whatever you want to learn in it
+from a CCNA to a plus to everything,
+
+00:01:30.870 --> 00:01:35.100
+they got you back. They got fantastic
+videos. Hands-on labs, practice exams,
+
+00:01:35.130 --> 00:01:38.310
+pretty much everything you need to get
+started in it or advance your career in
+
+00:01:38.310 --> 00:01:41.130
+it. So check it out, link below
+and use my code network, Chuck,
+
+00:01:41.130 --> 00:01:44.070
+and you'll get 30% off
+forever. Let's get started.
+
+00:01:44.100 --> 00:01:46.530
+So just like episode one and two,
+go ahead and fire up that lab.
+
+00:01:46.560 --> 00:01:49.470
+Check that link in the description. Load
+that sucker up and we'll get started.
+
+00:01:49.470 --> 00:01:52.350
+Cause we got to do this hands-on you
+got to start coding with me right now.
+
+00:01:52.480 --> 00:01:54.390
+Best way to learn. Okay.
+So far in this course,
+
+00:01:54.390 --> 00:01:58.650
+we've talked about two very big ideas
+in Python, the variables and strengths.
+
+00:01:58.710 --> 00:02:00.960
+So go ahead with me right now. As
+I'm typing this type it with me,
+
+00:02:01.020 --> 00:02:05.190
+create the variable name and then assign
+that variable. The string of your name,
+
+00:02:05.310 --> 00:02:09.330
+try it out. Do a mine here. There's my
+variable. And there's my string string.
+
+00:02:09.420 --> 00:02:11.040
+We know what the stream,
+because it's between quotes. No,
+
+00:02:11.040 --> 00:02:14.820
+it's a variable because it
+ain't got nothing, man. Now
+let's talk about numbers.
+
+00:02:14.850 --> 00:02:18.120
+The first type of number we'll talk
+about is our good old whole number.
+
+00:02:18.300 --> 00:02:21.000
+It's the first thing we learned
+in math, right? 1, 2, 3, 4, 5,
+
+00:02:21.060 --> 00:02:23.400
+as we're also going to learn
+here with Python and Python,
+
+00:02:23.400 --> 00:02:27.060
+a whole number is referred to as an
+integer because they just have to be
+
+00:02:27.060 --> 00:02:30.630
+different non skinny. Well kind of
+that's what it's called an integer.
+
+00:02:30.660 --> 00:02:32.760
+Let's go make one right now.
+Come on, let's go. You ready?
+
+00:02:32.790 --> 00:02:36.150
+It's super complicated. Watch this. I
+want you to create the integer seven
+
+00:02:39.120 --> 00:02:42.120
+Done. That's an integer right
+there. If I were to run this code,
+
+00:02:42.240 --> 00:02:45.450
+it's fine by clicking notice though,
+I don't have anything outputting.
+
+00:02:45.450 --> 00:02:46.560
+Cause I don't, I'm not telling it to,
+
+00:02:46.590 --> 00:02:51.150
+but that is indeed an integer AKA whole
+number. And really it's that simple.
+
+00:02:51.180 --> 00:02:54.210
+Now, just like we can assign
+a string to a variable.
+
+00:02:54.240 --> 00:02:57.270
+We can also assign a number
+or an integer to a variable.
+
+00:02:57.330 --> 00:02:58.860
+So why don't you do that for me right now,
+
+00:02:58.930 --> 00:03:02.620
+assign that number seven to a variable
+named age. I'm going to do it.
+
+00:03:02.830 --> 00:03:06.700
+And it's very simple. Age
+equals seven. Now I'm not seven.
+
+00:03:06.700 --> 00:03:09.700
+So I'm going to fix that
+real quick. I am 31.
+
+00:03:10.240 --> 00:03:13.450
+I'm getting old man is more
+coffee. Just thinking about that.
+
+00:03:15.640 --> 00:03:17.050
+Now let's go ahead and
+print those suckers out.
+
+00:03:17.050 --> 00:03:18.400
+So just below all that code here,
+
+00:03:18.490 --> 00:03:22.450
+we're going to do print we'll print our
+variable name and just blow that we'll
+
+00:03:22.450 --> 00:03:27.160
+print our variable age and let's run
+that code real quick run. Awesome.
+
+00:03:27.460 --> 00:03:30.810
+Never Chuck 31. Okay, cool.
+We've got two data types here.
+
+00:03:30.860 --> 00:03:33.790
+We've got a string and we have an
+integer. Awesome. Now real quick.
+
+00:03:33.790 --> 00:03:38.170
+I want to show you a handy way to identify
+what type of data we're looking at.
+
+00:03:38.440 --> 00:03:41.290
+And it's a function called type.
+Literally. It's what it is.
+
+00:03:41.440 --> 00:03:46.210
+You'll type it in like this
+type and then parentheses
+
+00:03:46.480 --> 00:03:49.450
+and whatever the variable is or the
+data is you'll put it in between.
+
+00:03:49.570 --> 00:03:50.200
+So for example,
+
+00:03:50.200 --> 00:03:52.990
+if we wanted to find out what type
+of data the variable name was,
+
+00:03:53.350 --> 00:03:57.220
+we would type in type and then
+put name. Let's try it out.
+
+00:03:57.400 --> 00:04:02.230
+So just below all this junk, we're going
+to do type for emphases and then name.
+
+00:04:02.320 --> 00:04:05.020
+Now, if you run that code, we're not
+going to get anything going click on run.
+
+00:04:05.320 --> 00:04:07.000
+Nothing because we got to print that out.
+
+00:04:07.300 --> 00:04:11.290
+So I'll just put the print function
+around that prince and the parentheses
+
+00:04:11.290 --> 00:04:15.550
+around that. So now I'm using the print
+function to print the type function,
+
+00:04:15.790 --> 00:04:18.760
+just programming. So cool.
+Anyways, it's going to print that.
+
+00:04:18.790 --> 00:04:23.710
+So now right here in our output,
+we see the class is STR or string.
+
+00:04:23.740 --> 00:04:27.100
+Let's do that same thing for our integer
+and see what happens. Spoiler alert.
+
+00:04:27.100 --> 00:04:28.810
+It's going to say it's an integer,
+but let's just try it out.
+
+00:04:28.870 --> 00:04:33.730
+Print type age and we'll print
+that sucker out. Boom. Okay,
+
+00:04:33.730 --> 00:04:35.350
+cool. Just had to prove
+it to you. So you know,
+
+00:04:35.350 --> 00:04:38.890
+I wouldn't line strings
+and integers right there.
+
+00:04:39.100 --> 00:04:41.470
+Now I want you to do something
+for me. Let's do a little,
+
+00:04:41.650 --> 00:04:42.610
+little experiment here.
+
+00:04:42.850 --> 00:04:47.560
+I want you to add quotes around this
+energy right here around 31. Do it.
+
+00:04:47.590 --> 00:04:50.920
+Let's do it right now. This is gonna be
+cool. All right. So quotes and quote.
+
+00:04:51.010 --> 00:04:52.180
+So now let me ask you a question.
+
+00:04:52.180 --> 00:04:56.860
+When we do run this code here and we try
+to find out what type of data age is,
+
+00:04:57.100 --> 00:04:59.680
+what's it going to say? Now that
+we've added quotes, let's try it out.
+
+00:04:59.770 --> 00:05:02.170
+Go and click on run. Ooh,
+did you see that coming?
+
+00:05:02.320 --> 00:05:07.060
+Both of them are now strings because
+remember anything between quotes is a
+
+00:05:07.120 --> 00:05:09.370
+string. Even if you put a number there,
+
+00:05:09.430 --> 00:05:13.750
+that number is now seen by Python
+as just regular text a string,
+
+00:05:13.870 --> 00:05:16.630
+knowing this is going to come in handy
+here in a moment when we keep working on
+
+00:05:16.630 --> 00:05:19.480
+our robot barista. Yeah, I
+didn't forget about him. Did you?
+
+00:05:19.600 --> 00:05:21.190
+We're going to keep making
+him better. So real quick.
+
+00:05:21.190 --> 00:05:23.920
+I want you to take those quotes off
+now because we want that 31 or whatever
+
+00:05:23.920 --> 00:05:25.450
+yours is to be a number you'll by the way,
+
+00:05:25.450 --> 00:05:27.220
+you can put network Chuck
+and 31 here. If you want,
+
+00:05:27.790 --> 00:05:32.050
+as you want to be as old as me gross.
+But anyways, um, just like math,
+
+00:05:32.140 --> 00:05:35.380
+we also have decimals, right? So
+let me type in a new variable here.
+
+00:05:35.440 --> 00:05:40.180
+I'll do actual underscore age equals
+am I real age in decimal point is
+
+00:05:40.180 --> 00:05:44.590
+actually 31 point 96 and yeah,
+my birthday is coming up.
+
+00:05:44.650 --> 00:05:47.200
+Can you figure out what
+it is? Let me know. Now,
+
+00:05:47.200 --> 00:05:49.540
+as soon as we add that
+decimal to our number here,
+
+00:05:49.570 --> 00:05:53.710
+our integer it's no longer an integer
+it's now what's called a floating point
+
+00:05:53.740 --> 00:05:56.320
+number or float for short gosh,
+
+00:05:56.320 --> 00:05:59.180
+that made you want to rip
+beer float through real quick.
+
+00:05:59.180 --> 00:06:01.940
+Let's actually print that type out
+just to see what it looks like.
+
+00:06:02.000 --> 00:06:06.560
+So I'll do print type and
+then that variable actual
+
+00:06:06.920 --> 00:06:10.850
+underscore age. And let's do that,
+print it out or run the code. Right?
+
+00:06:11.090 --> 00:06:15.440
+Men look at us. We got three data
+types in Python. Now string integer.
+
+00:06:15.650 --> 00:06:20.270
+Was that an arrow? Let's fix
+that. Let's go and float. AKA,
+
+00:06:20.360 --> 00:06:24.410
+just text whole numbers
+and decimals. Now again,
+
+00:06:24.440 --> 00:06:26.060
+normally when you start
+talking about numbers,
+
+00:06:26.150 --> 00:06:28.820
+you're going to start talking about
+math, right? And yes, there is math.
+
+00:06:28.880 --> 00:06:31.610
+Actually. You could use Python
+as a calculator, like watch this.
+
+00:06:31.640 --> 00:06:34.790
+Let's remove all this code right
+here. Just go in here and delete it.
+
+00:06:34.880 --> 00:06:36.050
+So right now when we run this,
+
+00:06:36.080 --> 00:06:38.810
+nothing's going to be outputted
+because we're just setting or assigning
+
+00:06:38.810 --> 00:06:40.850
+variables here. So let's
+do some Python math.
+
+00:06:40.850 --> 00:06:45.260
+So do this real quick
+print five space plus
+
+00:06:45.320 --> 00:06:48.080
+space seven. What do you think's going
+to happen there? Let's try it out.
+
+00:06:48.110 --> 00:06:50.180
+Let's run the code. Run
+simple enough, right?
+
+00:06:50.230 --> 00:06:55.100
+It did math five plus seven here we
+have the integer five and the integer
+
+00:06:55.190 --> 00:06:58.310
+seven and we added them
+together and we printed it out.
+
+00:06:58.400 --> 00:07:02.240
+We can also subtract five
+minus seven, negative two. Yes.
+
+00:07:02.270 --> 00:07:04.190
+Negatives can be integers.
+
+00:07:04.250 --> 00:07:08.870
+We can also divide with the Ford
+slash we can multiply with the
+
+00:07:08.870 --> 00:07:12.680
+asterisk. We can even do five
+to the seventh power exponent.
+
+00:07:12.830 --> 00:07:15.470
+We can even do all of that
+in one print function,
+
+00:07:15.680 --> 00:07:20.210
+plus six divided by nine times
+seven or I type six times six
+
+00:07:20.510 --> 00:07:22.310
+minus four. Let's run it. Now.
+
+00:07:22.310 --> 00:07:25.310
+You're probably not surprised that
+Python can do math cause mean computers.
+
+00:07:25.340 --> 00:07:28.820
+They're pretty big on math. They love
+it. It's kind of their love language.
+
+00:07:28.970 --> 00:07:32.600
+And also in case you were
+wondering, Python does follow
+the order of operations.
+
+00:07:32.720 --> 00:07:36.710
+So dust off the cobwebs of that math
+knowledge and try to remember that or just
+
+00:07:36.710 --> 00:07:39.770
+Google it. So we'll do
+exponents first multiplication.
+
+00:07:39.800 --> 00:07:42.800
+You know how it does just math stuff,
+but it is important to remember that.
+
+00:07:43.310 --> 00:07:46.250
+Now we can also set that
+entire equation to a variable.
+
+00:07:46.310 --> 00:07:49.760
+I'll create a variable name to math
+and have that equal, all that stuff.
+
+00:07:49.820 --> 00:07:50.780
+If I run that code, of course,
+
+00:07:51.020 --> 00:07:52.790
+it's not going to show anything
+cause I'm not printing it out.
+
+00:07:52.940 --> 00:07:57.170
+Let's print out math down here,
+prints math, and let's run that. Cool.
+
+00:07:57.290 --> 00:07:59.180
+Now real quick. I want
+you to try this first,
+
+00:07:59.180 --> 00:08:02.240
+make sure you do have these
+variables in place. So your age,
+
+00:08:02.360 --> 00:08:05.120
+trying to figure out your actual age,
+there's a website actually called, uh,
+
+00:08:05.270 --> 00:08:07.010
+agent al.io, kinda neat,
+
+00:08:07.040 --> 00:08:09.560
+and then type out some kind of math
+problem or equation and set that to the
+
+00:08:09.560 --> 00:08:11.210
+variable math. Once you do that,
+
+00:08:11.240 --> 00:08:14.270
+I want you to add all those variables
+together and set it to the variable
+
+00:08:14.300 --> 00:08:18.140
+results. Pause the video. I'll
+wait and unpause. Let's try it.
+
+00:08:18.200 --> 00:08:20.480
+So to do this first I'm to
+move that print function,
+
+00:08:20.480 --> 00:08:24.260
+we don't need that right now. I'll define
+my variable results. Have that equal.
+
+00:08:24.440 --> 00:08:27.470
+Now it could go through here and
+painstakingly type in each number,
+
+00:08:27.470 --> 00:08:28.550
+but we don't have to do that.
+
+00:08:28.580 --> 00:08:31.760
+We can just simply type in the variables
+and add those variables together.
+
+00:08:32.120 --> 00:08:36.350
+So I'll say age plus actual age
+
+00:08:36.620 --> 00:08:40.520
+plus math, and then let's,
+uh, print out those results.
+
+00:08:40.520 --> 00:08:44.810
+So print the variable results
+and let's see what happens. Bam.
+
+00:08:44.900 --> 00:08:45.950
+We added them together.
+
+00:08:46.220 --> 00:08:50.090
+Now pop quiz that result
+or the variable results.
+
+00:08:50.360 --> 00:08:52.880
+What type of data is
+that? Do you know? Well,
+
+00:08:52.910 --> 00:08:56.790
+if we can look at the results and we
+know that there's a decimal right there,
+
+00:08:56.850 --> 00:09:00.960
+we know a decimal is a float or a
+floating point number and fun fact,
+
+00:09:00.960 --> 00:09:05.640
+any time Python divides or uses
+division, it will convert those numbers.
+
+00:09:05.640 --> 00:09:09.270
+It's dividing into floating point numbers
+before it divides and the result will
+
+00:09:09.270 --> 00:09:10.650
+be a floating point. So anyways,
+
+00:09:10.680 --> 00:09:14.610
+what we've covered so far is
+that you can do math and Python.
+
+00:09:14.760 --> 00:09:17.760
+If you want to add it's a plus
+side, subtract, it's a minus sign.
+
+00:09:17.770 --> 00:09:21.840
+So stuff that you probably intuitively
+already knew, right? Multiply.
+
+00:09:22.140 --> 00:09:25.770
+It's going to be that asterisk
+divide Ford slash and then exponents,
+
+00:09:25.780 --> 00:09:29.400
+which this one may not have been
+too obvious, double asterisk,
+
+00:09:29.610 --> 00:09:31.410
+eight to the power of 25,
+whatever you want to do.
+
+00:09:31.500 --> 00:09:35.250
+So now that you are armed with
+the knowledge of Python math,
+
+00:09:35.280 --> 00:09:39.120
+we can add some features to our robot
+barista because as it stands right now,
+
+00:09:39.150 --> 00:09:42.690
+our coffee is free and uh,
+we're losing money like crazy.
+
+00:09:42.750 --> 00:09:45.600
+So we had to actually start charging
+our customer some money and to do that,
+
+00:09:45.600 --> 00:09:49.050
+we need, we need math. So go and open
+up the second lab for this episode.
+
+00:09:49.050 --> 00:09:51.210
+Yet two labs. Yes, yes, let's do it.
+
+00:09:51.330 --> 00:09:56.010
+We're going to modify our network coffee
+script. Let's do this quick recap.
+
+00:09:56.100 --> 00:09:58.980
+We've expertly programmed
+him to greet our customers.
+
+00:09:59.070 --> 00:10:03.060
+We then program him to ask their names
+and they can tell him and he'll remember
+
+00:10:03.060 --> 00:10:06.240
+it because we assign it to a variable.
+He then greets them with that name,
+
+00:10:06.270 --> 00:10:08.820
+gives them a menu. He will
+ask them what they want.
+
+00:10:09.060 --> 00:10:12.630
+They will tell him he'll remember it
+and tell them it'll be ready here in a
+
+00:10:12.630 --> 00:10:16.050
+moment. Let's run it real quick.
+Just for fun, because it is fun. Run.
+
+00:10:16.170 --> 00:10:20.550
+What's your name? My name is Beatrice.
+I would like a latte. Thank you,
+
+00:10:20.550 --> 00:10:23.640
+robot barista. And it's gonna be
+ready in a moment. I'm so at home,
+
+00:10:23.730 --> 00:10:26.610
+but we're losing money. Let's charge
+some money real quick. Now here.
+
+00:10:26.610 --> 00:10:29.130
+I want to see if you can do this.
+Let's let's challenge you a bit.
+
+00:10:29.220 --> 00:10:32.550
+Here are your tasks and then we'll walk
+through it together. Task number one,
+
+00:10:32.760 --> 00:10:35.760
+first, create a variable named
+price and assign an integer.
+
+00:10:35.790 --> 00:10:38.880
+We're setting our price for each
+coffee and just keep things simple.
+
+00:10:38.910 --> 00:10:40.980
+Everything on the menu is
+the same price. Now for me,
+
+00:10:40.980 --> 00:10:45.330
+I want to set mine to $8 because we're
+fancy man. Never shucked coffee is good.
+
+00:10:45.810 --> 00:10:47.520
+Anyways, you can set it
+to eight. If you want.
+
+00:10:47.520 --> 00:10:51.750
+It doesn't have to be eight tasks.
+Number two, program, our robot barista.
+
+00:10:51.900 --> 00:10:56.610
+We'll call them RB for short robot
+barista to ask how many coffees they would
+
+00:10:56.610 --> 00:11:00.270
+like and also make sure he remembers
+how many they want. And finally task.
+
+00:11:00.300 --> 00:11:01.590
+Number three. Now keep in mind.
+
+00:11:01.590 --> 00:11:04.260
+This can be done various ways
+each step can be done for all.
+
+00:11:04.740 --> 00:11:05.820
+Step one is pretty straight forward.
+
+00:11:05.970 --> 00:11:07.830
+Step two and three can be
+done in a number of ways,
+
+00:11:07.830 --> 00:11:09.150
+as long as you accomplish it. That's cool.
+
+00:11:09.180 --> 00:11:13.680
+Step three or task three program RB
+robot barista to give them their total,
+
+00:11:13.710 --> 00:11:16.560
+the total cost of all the coffees.
+So right now, pause the video.
+
+00:11:16.590 --> 00:11:21.000
+See if you can do this, add this to
+your script. I'll wait and unpause.
+
+00:11:21.000 --> 00:11:25.200
+Here we go. First. Let's
+fuel up again. Python.
+
+00:11:25.260 --> 00:11:27.960
+Math. Just when you thought you
+were done with math and school here,
+
+00:11:27.960 --> 00:11:30.840
+it comes again, but it's okay.
+It's still fun. Well, it's it.
+
+00:11:30.840 --> 00:11:32.430
+Wasn't a fun before. It's fun now though.
+
+00:11:32.460 --> 00:11:35.850
+So our first thing is to figure out where
+in our script do we want to ask them?
+
+00:11:35.970 --> 00:11:39.960
+Well, it looks like right here after
+we set the order equal to input.
+
+00:11:39.990 --> 00:11:42.870
+So first let me set our price.
+Our variable will be named price,
+
+00:11:43.650 --> 00:11:47.610
+have the equal to, and again, it was
+going to be $8. So just simply eight.
+
+00:11:47.670 --> 00:11:50.850
+Now I will say this as we're doing this
+and you may have tried this already.
+
+00:11:50.880 --> 00:11:51.810
+There's a little gotcha. There.
+
+00:11:51.840 --> 00:11:54.730
+You may have hit this error and we'll
+talk about how you can fix anyways.
+
+00:11:54.760 --> 00:11:57.160
+This solves a task. Number
+one, test number two,
+
+00:11:57.190 --> 00:12:00.970
+robot barista needs to ask our customer
+how many coffees they want and remember
+
+00:12:00.970 --> 00:12:04.150
+it. So that's going to involve a
+variable and the input function,
+
+00:12:04.300 --> 00:12:05.170
+I'll name my variable.
+
+00:12:05.170 --> 00:12:08.080
+And you could have done whatever you
+want it to I'll name mine. Quantity.
+
+00:12:08.290 --> 00:12:10.960
+I'll have that equal the
+input function. So in book,
+
+00:12:10.960 --> 00:12:12.220
+because we want to get some information,
+
+00:12:12.220 --> 00:12:16.780
+some data from our customers
+and we'll ask how many coffees
+
+00:12:17.350 --> 00:12:18.790
+would you like?
+
+00:12:19.420 --> 00:12:22.030
+And then I'll put a space after that to
+make sure it looks pretty. And actually,
+
+00:12:22.030 --> 00:12:23.470
+you know what? I'll do a I'll space.
+
+00:12:24.040 --> 00:12:28.000
+I'll do a line break with our
+backslash in new line indicator.
+
+00:12:28.060 --> 00:12:30.610
+So now at this point we
+get our price variable set.
+
+00:12:30.850 --> 00:12:32.470
+We've got our quantity variable set,
+
+00:12:32.530 --> 00:12:34.840
+which we'll get data from our
+customer and the robot barista.
+
+00:12:34.840 --> 00:12:35.710
+We'll ask them for it.
+
+00:12:35.800 --> 00:12:39.100
+Now let's do some math because now the
+robot barista has to tell them their
+
+00:12:39.100 --> 00:12:40.030
+total. Now again,
+
+00:12:40.030 --> 00:12:42.520
+you could have done this a number of
+ways and maybe you did hit a hiccup and
+
+00:12:42.520 --> 00:12:44.260
+we'll talk about that, but
+I'm gonna start with this.
+
+00:12:44.320 --> 00:12:46.000
+I'm going to start with
+calculating the total.
+
+00:12:46.090 --> 00:12:49.300
+I'm going to do a variable for that. So
+I'll say total and I'll have the equal.
+
+00:12:49.300 --> 00:12:51.070
+And then here's, here's
+where the math comes in.
+
+00:12:51.100 --> 00:12:53.020
+The total will be the
+price of coffee, right?
+
+00:12:53.050 --> 00:12:55.300
+Times however many coffees they want.
+
+00:12:55.360 --> 00:13:00.340
+So let's do that math here
+in our variable. So I'll
+say price times, quantity,
+
+00:13:00.670 --> 00:13:03.130
+that should work, right? You
+would think not to check our math.
+
+00:13:03.130 --> 00:13:06.250
+Let's print the total.
+So I'll do print total.
+
+00:13:06.250 --> 00:13:08.950
+So I'll print the total variable
+and let's see if it works.
+
+00:13:08.980 --> 00:13:10.750
+Let's go ahead and run the code.
+We're run through real quick.
+
+00:13:10.780 --> 00:13:14.770
+My name is Patricia. I want black
+coffee. I want 10. Cause um,
+
+00:13:15.040 --> 00:13:18.310
+I want some energy today.
+Well, what just happened there?
+
+00:13:18.370 --> 00:13:22.360
+So what we wanted to happen was we
+wanted eight times the quantity,
+
+00:13:22.360 --> 00:13:26.290
+which we typed in 10, which we
+know based on simple math skills,
+
+00:13:26.320 --> 00:13:29.860
+it should be 80, but
+instead we cut eight tens.
+
+00:13:30.760 --> 00:13:34.420
+Why? Well, because of this,
+when you use the input function,
+
+00:13:34.480 --> 00:13:38.500
+whatever data it asks you for that
+data is not going to be a number.
+
+00:13:38.500 --> 00:13:39.610
+It's not going to be an integer.
+
+00:13:39.670 --> 00:13:42.820
+What do you think is going to be it's
+going to be a string. So when we told,
+
+00:13:43.150 --> 00:13:47.110
+we told robot barista to
+multiply price by quantity,
+
+00:13:47.380 --> 00:13:51.400
+he multiplied the integer
+eight times the string 10.
+
+00:13:51.520 --> 00:13:56.170
+So he literally gave us eight
+tents, which has got a funny, right.
+
+00:13:56.200 --> 00:13:57.610
+But how do we fix that?
+Because it's not funny.
+
+00:13:57.610 --> 00:14:00.130
+We're trying to run a coffee
+shop here. How do we fix that?
+
+00:14:00.160 --> 00:14:02.140
+But what we need is
+for the input function,
+
+00:14:02.140 --> 00:14:05.440
+the data we received from our customer,
+we, when we that not to be a string,
+
+00:14:05.890 --> 00:14:08.620
+we need that to be an integer. Don't
+we new concept time. Here we go.
+
+00:14:08.680 --> 00:14:13.240
+You can convert data easily like
+this. Oh, it's so cool. Watch it.
+
+00:14:13.240 --> 00:14:15.220
+It's so powerful. You're gonna
+use this all the time. Trust me.
+
+00:14:15.310 --> 00:14:16.480
+And we can do it in a number of places,
+
+00:14:16.480 --> 00:14:18.550
+but I want to do it right here because
+it's very clear when you do it here.
+
+00:14:18.610 --> 00:14:21.370
+Otherwise I'm doing like this. Like
+we'll make this very clear. Anyways,
+
+00:14:21.370 --> 00:14:24.880
+here we go. So here in our total
+with our math equation right now,
+
+00:14:24.880 --> 00:14:27.520
+we're multiplying an
+integer with a string.
+
+00:14:27.550 --> 00:14:30.580
+Let's change that string into an
+integer. We can do it like this.
+
+00:14:30.610 --> 00:14:32.080
+We're going to wrap
+them up. So watch here,
+
+00:14:32.170 --> 00:14:34.600
+right here with our quantity variable.
+
+00:14:34.660 --> 00:14:38.320
+I'm going to type in I N
+T and then parentheses,
+
+00:14:39.100 --> 00:14:43.330
+but parentheses around him. Bam.
+What we just did here is pure magic.
+
+00:14:43.360 --> 00:14:46.210
+This function right here,
+this int function or entity,
+
+00:14:46.210 --> 00:14:49.450
+your function turns whatever's
+in the side into an integer.
+
+00:14:49.510 --> 00:14:52.250
+So now theoretically, if we did it right,
+
+00:14:52.340 --> 00:14:56.270
+we're multiplying integer by integer.
+Let's see if it works. It's run our code,
+
+00:14:56.330 --> 00:15:00.590
+run, walk through it again. My name is
+Ben. I would like an espresso please.
+
+00:15:00.950 --> 00:15:05.570
+I want 20 fingers crossed
+civil works. Bam. Yes.
+
+00:15:05.600 --> 00:15:09.860
+Okay. We successfully converted our string
+into an integer for the sake of math.
+
+00:15:10.070 --> 00:15:14.480
+Yes. Cool. So we accomplished task
+one and task two, but now task three.
+
+00:15:14.510 --> 00:15:18.290
+We have to make our robot barista tell
+our customer that they have a total.
+
+00:15:18.470 --> 00:15:22.430
+So just under print total, actually,
+we're going to remove print total.
+
+00:15:22.460 --> 00:15:26.120
+We want him to actually say something
+human-like so we'll say print.
+
+00:15:26.380 --> 00:15:29.090
+We'll do a string. We'll
+say, um, thank you, period.
+
+00:15:29.120 --> 00:15:33.560
+Your total is we'll do
+a colon and a space.
+
+00:15:33.710 --> 00:15:36.440
+And then we've been here before.
+We're going to concatenate.
+
+00:15:36.440 --> 00:15:39.500
+We're going to add some stuff together
+and our print function add some strings.
+
+00:15:39.560 --> 00:15:43.610
+So we'll do plus space and then
+we'll do total. The variable.
+
+00:15:43.640 --> 00:15:47.630
+Now more foreshadowing. This
+probably is not going to work.
+
+00:15:47.690 --> 00:15:49.970
+Do you know why though? Do
+you know why this won't work?
+
+00:15:50.000 --> 00:15:52.580
+Let's run the code and see what
+happens. Click on run. What's my name,
+
+00:15:52.700 --> 00:15:57.320
+Tom riddle. I want a cappuccino.
+I want 70 cappuccinos.
+
+00:15:57.380 --> 00:16:01.010
+Whoa, error. Ooh. Get used to
+it. This can happen to you a lot.
+
+00:16:01.040 --> 00:16:04.280
+Now let's take a look at what
+happened here. We have a type error.
+
+00:16:04.310 --> 00:16:06.650
+Now we know from earlier that
+when we are talking about type,
+
+00:16:06.650 --> 00:16:09.140
+we're talking about type of data.
+When we use our type function,
+
+00:16:09.170 --> 00:16:12.560
+it will tell us what kind of data
+it is. So same type error robot.
+
+00:16:12.560 --> 00:16:17.450
+Barista can only concatenate
+string, not integer to string.
+
+00:16:17.720 --> 00:16:22.100
+So what he's saying here is that, Hey,
+I can add a string to another string,
+
+00:16:22.130 --> 00:16:22.963
+but bro,
+
+00:16:23.510 --> 00:16:27.800
+he threw at me the problem
+of a string plus an integer,
+
+00:16:27.830 --> 00:16:30.860
+which equals can't do that. I'm
+confused. I don't know how to do that.
+
+00:16:30.890 --> 00:16:34.430
+We have the reverse problem now don't we
+earlier, when we did our math problem,
+
+00:16:34.430 --> 00:16:36.140
+we needed a string to become an integer.
+
+00:16:36.170 --> 00:16:40.670
+Now it seems we need an integer to become
+a string. See if you can solve this,
+
+00:16:40.730 --> 00:16:43.430
+using the same mentality, the same
+pattern that we just followed.
+
+00:16:43.580 --> 00:16:46.070
+See if you can do. It's actually
+crazy simple. Now. Whereas earlier,
+
+00:16:46.070 --> 00:16:48.200
+when we wanted to convert
+our string into an integer,
+
+00:16:48.200 --> 00:16:50.990
+we surrounded it with the
+int function. Just like,
+
+00:16:50.990 --> 00:16:53.570
+so turning it into an integer.
+We can do the same thing,
+
+00:16:53.600 --> 00:16:57.500
+but instead of int we'll do STR
+for string to that same variable,
+
+00:16:57.530 --> 00:17:00.290
+just like that. Let's try. Let's try now.
+It's not going to be quantity, right?
+
+00:17:00.290 --> 00:17:02.960
+It would be total. So it's going to be
+total right here. Right here on total.
+
+00:17:03.020 --> 00:17:03.860
+I feel like I'm saying Toto,
+
+00:17:03.950 --> 00:17:08.360
+total typing STR parentheses and we'll
+wrap it up both sides. So now we should,
+
+00:17:08.360 --> 00:17:10.970
+at this point, be adding
+a string or concatenating,
+
+00:17:10.970 --> 00:17:14.600
+a string with another string.
+We're converting this number,
+
+00:17:14.630 --> 00:17:18.020
+this endanger into a string. Let's run
+the code and see what happens. Hello?
+
+00:17:18.050 --> 00:17:21.980
+I am poppy. I would like
+a black coffee please.
+
+00:17:22.610 --> 00:17:27.260
+I would like over 9,000 coffees please.
+Ooh, we got it. We got it. It worked.
+
+00:17:27.320 --> 00:17:28.550
+So take that in for a second.
+
+00:17:28.580 --> 00:17:33.170
+We convert a string to an integer
+and then an integer into a string.
+
+00:17:33.320 --> 00:17:35.840
+That's programming man. That's
+programming anyway. Sorry.
+
+00:17:35.840 --> 00:17:39.110
+I'm getting a little I'm way too.
+Hopped up on caffeine. Coffee break.
+
+00:17:41.330 --> 00:17:45.410
+Now that is some coffee bill. 72,000
+business is good now real quick.
+
+00:17:45.440 --> 00:17:47.780
+There's no dollar sign. Let's
+add a dollar sign to it. Now,
+
+00:17:47.810 --> 00:17:50.850
+how would you do that? How would you add
+a dollar sign to that statement? Well,
+
+00:17:50.880 --> 00:17:53.070
+it's pretty simple, right? We go
+in here and within that string,
+
+00:17:53.130 --> 00:17:55.950
+let's say like right around here, put a
+dollar sign. Let's run it right? Hello.
+
+00:17:55.980 --> 00:17:58.920
+My name is John Hammond.
+I would like an espresso.
+
+00:17:59.160 --> 00:18:03.150
+I would like 8,000
+espressos please. All right,
+
+00:18:03.450 --> 00:18:05.850
+now we're talking money.
+Now. One more task for you.
+
+00:18:06.000 --> 00:18:08.820
+I want you in this last statement
+for the robot barista staying.
+
+00:18:08.820 --> 00:18:09.660
+Hey sounds good.
+
+00:18:09.660 --> 00:18:11.940
+John Hammond we'll have that espresso
+ready for you here in a moment.
+
+00:18:12.000 --> 00:18:15.720
+That doesn't sound right because John
+Hammond wanted 8,000 espressos and we're
+
+00:18:15.720 --> 00:18:18.270
+only seeing one come on, robot
+barista, get your head together.
+
+00:18:18.270 --> 00:18:20.970
+So I want you to throw a number
+in here. Say sounds good.
+
+00:18:20.970 --> 00:18:25.770
+John Hammond we'll have jeez, that
+vet to a, your we'll have your, that.
+
+00:18:25.770 --> 00:18:30.300
+Will you say your 8,000 or however many
+you type in espresso's ready for you in
+
+00:18:30.300 --> 00:18:32.610
+a moment. Let's do that real
+quick. That's pretty simple.
+
+00:18:32.670 --> 00:18:35.160
+It's using skills and tools. We've
+already learned. So down here,
+
+00:18:35.250 --> 00:18:36.360
+whereas this sounds good. Let me say,
+
+00:18:36.390 --> 00:18:39.660
+plus the name we'll have that order
+ready for you here in a moment.
+
+00:18:39.780 --> 00:18:41.940
+We'll change the, that
+to your we'll have your,
+
+00:18:42.000 --> 00:18:44.370
+and then we need to add
+another thing to this.
+
+00:18:44.580 --> 00:18:48.240
+We'll add the quantity and then
+we'll add one more string after that.
+
+00:18:48.630 --> 00:18:52.110
+And it will simply just be
+a space character that way
+it's nice and pretty well
+
+00:18:52.110 --> 00:18:54.690
+let's run that code. See if it
+works, Ron, my name is Nick.
+
+00:18:55.230 --> 00:18:59.070
+Nick likes black coffee,
+92,000 copies, please.
+
+00:18:59.640 --> 00:19:02.790
+That's some Coffeyville man.
+Good job robot barista now. Sure.
+
+00:19:02.850 --> 00:19:06.330
+Black coffee is not implorable. We
+haven't got to how we can do that yet,
+
+00:19:06.450 --> 00:19:11.230
+but man, this is beautiful. Our robot
+barista. He's a champ who, okay. We,
+
+00:19:11.230 --> 00:19:15.390
+we did a lot. We learned some Python
+math, which normally math sucks.
+
+00:19:15.390 --> 00:19:18.360
+I think we can all agree with that.
+Right? But math and Python much better.
+
+00:19:18.420 --> 00:19:21.570
+So here we learned the new data
+types. We learned about integers,
+
+00:19:21.570 --> 00:19:24.570
+which are whole numbers. We learned
+about floating point numbers or floats,
+
+00:19:24.600 --> 00:19:27.600
+which are decimals. And then
+we saw how we could use math,
+
+00:19:27.630 --> 00:19:31.590
+basically treating Python
+like a calculator and do
+some cool stuff like adding
+
+00:19:31.590 --> 00:19:35.520
+prices to our coffee shop, who, who
+were thought to add prices to coffee.
+
+00:19:35.730 --> 00:19:37.770
+And we did some crazy things
+like converting into Jersey,
+
+00:19:37.770 --> 00:19:40.530
+into strings and strings
+and integers. Dude,
+
+00:19:41.040 --> 00:19:44.400
+we're doing some cool stuff and we're
+just getting stuck in case you were
+
+00:19:44.400 --> 00:19:47.970
+wondering. Yeah, Python does
+get way, way cooler than this,
+
+00:19:48.210 --> 00:19:49.710
+but I hope you enjoyed this.
+Let me know what you thought.
+
+00:19:49.710 --> 00:19:51.030
+The video in the comments below,
+
+00:19:51.060 --> 00:19:54.190
+make sure you continue to hack YouTube
+by liking this video and hit that
+
+00:19:54.190 --> 00:19:56.880
+notification bell and subscribing
+you get a hack YouTube today.
+
+00:19:57.120 --> 00:19:58.590
+Ethically of course, and again,
+
+00:19:58.590 --> 00:20:01.590
+a massive shout out to the sponsor
+of this video and this entire series.
+
+00:20:01.830 --> 00:20:03.270
+It pro TV, who again,
+
+00:20:03.270 --> 00:20:07.170
+I use to learn everything about it and
+you should too check them out using my
+
+00:20:07.170 --> 00:20:09.990
+link below or my code
+network, Chuck and get 30% off
+
+00:20:11.640 --> 00:20:14.130
+forever. You thought that can
+take forever. It didn't you. Oh,
+
+00:20:14.130 --> 00:20:17.910
+and also I've got a bonus quiz and an
+extra land for you if you want to try it
+
+00:20:17.910 --> 00:20:20.550
+out and keep going. So
+check it out. Link below.
+
+00:20:20.640 --> 00:20:23.730
+And the first three people to get
+a hundred percent on that quiz.
+
+00:20:24.210 --> 00:20:26.460
+We'll get some free network.
+Chuck coffee then. Yeah.
+
+00:20:26.790 --> 00:20:29.310
+That's pretty much all I have
+today. Ooh, Python's amazing.
+
+00:20:29.760 --> 00:20:32.910
+I think we can all agree and thank
+you Don for making math. Cool again,
+
+00:20:33.750 --> 00:20:35.460
+or I'll catch you guys next time.
+
+00:20:36.720 --> 00:20:41.720
+[Inaudible].
+

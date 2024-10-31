@@ -1,0 +1,51 @@
+**Adding Elements to Python Lists**
+
+**Key Concepts**
+
+* Methods: Built-in Python tools or functions specific to certain objects/classes.
+* Append method: Adds an item to the end of a list.
+* Extend method: Adds multiple pieces of data (in list form) to the end of a list.
+* Insert method: Inserts an item into a list at a specified index.
+
+**Instructions**
+
+1. **Append method:**
+   - Use `list_name.append(item)` to add an item to the end of a list.
+
+2. **Extend method:**
+   - To add multiple items at the end of a list, use `list_name.extend(new_list)` where `new_list` is a list of items to be added.
+   - Alternatively, add a list directly to a list using `list_name = list_name + new_list`.
+
+3. **Insert method:**
+   - To insert an item at a specific index, use `list_name.insert(index, item)` where `index` is the position in the list (0-based) and `item` is the data to be added.
+   - Negative indices can be used to insert before the last item (e.g., `list_name.insert(-1, item)`).
+
+**Examples**
+
+* **Add "toilet paper" to the end of a list named "supplies":**
+```python
+supplies.append("toilet paper")
+```
+
+* **Add multiple items ("toilet paper" and "bidet") to the end of the "supplies" list:**
+```python
+supplies.extend(["toilet paper", "bidet"])
+```
+```python
+supplies = supplies + ["toilet paper", "bidet"]
+```
+
+* **Insert "bidet" at the beginning of the "supplies" list:**
+```python
+supplies.insert(0, "bidet")
+```
+
+* **Insert "toilet paper" second to last in the "supplies" list:**
+```python
+supplies.insert(-1, "toilet paper")
+```
+
+**Additional Resources**
+
+* [Python For Security course on IT Pro TV](https://itpro.tv/networkchuck)
+* [Network Chuck Academy](link provided in the video)

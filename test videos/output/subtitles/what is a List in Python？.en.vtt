@@ -1,0 +1,1369 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.700
+- This is a Python list,
+
+00:00:01.700 --> 00:00:03.580
+and they are ridiculously powerful
+
+00:00:03.580 --> 00:00:04.940
+and pretty fun to play with.
+
+00:00:04.940 --> 00:00:06.130
+So in this episode,
+
+00:00:06.130 --> 00:00:07.690
+get you coffee ready
+because we're covering
+
+00:00:07.690 --> 00:00:10.220
+the what and why of this
+incredible data structure,
+
+00:00:10.220 --> 00:00:12.210
+and how it will open up a whole new world
+
+00:00:12.210 --> 00:00:13.490
+of Python goodness.
+
+00:00:13.490 --> 00:00:14.960
+You ready?
+(coffee slurping)
+
+00:00:14.960 --> 00:00:16.169
+Let's dive in.
+
+00:00:16.169 --> 00:00:19.169
+(soft groovy music)
+
+00:00:23.320 --> 00:00:24.153
+Okay, here we go.
+
+00:00:24.153 --> 00:00:25.910
+One more sip of coffee. Let's get started.
+
+00:00:25.910 --> 00:00:27.800
+So we covered a variable, we create it,
+
+00:00:27.800 --> 00:00:29.280
+assign it a simple piece of data,
+
+00:00:29.280 --> 00:00:31.300
+and we can use it everywhere
+in our Python script.
+
+00:00:31.300 --> 00:00:33.480
+It's awesome. But let me show
+you when it's not awesome.
+
+00:00:33.480 --> 00:00:35.880
+Because you and I, we're
+going on a camping trip.
+
+00:00:35.880 --> 00:00:37.160
+What, you didn't know? Yeah, come on.
+
+00:00:37.160 --> 00:00:38.970
+But first we need our
+Python lab up and running,
+
+00:00:38.970 --> 00:00:39.980
+let's get that running real quick.
+
+00:00:39.980 --> 00:00:41.430
+So check that link
+below in the description
+
+00:00:41.430 --> 00:00:43.580
+to get access to a free
+Python lab right now.
+
+00:00:43.580 --> 00:00:44.890
+But while your lab is loading up,
+
+00:00:44.890 --> 00:00:46.800
+let me tell you about the
+sponsor of this entire series
+
+00:00:46.800 --> 00:00:49.010
+and why it can be free here on YouTube;
+
+00:00:49.010 --> 00:00:49.843
+ITProTV.
+
+00:00:49.843 --> 00:00:52.350
+They are by far my favorite
+IT training provider.
+
+00:00:52.350 --> 00:00:54.580
+They are what I use to
+keep myself up to date
+
+00:00:54.580 --> 00:00:55.890
+on all the latest things in IT.
+
+00:00:55.890 --> 00:00:57.220
+From automation,
+
+00:00:57.220 --> 00:00:59.440
+which dad gum look at all
+these automation things,
+
+00:00:59.440 --> 00:01:00.790
+to all things Cisco.
+
+00:01:00.790 --> 00:01:02.470
+Holy crap, look at all the Cisco stuff.
+
+00:01:02.470 --> 00:01:05.480
+ENCOR, DevNet, CCNA,
+and, of course, Python.
+
+00:01:05.480 --> 00:01:06.400
+They have everything you need
+
+00:01:06.400 --> 00:01:08.050
+to go crazy in Python right now
+
+00:01:08.050 --> 00:01:08.980
+if you just cannot wait
+
+00:01:08.980 --> 00:01:10.590
+and you wanna go further, this is it.
+
+00:01:10.590 --> 00:01:11.800
+Seriously, check it out, link below.
+
+00:01:11.800 --> 00:01:14.070
+But that's not all, a fuckin'
+infomercial, but seriously,
+
+00:01:14.070 --> 00:01:15.100
+they do have more than training.
+
+00:01:15.100 --> 00:01:17.150
+They have, hey look, practice test.
+
+00:01:17.150 --> 00:01:19.040
+To get you ready for those crazy exams.
+
+00:01:19.040 --> 00:01:22.280
+Or how about a lab to actually
+practice what you're doing?
+
+00:01:22.280 --> 00:01:23.113
+Look at all these labs.
+
+00:01:23.113 --> 00:01:25.110
+So, if you wanna learn IT like me,
+
+00:01:25.110 --> 00:01:26.100
+check it out, link below.
+
+00:01:26.100 --> 00:01:29.400
+Use code NETWORKCHUCK
+and get 30% off forever.
+
+00:01:29.400 --> 00:01:30.290
+Seriously, they are awesome.
+
+00:01:30.290 --> 00:01:33.010
+So yeah, your lab should be up
+and loaded. Let's keep going.
+
+00:01:33.010 --> 00:01:34.500
+So, we're going on a camping trip.
+
+00:01:34.500 --> 00:01:36.630
+And like all camping trips,
+we need a ton of stuff.
+
+00:01:36.630 --> 00:01:38.840
+Tent, sleeping bags,
+raspberry pis, flash drives,
+
+00:01:38.840 --> 00:01:41.050
+ethernet cables, marshmallows,
+just things like that, right?
+
+00:01:41.050 --> 00:01:41.883
+The essentials.
+
+00:01:41.883 --> 00:01:43.310
+Now here's what I need you to do.
+
+00:01:43.310 --> 00:01:45.853
+I need you to create a variable.
+Let's name it camp_stuff.
+
+00:01:46.810 --> 00:01:49.630
+And I want that to equal all
+the supplies we have to bring.
+
+00:01:49.630 --> 00:01:50.640
+Go ahead and do it right now.
+
+00:01:50.640 --> 00:01:52.830
+In fact, we'll do it together
+right now. Let's do it.
+
+00:01:52.830 --> 00:01:54.870
+So using the knowledge we
+learned so far in this series,
+
+00:01:54.870 --> 00:01:55.703
+we might do this.
+
+00:01:55.703 --> 00:01:58.500
+Camping stuff. Variable created.
+
+00:01:58.500 --> 00:02:00.510
+Let's have it equal something. Equals.
+
+00:02:00.510 --> 00:02:03.410
+And, you know what, we'll just
+start typing in the stuff.
+
+00:02:03.410 --> 00:02:04.610
+Tent, sleeping bags,
+
+00:02:04.610 --> 00:02:06.260
+jump forward in time and
+have it already there.
+
+00:02:06.260 --> 00:02:09.330
+And if we print the variable camping stuff
+
+00:02:09.330 --> 00:02:11.330
+and we run our code, go and
+click run at the top there.
+
+00:02:11.330 --> 00:02:13.950
+That works, but it doesn't.
+
+00:02:13.950 --> 00:02:17.440
+Because right now this is one
+big fat gargantuous string.
+
+00:02:17.440 --> 00:02:19.720
+It's bloated. It's ugly. I hate it.
+
+00:02:19.720 --> 00:02:22.120
+It's really hard to use,
+and honestly kind of stupid.
+
+00:02:22.120 --> 00:02:22.980
+We can do better.
+
+00:02:22.980 --> 00:02:26.500
+Instead of storing all of our
+data into one big fat string,
+
+00:02:26.500 --> 00:02:27.760
+we could try out something really cool,
+
+00:02:27.760 --> 00:02:30.520
+something amazing, something
+fun, something life changing.
+
+00:02:30.520 --> 00:02:32.724
+something called a Python list.
+
+00:02:32.724 --> 00:02:34.550
+(Chuck chuckling)
+
+00:02:34.550 --> 00:02:35.530
+Let's do this.
+
+00:02:35.530 --> 00:02:36.870
+Which honestly makes total sense,
+
+00:02:36.870 --> 00:02:38.890
+'cause we're trying to make a
+list of things we gotta bring.
+
+00:02:38.890 --> 00:02:41.520
+Hey, Python list. It just all adds up.
+
+00:02:41.520 --> 00:02:42.380
+It's all comin' together here.
+
+00:02:42.380 --> 00:02:45.130
+So I'm gonna create a new
+variable called camping_list.
+
+00:02:46.920 --> 00:02:49.100
+Just like before, but
+here comes the craziness.
+
+00:02:49.100 --> 00:02:50.690
+Don't worry. I'll walk you through it.
+
+00:02:50.690 --> 00:02:53.040
+Brackets. That's the
+game changer right there.
+
+00:02:53.040 --> 00:02:53.873
+Buckle your seatbelt.
+
+00:02:53.873 --> 00:02:55.060
+Coffee break.
+(coffee slurping)
+
+00:02:55.060 --> 00:02:56.290
+And time to build the list.
+
+00:02:56.290 --> 00:02:58.700
+You can step forward in
+time. Just go ahead and jump.
+
+00:02:58.700 --> 00:03:00.440
+Jump forward in time. Woo. Done.
+
+00:03:00.440 --> 00:03:01.273
+That was exhausting.
+
+00:03:01.273 --> 00:03:02.280
+Need a coffee break.
+(coffee slurping)
+
+00:03:02.280 --> 00:03:04.050
+Okay, and also I want
+you to do the same thing.
+
+00:03:04.050 --> 00:03:06.350
+So I know it's a lot of typing, whatever.
+
+00:03:06.350 --> 00:03:08.000
+Just do it. It's not too hard.
+
+00:03:08.000 --> 00:03:09.750
+This right here is a Python list.
+
+00:03:09.750 --> 00:03:11.350
+And it's so awesome for so many reasons,
+
+00:03:11.350 --> 00:03:13.017
+way better than this idiot over here.
+
+00:03:13.017 --> 00:03:14.380
+And I will go into why,
+
+00:03:14.380 --> 00:03:16.400
+but first let's get a
+really nerdy definition
+
+00:03:16.400 --> 00:03:18.320
+on what a Python list is.
+
+00:03:18.320 --> 00:03:19.210
+Go ahead Bernard.
+
+00:03:19.210 --> 00:03:20.730
+- [Bernard] A Python list is an ordered
+
+00:03:20.730 --> 00:03:23.180
+and changeable collection of data objects.
+
+00:03:23.180 --> 00:03:26.660
+Unlike an array, which can
+contain objects of a single type,
+
+00:03:26.660 --> 00:03:28.860
+a list can contain a mixture of objects.
+
+00:03:28.860 --> 00:03:30.940
+- Now first before we talk
+about how awesome this is,
+
+00:03:30.940 --> 00:03:32.610
+I want you to print the type of data
+
+00:03:32.610 --> 00:03:33.683
+this camping list variable is.
+
+00:03:33.683 --> 00:03:35.660
+Just go ahead and print
+it real quick. The type.
+
+00:03:35.660 --> 00:03:37.700
+Do you remember how? Here's how we do it.
+
+00:03:37.700 --> 00:03:39.370
+Print using our print function.
+
+00:03:39.370 --> 00:03:41.830
+And then in the print function
+we use our type function
+
+00:03:41.830 --> 00:03:45.130
+and that'll just print the
+type of the camping list.
+
+00:03:45.130 --> 00:03:46.840
+'Cause I don't wanna lie to
+you, I gotta prove to you
+
+00:03:46.840 --> 00:03:49.450
+that this is a data structure called list.
+
+00:03:49.450 --> 00:03:51.140
+Let's go ahead and run the code. Run.
+
+00:03:51.140 --> 00:03:52.610
+And there it is suckers, I told you.
+
+00:03:52.610 --> 00:03:56.320
+A data class, a data
+structure called list. Oh man.
+
+00:03:56.320 --> 00:03:58.780
+I'm tellin' you, this is
+gonna open up so many doors
+
+00:03:58.780 --> 00:03:59.950
+to Python coding.
+
+00:03:59.950 --> 00:04:01.930
+We're gonna spend a lot of time
+actually playing with this.
+
+00:04:01.930 --> 00:04:04.290
+Okay. Anyways. I'm excited
+for you. Let's keep going.
+
+00:04:04.290 --> 00:04:05.470
+I'm gonna delete this stuff real quick
+
+00:04:05.470 --> 00:04:06.860
+and we'll talk about
+what the junk is going on
+
+00:04:06.860 --> 00:04:08.497
+with this stuff up here.
+
+00:04:08.497 --> 00:04:09.330
+Now you can recognize a list
+
+00:04:09.330 --> 00:04:12.170
+because it'll always have
+opening and closing brackets.
+
+00:04:12.170 --> 00:04:13.810
+Bam, and bam.
+
+00:04:13.810 --> 00:04:15.820
+It has to have those.
+That's what a list needs.
+
+00:04:15.820 --> 00:04:18.610
+And then inside that list
+is where we have our data.
+
+00:04:18.610 --> 00:04:21.490
+And notice how the data
+is separate by a comma.
+
+00:04:21.490 --> 00:04:22.323
+There they all are.
+
+00:04:22.323 --> 00:04:24.690
+Now real quick, let's bask
+in the awesomeness of a list.
+
+00:04:24.690 --> 00:04:27.940
+So up here, right? Is a big ugly strings.
+
+00:04:27.940 --> 00:04:29.600
+One big fat string.
+
+00:04:29.600 --> 00:04:33.610
+Down here, we got a bunch
+of individual strings.
+
+00:04:33.610 --> 00:04:36.280
+Like how many we have here. Count for me.
+
+00:04:36.280 --> 00:04:37.113
+I'll do it.
+
+00:04:37.113 --> 00:04:39.590
+We have 10 individual pieces of data
+
+00:04:39.590 --> 00:04:40.850
+inside this one variable.
+
+00:04:40.850 --> 00:04:42.370
+So much better, right?
+
+00:04:42.370 --> 00:04:44.900
+You're probably thinking,
+well, why is it so much better?
+
+00:04:44.900 --> 00:04:45.733
+We'll get to it. We'll get to it.
+
+00:04:45.733 --> 00:04:47.210
+I'll show you a use case here.
+
+00:04:47.210 --> 00:04:49.390
+But can I tell you something
+else cool about a list?
+
+00:04:49.390 --> 00:04:52.650
+It can have more than just
+string data types inside of it.
+
+00:04:52.650 --> 00:04:53.483
+Let's try it out, actually.
+
+00:04:53.483 --> 00:04:54.670
+So, let's create a new list.
+
+00:04:54.670 --> 00:04:57.740
+And I wanna name this camp_site.
+
+00:04:57.740 --> 00:04:59.220
+And actually, I want you to do this.
+
+00:04:59.220 --> 00:05:00.610
+And here's the data I
+want you to put in there.
+
+00:05:00.610 --> 00:05:02.190
+It'll be campsite information.
+
+00:05:02.190 --> 00:05:04.550
+First, the name of our camp
+will be, or the campsite,
+
+00:05:04.550 --> 00:05:05.460
+will be Crystal Lake.
+
+00:05:05.460 --> 00:05:06.760
+Sounds perfectly safe.
+
+00:05:06.760 --> 00:05:08.180
+And then of course we'll
+need our site number,
+
+00:05:08.180 --> 00:05:09.800
+which will be 404.
+
+00:05:09.800 --> 00:05:11.730
+And then they expect a
+temperature of that day.
+
+00:05:11.730 --> 00:05:15.300
+It's gonna be a balmy 89.3 degrees.
+
+00:05:15.300 --> 00:05:16.580
+And then one more piece of data.
+
+00:05:16.580 --> 00:05:19.950
+Is this place dangerous? True or false?
+
+00:05:19.950 --> 00:05:22.090
+It's gonna be true. It is dangerous.
+
+00:05:22.090 --> 00:05:24.260
+So, make our campsite list.
+
+00:05:24.260 --> 00:05:25.913
+Go for it now. Pause.
+
+00:05:26.930 --> 00:05:28.250
+Unpause. coffee break.
+(coffee slurping)
+
+00:05:28.250 --> 00:05:29.083
+Let's go ahead and do it.
+
+00:05:29.083 --> 00:05:30.670
+To make our list we'll
+do an opening bracket
+
+00:05:30.670 --> 00:05:34.150
+and our amazing Python replit
+here will make it for us.
+
+00:05:34.150 --> 00:05:36.260
+First data, Crystal Lake, is a string.
+
+00:05:36.260 --> 00:05:37.093
+Cool. We got that.
+
+00:05:37.093 --> 00:05:40.870
+Comma, space. Space is optional,
+but it's best practice.
+
+00:05:40.870 --> 00:05:43.230
+Do a space just 'cause it looks prettier.
+
+00:05:43.230 --> 00:05:44.230
+And we're all about pretty.
+
+00:05:44.230 --> 00:05:45.920
+Next piece of data. 404.
+
+00:05:45.920 --> 00:05:47.930
+That's gonna be a number,
+an integer, right?
+
+00:05:47.930 --> 00:05:49.760
+Done. Just like that, no quotes.
+
+00:05:49.760 --> 00:05:51.080
+Space, or comma space.
+
+00:05:51.080 --> 00:05:53.440
+Temperature. 89.3 degrees.
+
+00:05:53.440 --> 00:05:56.420
+Fahrenheit people. I'm
+in America. Get over it.
+
+00:05:56.420 --> 00:05:58.520
+And then finally, is it dangerous?
+
+00:05:58.520 --> 00:06:00.320
+Yeah. True. Cool.
+
+00:06:00.320 --> 00:06:02.680
+So (Chuck chuckles) how amazing is this?
+
+00:06:02.680 --> 00:06:03.980
+Here in this list
+
+00:06:03.980 --> 00:06:07.030
+we have four different
+types of data, right?
+
+00:06:07.030 --> 00:06:10.860
+We got a string, we have an
+integer, a float, and a boolean.
+
+00:06:10.860 --> 00:06:12.450
+I don't know why I say
+it like that. I'm sorry.
+
+00:06:12.450 --> 00:06:13.440
+So now I think you're startin'
+
+00:06:13.440 --> 00:06:15.200
+to see how amazing the list are.
+
+00:06:15.200 --> 00:06:17.220
+They can hold multiple pieces of data
+
+00:06:17.220 --> 00:06:18.830
+and different types of data.
+
+00:06:18.830 --> 00:06:20.440
+Doesn't that make you
+just a little bit excited?
+
+00:06:20.440 --> 00:06:22.090
+If it doesn't, man, sip some more coffee
+
+00:06:22.090 --> 00:06:23.390
+and then come back to me, okay?
+
+00:06:23.390 --> 00:06:25.551
+Rewind. Now here comes the killer.
+
+00:06:25.551 --> 00:06:26.384
+(Chuck chuckles) killer.
+
+00:06:26.384 --> 00:06:28.690
+The killer part of list.
+I talked about this.
+
+00:06:28.690 --> 00:06:30.670
+If you remember what
+Professor Bernard said,
+
+00:06:30.670 --> 00:06:32.570
+they are ordered.
+
+00:06:32.570 --> 00:06:33.403
+What does that mean?
+
+00:06:33.403 --> 00:06:35.620
+I'll explain it by showing
+you two amazing things.
+
+00:06:35.620 --> 00:06:37.260
+You ready for this? Okay. Here we go.
+
+00:06:37.260 --> 00:06:39.040
+Let's say that out of
+our camping list I need
+
+00:06:39.040 --> 00:06:41.890
+to assign who's going to bring
+what on the camping trip.
+
+00:06:41.890 --> 00:06:45.370
+So for example, me, I'm
+going to bring coffee, duh.
+
+00:06:45.370 --> 00:06:46.470
+Right? You saw that coming.
+
+00:06:46.470 --> 00:06:48.060
+And you. You're coming, right?
+
+00:06:48.060 --> 00:06:48.893
+Yeah. You're coming.
+
+00:06:48.893 --> 00:06:51.750
+You're gonna bring marshmallows
+because they're delicious.
+
+00:06:51.750 --> 00:06:54.090
+Here's how I can assign
+that data with a list.
+
+00:06:54.090 --> 00:06:55.070
+Oh, it's so powerful. Watch this.
+
+00:06:55.070 --> 00:06:57.240
+This is gonna blow your mind.
+
+00:06:57.240 --> 00:07:00.800
+I'll create the variable me and
+have that equal, watch this,
+
+00:07:00.800 --> 00:07:04.700
+the list camping list,
+and then do some brackets.
+
+00:07:04.700 --> 00:07:07.530
+And then in those brackets
+I'm gonna put the number four.
+
+00:07:07.530 --> 00:07:09.430
+What just happened? What am I doing?
+
+00:07:09.430 --> 00:07:13.010
+Watch. I'm going to print
+me, the variable me.
+
+00:07:13.010 --> 00:07:15.246
+Let's run it. Run. Did you just see that?
+
+00:07:15.246 --> 00:07:16.180
+(Chuck laughing)
+
+00:07:16.180 --> 00:07:17.013
+Sorry.
+
+00:07:17.013 --> 00:07:18.740
+I know it's it seems like
+I'm over exaggerating,
+
+00:07:18.740 --> 00:07:20.580
+but I'm really this excited about it.
+
+00:07:20.580 --> 00:07:21.413
+I'm not kidding.
+
+00:07:21.413 --> 00:07:24.920
+Right here. It printed just coffee.
+
+00:07:24.920 --> 00:07:27.540
+Just that one string, that
+one piece of data in our list.
+
+00:07:27.540 --> 00:07:29.200
+Now go ahead and do
+the same thing for you.
+
+00:07:29.200 --> 00:07:30.470
+Do you remember what you're bringing?
+
+00:07:30.470 --> 00:07:31.500
+Go ahead and do it real quick.
+
+00:07:31.500 --> 00:07:33.240
+Pause the video, do
+the same thing for you,
+
+00:07:33.240 --> 00:07:35.420
+and then print out that one item.
+
+00:07:35.420 --> 00:07:36.950
+Go. Unpause. Okay.
+
+00:07:36.950 --> 00:07:37.783
+How would you do that?
+
+00:07:37.783 --> 00:07:40.800
+Create the variable you,
+have that equal camping list
+
+00:07:40.800 --> 00:07:43.330
+and then brackets, let's see
+if you could figure this out.
+
+00:07:43.330 --> 00:07:45.130
+You were bringing marshmallows,
+
+00:07:45.130 --> 00:07:46.490
+which is the last in our list,
+
+00:07:46.490 --> 00:07:49.270
+which means marshmallows will be nine.
+
+00:07:49.270 --> 00:07:50.460
+Did you get that right?
+
+00:07:50.460 --> 00:07:52.150
+I'll explain why it's
+nine here in a second,
+
+00:07:52.150 --> 00:07:53.310
+but let's go ahead and print it out.
+
+00:07:53.310 --> 00:07:54.420
+I'll put it below me.
+
+00:07:54.420 --> 00:07:56.520
+Printing you now. And run.
+
+00:07:56.520 --> 00:07:58.520
+Coffee and marshmallows. Yes.
+
+00:07:58.520 --> 00:08:00.120
+So when I say the list is ordered,
+
+00:08:00.120 --> 00:08:01.640
+or you might see people
+talking about it being
+
+00:08:01.640 --> 00:08:03.690
+in a sequence, or sequenced,
+
+00:08:03.690 --> 00:08:06.120
+when you put your stuff,
+that data, into your list,
+
+00:08:06.120 --> 00:08:08.510
+the order you put it in
+there, it stays the same.
+
+00:08:08.510 --> 00:08:09.880
+Which is great because we can do things
+
+00:08:09.880 --> 00:08:12.750
+like reference the individual
+items in that list.
+
+00:08:12.750 --> 00:08:14.280
+So when it says ordered,
+when it says sequenced,
+
+00:08:14.280 --> 00:08:16.370
+it just means, hey, that
+stuff you put in there,
+
+00:08:16.370 --> 00:08:18.760
+it's in that same order all
+the time unless we change it,
+
+00:08:18.760 --> 00:08:19.890
+which we'll talk about later.
+
+00:08:19.890 --> 00:08:21.880
+But then real quick, hold
+on. Why was coffee four?
+
+00:08:21.880 --> 00:08:23.630
+Because if we're looking at our list here,
+
+00:08:23.630 --> 00:08:26.840
+we got one, two, three, and then four.
+
+00:08:26.840 --> 00:08:28.280
+Raspberry pi is four.
+
+00:08:28.280 --> 00:08:30.160
+Coffee should have been five, right?
+
+00:08:30.160 --> 00:08:31.480
+No, we're dealin' with computers
+
+00:08:31.480 --> 00:08:35.130
+and computers have to
+be difficult sometimes.
+
+00:08:35.130 --> 00:08:37.140
+You might realize and remember and know
+
+00:08:37.140 --> 00:08:39.900
+that computers always
+start counting with zero.
+
+00:08:39.900 --> 00:08:40.950
+That's what they do.
+
+00:08:40.950 --> 00:08:42.860
+So test would be zero.
+
+00:08:42.860 --> 00:08:47.210
+Then one, two, three, bringin'
+us at four with coffee.
+
+00:08:47.210 --> 00:08:49.540
+Which is why marshmallows,
+instead of being 10,
+
+00:08:49.540 --> 00:08:50.640
+would actually be 9.
+
+00:08:50.640 --> 00:08:53.460
+So in a list with 10 items,
+
+00:08:53.460 --> 00:08:55.640
+your last number will
+always end up being 9.
+
+00:08:55.640 --> 00:08:56.690
+Just keep that in mind.
+
+00:08:56.690 --> 00:08:59.328
+That always messes me up
+whenever I'm dealing with list,
+
+00:08:59.328 --> 00:09:01.590
+so I just have to manually,
+consciously remember it.
+
+00:09:01.590 --> 00:09:02.423
+It's fine though.
+
+00:09:02.423 --> 00:09:05.760
+But this right here, what we
+did here, is super powerful
+
+00:09:05.760 --> 00:09:08.720
+and it'll become more
+apparent how powerful that is
+
+00:09:08.720 --> 00:09:09.950
+when we do something later.
+
+00:09:09.950 --> 00:09:10.830
+I can't tell you yet.
+
+00:09:10.830 --> 00:09:12.790
+I wanna tell you, but you have to wait.
+
+00:09:12.790 --> 00:09:13.770
+But diving deeper into that,
+
+00:09:13.770 --> 00:09:17.020
+you'll also see list
+referred to as indexed.
+
+00:09:17.020 --> 00:09:19.070
+That's kinda just another
+way of saying ordered.
+
+00:09:19.070 --> 00:09:20.580
+Ordered, sequenced, indexed.
+
+00:09:20.580 --> 00:09:21.920
+And when I say indexed, it just means
+
+00:09:21.920 --> 00:09:24.040
+that each item in our
+list is assigned a number.
+
+00:09:24.040 --> 00:09:25.730
+It's just the order it's in.
+
+00:09:25.730 --> 00:09:28.460
+And when we reference a list like this,
+
+00:09:28.460 --> 00:09:30.460
+we're calling out the index of that item.
+
+00:09:30.460 --> 00:09:32.850
+We're going, hey, ah,
+here's our camping list.
+
+00:09:32.850 --> 00:09:35.610
+Item number four. Pull it out.
+
+00:09:35.610 --> 00:09:37.470
+That's what we're doing. How cool is that?
+
+00:09:37.470 --> 00:09:39.670
+And you probably already
+noticed that when we are trying
+
+00:09:39.670 --> 00:09:42.720
+to reference a item in a
+list, when we index it,
+
+00:09:42.720 --> 00:09:43.560
+we use brackets.
+
+00:09:43.560 --> 00:09:44.890
+Now, quick coffee break.
+
+00:09:44.890 --> 00:09:46.920
+I wanna cover one more thing
+that might break your brain,
+
+00:09:46.920 --> 00:09:48.160
+but can we just do it real quick?
+
+00:09:48.160 --> 00:09:49.690
+It's gonna be fun. It's
+really fun, I promise.
+
+00:09:49.690 --> 00:09:50.840
+Coffee break.
+(coffee slurping)
+
+00:09:50.840 --> 00:09:53.057
+It has to do with indexing.
+We're gonna index one more time.
+
+00:09:53.057 --> 00:09:55.220
+And actually I'm gonna
+change you real quick.
+
+00:09:55.220 --> 00:09:56.880
+I'm gonna change you. Your variable you.
+
+00:09:56.880 --> 00:09:58.360
+You're still bringing marshmallows,
+
+00:09:58.360 --> 00:10:00.270
+but I'm gonna change the
+way I find marshmallows
+
+00:10:00.270 --> 00:10:01.160
+with that list.
+
+00:10:01.160 --> 00:10:01.993
+Watch this.
+
+00:10:01.993 --> 00:10:06.630
+I'm gonna change that nine to,
+this is weird, negative one.
+
+00:10:06.630 --> 00:10:08.847
+Now what do you think is gonna
+happen when we print this?
+
+00:10:08.847 --> 00:10:11.000
+Let's try it out. Let's run our code.
+
+00:10:11.000 --> 00:10:14.020
+Hey look, it stayed the dang
+same. (Chuck chuckling) Why?
+
+00:10:14.020 --> 00:10:16.000
+Well, that's called a negative index.
+
+00:10:16.000 --> 00:10:16.833
+It does come in handy.
+
+00:10:16.833 --> 00:10:18.080
+But essentially what you're doing
+
+00:10:18.080 --> 00:10:19.710
+is you're counting in reverse.
+
+00:10:19.710 --> 00:10:21.210
+So instead of starting up here,
+
+00:10:21.210 --> 00:10:23.100
+we're starting all the way back here.
+
+00:10:23.100 --> 00:10:26.217
+So the very last item in our
+list would be negative one.
+
+00:10:26.217 --> 00:10:27.050
+And you're probably thinkin',
+
+00:10:27.050 --> 00:10:29.180
+well, Chuck, nuh uh,
+should be negative zero.
+
+00:10:29.180 --> 00:10:30.150
+It's not. Just isn't.
+
+00:10:30.150 --> 00:10:31.850
+You can't have negative
+zero. It's impossible.
+
+00:10:31.850 --> 00:10:34.500
+Anyways, sorry. I didn't mean
+to get little angry with you.
+
+00:10:34.500 --> 00:10:35.350
+I'm just kidding. I wasn't.
+
+00:10:35.350 --> 00:10:38.530
+But that's a handy way to access
+the last item in your list.
+
+00:10:38.530 --> 00:10:40.440
+You're probably thinking,
+well, that's kind of stupid.
+
+00:10:40.440 --> 00:10:41.490
+Why would we ever do that?
+
+00:10:41.490 --> 00:10:44.270
+Well, sometimes you may
+not know how big a list is.
+
+00:10:44.270 --> 00:10:46.030
+And other times there
+might be a very good reason
+
+00:10:46.030 --> 00:10:48.260
+to access the last item in a list.
+
+00:10:48.260 --> 00:10:49.430
+You'll find out that later.
+
+00:10:49.430 --> 00:10:50.263
+But let's try it one more.
+
+00:10:50.263 --> 00:10:52.110
+What happens if we do,
+go ahead and change it
+
+00:10:52.110 --> 00:10:53.040
+to negative two.
+
+00:10:53.040 --> 00:10:55.473
+Negative two. Let's try
+it out. Run our code.
+
+00:10:56.490 --> 00:10:57.550
+Bam. Beard oil.
+
+00:10:57.550 --> 00:11:00.010
+It's now the second to
+last item in the list.
+
+00:11:00.010 --> 00:11:02.310
+And real quick, I can't believe
+we haven't done this yet.
+
+00:11:02.310 --> 00:11:03.143
+Shame on me.
+
+00:11:03.143 --> 00:11:04.370
+Let's go ahead and print the entire list
+
+00:11:04.370 --> 00:11:06.110
+at the very end here.
+
+00:11:06.110 --> 00:11:09.500
+Just print camping list. Run. Cool.
+
+00:11:09.500 --> 00:11:12.150
+So when we print the
+camping list, guess what?
+
+00:11:12.150 --> 00:11:15.190
+It looks just like our
+list that we have there.
+
+00:11:15.190 --> 00:11:16.470
+Let me scroll up so you can see it.
+
+00:11:16.470 --> 00:11:17.303
+The only difference
+
+00:11:17.303 --> 00:11:18.940
+is that it uses single quotes
+instead of double quotes.
+
+00:11:18.940 --> 00:11:19.900
+It breaks our standard.
+
+00:11:19.900 --> 00:11:21.120
+It's okay though. We'll forgive it.
+
+00:11:21.120 --> 00:11:23.050
+Now, I told you didn't I? I wasn't lying.
+
+00:11:23.050 --> 00:11:27.350
+Python lists are really
+fun and really powerful.
+
+00:11:27.350 --> 00:11:29.550
+Now, you probably understand
+the power they have,
+
+00:11:29.550 --> 00:11:33.170
+even just now, but you have
+no idea what's coming up.
+
+00:11:33.170 --> 00:11:35.640
+What you can do with
+these is gonna, you know,
+
+00:11:35.640 --> 00:11:36.710
+it's just gonna be mind blowing.
+
+00:11:36.710 --> 00:11:38.310
+So, I know you can't wait,
+
+00:11:38.310 --> 00:11:40.470
+go ahead and move forward
+to the next episode.
+
+00:11:40.470 --> 00:11:42.763
+Now, if you're watching on
+YouTube it might be like,
+
+00:11:42.763 --> 00:11:44.440
+(Chuck groaning) it's not here.
+
+00:11:44.440 --> 00:11:45.290
+I know.
+
+00:11:45.290 --> 00:11:48.210
+I create them in batches and
+I release them week by week,
+
+00:11:48.210 --> 00:11:51.410
+sometimes month by month,
+and maybe year by year, hush.
+
+00:11:51.410 --> 00:11:53.350
+No, I do release them frequently,
+
+00:11:53.350 --> 00:11:56.350
+but they do have them in advance
+on Network Chuck Academy,
+
+00:11:56.350 --> 00:11:57.760
+which you can check out in the link below.
+
+00:11:57.760 --> 00:11:59.820
+Also in Network Chuck
+Academy is extra practice
+
+00:11:59.820 --> 00:12:00.670
+on the stuff we're covering.
+
+00:12:00.670 --> 00:12:03.230
+So if you're like, hey, I
+get this, I understand it,
+
+00:12:03.230 --> 00:12:05.040
+but I wanna play with it a bit more.
+
+00:12:05.040 --> 00:12:08.280
+First, play with it
+yourself. Just do more of it.
+
+00:12:08.280 --> 00:12:09.740
+But also, I'm gonna have some exercises,
+
+00:12:09.740 --> 00:12:11.220
+some labs, and some quiz questions
+
+00:12:11.220 --> 00:12:13.850
+along with all of this
+at Network Chuck Academy,
+
+00:12:13.850 --> 00:12:15.150
+so check it out, link below.
+
+00:12:15.150 --> 00:12:17.670
+Oh and also, hey, I'm
+gotta ask you a question.
+
+00:12:17.670 --> 00:12:20.100
+Have you hacked the
+YouTube algorithm today?
+
+00:12:20.100 --> 00:12:20.967
+Let's make sure you do.
+
+00:12:20.967 --> 00:12:23.890
+Hit that like button, notification
+bell, comment, subscribe.
+
+00:12:23.890 --> 00:12:25.420
+Did I hit everything? Yes.
+
+00:12:25.420 --> 00:12:27.070
+You gotta hack YouTube today.
+
+00:12:27.070 --> 00:12:28.490
+Ethically, of course.
+
+00:12:28.490 --> 00:12:29.323
+Yeah. That's all I got.
+
+00:12:29.323 --> 00:12:30.330
+And also, again, a huge shout out
+
+00:12:30.330 --> 00:12:33.070
+to the sponsor of this
+entire series; ITProTV.
+
+00:12:33.070 --> 00:12:34.980
+Again, if you're trying to get into IT,
+
+00:12:34.980 --> 00:12:36.460
+if you wanna learn anything in IT,
+
+00:12:36.460 --> 00:12:38.450
+get certification or just learn a skill,
+
+00:12:38.450 --> 00:12:39.940
+dude, they're the place to go.
+
+00:12:39.940 --> 00:12:41.330
+Again, if you use my code NETWORKCHUCK
+
+00:12:41.330 --> 00:12:43.550
+you get 30% off forever.
+
+00:12:43.550 --> 00:12:44.383
+Don't miss that deal.
+
+00:12:44.383 --> 00:12:45.730
+It's not goin' away 'cause I said forever,
+
+00:12:45.730 --> 00:12:47.550
+but you still, just don't waste time.
+
+00:12:47.550 --> 00:12:49.510
+Don't don't wait till
+tomorrow, do it right now.
+
+00:12:49.510 --> 00:12:50.390
+You can start learning right now.
+
+00:12:50.390 --> 00:12:52.120
+You got a career in a month. Just do it.
+
+00:12:52.120 --> 00:12:53.840
+I'll catch you guys later.
+
+00:12:53.840 --> 00:12:55.423
+I'm done talking. Coffee break.
+
+00:12:57.137 --> 00:13:00.137
+(soft groovy music)
+

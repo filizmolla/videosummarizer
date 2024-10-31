@@ -1,0 +1,73 @@
+## Nmap Tutorial: Finding Network Vulnerabilities
+
+**Introduction**
+
+* Enmap (Nmap) is a powerful tool for scanning networks and finding vulnerable targets.
+
+## Basic Commands
+
+**Ping Scan:**
+
+* `enmap -sT -p network`
+
+**Port Scan:**
+
+* `enmap -sT -p ports network`
+* Utilizes TCP three-way handshake for port detection:
+    * Send message
+    * Receive SYN-ACK
+    * Respond with ACK
+
+**Stealth Scan:**
+
+* `enmap -sS -p ports network`
+* Sends only a single SYN message, reducing likelihood of detection
+
+**OS Detection:**
+
+* `enmap -O host`
+* Guesses OS based on TCP/IP stack responses
+
+## Advanced Features
+
+**Combo Search:**
+
+* `enmap -A host`
+* Performs OS, protocol version, and script scanning
+
+**Decoy:**
+
+* `enmap -D decoy_ip -sT -p ports network`
+* Sends decoy packets to confuse attackers
+
+**Scripting Engine:**
+
+* `enmap --script Vulner host`
+* Scans for known vulnerabilities using scripts
+
+## Actionable Advice
+
+* Practice commands and switches.
+* Understand networking concepts.
+* Lower scan speed to avoid detection.
+
+## References
+
+* EC Council: Scanning and Enumeration (Modules 3 and 4)
+* Nmap Scripting Engine: https://nmap.org/nsedoc/
+
+## Examples
+
+* Screenshot of Nmap command to scan a host for vulnerabilities.
+
+## Techniques
+
+* TCP three-way handshake for port detection
+* Host decoy for obfuscation
+* Nmap scripts for vulnerability scanning
+
+## Additional Points
+
+* Nmap is available for Windows, macOS, and Linux.
+* Consider using a VPN to avoid detection.
+* Vulnhub provides vulnerable virtual machines for ethical hacking practice.

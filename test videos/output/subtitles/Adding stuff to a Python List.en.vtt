@@ -1,0 +1,1196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:02.810
+- Do you know what's more
+fun than Python lists?
+
+00:00:02.810 --> 00:00:05.270
+Nothing. Not even "Elden Ring," maybe.
+
+00:00:05.270 --> 00:00:06.360
+But seriously, in this video,
+
+00:00:06.360 --> 00:00:08.610
+we're gonna level up
+those Python list skills.
+
+00:00:08.610 --> 00:00:10.370
+We've already seen how we can build a list
+
+00:00:10.370 --> 00:00:11.290
+in the previous episode,
+
+00:00:11.290 --> 00:00:12.927
+but now we're gonna add things to it.
+
+00:00:12.927 --> 00:00:16.310
+And it's this crazy fun
+thing called methods.
+
+00:00:16.310 --> 00:00:17.480
+Hmm, what is that?
+
+00:00:17.480 --> 00:00:18.313
+You're gonna find out.
+
+00:00:18.313 --> 00:00:19.430
+So get your coffee ready
+
+00:00:19.430 --> 00:00:20.530
+or refill your coffee
+
+00:00:20.530 --> 00:00:22.580
+'cause I've already had like four cups
+
+00:00:22.580 --> 00:00:23.422
+and let's get started.
+
+00:00:23.422 --> 00:00:24.255
+(host sipping coffee)
+
+00:00:24.255 --> 00:00:26.838
+(upbeat music)
+
+00:00:31.600 --> 00:00:32.590
+Okay, quick sip of coffee
+
+00:00:32.590 --> 00:00:34.290
+before we launch our lab. (sipping coffee)
+
+00:00:34.290 --> 00:00:35.123
+If you haven't already,
+
+00:00:35.123 --> 00:00:36.080
+check that link of the description
+
+00:00:36.080 --> 00:00:36.973
+I've got a free Python lab
+
+00:00:36.973 --> 00:00:39.580
+that you can use right here
+in your browser, right now.
+
+00:00:39.580 --> 00:00:41.290
+So go ahead and launch it, right now.
+
+00:00:41.290 --> 00:00:42.930
+It's free. And while that lab is launching
+
+00:00:42.930 --> 00:00:44.060
+can I show you something really cool
+
+00:00:44.060 --> 00:00:44.893
+I've been working on?
+
+00:00:44.893 --> 00:00:45.726
+Check this out.
+
+00:00:45.726 --> 00:00:47.360
+I've been watching the
+Python For Security course
+
+00:00:47.360 --> 00:00:49.500
+on IT Pro TV and check this out.
+
+00:00:49.500 --> 00:00:52.500
+I learned how to build my
+own port scanner in Python.
+
+00:00:52.500 --> 00:00:54.510
+Sure, you can use pre-built port scanners
+
+00:00:54.510 --> 00:00:55.620
+but building your own,
+
+00:00:55.620 --> 00:00:56.453
+that's just cool.
+
+00:00:56.453 --> 00:00:57.570
+If you wanna try it, check it out,
+
+00:00:57.570 --> 00:00:58.403
+link below,
+
+00:00:58.403 --> 00:00:59.236
+itpro.tv/NetworkChuch
+
+00:01:00.070 --> 00:01:01.658
+which by the way IT Pro TV is a sponsor
+
+00:01:01.658 --> 00:01:03.000
+of this entire series
+
+00:01:03.000 --> 00:01:04.940
+and the reason it can
+be free here on YouTube
+
+00:01:04.940 --> 00:01:05.773
+and not to mention,
+
+00:01:05.773 --> 00:01:07.850
+they are my go-to IT training provider.
+
+00:01:07.850 --> 00:01:09.300
+I use them to learn stuff.
+
+00:01:09.300 --> 00:01:11.320
+And literally whatever
+you wanna learn in IT,
+
+00:01:11.320 --> 00:01:13.000
+you can learn it at IT Pro TV
+
+00:01:13.000 --> 00:01:15.200
+from just getting your start
+with foundational skills
+
+00:01:15.200 --> 00:01:17.740
+to more advanced things
+like Linux or the CCNA,
+
+00:01:17.740 --> 00:01:19.600
+or the DevNet Associate, the CCMP,
+
+00:01:19.600 --> 00:01:21.240
+and of course, tons of Python.
+
+00:01:21.240 --> 00:01:23.490
+And you'll also able to stay
+awake during this training.
+
+00:01:23.490 --> 00:01:24.510
+That's one of the features.
+
+00:01:24.510 --> 00:01:25.530
+I'm glad they baked that in.
+
+00:01:25.530 --> 00:01:27.570
+And of course they have virtual labs
+
+00:01:27.570 --> 00:01:29.310
+so you can practice all
+that stuff you're learning
+
+00:01:29.310 --> 00:01:30.930
+and practice tests,
+
+00:01:30.930 --> 00:01:32.560
+so you can get ready for any
+exam you might be taking.
+
+00:01:32.560 --> 00:01:34.440
+So if you wanna learn IT like me,
+
+00:01:34.440 --> 00:01:35.610
+check it out, link below.
+
+00:01:35.610 --> 00:01:37.470
+itpro.tv/NetworkChuck.
+
+00:01:37.470 --> 00:01:38.620
+If you use code "NetworkChuck"
+
+00:01:38.620 --> 00:01:40.190
+you'll get 30% off
+
+00:01:41.220 --> 00:01:42.602
+Forever.
+
+00:01:42.602 --> 00:01:44.820
+So, so here is our gorgeous Python script
+
+00:01:44.820 --> 00:01:46.290
+because hey, we're going camping.
+
+00:01:46.290 --> 00:01:47.123
+You're coming, right?
+
+00:01:47.123 --> 00:01:48.990
+Yes you are. In order to
+go camping, you need stuff,
+
+00:01:48.990 --> 00:01:49.980
+supplies to bring with you.
+
+00:01:49.980 --> 00:01:51.640
+And we did that in Python.
+
+00:01:51.640 --> 00:01:53.660
+We put together an amazing Python list,
+
+00:01:53.660 --> 00:01:55.180
+full of the stuff that we are bringing.
+
+00:01:55.180 --> 00:01:56.310
+But you forgot something.
+
+00:01:56.310 --> 00:01:57.930
+And I can't believe you forgot this.
+
+00:01:57.930 --> 00:01:59.850
+Come on, get your head on straight.
+
+00:01:59.850 --> 00:02:01.840
+But seriously, we forgot toilet paper.
+
+00:02:01.840 --> 00:02:04.000
+Can you imagine what a
+disaster that would be?
+
+00:02:04.000 --> 00:02:05.580
+And actually I'm going to bring a bidet
+
+00:02:05.580 --> 00:02:07.130
+because I'm fancy.
+
+00:02:07.130 --> 00:02:08.210
+So that that'll be for me,
+
+00:02:08.210 --> 00:02:09.170
+you can use the toilet paper.
+
+00:02:09.170 --> 00:02:10.700
+So now our task in this video
+
+00:02:10.700 --> 00:02:14.450
+is to somehow, with our
+list already created,
+
+00:02:14.450 --> 00:02:16.820
+we gotta add toilet paper to our list
+
+00:02:16.820 --> 00:02:18.160
+and also a bidet for me,
+
+00:02:18.160 --> 00:02:19.080
+'cause I'm I'm bougie.
+
+00:02:19.080 --> 00:02:20.410
+And this is just one of
+the many great things
+
+00:02:20.410 --> 00:02:22.500
+about Python list because
+we can change these.
+
+00:02:22.500 --> 00:02:24.230
+We can add things if we forget stuff,
+
+00:02:24.230 --> 00:02:25.930
+'cause I forget things all the time.
+
+00:02:25.930 --> 00:02:27.680
+And apparently you do too, thanks a lot.
+
+00:02:27.680 --> 00:02:28.660
+I'm just kidding, by the way.
+
+00:02:28.660 --> 00:02:29.890
+Don't get scared or upset.
+
+00:02:29.890 --> 00:02:31.170
+I'm sorry. Anyways, here we go.
+
+00:02:31.170 --> 00:02:32.610
+So our task of the day
+
+00:02:32.610 --> 00:02:34.960
+is to add toilet paper
+and a bidet to our list.
+
+00:02:34.960 --> 00:02:35.950
+Now I know what you're thinking.
+
+00:02:35.950 --> 00:02:37.687
+You're thinking, "Well, Chuck
+can't we just go over here,
+
+00:02:37.687 --> 00:02:39.730
+"in our list and edit the list manually."
+
+00:02:39.730 --> 00:02:41.227
+Like just go over here and go,
+
+00:02:41.227 --> 00:02:43.237
+"Toilet paper,
+
+00:02:43.237 --> 00:02:44.070
+"they're done."
+
+00:02:44.070 --> 00:02:45.330
+No, that's lazy.
+
+00:02:45.330 --> 00:02:47.750
+We have to do it
+programmatically, using Python.
+
+00:02:47.750 --> 00:02:48.583
+Don't do that.
+
+00:02:48.583 --> 00:02:49.960
+So we're not gonna do that.
+
+00:02:49.960 --> 00:02:51.980
+We're gonna use a powerful Python concept.
+
+00:02:51.980 --> 00:02:53.970
+In fact, new concept time.
+
+00:02:53.970 --> 00:02:55.600
+It's a thing called methods.
+
+00:02:55.600 --> 00:02:57.850
+Professor Bernard, go ahead
+and tell us what methods are.
+
+00:02:57.850 --> 00:02:59.110
+- [Bernard] A method in Python
+
+00:02:59.110 --> 00:03:01.160
+is somewhat similar to a function
+
+00:03:01.160 --> 00:03:04.810
+except it is associated
+with object/classes.
+
+00:03:04.810 --> 00:03:06.630
+Methods in Python are very...
+
+00:03:06.630 --> 00:03:07.580
+- Okay, Bernard, you're done.
+
+00:03:07.580 --> 00:03:08.413
+You're putting people to sleep.
+
+00:03:08.413 --> 00:03:09.246
+I'm sorry guys.
+
+00:03:09.246 --> 00:03:10.520
+Anyways, let's stop talking about methods
+
+00:03:10.520 --> 00:03:11.410
+and let's actually use one
+
+00:03:11.410 --> 00:03:13.830
+to add toilet paper and
+a bidet to our list.
+
+00:03:13.830 --> 00:03:14.663
+Let's do it.
+
+00:03:14.663 --> 00:03:15.560
+It's it's really cool, actually.
+
+00:03:15.560 --> 00:03:17.150
+This is actually a groundbreaking concept.
+
+00:03:17.150 --> 00:03:19.700
+You're gonna use a ton in
+Python not with just lists.
+
+00:03:19.700 --> 00:03:20.533
+So as you learn this,
+
+00:03:20.533 --> 00:03:22.510
+you're getting a head
+start to everything else,
+
+00:03:22.510 --> 00:03:23.343
+which is pretty cool.
+
+00:03:23.343 --> 00:03:25.370
+Anyways, here we go. So down
+here, type this with me.
+
+00:03:25.370 --> 00:03:26.203
+Our list up there,
+
+00:03:26.203 --> 00:03:27.265
+supplies, go and type it out.
+
+00:03:27.265 --> 00:03:28.310
+Supplies
+
+00:03:28.310 --> 00:03:29.830
+Here comes the method.
+
+00:03:29.830 --> 00:03:31.580
+I'm gonna do a dot,
+
+00:03:31.580 --> 00:03:34.610
+and then type in a pen.
+
+00:03:34.610 --> 00:03:37.300
+Notice, ooh, pretty different color.
+
+00:03:37.300 --> 00:03:38.530
+When colors change in Python
+
+00:03:38.530 --> 00:03:39.550
+we know somethings happening.
+
+00:03:39.550 --> 00:03:40.710
+Something's cooking and brewing
+
+00:03:40.710 --> 00:03:41.930
+and that's what's happening here.
+
+00:03:41.930 --> 00:03:45.810
+So just after append, I'm
+gonna do a parenthesis and
+
+00:03:45.810 --> 00:03:48.864
+inside those parentheses, I'm
+going to add our toilet paper.
+
+00:03:48.864 --> 00:03:50.009
+Let's go ahead and do
+it. We'll do a string
+
+00:03:50.009 --> 00:03:52.747
+and we'll type in toilet
+paper and that's it.
+
+00:03:52.747 --> 00:03:54.840
+So let's go and just test the script
+
+00:03:54.840 --> 00:03:56.670
+out before I explain what happened here.
+
+00:03:56.670 --> 00:04:00.280
+So down here let's go and
+print supplies once more
+
+00:04:00.280 --> 00:04:03.086
+just like this and
+let's run our code, run.
+
+00:04:03.086 --> 00:04:03.919
+Look at that.
+
+00:04:03.919 --> 00:04:05.750
+Okay. So, some magic just happened.
+
+00:04:05.750 --> 00:04:09.090
+Our list now at the very
+end has toilet paper on it.
+
+00:04:09.090 --> 00:04:11.330
+Thank goodness for you.
+
+00:04:11.330 --> 00:04:12.163
+I'm using a bidet.
+
+00:04:12.163 --> 00:04:13.910
+So let's analyze what happened here.
+
+00:04:13.910 --> 00:04:16.090
+This "append" thing is called a method.
+
+00:04:16.090 --> 00:04:18.090
+A method is a built in Python tool or
+
+00:04:18.090 --> 00:04:20.000
+or function and specifically for list.
+
+00:04:20.000 --> 00:04:22.560
+It allows us to change
+things up with our list.
+
+00:04:22.560 --> 00:04:25.640
+So with our append method,
+obviously we're appending
+
+00:04:25.640 --> 00:04:28.400
+or adding an item to our
+list at the very end.
+
+00:04:28.400 --> 00:04:30.570
+And you probably assumed and
+you assumed correctly, sir
+
+00:04:30.570 --> 00:04:33.470
+ma'am, that the, there are other methods
+
+00:04:33.470 --> 00:04:35.030
+and we can do different things to our list
+
+00:04:35.030 --> 00:04:36.310
+which we will explore.
+
+00:04:36.310 --> 00:04:37.910
+But real quick let's
+have you try it yourself.
+
+00:04:37.910 --> 00:04:39.730
+So here we add a toilet paper.
+
+00:04:39.730 --> 00:04:41.700
+You, I need you to
+carry it for me, please.
+
+00:04:41.700 --> 00:04:44.970
+Can you please add a bidet to
+our list just underneath that
+
+00:04:44.970 --> 00:04:48.380
+pause the video, unpause, coffee break.
+
+00:04:48.380 --> 00:04:49.900
+So just under adding toilet paper
+
+00:04:49.900 --> 00:04:51.910
+I'm gonna type in supplies
+
+00:04:51.910 --> 00:04:54.940
+dot append, once more using
+our pen method parentheses
+
+00:04:54.940 --> 00:04:57.660
+and then I'll put in
+bidet, let's run the code.
+
+00:04:57.660 --> 00:04:59.590
+Yes. Just like that.
+
+00:04:59.590 --> 00:05:01.490
+Not only do we have a toilet paper
+
+00:05:01.490 --> 00:05:03.610
+but now we have a bidet
+for "Network Chuck"
+
+00:05:03.610 --> 00:05:05.240
+Which by the way, I'm not
+even kidding about that.
+
+00:05:05.240 --> 00:05:07.200
+I've got a bidet in every
+bathroom in my house.
+
+00:05:07.200 --> 00:05:09.850
+If you're not using a bidet
+what are you even doing?
+
+00:05:09.850 --> 00:05:11.240
+Okay. Off my soapbox.
+
+00:05:11.240 --> 00:05:12.720
+Now some of you may have tried this
+
+00:05:12.720 --> 00:05:13.830
+and it wasn't a bad thought.
+
+00:05:13.830 --> 00:05:16.760
+You're probably thinking, Hey,
+we don't need an extra line.
+
+00:05:16.760 --> 00:05:19.680
+I'll just add two in one append method.
+
+00:05:19.680 --> 00:05:21.590
+Right? Makes sense to me.
+
+00:05:21.590 --> 00:05:23.410
+But if you run our code
+
+00:05:23.410 --> 00:05:25.340
+it doesn't work. Using the append method,
+
+00:05:25.340 --> 00:05:26.890
+you can only add one item
+
+00:05:26.890 --> 00:05:29.680
+one piece of data at a
+time, which honestly yeah.
+
+00:05:29.680 --> 00:05:30.620
+Is kind of annoying.
+
+00:05:30.620 --> 00:05:31.680
+So is there a way around that?
+
+00:05:31.680 --> 00:05:33.100
+Can we do something else?
+
+00:05:33.100 --> 00:05:34.070
+And the answer is yes
+
+00:05:34.070 --> 00:05:35.420
+there is one other way we can do this.
+
+00:05:35.420 --> 00:05:36.450
+And this one is very handy.
+
+00:05:36.450 --> 00:05:37.283
+So me back this
+
+00:05:37.283 --> 00:05:40.040
+up really quick I'll type
+in supplies once more.
+
+00:05:40.040 --> 00:05:42.090
+And it's another method, who
+would've saw that coming.
+
+00:05:42.090 --> 00:05:46.410
+Right? And this one is
+called extend E-X-T-E-N-D.
+
+00:05:46.410 --> 00:05:47.680
+Did I say that? E-X-T-E-N-D.
+
+00:05:47.680 --> 00:05:49.960
+There we go. And then of course
+our parentheses. Now here
+
+00:05:49.960 --> 00:05:51.210
+we're not adding one piece of data.
+
+00:05:51.210 --> 00:05:52.960
+We're adding multiple pieces of data
+
+00:05:52.960 --> 00:05:55.310
+which will come in the form of a list.
+
+00:05:55.310 --> 00:05:58.180
+We're actually gonna add
+another list to our list.
+
+00:05:58.180 --> 00:05:59.013
+Let's try it out.
+
+00:05:59.013 --> 00:06:00.400
+And actually I want you
+to do it real quick.
+
+00:06:00.400 --> 00:06:03.660
+So you know, our task bidet
+and toilet paper, add that list
+
+00:06:03.660 --> 00:06:05.110
+Using the extend method.
+
+00:06:05.110 --> 00:06:06.700
+It's kind of intuitive, so try it out.
+
+00:06:06.700 --> 00:06:09.840
+Pause the video unpause, coffee break.
+
+00:06:09.840 --> 00:06:11.770
+Here's how you would do it
+here, inside our parentheses.
+
+00:06:11.770 --> 00:06:13.560
+I'm gonna create another
+list just inside there.
+
+00:06:13.560 --> 00:06:14.700
+And I'm not actually creating a list.
+
+00:06:14.700 --> 00:06:16.430
+I'm just telling it to add this list.
+
+00:06:16.430 --> 00:06:17.530
+If that makes sense.
+
+00:06:17.530 --> 00:06:19.680
+Okay. So brackets then a string.
+
+00:06:19.680 --> 00:06:22.020
+I'll say toilet paper and then comma
+
+00:06:22.020 --> 00:06:23.710
+one more piece of data, my bidet.
+
+00:06:23.710 --> 00:06:24.543
+Can't forget that.
+
+00:06:24.543 --> 00:06:25.376
+That should do it.
+
+00:06:25.376 --> 00:06:28.180
+Now. Let's run our
+code, run, that did yes.
+
+00:06:28.180 --> 00:06:32.700
+So with our extended
+method, we extended our list
+
+00:06:32.700 --> 00:06:35.410
+by adding two items at the very tail end.
+
+00:06:35.410 --> 00:06:36.670
+Whew, Amazing.
+
+00:06:36.670 --> 00:06:38.720
+Now can I show you one
+more fun way to do this.
+
+00:06:38.720 --> 00:06:41.120
+Watch this, instead of using extend
+
+00:06:41.120 --> 00:06:43.280
+we're gonna use something that
+does the exact same thing.
+
+00:06:43.280 --> 00:06:46.200
+We're gonna add a list to
+a list, but we'll do this.
+
+00:06:46.200 --> 00:06:47.033
+We'll take supplies
+
+00:06:47.033 --> 00:06:52.033
+and we'll say supplies equals
+supplies, which sounds weird.
+
+00:06:52.790 --> 00:06:56.110
+Plus, and then we'll do our
+list of things you want to add.
+
+00:06:56.110 --> 00:06:59.950
+So toilet paper and a bidet,
+and if we run our code
+
+00:06:59.950 --> 00:07:01.130
+it should be the exact same thing.
+
+00:07:01.130 --> 00:07:03.450
+Fingers crossed, totally is, awesome.
+
+00:07:03.450 --> 00:07:04.283
+What's happening here.
+
+00:07:04.283 --> 00:07:07.080
+First notice that we're not
+really using a method anymore.
+
+00:07:07.080 --> 00:07:09.760
+We're simply using a plus sign addition
+
+00:07:09.760 --> 00:07:11.050
+things we've already
+covered in this course.
+
+00:07:11.050 --> 00:07:12.110
+When we try to add two strings
+
+00:07:12.110 --> 00:07:13.480
+to each other or two integers
+
+00:07:13.480 --> 00:07:16.820
+and here we're adding two
+list, which is kind of crazy.
+
+00:07:16.820 --> 00:07:19.100
+So if we look at our
+equation, we're saying, Hey
+
+00:07:19.100 --> 00:07:21.680
+we got this list, name, supplies.
+
+00:07:21.680 --> 00:07:24.730
+We want this now to
+equal the list supplies.
+
+00:07:24.730 --> 00:07:27.300
+Plus this other list
+we're just pulling out
+
+00:07:27.300 --> 00:07:29.940
+of thin air, and, it did
+it. Adding those items
+
+00:07:29.940 --> 00:07:32.530
+to the end of the list supplies.
+
+00:07:32.530 --> 00:07:36.270
+So to sum it all up,
+sorry. When you want to
+
+00:07:36.270 --> 00:07:38.970
+add one piece of data,
+which will happen often
+
+00:07:38.970 --> 00:07:42.010
+especially when we do
+something called four loops.
+
+00:07:42.010 --> 00:07:44.330
+Oh, I that's gonna be fun
+coming up soon by the way.
+
+00:07:44.330 --> 00:07:45.163
+If you wanna add one piece
+
+00:07:45.163 --> 00:07:47.180
+of data at a time, we'll
+use the append method.
+
+00:07:47.180 --> 00:07:49.720
+So the list, name dot append,
+and then whatever you want to
+
+00:07:49.720 --> 00:07:50.553
+add on the side.
+
+00:07:50.553 --> 00:07:54.760
+To add multiple pieces of
+data or add a list to a list.
+
+00:07:54.760 --> 00:07:58.320
+We'll either use the extend
+method with a list inside
+
+00:07:58.320 --> 00:08:01.700
+or we can simply add a list to a list.
+
+00:08:01.700 --> 00:08:03.640
+But wait, there's more.
+
+00:08:03.640 --> 00:08:05.190
+So what if you don't want to add an item
+
+00:08:05.190 --> 00:08:06.760
+to the very end of your list?
+
+00:08:06.760 --> 00:08:07.660
+What if you want it to go
+
+00:08:07.660 --> 00:08:10.470
+in the beginning or in the
+middle or second to last
+
+00:08:10.470 --> 00:08:13.160
+there is a way there is
+a method, a new method.
+
+00:08:13.160 --> 00:08:14.780
+So let's say that the
+bidet is probably the most
+
+00:08:14.780 --> 00:08:16.690
+important item we have to bring on a trip.
+
+00:08:16.690 --> 00:08:18.210
+So I want that at the very
+beginning of our list.
+
+00:08:18.210 --> 00:08:19.250
+So we don't forget it.
+
+00:08:19.250 --> 00:08:21.600
+So I, the bidet added at
+the, well, the beginning.
+
+00:08:21.600 --> 00:08:22.433
+How do we do that?
+
+00:08:22.433 --> 00:08:23.300
+Let's try it out.
+
+00:08:23.300 --> 00:08:25.350
+Here we go type in supplies
+
+00:08:25.350 --> 00:08:29.600
+our list and then, dot,
+in our new method, insert.
+
+00:08:30.660 --> 00:08:33.330
+Ooh. And let's try it out parentheses.
+
+00:08:33.330 --> 00:08:34.980
+And if I want that data
+to go with the beginning
+
+00:08:34.980 --> 00:08:35.813
+here's what I'll do.
+
+00:08:35.813 --> 00:08:37.600
+I'm gonna type in zero, comma,
+
+00:08:37.600 --> 00:08:39.810
+and then my piece of data, "bidet".
+
+00:08:39.810 --> 00:08:42.630
+So what's happening here because
+with this method, it seems
+
+00:08:42.630 --> 00:08:44.027
+things are a bit different, right?
+
+00:08:44.027 --> 00:08:46.970
+We have two arguments that come into play.
+
+00:08:46.970 --> 00:08:48.750
+The first one is doing something.
+
+00:08:48.750 --> 00:08:49.720
+We'll talk about him in a bit.
+
+00:08:49.720 --> 00:08:52.480
+And the second one is our data,
+which we already know that.
+
+00:08:52.480 --> 00:08:54.900
+But this first thing that
+is actually something
+
+00:08:54.900 --> 00:08:55.733
+we've already talked about
+
+00:08:55.733 --> 00:08:58.380
+in the first episode of
+this talking about list.
+
+00:08:58.380 --> 00:08:59.430
+That's our index.
+
+00:08:59.430 --> 00:09:00.380
+You may have picked up on that.
+
+00:09:00.380 --> 00:09:02.740
+You may recall that our list are ordered.
+
+00:09:02.740 --> 00:09:03.900
+They're sequenced.
+
+00:09:03.900 --> 00:09:06.150
+0, 1, 2, 3.
+
+00:09:06.150 --> 00:09:07.310
+You got it. They're in order.
+
+00:09:07.310 --> 00:09:08.670
+And you can reference
+that order when you're
+
+00:09:08.670 --> 00:09:10.330
+trying to pull data out of it.
+
+00:09:10.330 --> 00:09:13.380
+And now when you're trying
+to insert data into your list
+
+00:09:13.380 --> 00:09:17.400
+so I'm telling this list, Hey
+buddy, bidets are important.
+
+00:09:17.400 --> 00:09:21.300
+And I want that bidet to be
+at position zero index zero.
+
+00:09:21.300 --> 00:09:23.110
+When I add the sucker in
+there. Now toilet paper
+
+00:09:23.110 --> 00:09:25.170
+is pretty important, but it's for you.
+
+00:09:25.170 --> 00:09:26.710
+And I don't really care
+about that so much.
+
+00:09:26.710 --> 00:09:27.940
+So just add toilet paper
+
+00:09:27.940 --> 00:09:30.050
+to the second to last
+position of our list.
+
+00:09:30.050 --> 00:09:32.060
+Can you do that for me real
+quick? and challenge for you.
+
+00:09:32.060 --> 00:09:35.320
+Challenge, use a negative index.
+
+00:09:35.320 --> 00:09:36.720
+Can you do it?
+
+00:09:36.720 --> 00:09:37.553
+Try it out.
+
+00:09:37.553 --> 00:09:38.386
+Pause the video.
+
+00:09:39.300 --> 00:09:40.530
+Unpause, coffee break.
+
+00:09:40.530 --> 00:09:42.810
+This is a fun one. I love when
+we combine multiple things.
+
+00:09:42.810 --> 00:09:44.470
+Okay? So here's how you would do it.
+
+00:09:44.470 --> 00:09:45.880
+I'm gonna do another insert method.
+
+00:09:45.880 --> 00:09:50.090
+So supplies dot, insert parentheses.
+
+00:09:50.090 --> 00:09:51.760
+Now I position if I want it to be second
+
+00:09:51.760 --> 00:09:55.310
+from last will be negative, one, comma
+
+00:09:55.310 --> 00:09:58.410
+And then, my data, toilet paper.
+
+00:09:58.410 --> 00:10:01.210
+Let's run our code to see if
+it works and boom, there it is.
+
+00:10:01.210 --> 00:10:03.680
+Toilet paper. Second to last in our list.
+
+00:10:03.680 --> 00:10:04.940
+Now this might have been a bit confusing
+
+00:10:04.940 --> 00:10:06.360
+because in our previous video
+
+00:10:06.360 --> 00:10:09.560
+if we wanted to print out
+the last item in our list
+
+00:10:09.560 --> 00:10:12.700
+we would do this: print
+supplies, use our brackets
+
+00:10:12.700 --> 00:10:16.020
+and reference the negative
+one index run our code.
+
+00:10:16.020 --> 00:10:19.240
+Negative one absolutely means
+printing out the last item
+
+00:10:19.240 --> 00:10:20.490
+'cause there it is right there.
+
+00:10:20.490 --> 00:10:21.970
+Marshmallows. They're delicious.
+
+00:10:21.970 --> 00:10:24.090
+However, it's a bit different
+when we're inserting data
+
+00:10:24.090 --> 00:10:25.570
+because normally when
+we're just adding data
+
+00:10:25.570 --> 00:10:27.690
+to our list and we're not
+using the insert method
+
+00:10:27.690 --> 00:10:29.670
+it'll always go down here at the end.
+
+00:10:29.670 --> 00:10:31.610
+But with insert, If we wanna have it go,
+
+00:10:31.610 --> 00:10:33.190
+just one before the end,
+
+00:10:33.190 --> 00:10:35.450
+we're gonna use negative
+one and so on and so on
+
+00:10:35.450 --> 00:10:37.860
+So if we want it to be
+third from the last, well
+
+00:10:37.860 --> 00:10:39.700
+I mean you probably got that, right?
+
+00:10:39.700 --> 00:10:41.620
+It'll be negative too.
+
+00:10:41.620 --> 00:10:43.920
+Let's run the code. There
+it is. Third from last.
+
+00:10:43.920 --> 00:10:44.980
+Woo. Okay.
+
+00:10:44.980 --> 00:10:46.460
+Coffee break. That was a lot.
+
+00:10:46.460 --> 00:10:48.390
+But I told you right? Way more fun
+
+00:10:48.390 --> 00:10:50.720
+than Elden ring or whatever
+video game you're into.
+
+00:10:50.720 --> 00:10:52.110
+This is real life, camping
+
+00:10:52.110 --> 00:10:54.900
+toilet paper, bidets,
+Python, man! Love it.
+
+00:10:54.900 --> 00:10:57.160
+Now right here, you learn the concepts
+
+00:10:57.160 --> 00:10:59.260
+but you need to concrete
+that into your brain.
+
+00:10:59.260 --> 00:11:00.480
+Solidify it practicing.
+
+00:11:00.480 --> 00:11:02.900
+So check out network,
+Chuck academy, link below.
+
+00:11:02.900 --> 00:11:04.090
+We're gonna have extra practice
+
+00:11:04.090 --> 00:11:06.650
+extra quizzes to cement
+these things into your brain.
+
+00:11:06.650 --> 00:11:07.650
+In the next episode
+
+00:11:07.650 --> 00:11:10.970
+we're going to destroy
+some things from our list.
+
+00:11:10.970 --> 00:11:13.650
+Obliterate, blow it up
+with some new methods.
+
+00:11:13.650 --> 00:11:14.483
+It's gonna be fun.
+
+00:11:14.483 --> 00:11:17.590
+And by the way, have you hacked
+the YouTube algorithm today?
+
+00:11:17.590 --> 00:11:18.860
+Let's make sure you do
+hit that like button.
+
+00:11:18.860 --> 00:11:21.370
+Subscribe, notification bell, comment
+
+00:11:21.370 --> 00:11:23.030
+You gotta hack YouTube today.
+
+00:11:23.030 --> 00:11:25.010
+Ethically of course.
+
+00:11:25.010 --> 00:11:26.210
+Yeah. That's all I have.
+
+00:11:27.150 --> 00:11:28.623
+I'll catch you guys next time.
+

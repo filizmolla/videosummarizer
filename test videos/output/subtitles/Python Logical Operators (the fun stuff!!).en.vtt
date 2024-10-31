@@ -1,0 +1,1248 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:02.280
+Stop before you watch this
+video, we gotta do this.
+
+00:00:02.980 --> 00:00:06.000
+If you like Python. Cool. And.
+
+00:00:06.900 --> 00:00:09.800
+You enjoy coffee. Continue. Let's do this.
+
+00:00:10.390 --> 00:00:11.223
+Else.
+
+00:00:12.440 --> 00:00:13.280
+I wasn't prepared for this.
+
+00:00:14.340 --> 00:00:15.173
+Why are you here?
+
+00:00:22.340 --> 00:00:25.270
+Welcome to episode six of
+my Python right now, series,
+
+00:00:25.320 --> 00:00:29.430
+where I'm gonna teach you everything
+you need to know to become dangerous and
+
+00:00:29.430 --> 00:00:31.830
+Python in this episode. Woo. Get ready.
+
+00:00:31.920 --> 00:00:34.910
+We're gonna get more control over
+our Python programming. And so far,
+
+00:00:34.910 --> 00:00:38.270
+we've done great job because we've kept
+evil Ben from coming into our coffee
+
+00:00:38.300 --> 00:00:40.790
+shop, but we have a new problem, evil Ben,
+
+00:00:41.040 --> 00:00:44.820
+the only person we have to worry
+about now, now we have evil, Patricia.
+
+00:00:45.260 --> 00:00:46.093
+Patricia.
+
+00:00:46.520 --> 00:00:47.740
+Get it together, sweetie. We have a.
+
+00:00:47.740 --> 00:00:48.180
+Show this weekend,
+
+00:00:48.180 --> 00:00:51.580
+evil Patricia is way worse than Ben and
+we have to keep her from entering our
+
+00:00:51.580 --> 00:00:54.820
+coffee shop. But to do this, we
+have to gain some new skills skills.
+
+00:00:54.820 --> 00:00:57.860
+We're gonna talk about here in this video.
+We're no longer looking for just Ben.
+
+00:00:58.000 --> 00:00:59.180
+If name equals Ben.
+
+00:00:59.600 --> 00:01:04.130
+Now we're like if name equals
+Ben and also Patricia, how,
+
+00:01:04.130 --> 00:01:07.170
+how are we gonna do that? It's a thing
+called logical operators and yeah,
+
+00:01:07.170 --> 00:01:08.370
+they're fun. So get ready.
+
+00:01:08.590 --> 00:01:11.450
+And the best part is you don't
+need a dang thing to do this.
+
+00:01:11.520 --> 00:01:15.730
+Just like every episode in this course
+you'll have access to a free Python lab
+
+00:01:15.780 --> 00:01:19.810
+right here in your browser. So check that
+link below and get signed up. And uh,
+
+00:01:19.870 --> 00:01:23.400
+oh, you know what? Forgot one
+thing. You need coffee by now.
+
+00:01:23.400 --> 00:01:25.560
+You should know that. I mean,
+how else did you get past my,
+
+00:01:25.560 --> 00:01:27.560
+if statement at the beginning
+of this video, if you're here,
+
+00:01:27.560 --> 00:01:28.840
+you already have coffee, right?
+
+00:01:29.460 --> 00:01:32.000
+And a massive shout out to our
+sponsor of this entire series.
+
+00:01:32.020 --> 00:01:35.040
+And the reason it can be free
+here on YouTube, it pro TV.
+
+00:01:35.380 --> 00:01:38.320
+If you really wanna get serious about
+your it career, or you're like, Hey,
+
+00:01:38.840 --> 00:01:42.320
+I want to get into it. You need to
+check out it pro TV. They're the,
+
+00:01:42.610 --> 00:01:45.790
+by just by far the best
+learning platform out there,
+
+00:01:46.030 --> 00:01:49.990
+I use it pro TV to keep myself up to
+date on all the new technologies and just
+
+00:01:49.990 --> 00:01:52.070
+to learn new stuff, wherever
+you're at in your it journey.
+
+00:01:52.140 --> 00:01:55.310
+They have you covered from foundational
+skills. If you jump in there real quick,
+
+00:01:55.420 --> 00:01:57.750
+dude, check this out. That's
+pretty slick. So it fundamentals.
+
+00:01:57.800 --> 00:02:00.710
+Stick your toe in the water of it.
+Then build up some Linux skills,
+
+00:02:00.710 --> 00:02:05.340
+routing and switching customer
+service mean, dude, this is so cool.
+
+00:02:05.400 --> 00:02:07.740
+So for those of you who ask me,
+Hey, how do I get started in it?
+
+00:02:08.320 --> 00:02:09.820
+Follow this stinking path right here.
+
+00:02:09.820 --> 00:02:11.860
+Because not only will you
+get to learn a ton of stuff,
+
+00:02:11.860 --> 00:02:15.020
+but you're doing things hands on. They
+have hands on labs built into this,
+
+00:02:15.020 --> 00:02:18.060
+which is really handy when you go for
+the more advanced things like, uh,
+
+00:02:18.100 --> 00:02:18.933
+I don't know, Python,
+
+00:02:19.400 --> 00:02:21.460
+if you wanna learn more Python
+than what I'm showing you here,
+
+00:02:21.460 --> 00:02:25.330
+they have a ton of stuff. Python
+or networking, Python for security,
+
+00:02:25.420 --> 00:02:29.010
+where to go. Yeah. Right here. And pretty
+much anything you want to learn in it.
+
+00:02:29.110 --> 00:02:31.250
+So if you're ready to take
+your it career seriously,
+
+00:02:31.250 --> 00:02:35.290
+and you wanna learn it like me, check it
+out. Link below, use the code network,
+
+00:02:35.300 --> 00:02:39.930
+Chuck, and you'll get 30% off Forever.
+
+00:02:40.630 --> 00:02:45.000
+So do it now anyways back learning
+Python. Okay. Let's get started.
+
+00:02:45.020 --> 00:02:48.800
+So if you haven't already opened up
+a lab for Python episode six day one,
+
+00:02:48.860 --> 00:02:50.520
+and you're like, I don't
+know where that is.
+
+00:02:50.630 --> 00:02:54.240
+Well then check the link below and get
+signed up, man. Come on. It's free now.
+
+00:02:54.240 --> 00:02:54.700
+So far,
+
+00:02:54.700 --> 00:02:58.960
+our robot barista bouncer is doing a
+fantastic job and we did a great job in
+
+00:02:59.080 --> 00:03:03.240
+telling him how to do a great job because
+in the last few videos we said, Hey,
+
+00:03:03.530 --> 00:03:07.120
+let's do some if statements to figure
+out and filter through the evil bends.
+
+00:03:07.140 --> 00:03:10.920
+If their name is Ben and they are
+evil, cuz not all Bens are evil.
+
+00:03:11.160 --> 00:03:14.760
+Remember they can come in. But now, now
+we got a different problem. Don't we?
+
+00:03:15.230 --> 00:03:19.310
+Because evil, Patricia is on
+the scene are her robot barista.
+
+00:03:19.310 --> 00:03:22.230
+Bouncer is not prepared to prevent
+evil Patricia from coming in.
+
+00:03:22.450 --> 00:03:24.750
+So we gotta change that right
+now. So if we look at our code,
+
+00:03:24.750 --> 00:03:28.790
+we can see that we're already saying,
+Hey, if the variable name is equal to Ben,
+
+00:03:28.810 --> 00:03:33.310
+if that evaluates too true, then
+kick him out. Or also if he's evil,
+
+00:03:34.010 --> 00:03:37.750
+but now we have to evaluate, Hey,
+not only does name have to equal Ben.
+
+00:03:37.810 --> 00:03:42.740
+It also could Patricia then kick
+her out too, to do that new concept,
+
+00:03:42.920 --> 00:03:46.540
+tie something called logical
+operators and watch this.
+
+00:03:46.540 --> 00:03:49.820
+This is pure magic and it's so
+simple, too elegant over here.
+
+00:03:49.820 --> 00:03:51.140
+Let's go ahead and do this
+together where it says,
+
+00:03:51.140 --> 00:03:54.460
+if name equals Ben right before our colon,
+
+00:03:54.750 --> 00:03:58.380
+let's get a space and then
+we'll put in this type in or,
+
+00:03:59.240 --> 00:04:04.170
+or check that out as we finish
+that R it changed colors and now we
+
+00:04:04.170 --> 00:04:09.130
+can type in name equals
+the string. Patricia.
+
+00:04:10.310 --> 00:04:13.210
+Ooh, powerful. Right? With one simple.
+
+00:04:13.510 --> 00:04:15.810
+If statement we're evaluating,
+
+00:04:15.870 --> 00:04:20.320
+if one thing is true or something
+else is true. If Ben comes in,
+
+00:04:20.630 --> 00:04:24.800
+dude, this is true. If Patricia
+comes in, dude, this is true.
+
+00:04:25.060 --> 00:04:28.440
+And now we have the power to kick
+Patricia out. Let's test it out.
+
+00:04:28.440 --> 00:04:30.960
+Let's run our code. Click
+on run. What's your name?
+
+00:04:31.090 --> 00:04:35.520
+Let's test our code real quick. Let's
+say our name is Ben. Ben. I'm evil. Ben.
+
+00:04:36.340 --> 00:04:38.240
+I'm not welcome here. Get
+out. Let's run it again.
+
+00:04:38.330 --> 00:04:42.190
+Let's test an average person like
+camera. Cameron's a good guy, right? Oh,
+
+00:04:42.190 --> 00:04:45.550
+Cameron came right in. But now let
+me stop that script. The beard thing.
+
+00:04:45.550 --> 00:04:47.550
+We'll we'll talk about that here
+in a bit. Let's run it again.
+
+00:04:47.980 --> 00:04:52.310
+This time we are evil Patricia. So
+my name's Patricia, are you evil?
+
+00:04:53.300 --> 00:04:56.910
+Yeah, we got it. And again,
+
+00:04:56.910 --> 00:05:00.630
+this is so cool because we don't have
+to have name equal both Ben and Patricia
+
+00:05:00.770 --> 00:05:03.620
+and know it can be either
+or so powerful man.
+
+00:05:03.680 --> 00:05:06.220
+So many use cases and I may have
+noticed, and this is kind of annoying.
+
+00:05:06.250 --> 00:05:09.980
+It's annoying to me anyway, uh, here
+in our print message. We're like,
+
+00:05:10.200 --> 00:05:13.540
+you're not welcome here,
+Ben, but that was Patricia.
+
+00:05:13.780 --> 00:05:16.580
+Patricia at this point is super
+confused. Like I'm not Ben. I am evil.
+
+00:05:16.660 --> 00:05:17.940
+I am Patricia, but I'm not Ben.
+
+00:05:18.040 --> 00:05:21.220
+So real quick use your skills that you've
+learned so far in this course and fix
+
+00:05:21.220 --> 00:05:25.010
+that for me real quick,
+pause and UN pause.
+
+00:05:25.020 --> 00:05:27.930
+Let's fix super simple. Right? If you
+watched all the previous episodes,
+
+00:05:27.930 --> 00:05:30.290
+we basically have to do what we're
+doing here in our L statement.
+
+00:05:30.290 --> 00:05:34.210
+We have to use the name variable and
+connate that with our print statement.
+
+00:05:34.210 --> 00:05:36.890
+So I'll do that real quick.
+Instead of putting Ben right here,
+
+00:05:36.940 --> 00:05:38.050
+we're gonna move all that right there.
+
+00:05:38.440 --> 00:05:40.930
+I'll make that first part of
+string on its own. And I'll say,
+
+00:05:40.930 --> 00:05:45.760
+plus the variable in name, but should be
+Patricia or Ben plus the other string.
+
+00:05:45.770 --> 00:05:49.080
+We're concatenating, all kinds of stuff
+all over the place. Five Ben, Patricia,
+
+00:05:49.540 --> 00:05:52.880
+and we'll yell at her. Get out of
+here. Good work. Let's try it out. Oh,
+
+00:05:52.880 --> 00:05:57.640
+forgot my closing pro on
+the print statement. There
+we go. Run. I am Patricia.
+
+00:05:59.080 --> 00:06:03.440
+I am indeed evil. I was like, wait,
+what? Why does he Patricia twice?
+
+00:06:03.720 --> 00:06:04.680
+I just realized what I did here.
+
+00:06:05.220 --> 00:06:09.160
+That's what happens when you try to
+teach and type. Now let me run that.
+
+00:06:09.670 --> 00:06:11.680
+That was weird. Perfect. That works now.
+
+00:06:11.860 --> 00:06:16.280
+So we cover the logical operator or
+super powerful, but not the only one.
+
+00:06:16.280 --> 00:06:19.070
+And it's a good thing because we have
+another case we have to look at here.
+
+00:06:19.070 --> 00:06:21.910
+Another requirement for our robot,
+barista bouncer. The other day,
+
+00:06:21.910 --> 00:06:24.550
+I was watching Lokey on Disney.
+Plus you ever seen it? It's amazing.
+
+00:06:24.730 --> 00:06:26.990
+And in watching that show,
+I realized that being evil,
+
+00:06:27.040 --> 00:06:30.710
+isn't black and white look because Lokey
+does bad things. He certainly is evil,
+
+00:06:30.710 --> 00:06:34.950
+but he also does good things, which
+that reminds me Lokey is totally evil.
+
+00:06:35.090 --> 00:06:38.740
+So if Lokey ever comes to our coffee
+shop real quick challenge for you.
+
+00:06:39.630 --> 00:06:42.540
+Let's make sure Lokey
+that's a different color.
+
+00:06:42.910 --> 00:06:45.940
+Let's make sure Lokey can't come in. Can
+you add that to our script? Real quick,
+
+00:06:46.150 --> 00:06:51.060
+pause the video. See what you got. UN
+pause. I'm gonna add it real quick.
+
+00:06:51.370 --> 00:06:55.740
+This is what you would do.
+Ben or Patricia or? Yeah,
+
+00:06:55.740 --> 00:06:59.130
+you could do another or three or, or no,
+that's only two, two ORs. I can count.
+
+00:06:59.130 --> 00:07:02.810
+I promise name equals Lokey.
+Let's try that out real quick.
+
+00:07:03.460 --> 00:07:08.370
+Lokey comes in. Yeah. He's evil. Got
+it. Okay, cool. So back to my story.
+
+00:07:08.670 --> 00:07:09.970
+Yes. Lokey is evil,
+
+00:07:10.110 --> 00:07:13.090
+but sometimes he does good things
+and I want to account for that.
+
+00:07:13.170 --> 00:07:15.410
+I wanna factor that in. So
+essentially here's what I want.
+
+00:07:15.410 --> 00:07:17.410
+We're gonna make this super
+complicated cuz we have to we're it.
+
+00:07:17.410 --> 00:07:21.800
+People here know I want, if Ben comes
+in and Ben is evil, he answers. Yes.
+
+00:07:21.900 --> 00:07:25.520
+And let's say if he's done four or more
+good deeds that day he can come in.
+
+00:07:25.520 --> 00:07:28.560
+Even if he is evil. So
+how would we do that now?
+
+00:07:28.560 --> 00:07:29.960
+I know things are getting a bit confusing.
+
+00:07:30.140 --> 00:07:34.120
+That's why we're going to flow chart
+mode. Here we go. Flow charts. Dun dun,
+
+00:07:34.140 --> 00:07:35.760
+dun. It's not scary at all.
+
+00:07:35.780 --> 00:07:38.320
+So here is the logical view of
+what we're doing in our script.
+
+00:07:38.550 --> 00:07:42.310
+What's your name is your name? Ben.
+Patricia. And also Lokey. Let me add that.
+
+00:07:42.490 --> 00:07:45.590
+If the answer is no, then come
+on in. If the answer is yes,
+
+00:07:45.720 --> 00:07:50.710
+let's make sure you're not evil. Are
+you evil? No. Come on in. Yes. Get out.
+
+00:07:50.850 --> 00:07:53.230
+But now we wanna say with our new logic,
+
+00:07:53.490 --> 00:07:57.790
+how many good deeds have you done today?
+If less than four, get outta here.
+
+00:07:57.850 --> 00:08:02.060
+You're still evil. But if you've done
+four or more good deeds, then Hey,
+
+00:08:02.410 --> 00:08:06.620
+come on in. I can work with that.
+I love me some anti heroes. Yeah.
+
+00:08:06.960 --> 00:08:09.540
+Now this should be a fun one because
+you can do this in probably a million
+
+00:08:09.540 --> 00:08:10.280
+different ways,
+
+00:08:10.280 --> 00:08:13.860
+but I wanna challenge you to use
+logical operators to make this happen.
+
+00:08:14.100 --> 00:08:17.340
+I remember so far we've already
+covered the or logical operator and,
+
+00:08:17.340 --> 00:08:19.220
+but let me introduce a new
+one to, for you real quick.
+
+00:08:19.220 --> 00:08:20.850
+And I'm not gonna tell you how to use it.
+
+00:08:20.850 --> 00:08:23.010
+Cause I think it's kind of intuitive
+and I want you to try it out.
+
+00:08:23.010 --> 00:08:25.410
+Just mess with it and
+break it. Another one is,
+
+00:08:26.230 --> 00:08:30.570
+and I want you to try and use
+the and logical operator. Oh,
+
+00:08:30.570 --> 00:08:31.350
+and also let me do this.
+
+00:08:31.350 --> 00:08:35.610
+I'm gonna put you into a tighter box on
+what you can do. Only change this one.
+
+00:08:35.990 --> 00:08:40.010
+If statement to make this
+happen. Only that one. Okay.
+
+00:08:40.500 --> 00:08:45.010
+For go pause me and see
+what you got. UN pause.
+
+00:08:45.460 --> 00:08:47.330
+Let's work through this real
+quick. So here at our task,
+
+00:08:47.330 --> 00:08:49.370
+we pretty much have two things
+we have to accomplish. First.
+
+00:08:49.470 --> 00:08:52.010
+We have to find out, Hey, how
+many good deeds have Lokey,
+
+00:08:52.170 --> 00:08:54.930
+Patricia or Ben completed today?
+And just like their Eagle status.
+
+00:08:55.140 --> 00:08:58.560
+All we have to do is just ask them
+because why would they lie about that?
+
+00:08:58.820 --> 00:09:01.600
+Duh man, they're they're not
+crazy. They're just evil.
+
+00:09:01.980 --> 00:09:06.040
+So just under evil status,
+we'll set a new variable.
+
+00:09:06.210 --> 00:09:10.560
+We'll call it good underscore deeds
+and we'll have that equal and input
+
+00:09:12.060 --> 00:09:13.200
+cuz we're gonna ask them, Hey,
+
+00:09:13.660 --> 00:09:17.790
+how many good deeds have you done today?
+
+00:09:18.250 --> 00:09:20.830
+And we'll do a little back
+slash and end to make it pretty,
+
+00:09:21.010 --> 00:09:24.470
+put some space there, but hold up
+quick quiz. This ain't gonna work.
+
+00:09:24.470 --> 00:09:27.670
+And why and yeah, I did say ain't
+it's okay. Why won't this work?
+
+00:09:28.580 --> 00:09:31.870
+It's because again, the input
+function will use a string by default.
+
+00:09:31.870 --> 00:09:33.110
+We have to convert that to an integer.
+
+00:09:33.110 --> 00:09:36.780
+So we'll just wrap that little
+input by function there with an
+
+00:09:38.370 --> 00:09:40.460
+integer function around it. Perfect.
+
+00:09:40.720 --> 00:09:43.660
+So now how many good deeds they have
+done will be stored any good deeds
+
+00:09:43.860 --> 00:09:45.620
+variable. So now for the
+second part of this task,
+
+00:09:46.440 --> 00:09:48.700
+we need to add some logic
+here. So let's get to our,
+
+00:09:48.700 --> 00:09:51.580
+if statement over here and make some
+changes. So just after this, yes,
+
+00:09:52.160 --> 00:09:55.020
+I'm gonna put a new operator in. We
+just talked about it. It's going to be,
+
+00:09:55.080 --> 00:09:58.930
+and so I'll go a and D color change.
+We know something's happening,
+
+00:09:58.960 --> 00:10:01.090
+magic's happening hit space.
+
+00:10:01.270 --> 00:10:05.250
+And I'll see if Eagle status
+is yes and good deeds.
+
+00:10:05.550 --> 00:10:09.730
+And I'll use one of our comparison
+operators less than four.
+
+00:10:09.920 --> 00:10:11.810
+That should do it. Yeah. I think
+you should do it. So check it out.
+
+00:10:11.810 --> 00:10:13.290
+Here's what's happening in order for this,
+
+00:10:13.290 --> 00:10:18.280
+if statement to evaluate to
+true both the evil status must
+
+00:10:18.380 --> 00:10:23.200
+be yes. And their good deeds
+must be less than four.
+
+00:10:23.340 --> 00:10:26.160
+So if they're evil and they've
+only done two good deeds, then bam,
+
+00:10:26.630 --> 00:10:30.680
+this statement's true. And will print,
+get your stinking, hide it outta here.
+
+00:10:30.680 --> 00:10:33.560
+You're not welcome. You're two evil
+for this place, this establishment.
+
+00:10:33.620 --> 00:10:35.720
+And that's what the and
+operator does for us.
+
+00:10:35.720 --> 00:10:40.630
+It's not just saying this or this either
+could be true saying both of these
+
+00:10:40.630 --> 00:10:43.310
+suckers have to be true in
+order for us to continue.
+
+00:10:43.730 --> 00:10:47.190
+So let's try it out real quick. Run
+this time. I'm just gonna be a lowkey.
+
+00:10:47.330 --> 00:10:50.550
+Why not? I'm lowkey am
+my evil. Of course. Yes.
+
+00:10:51.330 --> 00:10:55.070
+But how many good deeds have I done
+today? Let's say we've we've been good.
+
+00:10:55.330 --> 00:11:00.300
+We did seven good deeds
+today. We made it in. Yeah,
+
+00:11:00.300 --> 00:11:03.300
+we were evil, but Hey, we made up
+for it. That's how that works. Right?
+
+00:11:03.540 --> 00:11:05.500
+I don't know. Probably not,
+
+00:11:05.600 --> 00:11:08.380
+but now I'll see what happens if we didn't
+do enough. Good deeds. Let's run it.
+
+00:11:08.560 --> 00:11:12.460
+What's my name. I am Patricia.
+Am I evil? Of course I am.
+
+00:11:12.520 --> 00:11:16.460
+How many good deeds I've only done two
+good deeds today. I now welcome here.
+
+00:11:16.690 --> 00:11:19.810
+Less than four D who man,
+take yourself a coffee break.
+
+00:11:19.830 --> 00:11:21.770
+Cuz right now with the power of Python,
+
+00:11:22.430 --> 00:11:25.770
+we saw the problem of evil
+kind of, we didn't solve it.
+
+00:11:25.770 --> 00:11:29.610
+We were able to detect if evil people
+are walking into our coffee shop and now
+
+00:11:29.610 --> 00:11:32.450
+our robot bar a bouncer is doing
+a killer job, but also real quick,
+
+00:11:32.570 --> 00:11:35.530
+I kind of have a, a brain
+breaking scenario here. It's
+gonna hurt a little bit.
+
+00:11:35.790 --> 00:11:39.320
+So we covered the or
+logical operator and the,
+
+00:11:39.380 --> 00:11:43.080
+and logical operator. But there's another
+one that I don't really use often,
+
+00:11:43.620 --> 00:11:44.300
+but it's there.
+
+00:11:44.300 --> 00:11:47.040
+But I think it's worth mentioning cuz
+it'll help you understand if statements
+
+00:11:47.040 --> 00:11:51.520
+even more. And this is the not
+operator now to talk about this,
+
+00:11:51.520 --> 00:11:53.960
+let's go ahead and launch
+lab two for this episode,
+
+00:11:53.960 --> 00:11:56.560
+episode six and we got a bit
+of a clean slate here and here.
+
+00:11:56.570 --> 00:11:59.920
+We're gonna use the same logic as before.
+If Ben comes in, don't let him in.
+
+00:11:59.940 --> 00:12:02.400
+And we strip things down. It's very
+simple here so I can illustrate this.
+
+00:12:02.620 --> 00:12:07.400
+My pen. Sorry, evil. Ben strikes
+again. That rhymed a lot anyways.
+
+00:12:07.400 --> 00:12:09.920
+And I'll just run the code just to
+make sure it works. What's your name?
+
+00:12:09.920 --> 00:12:12.280
+My name is Ben. Get
+outta here. Very simple.
+
+00:12:13.210 --> 00:12:16.510
+Now I wanna do something with
+our not logical operator.
+
+00:12:16.730 --> 00:12:20.790
+I'm gonna throw 'em in right here.
+Let's try it out. This is so weird.
+
+00:12:20.970 --> 00:12:25.030
+It really is. If not
+notice that change color.
+
+00:12:25.030 --> 00:12:29.030
+It's a real logical operator. If not
+name equals Ben, what's gonna happen.
+
+00:12:29.300 --> 00:12:33.580
+Well only one way to find out, right? And
+also guess what you think will happen.
+
+00:12:34.060 --> 00:12:35.780
+Positive video. Think about
+it. I'm not gonna wait for you.
+
+00:12:35.780 --> 00:12:38.780
+Let's run the code right now. Run.
+What's your name? Let's try Ben.
+
+00:12:39.130 --> 00:12:43.260
+Come on in what just happened?
+Well with our, if statement,
+
+00:12:43.570 --> 00:12:48.180
+what we're saying is if the name
+doesn't equal, Ben, then do this.
+
+00:12:48.480 --> 00:12:50.500
+If it does equal Ben, then do this.
+
+00:12:50.520 --> 00:12:53.300
+So we just basically did the opposite
+of what our original statement said.
+
+00:12:53.670 --> 00:12:58.410
+If net equals bend, do this. Now we're
+saying if name not equal, Ben do this.
+
+00:12:58.910 --> 00:13:01.370
+Now, if that broke your
+brain a bit, me too,
+
+00:13:01.370 --> 00:13:05.410
+because even now I have to sit here and
+go, wait, wait, if not, okay, I got it.
+
+00:13:05.410 --> 00:13:06.290
+Now it takes a bit right?
+
+00:13:06.310 --> 00:13:10.250
+And I think it might help if we talk
+about bulls to make it make more sense.
+
+00:13:10.590 --> 00:13:11.810
+Let me explain this whole time.
+
+00:13:11.810 --> 00:13:15.120
+When I've been talking about controlling
+the flow of bar Python programming,
+
+00:13:15.330 --> 00:13:16.720
+we've been dealing with
+if statements, right?
+
+00:13:16.720 --> 00:13:21.200
+We'll say if whatever this junk is
+evaluates to, what do we say? True.
+
+00:13:21.420 --> 00:13:24.200
+Do something. If the statement's
+false, do something else.
+
+00:13:24.210 --> 00:13:28.200
+These two bits of data here
+true and false are what we call
+
+00:13:28.990 --> 00:13:31.280
+boos, which I don't know
+why, but when I say boos,
+
+00:13:31.280 --> 00:13:33.600
+it makes me hungry and I really
+don't have a reason anyways.
+
+00:13:34.080 --> 00:13:37.910
+So I'm probably gonna eat after this
+video. And boos is actually a data type.
+
+00:13:37.910 --> 00:13:39.390
+So let's play with them
+for a second. Let's do it.
+
+00:13:39.390 --> 00:13:41.550
+So right here in our terminal
+here, I'm gonna clear my stuff out.
+
+00:13:41.610 --> 00:13:44.830
+Did you know that we can actually just
+type stuff in our terminal and do Python
+
+00:13:45.210 --> 00:13:47.590
+in real time? So do this. I
+want you to set a new variable,
+
+00:13:47.930 --> 00:13:51.270
+say the variable me and have
+that equal your name. So for me,
+
+00:13:51.270 --> 00:13:54.790
+it'll be network check the string
+network. Check for you. It'll be Bob or,
+
+00:13:55.280 --> 00:13:59.580
+or Ben, sorry, Ben. I set that
+variable. Bam. So right now,
+
+00:13:59.580 --> 00:14:00.280
+while we're in this terminal,
+
+00:14:00.280 --> 00:14:02.460
+in the context of just being
+here before we reset it,
+
+00:14:02.460 --> 00:14:05.780
+that's where the variable
+equals me is you. Huh?
+
+00:14:05.800 --> 00:14:08.900
+So if I call that variable just by
+typing in me, it calls network. Chuck.
+
+00:14:09.000 --> 00:14:13.260
+Now try this type in me and then
+do double equal sign equals equals
+
+00:14:13.880 --> 00:14:16.650
+do a space and let's do the
+ring of your name network,
+
+00:14:16.650 --> 00:14:19.050
+Chuck that we just did before.
+So the same exact thing before,
+
+00:14:19.050 --> 00:14:20.490
+but we have one extra equal sign.
+
+00:14:20.880 --> 00:14:24.490
+What do you think will be the output
+here it out. True. How cool is that?
+
+00:14:24.490 --> 00:14:28.290
+Because the double equal sign is
+evaluating. If something is true or false.
+
+00:14:28.510 --> 00:14:31.370
+And we said, Hey, does
+me equal network Chuck?
+
+00:14:31.750 --> 00:14:35.530
+And because we just said it there, it
+totally does what happened. My voice just,
+
+00:14:35.570 --> 00:14:37.400
+I don't don't know what
+happened now let's try this.
+
+00:14:37.560 --> 00:14:40.120
+I want you to print the
+type of that data. Now this,
+
+00:14:40.580 --> 00:14:43.000
+if you recall back from one of
+our earlier episodes, we did that.
+
+00:14:43.210 --> 00:14:46.960
+Let's try it real quick here.
+I'll say print parentheses type.
+
+00:14:47.850 --> 00:14:48.800
+We're printing our type function.
+
+00:14:48.910 --> 00:14:52.880
+Parentheses me equal equals network.
+
+00:14:53.130 --> 00:14:56.680
+Chuck I'll close out my string of the
+quote then parenty and I think I need one
+
+00:14:56.680 --> 00:14:58.960
+more parentheses. Yes. Okay,
+cool. So we're all good.
+
+00:14:59.150 --> 00:15:01.600
+When I print the type of
+that data, check this out.
+
+00:15:02.840 --> 00:15:05.360
+A new data class and earlier
+episodes, we saw strings,
+
+00:15:05.360 --> 00:15:08.000
+we saw integers and we saw floating
+point numbers and all kinds of stuff.
+
+00:15:08.160 --> 00:15:12.150
+I think, think just those three. Now
+we have the Julian true or false.
+
+00:15:12.490 --> 00:15:15.230
+And that's the data type we're working
+with when we're dealing with lot of
+
+00:15:15.230 --> 00:15:18.470
+widths. I just said if statements,
+so now one more thing, try this.
+
+00:15:19.150 --> 00:15:21.030
+I want you to do me once more.
+
+00:15:21.040 --> 00:15:25.830
+We'll do our equals equals our
+comparison operator and compare that to a
+
+00:15:25.830 --> 00:15:29.270
+false thing. I'll do Nick. I'll do one
+for you, Nick. Like Nick, I'm not Nick.
+
+00:15:29.490 --> 00:15:32.780
+So when I run that is pairing the
+me variable to Nick and saying, Hey,
+
+00:15:33.000 --> 00:15:36.660
+is this me variable equal Nick,
+it should return false. Right?
+
+00:15:37.280 --> 00:15:40.980
+And it certainly does. That's a false
+statement, but now let's break your brain,
+
+00:15:41.120 --> 00:15:45.460
+hit the up arrow and bring that up again.
+Put that knot operator in front of it.
+
+00:15:45.460 --> 00:15:49.900
+That not logical operator, not me
+equals Nick. What will that evaluate to?
+
+00:15:49.910 --> 00:15:54.850
+Let's try it out. True. It's not, it's
+just a better way to understand it.
+
+00:15:54.850 --> 00:15:56.250
+Play with it, play
+around with things here.
+
+00:15:56.250 --> 00:15:59.730
+The reason this evaluated to true is
+we're saying, Hey, is this statement true?
+
+00:16:00.350 --> 00:16:03.290
+Is me not equal to Nick? It's
+kinda like you saying, Hey,
+
+00:16:03.850 --> 00:16:07.970
+I don't not want coffee. Right? That's
+kinda, that's kinda what it is in Python.
+
+00:16:08.230 --> 00:16:10.450
+Not me equals Nick. Not
+one more quick, fun thing.
+
+00:16:10.450 --> 00:16:11.930
+Last thing I promise here in our script,
+
+00:16:12.280 --> 00:16:16.120
+I use the knot to basically do the
+opposite. Is the name not equal to Ben?
+
+00:16:16.120 --> 00:16:18.560
+There's actually another way to do
+it. And a more common way to do it.
+
+00:16:18.830 --> 00:16:22.600
+It's actually something I use more
+often take the knot away, no more knots.
+
+00:16:22.660 --> 00:16:24.760
+And let's work with our
+comparison operator,
+
+00:16:24.760 --> 00:16:28.920
+remove your equals and let's
+do exclamation point equal.
+
+00:16:28.950 --> 00:16:32.240
+Sign that right there. Pretty much
+accomplishments. The same thing.
+
+00:16:32.570 --> 00:16:33.830
+We just use a logical operator.
+
+00:16:33.850 --> 00:16:35.910
+Now we're using a comparison
+operator to do the same thing.
+
+00:16:36.220 --> 00:16:40.510
+This means not equals. If name does not
+equal Ben, then that makes more sense.
+
+00:16:40.510 --> 00:16:43.710
+Right? I feel like if saying, if not
+name, that's like speaking pig Latin,
+
+00:16:43.810 --> 00:16:47.070
+but if we run it again, it does the
+same thing as not right. Who, okay,
+
+00:16:47.370 --> 00:16:48.170
+one more coffee break.
+
+00:16:48.170 --> 00:16:51.430
+Cuz that was crazy because now don't
+you just feel more powerful in Python
+
+00:16:51.660 --> 00:16:55.140
+because now you can control the
+flow of your programming comparison,
+
+00:16:55.330 --> 00:16:59.380
+logical conditional operators to just
+do all kinds of stuff and don't stop
+
+00:16:59.380 --> 00:16:59.880
+there.
+
+00:16:59.880 --> 00:17:03.940
+I'm gonna have in the link below some
+challenge labs for you to complete and
+
+00:17:03.940 --> 00:17:07.500
+accomplish because honestly with Python
+and programming and anything in it,
+
+00:17:07.500 --> 00:17:10.700
+pretty much anything in life
+repetition will help you get there.
+
+00:17:10.750 --> 00:17:13.460
+It'll cement those ideas
+into your brain before law.
+
+00:17:13.590 --> 00:17:16.170
+I'm gonna be coding like a wizard
+anyways. That's episode six.
+
+00:17:16.170 --> 00:17:20.170
+That's all I got massive. Shout out to
+it. Pro TV, the sponsor of this video,
+
+00:17:20.510 --> 00:17:23.090
+the series. The other reason,
+this is free on YouTube here.
+
+00:17:23.110 --> 00:17:24.330
+So if you haven't already check them out,
+
+00:17:24.330 --> 00:17:28.610
+if you wanna study it like me and
+get 30% off forever use code network,
+
+00:17:28.610 --> 00:17:32.170
+Chuck and also, Hey, have you
+hacked the YouTube algorithm today?
+
+00:17:32.170 --> 00:17:35.520
+Just make sure you do at that like
+button bell comment. Subscribe.
+
+00:17:35.940 --> 00:17:39.360
+You gotta hack YouTube today.
+Ethically of course. And yeah,
+
+00:17:39.360 --> 00:17:42.120
+that's really all I got. I'll
+catch you guys next time.
+
