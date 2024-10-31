@@ -48,14 +48,20 @@ class VideoSummarizer:
         print(self.user_prompt.format(title=video.title, transcript=video.transcript))
         print(video)
         response = self.client.generate_content(self.user_prompt.format(title=video.title, transcript=video.transcript))
-
-        if hasattr(response, 'text') and response.text is not None:
-            summary = response.text
-            print(f"Summary for {video.title}: {summary}")
-        else:
-            # Handle case when no valid Part is returned
-            print(f"No valid summary returned for {video.title}. Reason: {response.get('finish_reason', 'Unknown')}")
-            summary = "No valid summary."
+        try:
+            if hasattr(response, 'text') and response.text is not None:
+                summary = response.text
+                print(f"Summary for {video.title}: {summary}")
+            else:
+                # Log when there's no valid part or summary text
+                finish_reason = getattr(response, 'finish_reason', 'Unknown')
+                print(f"No valid summary returned for {video.title}. Reason: {finish_reason}")
+                summary = f"No valid summary returned for {video.title}. Reason: {finish_reason}"
+        except ValueError as e:
+            print(f"ValueError encountered for {video.title}: {e}")
+        except Exception as e:
+            print(f"Unexpected error for {video.title}: {e}")
+ 
 
         #summary = response.text
 
