@@ -44,11 +44,14 @@ class VideoSummarizer:
         
     def summarize(self, video: Video):
         start_time = time.time()
-        response = self.client.generate_content(self.user_prompt)
+        print("#######################################")
+        print(self.user_prompt)
+
+        response = self.client.generate_content(self.user_prompt.format(title=video.title, transcript=video.transcript))
+
         summary = response.text
+        
         print(response.usage_metadata)
-
-
         end_time = time.time()
         summary_time = end_time - start_time 
         note_filename = self.notes_path + "\\" + video.title + ".txt" 

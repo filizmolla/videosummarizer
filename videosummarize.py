@@ -9,7 +9,7 @@ def summarize(video):
     summarizer=VideoSummarizer(video)
     summarizer.start()
 
-v = Video(url="https://www.youtube.com/watch?v=dcLzmcaDPL8")
+v = Video(url="https://www.youtube.com/watch?v=gd7BXuUQ91w")
 summarize(v)
 print(v)
 for field, value in v.__dict__.items():
