@@ -139,7 +139,7 @@ class VideoTranscriber:
                 cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
                 
                 return cleaned_text
-    
+            start_time = time.time()    
             # if the video has human subtitles skip the transcribing part. 
             for lang in languages:
                 subtitle_name = f"{video.title}.{lang}.vtt"
@@ -153,13 +153,23 @@ class VideoTranscriber:
                         transcript = clean_subtitles(raw_subtitles)
                         video.transcript = transcript     
                     self.save_transcript(video, video.transcript)
+                    end_time = time.time()
+                    transcribing_time = end_time - start_time
                     video.transcript_from = "from_subtitles"
+                    start_time, end_time = self.format_time(start_time, end_time)
+                    video.transcribing_start_date = start_time
+                    video.transcribing_end_date = end_time 
+                    video.transcribing_time = transcribing_time
                     return video
                 else:
                     print(f"Video subtitles with {subtitle_file} does not exist.")
             print("Video does not have subtitles with the languages selected!")
             self.transcribe_video(self.video)
             return video
+        
+
+
+
 
         def format_time(self, start_time, end_time):
             start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
@@ -186,12 +196,12 @@ class VideoTranscriber:
             result = model.transcribe(self.audio_download_directory + "\\" + video.title_with_ext)
             transcript_text = result['text']
             end_time = time.time() 
-            download_time = end_time - start_time
-            print(f"\nTranscribing completed in {download_time:.2f} seconds.")
+            transcribing_time = end_time - start_time
+            print(f"\nTranscribing completed in {transcribing_time:.2f} seconds.")
             start_time, end_time = self.format_time(start_time, end_time)
             video.transcribing_start_date = start_time
             video.transcribing_end_date = end_time 
-            video.transcribing_time = download_time
+            video.transcribing_time = transcribing_time
             self.save_transcript(video, transcript_text)
             video.transcript_from = "whisper"
             return transcript_text

@@ -49,7 +49,12 @@ class VideoSummarizer:
         print(self.user_prompt.format(title=video.title, transcript=video.transcript))
         print(video)
         
-        response = self.client.generate_content(self.user_prompt.format(title=video.title, transcript=video.transcript))
+        prompt = self.user_prompt.format(title=video.title, transcript=video.transcript)
+        response = self.client.generate_content(prompt)
+        word, char, token = self.get_text_information(prompt)
+        video.transcript_word_count = word # video.prompt_word_count? 
+        video.transcript_character_count = char 
+        video.transcript_token_count = token
 
         summary = ""
         try:
@@ -80,9 +85,13 @@ class VideoSummarizer:
         s.gpt_model_name = self.model_name
         gpt_info = genai.get_model(f"models/{self.model_name}") 
         s.gpt_information = json.dumps(gpt_info.__dict__)
-        s.gpt_input_token_count = gpt_info.input_token_limit
+        s.gpt_input_token_count = gpt_info.input_token_limit # not that necessary?
         s.gpt_output_token_count = gpt_info.output_token_limit
-       
+        word, char, token = self.get_text_information(summary)
+        s.summary_word_count = word 
+        s.summary_char_count = char
+        s.summary_token_count = token 
+
         start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
         s.summary_start_date = PyDateTime.strptime(start_time_str, '%Y-%m-%d %H:%M:%S')
         end_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(end_time))
@@ -91,8 +100,14 @@ class VideoSummarizer:
         video.summaries.append(s)
         video.is_summarized = True
         video.status = "Done."
-        
         return summary
+    
+    def get_text_information(self,text):
+        word_count = len(text.split())
+        char_count = len(text)
+        ct = self.client.count_tokens(text)
+        token_count = ct.total_tokens
+        return word_count, char_count, token_count
 
     def save_summary(self, summary_text, note_filename):
         with open(note_filename, "w", encoding="utf-8") as file: 
