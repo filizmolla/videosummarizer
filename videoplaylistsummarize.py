@@ -46,7 +46,7 @@ def get_videos_from_url(url):
         print("No valid playlist ID found in the URL.")
         return []
 
-def summarize_playlist(playlist_url):
+def get_video_list_formatted_from_url(playlist_url):
     videos = get_videos_from_url(playlist_url)
     vl_str = []
     for video in videos:
@@ -62,6 +62,10 @@ def summarize_playlist(playlist_url):
         print(v.playlist_id)
         print(v.playlist_order)
         print(v.is_in_playlist)
+    return vl
+
+def summarize_playlist(playlist_url):
+    vl = get_video_list_formatted_from_url(playlist_url)
     summarize_video_list(vl)
 
 if __name__ == "__main__":
