@@ -33,13 +33,10 @@ def clean_subtitles(subtitle_text):
     # Remove HTML entities like &nbsp;
     cleaned_text = re.sub(r'&nbsp;', ' ', cleaned_text)
 
-    # Replace multiple spaces with a single space and strip leading/trailing spaces
-    cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
-    
     return cleaned_text
 
 
-def download_human_subtitles(video_url, languages=['en', 'tr']):
+def download_human_subtitles(video_url, languages=['en']):
     """
     Download human-generated subtitles from a YouTube video and return the cleaned text.
 
@@ -56,20 +53,26 @@ def download_human_subtitles(video_url, languages=['en', 'tr']):
         'subtitlesformat': 'vtt',           # Set subtitle format to .vtt
         'skip_download': False,              # Download the audio
         'format': 'm4a/bestaudio/best',
-        'writeautomaticsub': False,         # Do not download auto-generated subtitles
+        'writeautomaticsub': True,         # Do not download auto-generated subtitles
         'outtmpl': {
             'default': 'audio_downloaded.%(ext)s',    # Name for audio file
             'subtitle':  '%(title)s.%(ext)s',          # Name for subtitles file
+            #'automatic_sub': '%(title)s_%(language)s_auto_subtitles.%(ext)s'  # For auto subtitles
         },
         'postprocessors': [
         {  # Extract audio using ffmpeg
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'm4a',
         },
-        {                 # Postprocess to convert to .srt if .vtt is downloaded
+        {                 
             'key': 'FFmpegSubtitlesConvertor',
             'format': 'vtt',
         },
+        {
+            'key': 'FFmpegSubtitlesConvertor',
+            'format': 'vtt',
+        },
+
         ],
         #'quiet': True,                      # Suppress output
     }
@@ -101,6 +104,6 @@ def download_human_subtitles(video_url, languages=['en', 'tr']):
  
 
 # Kullanım örneği
-video_url = "https://www.youtube.com/watch?v=OTNe0eV8418"
-subtitles = download_human_subtitles(video_url, languages=['tr', 'en'])
+video_url = "https://www.youtube.com/watch?v=i9oDVl1J7Dk"
+subtitles = download_human_subtitles(video_url, languages=['en'])
 print(subtitles)

@@ -1,0 +1,37 @@
+**Title**: Running AI Locally
+
+**Key Concepts:**
+
+- Running AI locally provides control and privacy.
+- Customizability and speed are benefits of local AI.
+- AI is integrated into note-taking applications for convenience.
+
+**Actionable Advice:**
+
+1. **Install Llama:** A foundation for AI functionality, accessible via llama.ai.
+2. **Install Docker:** For running the Open Web UI container, which provides a web user interface for AI.
+3. **Deploy Open Web UI:** Using a Docker command to access the AI models.
+4. **Install Automatic 1111:** For integrating stable diffusion with Open Web UI.
+
+**Examples:**
+
+- Terry, a custom-built AI server with powerful hardware.
+- Obsidian, a note-taking application that can interface with local AI through the BMO chatbot plugin.
+
+**Specific Techniques:**
+
+- Using a curl command to automatically install Llama
+- Adding AI models to Llama with the "llama pull" command
+- Controlling AI responses with settings and options in Open Web UI
+- Generating images with Stable Diffusion via the Open Web UI prompt
+- Integrating Stable Diffusion into Obsidian for AI-assisted writing
+
+**Interesting Facts and Insights:**
+
+- WSL (Windows Subsystem for Linux) enables Linux execution within Windows.
+- Pop Os by System 76 is an alternative Linux distribution used in the video.
+- GPU acceleration enhances AI performance.
+- Open Web UI supports multiple web UI options for Llama.
+- AI can provide real-time image generation without the need for internet access.
+- Custom model files can restrict user access and prevent cheating.
+- Ethical considerations include responsible AI use and prevention of online cheating.

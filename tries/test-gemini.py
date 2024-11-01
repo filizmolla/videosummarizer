@@ -1,4 +1,5 @@
 import google.generativeai as genai 
+from google.ai.generativelanguage_v1beta.types import CountTokensResponse
 
 def print_model_information(model_name):
     # Returns the "context window" for the model, which is the combined input and output token limits.
@@ -13,6 +14,10 @@ def print_model_information(model_name):
 def get_prompt_info():
     return 0 
 
+def get_token_count(response: CountTokensResponse) -> int:
+    # Access the token count from the response object
+    return response.token_count
+
 
 with open('gemini-api-key.txt', 'r') as f:
     api_key = f.read().strip()
@@ -21,7 +26,6 @@ genai.configure(api_key=api_key)
 model_name ="gemini-pro"
 model = genai.GenerativeModel(model_name)
 print_model_information(model_name)
-exit()
 question = """    
 Please Present this transcript in a more readable manner using lists, bullet points etc.
     Highlight any any actionable advice, references to research, examples, or specific techniques mentioned.
@@ -35,7 +39,13 @@ Often we try to convince other people or even ourselves. And how do we do this? 
 """
 
 # Call `count_tokens` to get the input token count (`total_tokens`).
-print("total_tokens: ", model.count_tokens(question))
+ct = model.count_tokens(question)
+token_count = ct.total_tokens
+print("total_tokens: ", token_count)
+print(type(token_count))
+
+
+
 response = model.generate_content(f"{question}")
 answer = response.text
 print(question)

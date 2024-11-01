@@ -1,0 +1,2120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.199 --> 00:00:01.790 align:start position:0%
+ 
+what<00:00:00.320><c> you're</c><00:00:00.480><c> looking</c><00:00:00.719><c> at</c><00:00:00.960><c> here</c><00:00:01.240><c> are</c><00:00:01.439><c> the</c><00:00:01.599><c> five</c>
+
+00:00:01.790 --> 00:00:01.800 align:start position:0%
+what you're looking at here are the five
+ 
+
+00:00:01.800 --> 00:00:03.510 align:start position:0%
+what you're looking at here are the five
+rules<00:00:02.120><c> of</c><00:00:02.320><c> programming</c><00:00:03.000><c> written</c><00:00:03.280><c> by</c><00:00:03.399><c> the</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+rules of programming written by the
+ 
+
+00:00:03.520 --> 00:00:05.390 align:start position:0%
+rules of programming written by the
+legendary<00:00:04.040><c> programmer</c><00:00:04.560><c> Rob</c><00:00:04.839><c> Pike</c><00:00:05.160><c> who</c>
+
+00:00:05.390 --> 00:00:05.400 align:start position:0%
+legendary programmer Rob Pike who
+ 
+
+00:00:05.400 --> 00:00:07.190 align:start position:0%
+legendary programmer Rob Pike who
+programmed<00:00:05.839><c> the</c><00:00:05.920><c> go</c><00:00:06.160><c> programming</c><00:00:06.640><c> language</c>
+
+00:00:07.190 --> 00:00:07.200 align:start position:0%
+programmed the go programming language
+ 
+
+00:00:07.200 --> 00:00:08.950 align:start position:0%
+programmed the go programming language
+the<00:00:07.319><c> first</c><00:00:07.480><c> rule</c><00:00:07.720><c> of</c><00:00:07.799><c> programming</c><00:00:08.440><c> is</c><00:00:08.599><c> do</c><00:00:08.760><c> not</c>
+
+00:00:08.950 --> 00:00:08.960 align:start position:0%
+the first rule of programming is do not
+ 
+
+00:00:08.960 --> 00:00:10.709 align:start position:0%
+the first rule of programming is do not
+talk<00:00:09.160><c> about</c><00:00:09.440><c> programming</c><00:00:10.160><c> the</c><00:00:10.280><c> second</c><00:00:10.519><c> rule</c>
+
+00:00:10.709 --> 00:00:10.719 align:start position:0%
+talk about programming the second rule
+ 
+
+00:00:10.719 --> 00:00:12.749 align:start position:0%
+talk about programming the second rule
+of<00:00:10.880><c> programming</c><00:00:11.400><c> is</c><00:00:11.519><c> to</c><00:00:11.719><c> measure</c><00:00:12.320><c> don't</c><00:00:12.519><c> tune</c>
+
+00:00:12.749 --> 00:00:12.759 align:start position:0%
+of programming is to measure don't tune
+ 
+
+00:00:12.759 --> 00:00:14.910 align:start position:0%
+of programming is to measure don't tune
+for<00:00:12.960><c> Speed</c><00:00:13.280><c> until</c><00:00:13.519><c> you've</c><00:00:13.719><c> measured</c><00:00:14.440><c> and</c><00:00:14.639><c> even</c>
+
+00:00:14.910 --> 00:00:14.920 align:start position:0%
+for Speed until you've measured and even
+ 
+
+00:00:14.920 --> 00:00:16.830 align:start position:0%
+for Speed until you've measured and even
+then<00:00:15.280><c> don't</c><00:00:15.639><c> unless</c><00:00:16.039><c> one</c><00:00:16.240><c> part</c><00:00:16.359><c> of</c><00:00:16.480><c> the</c><00:00:16.560><c> code</c>
+
+00:00:16.830 --> 00:00:16.840 align:start position:0%
+then don't unless one part of the code
+ 
+
+00:00:16.840 --> 00:00:19.029 align:start position:0%
+then don't unless one part of the code
+overwhelms<00:00:17.400><c> the</c><00:00:17.560><c> rest</c><00:00:18.119><c> this</c><00:00:18.279><c> Echoes</c><00:00:18.720><c> another</c>
+
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+overwhelms the rest this Echoes another
+ 
+
+00:00:19.039 --> 00:00:21.109 align:start position:0%
+overwhelms the rest this Echoes another
+legendary<00:00:19.600><c> programmer</c><00:00:20.080><c> Donald</c><00:00:20.480><c> canth</c><00:00:20.960><c> who</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+legendary programmer Donald canth who
+ 
+
+00:00:21.119 --> 00:00:22.790 align:start position:0%
+legendary programmer Donald canth who
+offered<00:00:21.480><c> similar</c><00:00:21.840><c> advice</c><00:00:22.279><c> when</c><00:00:22.400><c> he</c><00:00:22.480><c> said</c>
+
+00:00:22.790 --> 00:00:22.800 align:start position:0%
+offered similar advice when he said
+ 
+
+00:00:22.800 --> 00:00:24.870 align:start position:0%
+offered similar advice when he said
+premature<00:00:23.359><c> optimization</c><00:00:24.240><c> is</c><00:00:24.400><c> the</c><00:00:24.519><c> root</c><00:00:24.720><c> of</c>
+
+00:00:24.870 --> 00:00:24.880 align:start position:0%
+premature optimization is the root of
+ 
+
+00:00:24.880 --> 00:00:26.550 align:start position:0%
+premature optimization is the root of
+all<00:00:25.039><c> evil</c><00:00:25.480><c> even</c><00:00:25.680><c> my</c><00:00:25.840><c> dad</c><00:00:26.000><c> would</c><00:00:26.119><c> tell</c><00:00:26.279><c> me</c>
+
+00:00:26.550 --> 00:00:26.560 align:start position:0%
+all evil even my dad would tell me
+ 
+
+00:00:26.560 --> 00:00:28.910 align:start position:0%
+all evil even my dad would tell me
+measure<00:00:26.920><c> twice</c><00:00:27.320><c> cut</c><00:00:27.599><c> once</c><00:00:28.160><c> in</c><00:00:28.320><c> programming</c>
+
+00:00:28.910 --> 00:00:28.920 align:start position:0%
+measure twice cut once in programming
+ 
+
+00:00:28.920 --> 00:00:30.470 align:start position:0%
+measure twice cut once in programming
+there's<00:00:29.080><c> a</c><00:00:29.240><c> nearly</c><00:00:29.560><c> Unlimited</c><00:00:30.039><c> a</c><00:00:30.160><c> number</c><00:00:30.359><c> of</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+there's a nearly Unlimited a number of
+ 
+
+00:00:30.480 --> 00:00:32.350 align:start position:0%
+there's a nearly Unlimited a number of
+ways<00:00:30.640><c> to</c><00:00:30.800><c> skin</c><00:00:31.039><c> a</c><00:00:31.199><c> cat</c><00:00:31.640><c> but</c><00:00:31.759><c> the</c><00:00:31.880><c> way</c><00:00:32.000><c> you</c><00:00:32.160><c> write</c>
+
+00:00:32.350 --> 00:00:32.360 align:start position:0%
+ways to skin a cat but the way you write
+ 
+
+00:00:32.360 --> 00:00:34.590 align:start position:0%
+ways to skin a cat but the way you write
+your<00:00:32.480><c> code</c><00:00:32.800><c> matters</c><00:00:33.559><c> like</c><00:00:33.760><c> as</c><00:00:33.879><c> we'll</c><00:00:34.079><c> see</c><00:00:34.360><c> in</c>
+
+00:00:34.590 --> 00:00:34.600 align:start position:0%
+your code matters like as we'll see in
+ 
+
+00:00:34.600 --> 00:00:36.069 align:start position:0%
+your code matters like as we'll see in
+JavaScript<00:00:35.280><c> there's</c><00:00:35.480><c> at</c><00:00:35.600><c> least</c><00:00:35.800><c> four</c>
+
+00:00:36.069 --> 00:00:36.079 align:start position:0%
+JavaScript there's at least four
+ 
+
+00:00:36.079 --> 00:00:37.750 align:start position:0%
+JavaScript there's at least four
+different<00:00:36.360><c> ways</c><00:00:36.600><c> to</c><00:00:36.760><c> Loop</c><00:00:37.040><c> over</c><00:00:37.200><c> an</c><00:00:37.360><c> array</c><00:00:37.640><c> and</c>
+
+00:00:37.750 --> 00:00:37.760 align:start position:0%
+different ways to Loop over an array and
+ 
+
+00:00:37.760 --> 00:00:39.790 align:start position:0%
+different ways to Loop over an array and
+count<00:00:38.079><c> its</c><00:00:38.280><c> values</c><00:00:38.960><c> but</c><00:00:39.079><c> the</c><00:00:39.200><c> performance</c><00:00:39.640><c> of</c>
+
+00:00:39.790 --> 00:00:39.800 align:start position:0%
+count its values but the performance of
+ 
+
+00:00:39.800 --> 00:00:41.630 align:start position:0%
+count its values but the performance of
+each<00:00:40.039><c> technique</c><00:00:40.480><c> varies</c><00:00:40.800><c> dramatically</c><00:00:41.559><c> in</c>
+
+00:00:41.630 --> 00:00:41.640 align:start position:0%
+each technique varies dramatically in
+ 
+
+00:00:41.640 --> 00:00:43.229 align:start position:0%
+each technique varies dramatically in
+today's<00:00:42.000><c> video</c><00:00:42.360><c> I'll</c><00:00:42.520><c> show</c><00:00:42.680><c> you</c><00:00:42.840><c> how</c><00:00:43.000><c> to</c>
+
+00:00:43.229 --> 00:00:43.239 align:start position:0%
+today's video I'll show you how to
+ 
+
+00:00:43.239 --> 00:00:45.389 align:start position:0%
+today's video I'll show you how to
+easily<00:00:43.600><c> Benchmark</c><00:00:44.079><c> your</c><00:00:44.239><c> JavaScript</c><00:00:44.800><c> code</c><00:00:45.239><c> so</c>
+
+00:00:45.389 --> 00:00:45.399 align:start position:0%
+easily Benchmark your JavaScript code so
+ 
+
+00:00:45.399 --> 00:00:46.869 align:start position:0%
+easily Benchmark your JavaScript code so
+you<00:00:45.480><c> can</c><00:00:45.640><c> scientifically</c><00:00:46.360><c> measure</c><00:00:46.640><c> its</c>
+
+00:00:46.869 --> 00:00:46.879 align:start position:0%
+you can scientifically measure its
+ 
+
+00:00:46.879 --> 00:00:48.790 align:start position:0%
+you can scientifically measure its
+performance<00:00:47.600><c> and</c><00:00:47.760><c> avoid</c><00:00:48.079><c> wasting</c><00:00:48.480><c> time</c>
+
+00:00:48.790 --> 00:00:48.800 align:start position:0%
+performance and avoid wasting time
+ 
+
+00:00:48.800 --> 00:00:50.910 align:start position:0%
+performance and avoid wasting time
+optimizing<00:00:49.320><c> red</c><00:00:49.520><c> herrings</c><00:00:50.280><c> to</c><00:00:50.440><c> help</c><00:00:50.600><c> us</c><00:00:50.760><c> make</c>
+
+00:00:50.910 --> 00:00:50.920 align:start position:0%
+optimizing red herrings to help us make
+ 
+
+00:00:50.920 --> 00:00:52.750 align:start position:0%
+optimizing red herrings to help us make
+benchmarking<00:00:51.559><c> extremely</c><00:00:52.039><c> easy</c><00:00:52.440><c> we're</c><00:00:52.600><c> going</c>
+
+00:00:52.750 --> 00:00:52.760 align:start position:0%
+benchmarking extremely easy we're going
+ 
+
+00:00:52.760 --> 00:00:55.029 align:start position:0%
+benchmarking extremely easy we're going
+to<00:00:52.879><c> use</c><00:00:53.120><c> the</c><00:00:53.280><c> JavaScript</c><00:00:53.800><c> runtime</c><00:00:54.320><c> Dino</c><00:00:54.879><c> which</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+to use the JavaScript runtime Dino which
+ 
+
+00:00:55.039 --> 00:00:57.069 align:start position:0%
+to use the JavaScript runtime Dino which
+has<00:00:55.199><c> a</c><00:00:55.320><c> built-in</c><00:00:55.840><c> benchmarking</c><00:00:56.440><c> tool</c><00:00:56.879><c> after</c>
+
+00:00:57.069 --> 00:00:57.079 align:start position:0%
+has a built-in benchmarking tool after
+ 
+
+00:00:57.079 --> 00:00:58.670 align:start position:0%
+has a built-in benchmarking tool after
+playing<00:00:57.359><c> around</c><00:00:57.600><c> with</c><00:00:57.719><c> it</c><00:00:57.840><c> for</c><00:00:57.960><c> a</c><00:00:58.039><c> few</c><00:00:58.280><c> days</c><00:00:58.600><c> I</c>
+
+00:00:58.670 --> 00:00:58.680 align:start position:0%
+playing around with it for a few days I
+ 
+
+00:00:58.680 --> 00:01:00.750 align:start position:0%
+playing around with it for a few days I
+was<00:00:58.840><c> able</c><00:00:59.000><c> to</c><00:00:59.160><c> achieve</c><00:00:59.440><c> some</c><00:00:59.600><c> amazing</c><00:01:00.199><c> things</c>
+
+00:01:00.750 --> 00:01:00.760 align:start position:0%
+was able to achieve some amazing things
+ 
+
+00:01:00.760 --> 00:01:02.189 align:start position:0%
+was able to achieve some amazing things
+like<00:01:00.920><c> I</c><00:01:01.039><c> figured</c><00:01:01.320><c> out</c><00:01:01.480><c> how</c><00:01:01.559><c> to</c><00:01:01.719><c> make</c><00:01:01.879><c> array</c>
+
+00:01:02.189 --> 00:01:02.199 align:start position:0%
+like I figured out how to make array
+ 
+
+00:01:02.199 --> 00:01:04.549 align:start position:0%
+like I figured out how to make array
+includes<00:01:02.760><c> 100,000</c><00:01:03.359><c> times</c><00:01:03.680><c> faster</c><00:01:04.199><c> I</c><00:01:04.280><c> was</c><00:01:04.400><c> able</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+includes 100,000 times faster I was able
+ 
+
+00:01:04.559 --> 00:01:06.070 align:start position:0%
+includes 100,000 times faster I was able
+to<00:01:04.720><c> write</c><00:01:04.839><c> a</c><00:01:04.920><c> sorting</c><00:01:05.280><c> algorithm</c><00:01:05.960><c> that</c>
+
+00:01:06.070 --> 00:01:06.080 align:start position:0%
+to write a sorting algorithm that
+ 
+
+00:01:06.080 --> 00:01:07.789 align:start position:0%
+to write a sorting algorithm that
+outperforms<00:01:06.680><c> the</c><00:01:06.799><c> built-in</c><00:01:07.240><c> array</c><00:01:07.520><c> sort</c>
+
+00:01:07.789 --> 00:01:07.799 align:start position:0%
+outperforms the built-in array sort
+ 
+
+00:01:07.799 --> 00:01:09.469 align:start position:0%
+outperforms the built-in array sort
+method<00:01:08.080><c> in</c><00:01:08.240><c> JavaScript</c><00:01:08.840><c> and</c><00:01:08.920><c> I</c><00:01:09.040><c> figured</c><00:01:09.280><c> out</c>
+
+00:01:09.469 --> 00:01:09.479 align:start position:0%
+method in JavaScript and I figured out
+ 
+
+00:01:09.479 --> 00:01:11.230 align:start position:0%
+method in JavaScript and I figured out
+the<00:01:09.640><c> fastest</c><00:01:10.000><c> way</c><00:01:10.119><c> to</c><00:01:10.240><c> write</c><00:01:10.400><c> a</c><00:01:10.520><c> loop</c><00:01:11.040><c> let's</c>
+
+00:01:11.230 --> 00:01:11.240 align:start position:0%
+the fastest way to write a loop let's
+ 
+
+00:01:11.240 --> 00:01:13.390 align:start position:0%
+the fastest way to write a loop let's
+take<00:01:11.360><c> a</c><00:01:11.520><c> look</c><00:01:11.680><c> at</c><00:01:11.799><c> how</c><00:01:11.960><c> Doo</c><00:01:12.320><c> bench</c><00:01:12.680><c> works</c><00:01:13.240><c> at</c>
+
+00:01:13.390 --> 00:01:13.400 align:start position:0%
+take a look at how Doo bench works at
+ 
+
+00:01:13.400 --> 00:01:14.550 align:start position:0%
+take a look at how Doo bench works at
+first<00:01:13.640><c> you'll</c><00:01:13.799><c> want</c><00:01:13.880><c> to</c><00:01:14.000><c> make</c><00:01:14.119><c> sure</c><00:01:14.280><c> you</c><00:01:14.400><c> have</c>
+
+00:01:14.550 --> 00:01:14.560 align:start position:0%
+first you'll want to make sure you have
+ 
+
+00:01:14.560 --> 00:01:16.830 align:start position:0%
+first you'll want to make sure you have
+Doo<00:01:14.920><c> 2</c><00:01:15.200><c> installed</c><00:01:15.880><c> and</c><00:01:16.080><c> I</c><00:01:16.200><c> also</c><00:01:16.400><c> want</c><00:01:16.479><c> to</c><00:01:16.640><c> point</c>
+
+00:01:16.830 --> 00:01:16.840 align:start position:0%
+Doo 2 installed and I also want to point
+ 
+
+00:01:16.840 --> 00:01:18.350 align:start position:0%
+Doo 2 installed and I also want to point
+out<00:01:17.000><c> that</c><00:01:17.159><c> this</c><00:01:17.320><c> video</c><00:01:17.560><c> is</c><00:01:17.720><c> part</c><00:01:17.880><c> of</c><00:01:18.000><c> my</c><00:01:18.119><c> full</c>
+
+00:01:18.350 --> 00:01:18.360 align:start position:0%
+out that this video is part of my full
+ 
+
+00:01:18.360 --> 00:01:20.469 align:start position:0%
+out that this video is part of my full
+Dino<00:01:18.799><c> course</c><00:01:19.360><c> which</c><00:01:19.479><c> is</c><00:01:19.640><c> now</c><00:01:19.840><c> officially</c><00:01:20.240><c> in</c>
+
+00:01:20.469 --> 00:01:20.479 align:start position:0%
+Dino course which is now officially in
+ 
+
+00:01:20.479 --> 00:01:21.950 align:start position:0%
+Dino course which is now officially in
+production<00:01:21.079><c> and</c><00:01:21.200><c> should</c><00:01:21.360><c> be</c><00:01:21.479><c> out</c><00:01:21.680><c> around</c>
+
+00:01:21.950 --> 00:01:21.960 align:start position:0%
+production and should be out around
+ 
+
+00:01:21.960 --> 00:01:24.069 align:start position:0%
+production and should be out around
+November<00:01:22.360><c> 7th</c><00:01:22.880><c> which</c><00:01:23.000><c> will</c><00:01:23.119><c> include</c><00:01:23.400><c> about</c><00:01:23.600><c> 25</c>
+
+00:01:24.069 --> 00:01:24.079 align:start position:0%
+November 7th which will include about 25
+ 
+
+00:01:24.079 --> 00:01:26.109 align:start position:0%
+November 7th which will include about 25
+videos<00:01:24.479><c> and</c><00:01:24.680><c> multiple</c><00:01:25.159><c> projects</c><00:01:25.840><c> the</c><00:01:25.960><c> other</c>
+
+00:01:26.109 --> 00:01:26.119 align:start position:0%
+videos and multiple projects the other
+ 
+
+00:01:26.119 --> 00:01:27.350 align:start position:0%
+videos and multiple projects the other
+thing<00:01:26.240><c> I</c><00:01:26.320><c> want</c><00:01:26.439><c> to</c><00:01:26.520><c> point</c><00:01:26.759><c> out</c><00:01:27.000><c> is</c><00:01:27.119><c> that</c><00:01:27.240><c> we're</c>
+
+00:01:27.350 --> 00:01:27.360 align:start position:0%
+thing I want to point out is that we're
+ 
+
+00:01:27.360 --> 00:01:29.149 align:start position:0%
+thing I want to point out is that we're
+measuring<00:01:27.799><c> JavaScript</c><00:01:28.400><c> and</c><00:01:28.520><c> its</c><00:01:28.680><c> performance</c>
+
+00:01:29.149 --> 00:01:29.159 align:start position:0%
+measuring JavaScript and its performance
+ 
+
+00:01:29.159 --> 00:01:31.149 align:start position:0%
+measuring JavaScript and its performance
+only<00:01:29.360><c> on</c><00:01:29.479><c> the</c><00:01:29.600><c> doo</c><00:01:30.000><c> runtime</c><00:01:30.640><c> which</c><00:01:30.799><c> under</c><00:01:31.000><c> the</c>
+
+00:01:31.149 --> 00:01:31.159 align:start position:0%
+only on the doo runtime which under the
+ 
+
+00:01:31.159 --> 00:01:33.149 align:start position:0%
+only on the doo runtime which under the
+hood<00:01:31.360><c> is</c><00:01:31.520><c> powered</c><00:01:31.799><c> by</c><00:01:31.920><c> the</c><00:01:32.040><c> V8</c><00:01:32.439><c> engine</c><00:01:32.960><c> which</c>
+
+00:01:33.149 --> 00:01:33.159 align:start position:0%
+hood is powered by the V8 engine which
+ 
+
+00:01:33.159 --> 00:01:35.069 align:start position:0%
+hood is powered by the V8 engine which
+also<00:01:33.439><c> Powers</c><00:01:33.799><c> all</c><00:01:34.000><c> chromium</c><00:01:34.439><c> browsers</c><00:01:34.920><c> and</c>
+
+00:01:35.069 --> 00:01:35.079 align:start position:0%
+also Powers all chromium browsers and
+ 
+
+00:01:35.079 --> 00:01:37.109 align:start position:0%
+also Powers all chromium browsers and
+no.<00:01:35.360><c> JS</c><00:01:36.119><c> however</c><00:01:36.399><c> if</c><00:01:36.479><c> you're</c><00:01:36.640><c> looking</c><00:01:36.880><c> to</c>
+
+00:01:37.109 --> 00:01:37.119 align:start position:0%
+no. JS however if you're looking to
+ 
+
+00:01:37.119 --> 00:01:38.630 align:start position:0%
+no. JS however if you're looking to
+compare<00:01:37.479><c> performance</c><00:01:38.079><c> between</c><00:01:38.399><c> different</c>
+
+00:01:38.630 --> 00:01:38.640 align:start position:0%
+compare performance between different
+ 
+
+00:01:38.640 --> 00:01:41.109 align:start position:0%
+compare performance between different
+run<00:01:38.920><c> times</c><00:01:39.399><c> like</c><00:01:39.560><c> node</c><00:01:39.960><c> Dino</c><00:01:40.320><c> and</c><00:01:40.479><c> Bun</c><00:01:40.960><c> I'd</c>
+
+00:01:41.109 --> 00:01:41.119 align:start position:0%
+run times like node Dino and Bun I'd
+ 
+
+00:01:41.119 --> 00:01:42.990 align:start position:0%
+run times like node Dino and Bun I'd
+highly<00:01:41.360><c> recommend</c><00:01:41.759><c> this</c><00:01:41.920><c> video</c><00:01:42.280><c> from</c><00:01:42.520><c> Anton</c>
+
+00:01:42.990 --> 00:01:43.000 align:start position:0%
+highly recommend this video from Anton
+ 
+
+00:01:43.000 --> 00:01:44.749 align:start position:0%
+highly recommend this video from Anton
+Putra<00:01:43.720><c> which</c><00:01:43.880><c> puts</c><00:01:44.119><c> all</c><00:01:44.280><c> three</c><00:01:44.439><c> of</c><00:01:44.520><c> them</c><00:01:44.640><c> to</c>
+
+00:01:44.749 --> 00:01:44.759 align:start position:0%
+Putra which puts all three of them to
+ 
+
+00:01:44.759 --> 00:01:46.230 align:start position:0%
+Putra which puts all three of them to
+the<00:01:44.920><c> test</c><00:01:45.119><c> in</c><00:01:45.280><c> a</c><00:01:45.399><c> large</c><00:01:45.640><c> scale</c><00:01:45.920><c> Cloud</c>
+
+00:01:46.230 --> 00:01:46.240 align:start position:0%
+the test in a large scale Cloud
+ 
+
+00:01:46.240 --> 00:01:47.910 align:start position:0%
+the test in a large scale Cloud
+environment<00:01:46.960><c> but</c><00:01:47.079><c> now</c><00:01:47.240><c> let's</c><00:01:47.399><c> jump</c><00:01:47.600><c> into</c><00:01:47.759><c> the</c>
+
+00:01:47.910 --> 00:01:47.920 align:start position:0%
+environment but now let's jump into the
+ 
+
+00:01:47.920 --> 00:01:49.830 align:start position:0%
+environment but now let's jump into the
+code<00:01:48.320><c> and</c><00:01:48.520><c> answer</c><00:01:48.799><c> the</c><00:01:49.000><c> question</c><00:01:49.439><c> what</c><00:01:49.560><c> is</c><00:01:49.680><c> the</c>
+
+00:01:49.830 --> 00:01:49.840 align:start position:0%
+code and answer the question what is the
+ 
+
+00:01:49.840 --> 00:01:51.670 align:start position:0%
+code and answer the question what is the
+fastest<00:01:50.200><c> way</c><00:01:50.360><c> to</c><00:01:50.520><c> Loop</c><00:01:50.840><c> over</c><00:01:51.040><c> an</c><00:01:51.200><c> array</c><00:01:51.520><c> in</c>
+
+00:01:51.670 --> 00:01:51.680 align:start position:0%
+fastest way to Loop over an array in
+ 
+
+00:01:51.680 --> 00:01:53.550 align:start position:0%
+fastest way to Loop over an array in
+JavaScript<00:01:52.560><c> well</c><00:01:52.719><c> I</c><00:01:52.840><c> know</c><00:01:52.960><c> of</c><00:01:53.079><c> at</c><00:01:53.200><c> least</c><00:01:53.360><c> four</c>
+
+00:01:53.550 --> 00:01:53.560 align:start position:0%
+JavaScript well I know of at least four
+ 
+
+00:01:53.560 --> 00:01:55.109 align:start position:0%
+JavaScript well I know of at least four
+different<00:01:53.880><c> ways</c><00:01:54.119><c> to</c><00:01:54.240><c> do</c><00:01:54.399><c> it</c><00:01:54.799><c> which</c><00:01:54.960><c> I've</c>
+
+00:01:55.109 --> 00:01:55.119 align:start position:0%
+different ways to do it which I've
+ 
+
+00:01:55.119 --> 00:01:57.109 align:start position:0%
+different ways to do it which I've
+represented<00:01:55.719><c> in</c><00:01:55.920><c> these</c><00:01:56.079><c> four</c><00:01:56.360><c> functions</c>
+
+00:01:57.109 --> 00:01:57.119 align:start position:0%
+represented in these four functions
+ 
+
+00:01:57.119 --> 00:01:59.149 align:start position:0%
+represented in these four functions
+where<00:01:57.320><c> the</c><00:01:57.439><c> goal</c><00:01:57.680><c> is</c><00:01:57.799><c> to</c><00:01:57.960><c> Loop</c><00:01:58.280><c> over</c><00:01:58.439><c> an</c><00:01:58.600><c> array</c>
+
+00:01:59.149 --> 00:01:59.159 align:start position:0%
+where the goal is to Loop over an array
+ 
+
+00:01:59.159 --> 00:02:00.590 align:start position:0%
+where the goal is to Loop over an array
+and<00:01:59.280><c> then</c><00:01:59.399><c> sum</c><00:01:59.600><c> up</c><00:01:59.719><c> the</c><00:01:59.960><c> numbers</c><00:02:00.280><c> in</c><00:02:00.439><c> that</c>
+
+00:02:00.590 --> 00:02:00.600 align:start position:0%
+and then sum up the numbers in that
+ 
+
+00:02:00.600 --> 00:02:02.910 align:start position:0%
+and then sum up the numbers in that
+array<00:02:01.320><c> first</c><00:02:01.520><c> up</c><00:02:01.719><c> we've</c><00:02:01.920><c> got</c><00:02:02.119><c> the</c><00:02:02.280><c> array</c><00:02:02.600><c> for</c>
+
+00:02:02.910 --> 00:02:02.920 align:start position:0%
+array first up we've got the array for
+ 
+
+00:02:02.920 --> 00:02:04.789 align:start position:0%
+array first up we've got the array for
+each<00:02:03.200><c> method</c><00:02:03.640><c> if</c><00:02:03.759><c> you</c><00:02:03.880><c> have</c><00:02:04.000><c> an</c><00:02:04.119><c> array</c><00:02:04.560><c> one</c>
+
+00:02:04.789 --> 00:02:04.799 align:start position:0%
+each method if you have an array one
+ 
+
+00:02:04.799 --> 00:02:06.870 align:start position:0%
+each method if you have an array one
+option<00:02:05.079><c> is</c><00:02:05.200><c> to</c><00:02:05.360><c> use</c><00:02:05.560><c> for</c><00:02:05.880><c> each</c><00:02:06.520><c> provide</c><00:02:06.759><c> it</c>
+
+00:02:06.870 --> 00:02:06.880 align:start position:0%
+option is to use for each provide it
+ 
+
+00:02:06.880 --> 00:02:08.949 align:start position:0%
+option is to use for each provide it
+with<00:02:07.000><c> a</c><00:02:07.119><c> callback</c><00:02:07.520><c> function</c><00:02:08.200><c> that</c><00:02:08.360><c> mutates</c><00:02:08.759><c> a</c>
+
+00:02:08.949 --> 00:02:08.959 align:start position:0%
+with a callback function that mutates a
+ 
+
+00:02:08.959 --> 00:02:10.630 align:start position:0%
+with a callback function that mutates a
+variable<00:02:09.640><c> that</c><00:02:09.800><c> works</c><00:02:10.160><c> but</c><00:02:10.280><c> there</c><00:02:10.399><c> is</c><00:02:10.520><c> a</c>
+
+00:02:10.630 --> 00:02:10.640 align:start position:0%
+variable that works but there is a
+ 
+
+00:02:10.640 --> 00:02:13.030 align:start position:0%
+variable that works but there is a
+cleaner<00:02:11.000><c> way</c><00:02:11.120><c> to</c><00:02:11.239><c> do</c><00:02:11.400><c> this</c><00:02:11.599><c> with</c><00:02:11.760><c> array</c><00:02:12.080><c> reduce</c>
+
+00:02:13.030 --> 00:02:13.040 align:start position:0%
+cleaner way to do this with array reduce
+ 
+
+00:02:13.040 --> 00:02:15.110 align:start position:0%
+cleaner way to do this with array reduce
+which<00:02:13.239><c> also</c><00:02:13.480><c> takes</c><00:02:13.720><c> a</c><00:02:13.879><c> callback</c><00:02:14.319><c> function</c><00:02:14.920><c> but</c>
+
+00:02:15.110 --> 00:02:15.120 align:start position:0%
+which also takes a callback function but
+ 
+
+00:02:15.120 --> 00:02:17.110 align:start position:0%
+which also takes a callback function but
+also<00:02:15.360><c> has</c><00:02:15.519><c> an</c><00:02:15.680><c> accumulated</c><00:02:16.360><c> value</c><00:02:16.879><c> is</c><00:02:17.000><c> so</c>
+
+00:02:17.110 --> 00:02:17.120 align:start position:0%
+also has an accumulated value is so
+ 
+
+00:02:17.120 --> 00:02:19.190 align:start position:0%
+also has an accumulated value is so
+there's<00:02:17.319><c> no</c><00:02:17.480><c> need</c><00:02:17.720><c> to</c><00:02:17.920><c> mutate</c><00:02:18.360><c> that</c><00:02:18.519><c> variable</c>
+
+00:02:19.190 --> 00:02:19.200 align:start position:0%
+there's no need to mutate that variable
+ 
+
+00:02:19.200 --> 00:02:20.790 align:start position:0%
+there's no need to mutate that variable
+you'll<00:02:19.360><c> see</c><00:02:19.599><c> functional</c><00:02:20.040><c> declarative</c><00:02:20.519><c> code</c>
+
+00:02:20.790 --> 00:02:20.800 align:start position:0%
+you'll see functional declarative code
+ 
+
+00:02:20.800 --> 00:02:22.509 align:start position:0%
+you'll see functional declarative code
+like<00:02:21.000><c> this</c><00:02:21.160><c> a</c><00:02:21.280><c> lot</c><00:02:21.400><c> in</c><00:02:21.519><c> front-end</c><00:02:22.040><c> projects</c>
+
+00:02:22.509 --> 00:02:22.519 align:start position:0%
+like this a lot in front-end projects
+ 
+
+00:02:22.519 --> 00:02:25.190 align:start position:0%
+like this a lot in front-end projects
+like<00:02:22.760><c> reactjs</c><00:02:23.760><c> however</c><00:02:24.160><c> the</c><00:02:24.360><c> next</c><00:02:24.680><c> option</c><00:02:25.080><c> is</c>
+
+00:02:25.190 --> 00:02:25.200 align:start position:0%
+like reactjs however the next option is
+ 
+
+00:02:25.200 --> 00:02:27.270 align:start position:0%
+like reactjs however the next option is
+to<00:02:25.440><c> increment</c><00:02:25.840><c> the</c><00:02:25.959><c> sum</c><00:02:26.440><c> using</c><00:02:26.760><c> a</c><00:02:26.959><c> regular</c>
+
+00:02:27.270 --> 00:02:27.280 align:start position:0%
+to increment the sum using a regular
+ 
+
+00:02:27.280 --> 00:02:29.229 align:start position:0%
+to increment the sum using a regular
+four<00:02:27.599><c> Loop</c><00:02:27.920><c> in</c><00:02:28.080><c> JavaScript</c><00:02:28.640><c> you</c><00:02:28.720><c> can</c><00:02:28.879><c> create</c><00:02:29.120><c> a</c>
+
+00:02:29.229 --> 00:02:29.239 align:start position:0%
+four Loop in JavaScript you can create a
+ 
+
+00:02:29.239 --> 00:02:31.110 align:start position:0%
+four Loop in JavaScript you can create a
+four<00:02:29.519><c> of</c><00:02:29.959><c> Loop</c><00:02:30.239><c> that</c><00:02:30.360><c> will</c><00:02:30.560><c> automatically</c>
+
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+four of Loop that will automatically
+ 
+
+00:02:31.120 --> 00:02:32.830 align:start position:0%
+four of Loop that will automatically
+iterate<00:02:31.480><c> to</c><00:02:31.640><c> the</c><00:02:31.720><c> end</c><00:02:31.879><c> of</c><00:02:32.000><c> the</c><00:02:32.120><c> array</c><00:02:32.640><c> that's</c>
+
+00:02:32.830 --> 00:02:32.840 align:start position:0%
+iterate to the end of the array that's
+ 
+
+00:02:32.840 --> 00:02:34.390 align:start position:0%
+iterate to the end of the array that's
+nice<00:02:33.000><c> and</c><00:02:33.120><c> readable</c><00:02:33.720><c> but</c><00:02:33.840><c> the</c><00:02:33.959><c> traditional</c>
+
+00:02:34.390 --> 00:02:34.400 align:start position:0%
+nice and readable but the traditional
+ 
+
+00:02:34.400 --> 00:02:36.110 align:start position:0%
+nice and readable but the traditional
+way<00:02:34.560><c> to</c><00:02:34.760><c> write</c><00:02:34.920><c> a</c><00:02:35.000><c> for</c><00:02:35.280><c> Loop</c><00:02:35.560><c> is</c><00:02:35.680><c> to</c><00:02:35.800><c> use</c><00:02:36.000><c> this</c>
+
+00:02:36.110 --> 00:02:36.120 align:start position:0%
+way to write a for Loop is to use this
+ 
+
+00:02:36.120 --> 00:02:37.990 align:start position:0%
+way to write a for Loop is to use this
+more<00:02:36.319><c> explicit</c><00:02:36.800><c> syntax</c><00:02:37.360><c> where</c><00:02:37.519><c> we</c><00:02:37.640><c> have</c><00:02:37.800><c> a</c>
+
+00:02:37.990 --> 00:02:38.000 align:start position:0%
+more explicit syntax where we have a
+ 
+
+00:02:38.000 --> 00:02:40.390 align:start position:0%
+more explicit syntax where we have a
+variable<00:02:38.400><c> of</c><00:02:38.599><c> I</c><00:02:39.200><c> that's</c><00:02:39.440><c> incremented</c><00:02:40.159><c> as</c><00:02:40.280><c> we</c>
+
+00:02:40.390 --> 00:02:40.400 align:start position:0%
+variable of I that's incremented as we
+ 
+
+00:02:40.400 --> 00:02:42.149 align:start position:0%
+variable of I that's incremented as we
+Loop<00:02:40.680><c> over</c><00:02:40.879><c> the</c><00:02:41.000><c> array's</c><00:02:41.400><c> length</c><00:02:41.879><c> and</c><00:02:42.000><c> that</c>
+
+00:02:42.149 --> 00:02:42.159 align:start position:0%
+Loop over the array's length and that
+ 
+
+00:02:42.159 --> 00:02:43.830 align:start position:0%
+Loop over the array's length and that
+gives<00:02:42.319><c> us</c><00:02:42.480><c> four</c><00:02:42.800><c> ways</c><00:02:43.000><c> to</c><00:02:43.159><c> solve</c><00:02:43.400><c> the</c><00:02:43.519><c> same</c>
+
+00:02:43.830 --> 00:02:43.840 align:start position:0%
+gives us four ways to solve the same
+ 
+
+00:02:43.840 --> 00:02:45.670 align:start position:0%
+gives us four ways to solve the same
+problem<00:02:44.440><c> but</c><00:02:44.560><c> the</c><00:02:44.680><c> big</c><00:02:44.920><c> question</c><00:02:45.360><c> is</c><00:02:45.560><c> which</c>
+
+00:02:45.670 --> 00:02:45.680 align:start position:0%
+problem but the big question is which
+ 
+
+00:02:45.680 --> 00:02:47.470 align:start position:0%
+problem but the big question is which
+one<00:02:45.920><c> will</c><00:02:46.080><c> perform</c><00:02:46.480><c> the</c><00:02:46.640><c> best</c><00:02:47.080><c> well</c><00:02:47.200><c> the</c><00:02:47.280><c> first</c>
+
+00:02:47.470 --> 00:02:47.480 align:start position:0%
+one will perform the best well the first
+ 
+
+00:02:47.480 --> 00:02:49.030 align:start position:0%
+one will perform the best well the first
+thing<00:02:47.599><c> we'll</c><00:02:47.760><c> do</c><00:02:48.000><c> is</c><00:02:48.159><c> create</c><00:02:48.440><c> some</c><00:02:48.599><c> testing</c>
+
+00:02:49.030 --> 00:02:49.040 align:start position:0%
+thing we'll do is create some testing
+ 
+
+00:02:49.040 --> 00:02:51.309 align:start position:0%
+thing we'll do is create some testing
+data<00:02:49.680><c> like</c><00:02:49.879><c> in</c><00:02:50.040><c> this</c><00:02:50.239><c> case</c><00:02:50.480><c> generate</c><00:02:50.879><c> a</c><00:02:51.040><c> large</c>
+
+00:02:51.309 --> 00:02:51.319 align:start position:0%
+data like in this case generate a large
+ 
+
+00:02:51.319 --> 00:02:53.630 align:start position:0%
+data like in this case generate a large
+array<00:02:51.840><c> with</c><00:02:52.120><c> 100,000</c><00:02:52.720><c> elements</c><00:02:53.120><c> in</c><00:02:53.239><c> it</c><00:02:53.519><c> and</c>
+
+00:02:53.630 --> 00:02:53.640 align:start position:0%
+array with 100,000 elements in it and
+ 
+
+00:02:53.640 --> 00:02:55.309 align:start position:0%
+array with 100,000 elements in it and
+now<00:02:53.879><c> finally</c><00:02:54.280><c> this</c><00:02:54.360><c> is</c><00:02:54.480><c> where</c><00:02:54.640><c> Doo</c><00:02:55.040><c> bench</c>
+
+00:02:55.309 --> 00:02:55.319 align:start position:0%
+now finally this is where Doo bench
+ 
+
+00:02:55.319 --> 00:02:57.750 align:start position:0%
+now finally this is where Doo bench
+comes<00:02:55.560><c> in</c><00:02:56.120><c> on</c><00:02:56.280><c> the</c><00:02:56.400><c> global</c><00:02:56.720><c> Dino</c><00:02:57.080><c> namespace</c>
+
+00:02:57.750 --> 00:02:57.760 align:start position:0%
+comes in on the global Dino namespace
+ 
+
+00:02:57.760 --> 00:02:59.430 align:start position:0%
+comes in on the global Dino namespace
+you<00:02:57.840><c> can</c><00:02:58.000><c> call</c><00:02:58.200><c> the</c><00:02:58.319><c> bench</c><00:02:58.680><c> method</c><00:02:59.200><c> and</c><00:02:59.280><c> then</c>
+
+00:02:59.430 --> 00:02:59.440 align:start position:0%
+you can call the bench method and then
+ 
+
+00:02:59.440 --> 00:03:00.990 align:start position:0%
+you can call the bench method and then
+either<00:02:59.879><c> provide</c><00:03:00.120><c> it</c><00:03:00.280><c> with</c><00:03:00.400><c> a</c><00:03:00.599><c> regular</c>
+
+00:03:00.990 --> 00:03:01.000 align:start position:0%
+either provide it with a regular
+ 
+
+00:03:01.000 --> 00:03:02.710 align:start position:0%
+either provide it with a regular
+function<00:03:01.319><c> to</c><00:03:01.519><c> Benchmark</c><00:03:02.080><c> or</c><00:03:02.280><c> provide</c><00:03:02.519><c> it</c><00:03:02.599><c> with</c>
+
+00:03:02.710 --> 00:03:02.720 align:start position:0%
+function to Benchmark or provide it with
+ 
+
+00:03:02.720 --> 00:03:04.750 align:start position:0%
+function to Benchmark or provide it with
+an<00:03:02.959><c> object</c><00:03:03.560><c> so</c><00:03:03.680><c> you</c><00:03:03.799><c> can</c><00:03:03.920><c> give</c><00:03:04.120><c> each</c><00:03:04.319><c> Benchmark</c>
+
+00:03:04.750 --> 00:03:04.760 align:start position:0%
+an object so you can give each Benchmark
+ 
+
+00:03:04.760 --> 00:03:07.190 align:start position:0%
+an object so you can give each Benchmark
+a<00:03:04.920><c> name</c><00:03:05.519><c> and</c><00:03:05.640><c> then</c><00:03:05.760><c> the</c><00:03:05.879><c> FN</c><00:03:06.400><c> property</c><00:03:07.000><c> will</c>
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+a name and then the FN property will
+ 
+
+00:03:07.200 --> 00:03:09.190 align:start position:0%
+a name and then the FN property will
+take<00:03:07.360><c> a</c><00:03:07.519><c> function</c><00:03:08.239><c> which</c><00:03:08.360><c> is</c><00:03:08.480><c> the</c><00:03:08.640><c> actual</c><00:03:08.959><c> code</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+take a function which is the actual code
+ 
+
+00:03:09.200 --> 00:03:10.949 align:start position:0%
+take a function which is the actual code
+that<00:03:09.319><c> you</c><00:03:09.400><c> want</c><00:03:09.560><c> to</c><00:03:09.720><c> run</c><00:03:09.920><c> and</c><00:03:10.120><c> measure</c><00:03:10.599><c> in</c><00:03:10.760><c> this</c>
+
+00:03:10.949 --> 00:03:10.959 align:start position:0%
+that you want to run and measure in this
+ 
+
+00:03:10.959 --> 00:03:12.990 align:start position:0%
+that you want to run and measure in this
+file<00:03:11.280><c> we'll</c><00:03:11.440><c> use</c><00:03:11.640><c> doench</c><00:03:12.360><c> to</c><00:03:12.519><c> set</c><00:03:12.680><c> up</c><00:03:12.840><c> a</c>
+
+00:03:12.990 --> 00:03:13.000 align:start position:0%
+file we'll use doench to set up a
+ 
+
+00:03:13.000 --> 00:03:15.110 align:start position:0%
+file we'll use doench to set up a
+benchmark<00:03:13.440><c> for</c><00:03:13.680><c> each</c><00:03:13.840><c> one</c><00:03:14.000><c> of</c><00:03:14.120><c> our</c><00:03:14.280><c> functions</c>
+
+00:03:15.110 --> 00:03:15.120 align:start position:0%
+benchmark for each one of our functions
+ 
+
+00:03:15.120 --> 00:03:17.070 align:start position:0%
+benchmark for each one of our functions
+it<00:03:15.239><c> also</c><00:03:15.480><c> helps</c><00:03:15.799><c> to</c><00:03:15.920><c> set</c><00:03:16.080><c> up</c><00:03:16.159><c> a</c><00:03:16.280><c> baseline</c><00:03:16.959><c> which</c>
+
+00:03:17.070 --> 00:03:17.080 align:start position:0%
+it also helps to set up a baseline which
+ 
+
+00:03:17.080 --> 00:03:18.869 align:start position:0%
+it also helps to set up a baseline which
+would<00:03:17.239><c> typically</c><00:03:17.560><c> be</c><00:03:17.720><c> your</c><00:03:17.920><c> original</c><00:03:18.360><c> code</c>
+
+00:03:18.869 --> 00:03:18.879 align:start position:0%
+would typically be your original code
+ 
+
+00:03:18.879 --> 00:03:20.309 align:start position:0%
+would typically be your original code
+and<00:03:19.000><c> in</c><00:03:19.120><c> this</c><00:03:19.280><c> case</c><00:03:19.480><c> I'm</c><00:03:19.599><c> going</c><00:03:19.760><c> to</c><00:03:19.879><c> set</c><00:03:20.120><c> that</c>
+
+00:03:20.309 --> 00:03:20.319 align:start position:0%
+and in this case I'm going to set that
+ 
+
+00:03:20.319 --> 00:03:22.509 align:start position:0%
+and in this case I'm going to set that
+as<00:03:20.440><c> our</c><00:03:20.640><c> traditional</c><00:03:21.040><c> for</c><00:03:21.400><c> Loop</c><00:03:21.760><c> in</c><00:03:21.920><c> Doo</c><00:03:22.360><c> these</c>
+
+00:03:22.509 --> 00:03:22.519 align:start position:0%
+as our traditional for Loop in Doo these
+ 
+
+00:03:22.519 --> 00:03:24.030 align:start position:0%
+as our traditional for Loop in Doo these
+benchmarks<00:03:23.000><c> don't</c><00:03:23.319><c> actually</c><00:03:23.599><c> affect</c><00:03:23.920><c> your</c>
+
+00:03:24.030 --> 00:03:24.040 align:start position:0%
+benchmarks don't actually affect your
+ 
+
+00:03:24.040 --> 00:03:25.990 align:start position:0%
+benchmarks don't actually affect your
+runtime<00:03:24.519><c> code</c><00:03:25.040><c> but</c><00:03:25.159><c> they</c><00:03:25.360><c> act</c><00:03:25.599><c> more</c><00:03:25.799><c> like</c>
+
+00:03:25.990 --> 00:03:26.000 align:start position:0%
+runtime code but they act more like
+ 
+
+00:03:26.000 --> 00:03:28.270 align:start position:0%
+runtime code but they act more like
+testing<00:03:26.440><c> code</c><00:03:27.080><c> and</c><00:03:27.239><c> the</c><00:03:27.360><c> way</c><00:03:27.519><c> to</c><00:03:27.760><c> execute</c><00:03:28.159><c> the</c>
+
+00:03:28.270 --> 00:03:28.280 align:start position:0%
+testing code and the way to execute the
+ 
+
+00:03:28.280 --> 00:03:30.509 align:start position:0%
+testing code and the way to execute the
+benchmarks<00:03:29.000><c> is</c><00:03:29.159><c> to</c><00:03:29.360><c> open</c><00:03:29.560><c> up</c><00:03:29.799><c> the</c><00:03:29.879><c> terminal</c>
+
+00:03:30.509 --> 00:03:30.519 align:start position:0%
+benchmarks is to open up the terminal
+ 
+
+00:03:30.519 --> 00:03:32.830 align:start position:0%
+benchmarks is to open up the terminal
+and<00:03:30.640><c> run</c><00:03:30.879><c> the</c><00:03:31.080><c> doench</c><00:03:31.720><c> command</c><00:03:32.360><c> followed</c><00:03:32.720><c> by</c>
+
+00:03:32.830 --> 00:03:32.840 align:start position:0%
+and run the doench command followed by
+ 
+
+00:03:32.840 --> 00:03:34.470 align:start position:0%
+and run the doench command followed by
+the<00:03:32.959><c> file</c><00:03:33.239><c> name</c><00:03:33.599><c> it'll</c><00:03:33.799><c> take</c><00:03:33.920><c> a</c><00:03:34.000><c> few</c><00:03:34.200><c> seconds</c>
+
+00:03:34.470 --> 00:03:34.480 align:start position:0%
+the file name it'll take a few seconds
+ 
+
+00:03:34.480 --> 00:03:36.589 align:start position:0%
+the file name it'll take a few seconds
+to<00:03:34.640><c> run</c><00:03:35.120><c> but</c><00:03:35.239><c> it</c><00:03:35.360><c> gives</c><00:03:35.519><c> us</c><00:03:35.720><c> this</c><00:03:35.920><c> report</c><00:03:36.480><c> that</c>
+
+00:03:36.589 --> 00:03:36.599 align:start position:0%
+to run but it gives us this report that
+ 
+
+00:03:36.599 --> 00:03:38.110 align:start position:0%
+to run but it gives us this report that
+shows<00:03:36.920><c> how</c><00:03:37.080><c> many</c><00:03:37.319><c> iterations</c><00:03:37.879><c> of</c><00:03:38.040><c> the</c>
+
+00:03:38.110 --> 00:03:38.120 align:start position:0%
+shows how many iterations of the
+ 
+
+00:03:38.120 --> 00:03:39.910 align:start position:0%
+shows how many iterations of the
+function<00:03:38.400><c> it</c><00:03:38.519><c> was</c><00:03:38.640><c> able</c><00:03:38.840><c> to</c><00:03:38.959><c> run</c><00:03:39.239><c> per</c><00:03:39.439><c> second</c>
+
+00:03:39.910 --> 00:03:39.920 align:start position:0%
+function it was able to run per second
+ 
+
+00:03:39.920 --> 00:03:41.869 align:start position:0%
+function it was able to run per second
+and<00:03:40.080><c> its</c><00:03:40.280><c> average</c><00:03:40.680><c> execution</c><00:03:41.239><c> time</c><00:03:41.640><c> as</c><00:03:41.720><c> well</c>
+
+00:03:41.869 --> 00:03:41.879 align:start position:0%
+and its average execution time as well
+ 
+
+00:03:41.879 --> 00:03:43.270 align:start position:0%
+and its average execution time as well
+as<00:03:41.959><c> the</c><00:03:42.120><c> best</c><00:03:42.400><c> case</c><00:03:42.560><c> and</c><00:03:42.760><c> worst</c><00:03:43.080><c> case</c>
+
+00:03:43.270 --> 00:03:43.280 align:start position:0%
+as the best case and worst case
+ 
+
+00:03:43.280 --> 00:03:45.309 align:start position:0%
+as the best case and worst case
+performance<00:03:44.040><c> but</c><00:03:44.200><c> at</c><00:03:44.280><c> a</c><00:03:44.480><c> high</c><00:03:44.680><c> level</c><00:03:45.000><c> the</c><00:03:45.120><c> most</c>
+
+00:03:45.309 --> 00:03:45.319 align:start position:0%
+performance but at a high level the most
+ 
+
+00:03:45.319 --> 00:03:47.270 align:start position:0%
+performance but at a high level the most
+useful<00:03:45.640><c> thing</c><00:03:46.000><c> is</c><00:03:46.159><c> just</c><00:03:46.280><c> the</c><00:03:46.439><c> summary</c><00:03:47.120><c> that</c>
+
+00:03:47.270 --> 00:03:47.280 align:start position:0%
+useful thing is just the summary that
+ 
+
+00:03:47.280 --> 00:03:49.390 align:start position:0%
+useful thing is just the summary that
+shows<00:03:47.560><c> us</c><00:03:47.799><c> which</c><00:03:48.000><c> function</c><00:03:48.319><c> is</c><00:03:48.560><c> fastest</c><00:03:49.239><c> and</c>
+
+00:03:49.390 --> 00:03:49.400 align:start position:0%
+shows us which function is fastest and
+ 
+
+00:03:49.400 --> 00:03:51.229 align:start position:0%
+shows us which function is fastest and
+surprisingly<00:03:50.000><c> the</c><00:03:50.120><c> traditional</c><00:03:50.519><c> for</c><00:03:50.840><c> Loop</c><00:03:51.080><c> is</c>
+
+00:03:51.229 --> 00:03:51.239 align:start position:0%
+surprisingly the traditional for Loop is
+ 
+
+00:03:51.239 --> 00:03:53.110 align:start position:0%
+surprisingly the traditional for Loop is
+significantly<00:03:51.920><c> faster</c><00:03:52.239><c> than</c><00:03:52.400><c> the</c><00:03:52.519><c> others</c><00:03:53.040><c> and</c>
+
+00:03:53.110 --> 00:03:53.120 align:start position:0%
+significantly faster than the others and
+ 
+
+00:03:53.120 --> 00:03:55.030 align:start position:0%
+significantly faster than the others and
+you<00:03:53.239><c> might</c><00:03:53.360><c> be</c><00:03:53.480><c> wondering</c><00:03:54.159><c> why</c><00:03:54.319><c> is</c><00:03:54.519><c> that</c><00:03:54.840><c> well</c>
+
+00:03:55.030 --> 00:03:55.040 align:start position:0%
+you might be wondering why is that well
+ 
+
+00:03:55.040 --> 00:03:56.509 align:start position:0%
+you might be wondering why is that well
+the<00:03:55.159><c> main</c><00:03:55.360><c> reason</c><00:03:55.680><c> is</c><00:03:55.799><c> that</c><00:03:55.920><c> it</c><00:03:56.040><c> doesn't</c><00:03:56.280><c> have</c>
+
+00:03:56.509 --> 00:03:56.519 align:start position:0%
+the main reason is that it doesn't have
+ 
+
+00:03:56.519 --> 00:03:58.670 align:start position:0%
+the main reason is that it doesn't have
+abstraction<00:03:57.159><c> or</c><00:03:57.360><c> function</c><00:03:57.720><c> call</c><00:03:58.040><c> Overhead</c>
+
+00:03:58.670 --> 00:03:58.680 align:start position:0%
+abstraction or function call Overhead
+ 
+
+00:03:58.680 --> 00:04:00.589 align:start position:0%
+abstraction or function call Overhead
+like<00:03:58.840><c> the</c><00:03:58.920><c> four</c><00:03:59.200><c> of</c><00:03:59.400><c> loop</c><00:03:59.799><c> uses</c><00:04:00.040><c> the</c><00:04:00.120><c> iterator</c>
+
+00:04:00.589 --> 00:04:00.599 align:start position:0%
+like the four of loop uses the iterator
+ 
+
+00:04:00.599 --> 00:04:02.910 align:start position:0%
+like the four of loop uses the iterator
+protocol<00:04:01.079><c> to</c><00:04:01.239><c> achieve</c><00:04:01.560><c> that</c><00:04:01.720><c> syntactic</c><00:04:02.239><c> sugar</c>
+
+00:04:02.910 --> 00:04:02.920 align:start position:0%
+protocol to achieve that syntactic sugar
+ 
+
+00:04:02.920 --> 00:04:05.470 align:start position:0%
+protocol to achieve that syntactic sugar
+and<00:04:03.159><c> array</c><00:04:03.519><c> for</c><00:04:03.799><c> each</c><00:04:04.000><c> and</c><00:04:04.200><c> reduce</c><00:04:04.920><c> require</c><00:04:05.319><c> a</c>
+
+00:04:05.470 --> 00:04:05.480 align:start position:0%
+and array for each and reduce require a
+ 
+
+00:04:05.480 --> 00:04:07.509 align:start position:0%
+and array for each and reduce require a
+function<00:04:05.799><c> call</c><00:04:06.159><c> after</c><00:04:06.400><c> each</c><00:04:06.640><c> iteration</c><00:04:07.400><c> that</c>
+
+00:04:07.509 --> 00:04:07.519 align:start position:0%
+function call after each iteration that
+ 
+
+00:04:07.519 --> 00:04:09.470 align:start position:0%
+function call after each iteration that
+a<00:04:07.760><c> traditional</c><00:04:08.040><c> for</c><00:04:08.319><c> Loop</c><00:04:08.519><c> doesn't</c><00:04:08.840><c> have</c><00:04:09.319><c> but</c>
+
+00:04:09.470 --> 00:04:09.480 align:start position:0%
+a traditional for Loop doesn't have but
+ 
+
+00:04:09.480 --> 00:04:11.630 align:start position:0%
+a traditional for Loop doesn't have but
+the<00:04:09.599><c> input</c><00:04:09.959><c> data</c><00:04:10.280><c> matters</c><00:04:10.920><c> like</c><00:04:11.159><c> if</c><00:04:11.280><c> we</c><00:04:11.400><c> bump</c>
+
+00:04:11.630 --> 00:04:11.640 align:start position:0%
+the input data matters like if we bump
+ 
+
+00:04:11.640 --> 00:04:13.149 align:start position:0%
+the input data matters like if we bump
+up<00:04:11.799><c> the</c><00:04:11.920><c> number</c><00:04:12.120><c> of</c><00:04:12.280><c> elements</c><00:04:12.640><c> in</c><00:04:12.760><c> the</c><00:04:12.879><c> array</c>
+
+00:04:13.149 --> 00:04:13.159 align:start position:0%
+up the number of elements in the array
+ 
+
+00:04:13.159 --> 00:04:14.949 align:start position:0%
+up the number of elements in the array
+to<00:04:13.280><c> a</c><00:04:13.400><c> million</c><00:04:14.159><c> you</c><00:04:14.280><c> can</c><00:04:14.400><c> see</c><00:04:14.680><c> that</c><00:04:14.799><c> the</c>
+
+00:04:14.949 --> 00:04:14.959 align:start position:0%
+to a million you can see that the
+ 
+
+00:04:14.959 --> 00:04:16.749 align:start position:0%
+to a million you can see that the
+benefits<00:04:15.400><c> of</c><00:04:15.560><c> the</c><00:04:15.760><c> traditional</c><00:04:16.079><c> for</c><00:04:16.400><c> Loop</c>
+
+00:04:16.749 --> 00:04:16.759 align:start position:0%
+benefits of the traditional for Loop
+ 
+
+00:04:16.759 --> 00:04:18.310 align:start position:0%
+benefits of the traditional for Loop
+increase<00:04:17.199><c> significantly</c><00:04:18.000><c> and</c><00:04:18.079><c> now</c><00:04:18.199><c> we're</c>
+
+00:04:18.310 --> 00:04:18.320 align:start position:0%
+increase significantly and now we're
+ 
+
+00:04:18.320 --> 00:04:20.390 align:start position:0%
+increase significantly and now we're
+getting<00:04:18.519><c> a</c><00:04:18.680><c> 5x</c><00:04:19.160><c> performance</c><00:04:19.560><c> boost</c><00:04:19.799><c> or</c><00:04:19.959><c> more</c>
+
+00:04:20.390 --> 00:04:20.400 align:start position:0%
+getting a 5x performance boost or more
+ 
+
+00:04:20.400 --> 00:04:21.870 align:start position:0%
+getting a 5x performance boost or more
+but<00:04:20.560><c> here's</c><00:04:20.759><c> the</c><00:04:20.880><c> weird</c><00:04:21.120><c> part</c><00:04:21.359><c> if</c><00:04:21.440><c> we</c><00:04:21.560><c> reduce</c>
+
+00:04:21.870 --> 00:04:21.880 align:start position:0%
+but here's the weird part if we reduce
+ 
+
+00:04:21.880 --> 00:04:24.150 align:start position:0%
+but here's the weird part if we reduce
+the<00:04:21.959><c> array's</c><00:04:22.360><c> length</c><00:04:22.680><c> down</c><00:04:22.840><c> to</c><00:04:23.040><c> about</c><00:04:23.400><c> 100</c><00:04:24.000><c> the</c>
+
+00:04:24.150 --> 00:04:24.160 align:start position:0%
+the array's length down to about 100 the
+ 
+
+00:04:24.160 --> 00:04:26.110 align:start position:0%
+the array's length down to about 100 the
+performance<00:04:24.639><c> becomes</c><00:04:25.040><c> almost</c><00:04:25.360><c> even</c><00:04:25.919><c> and</c>
+
+00:04:26.110 --> 00:04:26.120 align:start position:0%
+performance becomes almost even and
+ 
+
+00:04:26.120 --> 00:04:27.590 align:start position:0%
+performance becomes almost even and
+actually<00:04:26.440><c> array</c><00:04:26.759><c> reduce</c><00:04:27.199><c> beats</c><00:04:27.479><c> the</c>
+
+00:04:27.590 --> 00:04:27.600 align:start position:0%
+actually array reduce beats the
+ 
+
+00:04:27.600 --> 00:04:29.390 align:start position:0%
+actually array reduce beats the
+traditional<00:04:28.000><c> for</c><00:04:28.320><c> Loop</c><00:04:28.720><c> so</c><00:04:28.919><c> I</c><00:04:29.000><c> think</c><00:04:29.120><c> the</c><00:04:29.199><c> main</c>
+
+00:04:29.390 --> 00:04:29.400 align:start position:0%
+traditional for Loop so I think the main
+ 
+
+00:04:29.400 --> 00:04:30.870 align:start position:0%
+traditional for Loop so I think the main
+takeway<00:04:29.759><c> way</c><00:04:29.960><c> here</c><00:04:30.199><c> is</c><00:04:30.360><c> that</c><00:04:30.479><c> the</c><00:04:30.600><c> type</c><00:04:30.759><c> of</c>
+
+00:04:30.870 --> 00:04:30.880 align:start position:0%
+takeway way here is that the type of
+ 
+
+00:04:30.880 --> 00:04:32.510 align:start position:0%
+takeway way here is that the type of
+loop<00:04:31.160><c> you</c><00:04:31.280><c> use</c><00:04:31.600><c> doesn't</c><00:04:31.880><c> really</c><00:04:32.120><c> matter</c>
+
+00:04:32.510 --> 00:04:32.520 align:start position:0%
+loop you use doesn't really matter
+ 
+
+00:04:32.520 --> 00:04:33.950 align:start position:0%
+loop you use doesn't really matter
+unless<00:04:32.800><c> you're</c><00:04:32.960><c> looping</c><00:04:33.320><c> over</c><00:04:33.600><c> massive</c>
+
+00:04:33.950 --> 00:04:33.960 align:start position:0%
+unless you're looping over massive
+ 
+
+00:04:33.960 --> 00:04:35.629 align:start position:0%
+unless you're looping over massive
+arrays<00:04:34.520><c> in</c><00:04:34.680><c> which</c><00:04:34.880><c> case</c><00:04:35.039><c> you'll</c><00:04:35.240><c> want</c><00:04:35.360><c> to</c><00:04:35.479><c> use</c>
+
+00:04:35.629 --> 00:04:35.639 align:start position:0%
+arrays in which case you'll want to use
+ 
+
+00:04:35.639 --> 00:04:37.070 align:start position:0%
+arrays in which case you'll want to use
+a<00:04:35.800><c> traditional</c><00:04:36.160><c> for</c><00:04:36.479><c> Loop</c><00:04:36.800><c> pretty</c>
+
+00:04:37.070 --> 00:04:37.080 align:start position:0%
+a traditional for Loop pretty
+ 
+
+00:04:37.080 --> 00:04:38.670 align:start position:0%
+a traditional for Loop pretty
+interesting<00:04:37.840><c> but</c><00:04:38.000><c> now</c><00:04:38.120><c> I</c><00:04:38.199><c> want</c><00:04:38.320><c> to</c><00:04:38.400><c> show</c><00:04:38.560><c> you</c>
+
+00:04:38.670 --> 00:04:38.680 align:start position:0%
+interesting but now I want to show you
+ 
+
+00:04:38.680 --> 00:04:40.749 align:start position:0%
+interesting but now I want to show you
+an<00:04:38.880><c> optimization</c><00:04:39.759><c> that</c><00:04:39.880><c> can</c><00:04:40.039><c> have</c><00:04:40.160><c> a</c><00:04:40.360><c> massive</c>
+
+00:04:40.749 --> 00:04:40.759 align:start position:0%
+an optimization that can have a massive
+ 
+
+00:04:40.759 --> 00:04:42.790 align:start position:0%
+an optimization that can have a massive
+impact<00:04:41.080><c> on</c><00:04:41.280><c> performance</c><00:04:42.080><c> when</c><00:04:42.240><c> searching</c><00:04:42.600><c> for</c>
+
+00:04:42.790 --> 00:04:42.800 align:start position:0%
+impact on performance when searching for
+ 
+
+00:04:42.800 --> 00:04:45.029 align:start position:0%
+impact on performance when searching for
+a<00:04:43.000><c> value</c><00:04:43.320><c> in</c><00:04:43.440><c> an</c><00:04:43.600><c> array</c><00:04:44.160><c> so</c><00:04:44.400><c> in</c><00:04:44.520><c> this</c><00:04:44.680><c> function</c>
+
+00:04:45.029 --> 00:04:45.039 align:start position:0%
+a value in an array so in this function
+ 
+
+00:04:45.039 --> 00:04:46.790 align:start position:0%
+a value in an array so in this function
+I'm<00:04:45.199><c> generating</c><00:04:45.680><c> some</c><00:04:45.840><c> testing</c><00:04:46.199><c> data</c><00:04:46.639><c> that</c>
+
+00:04:46.790 --> 00:04:46.800 align:start position:0%
+I'm generating some testing data that
+ 
+
+00:04:46.800 --> 00:04:48.629 align:start position:0%
+I'm generating some testing data that
+creates<00:04:47.080><c> a</c><00:04:47.280><c> massive</c><00:04:47.680><c> array</c><00:04:48.080><c> containing</c>
+
+00:04:48.629 --> 00:04:48.639 align:start position:0%
+creates a massive array containing
+ 
+
+00:04:48.639 --> 00:04:51.469 align:start position:0%
+creates a massive array containing
+product<00:04:49.000><c> IDs</c><00:04:49.600><c> user</c><00:04:49.919><c> IDs</c><00:04:50.360><c> and</c><00:04:50.600><c> emails</c><00:04:51.240><c> but</c><00:04:51.360><c> then</c>
+
+00:04:51.469 --> 00:04:51.479 align:start position:0%
+product IDs user IDs and emails but then
+ 
+
+00:04:51.479 --> 00:04:53.430 align:start position:0%
+product IDs user IDs and emails but then
+I<00:04:51.600><c> created</c><00:04:51.960><c> another</c><00:04:52.280><c> array</c><00:04:52.720><c> with</c><00:04:52.880><c> 1,000</c>
+
+00:04:53.430 --> 00:04:53.440 align:start position:0%
+I created another array with 1,000
+ 
+
+00:04:53.440 --> 00:04:55.189 align:start position:0%
+I created another array with 1,000
+values<00:04:54.120><c> which</c><00:04:54.280><c> contain</c><00:04:54.639><c> some</c><00:04:54.800><c> matching</c>
+
+00:04:55.189 --> 00:04:55.199 align:start position:0%
+values which contain some matching
+ 
+
+00:04:55.199 --> 00:04:56.749 align:start position:0%
+values which contain some matching
+values<00:04:55.759><c> that</c><00:04:55.840><c> we</c><00:04:55.960><c> want</c><00:04:56.080><c> to</c><00:04:56.199><c> see</c><00:04:56.360><c> if</c><00:04:56.479><c> we</c><00:04:56.560><c> can</c>
+
+00:04:56.749 --> 00:04:56.759 align:start position:0%
+values that we want to see if we can
+ 
+
+00:04:56.759 --> 00:04:58.629 align:start position:0%
+values that we want to see if we can
+find<00:04:57.080><c> in</c><00:04:57.199><c> the</c><00:04:57.320><c> big</c><00:04:57.479><c> array</c><00:04:58.080><c> in</c><00:04:58.240><c> vanilla</c>
+
+00:04:58.629 --> 00:04:58.639 align:start position:0%
+find in the big array in vanilla
+ 
+
+00:04:58.639 --> 00:05:00.749 align:start position:0%
+find in the big array in vanilla
+JavaScript<00:04:59.240><c> the</c><00:04:59.320><c> typical</c><00:04:59.880><c> way</c><00:05:00.000><c> to</c><00:05:00.120><c> do</c><00:05:00.320><c> this</c><00:05:00.639><c> is</c>
+
+00:05:00.749 --> 00:05:00.759 align:start position:0%
+JavaScript the typical way to do this is
+ 
+
+00:05:00.759 --> 00:05:02.550 align:start position:0%
+JavaScript the typical way to do this is
+to<00:05:00.919><c> use</c><00:05:01.160><c> array</c><00:05:01.479><c> includes</c><00:05:02.160><c> which</c><00:05:02.280><c> is</c><00:05:02.400><c> a</c>
+
+00:05:02.550 --> 00:05:02.560 align:start position:0%
+to use array includes which is a
+ 
+
+00:05:02.560 --> 00:05:04.310 align:start position:0%
+to use array includes which is a
+function<00:05:03.080><c> that</c><00:05:03.160><c> will</c><00:05:03.280><c> Loop</c><00:05:03.560><c> over</c><00:05:03.759><c> the</c><00:05:03.919><c> array</c>
+
+00:05:04.310 --> 00:05:04.320 align:start position:0%
+function that will Loop over the array
+ 
+
+00:05:04.320 --> 00:05:06.430 align:start position:0%
+function that will Loop over the array
+until<00:05:04.560><c> it</c><00:05:04.680><c> finds</c><00:05:04.919><c> a</c><00:05:05.039><c> matching</c><00:05:05.440><c> value</c><00:05:06.080><c> and</c><00:05:06.199><c> then</c>
+
+00:05:06.430 --> 00:05:06.440 align:start position:0%
+until it finds a matching value and then
+ 
+
+00:05:06.440 --> 00:05:08.430 align:start position:0%
+until it finds a matching value and then
+return<00:05:06.560><c> a</c><00:05:06.720><c> Boolean</c><00:05:07.080><c> of</c><00:05:07.280><c> true</c><00:05:07.440><c> or</c><00:05:07.600><c> false</c><00:05:08.080><c> in</c><00:05:08.240><c> Big</c>
+
+00:05:08.430 --> 00:05:08.440 align:start position:0%
+return a Boolean of true or false in Big
+ 
+
+00:05:08.440 --> 00:05:10.950 align:start position:0%
+return a Boolean of true or false in Big
+O<00:05:08.840><c> that</c><00:05:08.960><c> would</c><00:05:09.120><c> give</c><00:05:09.280><c> us</c><00:05:09.440><c> o</c><00:05:09.680><c> of</c><00:05:09.840><c> n</c><00:05:10.160><c> performance</c>
+
+00:05:10.950 --> 00:05:10.960 align:start position:0%
+O that would give us o of n performance
+ 
+
+00:05:10.960 --> 00:05:12.430 align:start position:0%
+O that would give us o of n performance
+but<00:05:11.120><c> there's</c><00:05:11.280><c> an</c><00:05:11.440><c> alternative</c><00:05:12.080><c> and</c><00:05:12.240><c> more</c>
+
+00:05:12.430 --> 00:05:12.440 align:start position:0%
+but there's an alternative and more
+ 
+
+00:05:12.440 --> 00:05:14.469 align:start position:0%
+but there's an alternative and more
+clever<00:05:12.800><c> way</c><00:05:12.960><c> to</c><00:05:13.199><c> solve</c><00:05:13.520><c> this</c><00:05:13.759><c> problem</c><00:05:14.240><c> we</c><00:05:14.320><c> can</c>
+
+00:05:14.469 --> 00:05:14.479 align:start position:0%
+clever way to solve this problem we can
+ 
+
+00:05:14.479 --> 00:05:16.430 align:start position:0%
+clever way to solve this problem we can
+take<00:05:14.639><c> the</c><00:05:14.759><c> original</c><00:05:15.160><c> array</c><00:05:15.560><c> and</c><00:05:15.800><c> create</c><00:05:16.039><c> a</c><00:05:16.199><c> set</c>
+
+00:05:16.430 --> 00:05:16.440 align:start position:0%
+take the original array and create a set
+ 
+
+00:05:16.440 --> 00:05:18.309 align:start position:0%
+take the original array and create a set
+data<00:05:16.759><c> structure</c><00:05:17.400><c> a</c><00:05:17.520><c> set</c><00:05:17.720><c> will</c><00:05:17.919><c> index</c>
+
+00:05:18.309 --> 00:05:18.319 align:start position:0%
+data structure a set will index
+ 
+
+00:05:18.319 --> 00:05:20.270 align:start position:0%
+data structure a set will index
+everything<00:05:18.680><c> by</c><00:05:18.840><c> unique</c><00:05:19.240><c> value</c><00:05:19.759><c> and</c><00:05:19.919><c> has</c><00:05:20.080><c> a</c>
+
+00:05:20.270 --> 00:05:20.280 align:start position:0%
+everything by unique value and has a
+ 
+
+00:05:20.280 --> 00:05:22.230 align:start position:0%
+everything by unique value and has a
+method<00:05:20.600><c> called</c><00:05:20.960><c> has</c><00:05:21.479><c> that</c><00:05:21.560><c> will</c><00:05:21.720><c> tell</c><00:05:21.919><c> us</c><00:05:22.080><c> if</c>
+
+00:05:22.230 --> 00:05:22.240 align:start position:0%
+method called has that will tell us if
+ 
+
+00:05:22.240 --> 00:05:24.110 align:start position:0%
+method called has that will tell us if
+that<00:05:22.400><c> value</c><00:05:22.759><c> exists</c><00:05:23.120><c> in</c><00:05:23.240><c> the</c><00:05:23.400><c> set</c><00:05:23.919><c> pretty</c>
+
+00:05:24.110 --> 00:05:24.120 align:start position:0%
+that value exists in the set pretty
+ 
+
+00:05:24.120 --> 00:05:26.189 align:start position:0%
+that value exists in the set pretty
+simple<00:05:24.639><c> but</c><00:05:24.800><c> now</c><00:05:24.919><c> let's</c><00:05:25.080><c> run</c><00:05:25.240><c> our</c><00:05:25.400><c> Benchmark</c>
+
+00:05:26.189 --> 00:05:26.199 align:start position:0%
+simple but now let's run our Benchmark
+ 
+
+00:05:26.199 --> 00:05:27.629 align:start position:0%
+simple but now let's run our Benchmark
+this<00:05:26.319><c> time</c><00:05:26.520><c> the</c><00:05:26.639><c> performance</c><00:05:27.080><c> difference</c><00:05:27.440><c> is</c>
+
+00:05:27.629 --> 00:05:27.639 align:start position:0%
+this time the performance difference is
+ 
+
+00:05:27.639 --> 00:05:29.909 align:start position:0%
+this time the performance difference is
+staggering<00:05:28.360><c> array</c><00:05:28.680><c> includes</c><00:05:29.120><c> was</c><00:05:29.280><c> only</c><00:05:29.720><c> able</c>
+
+00:05:29.909 --> 00:05:29.919 align:start position:0%
+staggering array includes was only able
+ 
+
+00:05:29.919 --> 00:05:32.029 align:start position:0%
+staggering array includes was only able
+to<00:05:30.000><c> solve</c><00:05:30.280><c> the</c><00:05:30.440><c> problem</c><00:05:30.759><c> 4.9</c><00:05:31.520><c> times</c><00:05:31.840><c> per</c>
+
+00:05:32.029 --> 00:05:32.039 align:start position:0%
+to solve the problem 4.9 times per
+ 
+
+00:05:32.039 --> 00:05:34.150 align:start position:0%
+to solve the problem 4.9 times per
+second<00:05:32.560><c> while</c><00:05:32.759><c> set</c><00:05:33.039><c> lookup</c><00:05:33.479><c> was</c><00:05:33.639><c> able</c><00:05:33.840><c> to</c><00:05:33.960><c> do</c>
+
+00:05:34.150 --> 00:05:34.160 align:start position:0%
+second while set lookup was able to do
+ 
+
+00:05:34.160 --> 00:05:36.670 align:start position:0%
+second while set lookup was able to do
+the<00:05:34.280><c> same</c><00:05:34.520><c> thing</c><00:05:35.000><c> 4.5</c><00:05:35.800><c> million</c><00:05:36.199><c> times</c><00:05:36.520><c> per</c>
+
+00:05:36.670 --> 00:05:36.680 align:start position:0%
+the same thing 4.5 million times per
+ 
+
+00:05:36.680 --> 00:05:38.790 align:start position:0%
+the same thing 4.5 million times per
+second<00:05:37.039><c> or</c><00:05:37.199><c> in</c><00:05:37.280><c> other</c><00:05:37.440><c> words</c><00:05:37.840><c> a</c><00:05:38.039><c> million</c><00:05:38.440><c> times</c>
+
+00:05:38.790 --> 00:05:38.800 align:start position:0%
+second or in other words a million times
+ 
+
+00:05:38.800 --> 00:05:40.990 align:start position:0%
+second or in other words a million times
+faster<00:05:39.560><c> the</c><00:05:39.639><c> reason</c><00:05:39.880><c> it's</c><00:05:40.000><c> so</c><00:05:40.199><c> dramatic</c><00:05:40.800><c> is</c>
+
+00:05:40.990 --> 00:05:41.000 align:start position:0%
+faster the reason it's so dramatic is
+ 
+
+00:05:41.000 --> 00:05:43.309 align:start position:0%
+faster the reason it's so dramatic is
+because<00:05:41.240><c> set</c><00:05:41.639><c> has</c><00:05:41.800><c> o</c><00:05:42.039><c> of</c><00:05:42.199><c> one</c><00:05:42.440><c> performance</c><00:05:43.199><c> the</c>
+
+00:05:43.309 --> 00:05:43.319 align:start position:0%
+because set has o of one performance the
+ 
+
+00:05:43.319 --> 00:05:45.350 align:start position:0%
+because set has o of one performance the
+unique<00:05:43.639><c> values</c><00:05:43.919><c> are</c><00:05:44.120><c> already</c><00:05:44.400><c> indexed</c><00:05:45.120><c> so</c><00:05:45.280><c> it</c>
+
+00:05:45.350 --> 00:05:45.360 align:start position:0%
+unique values are already indexed so it
+ 
+
+00:05:45.360 --> 00:05:46.950 align:start position:0%
+unique values are already indexed so it
+doesn't<00:05:45.680><c> need</c><00:05:45.840><c> to</c><00:05:46.000><c> Loop</c><00:05:46.280><c> over</c><00:05:46.479><c> the</c><00:05:46.600><c> entire</c>
+
+00:05:46.950 --> 00:05:46.960 align:start position:0%
+doesn't need to Loop over the entire
+ 
+
+00:05:46.960 --> 00:05:48.909 align:start position:0%
+doesn't need to Loop over the entire
+array<00:05:47.520><c> it's</c><00:05:47.680><c> the</c><00:05:47.800><c> same</c><00:05:48.039><c> basic</c><00:05:48.360><c> concept</c><00:05:48.759><c> as</c>
+
+00:05:48.909 --> 00:05:48.919 align:start position:0%
+array it's the same basic concept as
+ 
+
+00:05:48.919 --> 00:05:50.469 align:start position:0%
+array it's the same basic concept as
+creating<00:05:49.199><c> an</c><00:05:49.400><c> index</c><00:05:49.759><c> in</c><00:05:49.880><c> a</c><00:05:50.000><c> relational</c>
+
+00:05:50.469 --> 00:05:50.479 align:start position:0%
+creating an index in a relational
+ 
+
+00:05:50.479 --> 00:05:52.430 align:start position:0%
+creating an index in a relational
+database<00:05:51.199><c> now</c><00:05:51.400><c> if</c><00:05:51.479><c> you're</c><00:05:51.639><c> only</c><00:05:51.840><c> using</c><00:05:52.120><c> array</c>
+
+00:05:52.430 --> 00:05:52.440 align:start position:0%
+database now if you're only using array
+ 
+
+00:05:52.440 --> 00:05:54.350 align:start position:0%
+database now if you're only using array
+includes<00:05:52.840><c> on</c><00:05:52.960><c> a</c><00:05:53.080><c> small</c><00:05:53.319><c> number</c><00:05:53.520><c> of</c><00:05:53.720><c> elements</c>
+
+00:05:54.350 --> 00:05:54.360 align:start position:0%
+includes on a small number of elements
+ 
+
+00:05:54.360 --> 00:05:55.950 align:start position:0%
+includes on a small number of elements
+it's<00:05:54.560><c> probably</c><00:05:54.919><c> not</c><00:05:55.080><c> worth</c><00:05:55.280><c> it</c><00:05:55.400><c> to</c><00:05:55.560><c> create</c><00:05:55.800><c> a</c>
+
+00:05:55.950 --> 00:05:55.960 align:start position:0%
+it's probably not worth it to create a
+ 
+
+00:05:55.960 --> 00:05:57.629 align:start position:0%
+it's probably not worth it to create a
+set<00:05:56.280><c> because</c><00:05:56.520><c> there</c><00:05:56.680><c> is</c><00:05:56.800><c> some</c><00:05:57.000><c> overhead</c><00:05:57.479><c> in</c>
+
+00:05:57.629 --> 00:05:57.639 align:start position:0%
+set because there is some overhead in
+ 
+
+00:05:57.639 --> 00:05:59.309 align:start position:0%
+set because there is some overhead in
+creating<00:05:58.000><c> that</c><00:05:58.160><c> index</c><00:05:58.840><c> but</c><00:05:58.960><c> if</c><00:05:59.039><c> you</c><00:05:59.120><c> have</c><00:05:59.240><c> a</c>
+
+00:05:59.309 --> 00:05:59.319 align:start position:0%
+creating that index but if you have a
+ 
+
+00:05:59.319 --> 00:06:01.590 align:start position:0%
+creating that index but if you have a
+large<00:05:59.720><c> data</c><00:06:00.000><c> set</c><00:06:00.400><c> it's</c><00:06:00.600><c> definitely</c><00:06:01.039><c> worth</c><00:06:01.240><c> it</c>
+
+00:06:01.590 --> 00:06:01.600 align:start position:0%
+large data set it's definitely worth it
+ 
+
+00:06:01.600 --> 00:06:03.390 align:start position:0%
+large data set it's definitely worth it
+but<00:06:01.759><c> now</c><00:06:01.880><c> let's</c><00:06:02.080><c> talk</c><00:06:02.240><c> about</c><00:06:02.440><c> sorting</c><00:06:02.840><c> arrays</c>
+
+00:06:03.390 --> 00:06:03.400 align:start position:0%
+but now let's talk about sorting arrays
+ 
+
+00:06:03.400 --> 00:06:04.950 align:start position:0%
+but now let's talk about sorting arrays
+there<00:06:03.520><c> are</c><00:06:03.680><c> many</c><00:06:03.880><c> ways</c><00:06:04.080><c> to</c><00:06:04.240><c> do</c><00:06:04.440><c> this</c><00:06:04.720><c> and</c><00:06:04.800><c> I</c>
+
+00:06:04.950 --> 00:06:04.960 align:start position:0%
+there are many ways to do this and I
+ 
+
+00:06:04.960 --> 00:06:06.469 align:start position:0%
+there are many ways to do this and I
+even<00:06:05.120><c> have</c><00:06:05.280><c> a</c><00:06:05.440><c> video</c><00:06:05.759><c> that</c><00:06:05.880><c> compares</c><00:06:06.280><c> 10</c>
+
+00:06:06.469 --> 00:06:06.479 align:start position:0%
+even have a video that compares 10
+ 
+
+00:06:06.479 --> 00:06:08.270 align:start position:0%
+even have a video that compares 10
+different<00:06:06.720><c> sorting</c><00:06:07.120><c> algorithms</c><00:06:07.680><c> visually</c>
+
+00:06:08.270 --> 00:06:08.280 align:start position:0%
+different sorting algorithms visually
+ 
+
+00:06:08.280 --> 00:06:10.469 align:start position:0%
+different sorting algorithms visually
+but<00:06:08.479><c> JavaScript</c><00:06:09.080><c> also</c><00:06:09.319><c> has</c><00:06:09.479><c> a</c><00:06:09.639><c> built-in</c><00:06:10.120><c> array</c>
+
+00:06:10.469 --> 00:06:10.479 align:start position:0%
+but JavaScript also has a built-in array
+ 
+
+00:06:10.479 --> 00:06:12.070 align:start position:0%
+but JavaScript also has a built-in array
+sort<00:06:10.800><c> method</c><00:06:11.160><c> and</c><00:06:11.280><c> I</c><00:06:11.360><c> was</c><00:06:11.479><c> curious</c><00:06:11.759><c> to</c><00:06:11.840><c> see</c><00:06:11.960><c> if</c>
+
+00:06:12.070 --> 00:06:12.080 align:start position:0%
+sort method and I was curious to see if
+ 
+
+00:06:12.080 --> 00:06:13.990 align:start position:0%
+sort method and I was curious to see if
+I<00:06:12.160><c> could</c><00:06:12.280><c> beat</c><00:06:12.479><c> it</c><00:06:12.840><c> by</c><00:06:13.080><c> implementing</c><00:06:13.720><c> three</c>
+
+00:06:13.990 --> 00:06:14.000 align:start position:0%
+I could beat it by implementing three
+ 
+
+00:06:14.000 --> 00:06:16.070 align:start position:0%
+I could beat it by implementing three
+different<00:06:14.240><c> sorting</c><00:06:14.720><c> algorithms</c><00:06:15.440><c> like</c><00:06:15.720><c> bubble</c>
+
+00:06:16.070 --> 00:06:16.080 align:start position:0%
+different sorting algorithms like bubble
+ 
+
+00:06:16.080 --> 00:06:18.150 align:start position:0%
+different sorting algorithms like bubble
+sort<00:06:16.440><c> quick</c><00:06:16.680><c> sort</c><00:06:16.960><c> and</c><00:06:17.080><c> merge</c><00:06:17.440><c> sort</c><00:06:17.919><c> I'm</c><00:06:18.039><c> not</c>
+
+00:06:18.150 --> 00:06:18.160 align:start position:0%
+sort quick sort and merge sort I'm not
+ 
+
+00:06:18.160 --> 00:06:19.550 align:start position:0%
+sort quick sort and merge sort I'm not
+going<00:06:18.280><c> to</c><00:06:18.400><c> go</c><00:06:18.520><c> over</c><00:06:18.680><c> the</c><00:06:18.800><c> implementation</c><00:06:19.360><c> in</c>
+
+00:06:19.550 --> 00:06:19.560 align:start position:0%
+going to go over the implementation in
+ 
+
+00:06:19.560 --> 00:06:21.390 align:start position:0%
+going to go over the implementation in
+detail<00:06:20.080><c> but</c><00:06:20.240><c> bubble</c><00:06:20.560><c> sort</c><00:06:20.880><c> is</c><00:06:21.000><c> generally</c>
+
+00:06:21.390 --> 00:06:21.400 align:start position:0%
+detail but bubble sort is generally
+ 
+
+00:06:21.400 --> 00:06:23.589 align:start position:0%
+detail but bubble sort is generally
+considered<00:06:21.800><c> the</c><00:06:22.000><c> simplest</c><00:06:22.440><c> algorithm</c><00:06:23.360><c> but</c>
+
+00:06:23.589 --> 00:06:23.599 align:start position:0%
+considered the simplest algorithm but
+ 
+
+00:06:23.599 --> 00:06:26.110 align:start position:0%
+considered the simplest algorithm but
+not<00:06:23.840><c> very</c>
+
+00:06:26.110 --> 00:06:26.120 align:start position:0%
+ 
+ 
+
+00:06:26.120 --> 00:06:28.230 align:start position:0%
+ 
+performant<00:06:27.120><c> while</c><00:06:27.319><c> quicksort</c><00:06:27.759><c> is</c><00:06:27.880><c> a</c><00:06:28.000><c> divide</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+performant while quicksort is a divide
+ 
+
+00:06:28.240 --> 00:06:30.110 align:start position:0%
+performant while quicksort is a divide
+and<00:06:28.400><c> conquer</c><00:06:28.759><c> algorithm</c><00:06:29.440><c> that</c><00:06:29.639><c> is</c><00:06:29.759><c> generally</c>
+
+00:06:30.110 --> 00:06:30.120 align:start position:0%
+and conquer algorithm that is generally
+ 
+
+00:06:30.120 --> 00:06:31.430 align:start position:0%
+and conquer algorithm that is generally
+considered<00:06:30.440><c> to</c><00:06:30.520><c> be</c><00:06:30.680><c> the</c><00:06:30.800><c> fastest</c><00:06:31.080><c> sorting</c>
+
+00:06:31.430 --> 00:06:31.440 align:start position:0%
+considered to be the fastest sorting
+ 
+
+00:06:31.440 --> 00:06:33.890 align:start position:0%
+considered to be the fastest sorting
+algorithm<00:06:31.880><c> for</c><00:06:32.039><c> most</c><00:06:32.199><c> use</c>
+
+00:06:33.890 --> 00:06:33.900 align:start position:0%
+algorithm for most use
+ 
+
+00:06:33.900 --> 00:06:35.309 align:start position:0%
+algorithm for most use
+[Music]
+
+00:06:35.309 --> 00:06:35.319 align:start position:0%
+[Music]
+ 
+
+00:06:35.319 --> 00:06:37.670 align:start position:0%
+[Music]
+cases<00:06:36.319><c> and</c><00:06:36.440><c> then</c><00:06:36.560><c> merge</c><00:06:36.840><c> sort</c><00:06:37.160><c> which</c><00:06:37.240><c> is</c><00:06:37.360><c> also</c>
+
+00:06:37.670 --> 00:06:37.680 align:start position:0%
+cases and then merge sort which is also
+ 
+
+00:06:37.680 --> 00:06:39.390 align:start position:0%
+cases and then merge sort which is also
+a<00:06:37.759><c> divide</c><00:06:38.000><c> and</c><00:06:38.160><c> conquer</c><00:06:38.479><c> algorithm</c><00:06:39.160><c> that</c><00:06:39.280><c> can</c>
+
+00:06:39.390 --> 00:06:39.400 align:start position:0%
+a divide and conquer algorithm that can
+ 
+
+00:06:39.400 --> 00:06:42.909 align:start position:0%
+a divide and conquer algorithm that can
+perform<00:06:39.759><c> really</c><00:06:39.960><c> well</c><00:06:40.199><c> on</c><00:06:40.360><c> certain</c><00:06:40.639><c> data</c>
+
+00:06:42.909 --> 00:06:42.919 align:start position:0%
+perform really well on certain data
+ 
+
+00:06:42.919 --> 00:06:44.950 align:start position:0%
+perform really well on certain data
+structures<00:06:43.919><c> in</c><00:06:44.080><c> this</c><00:06:44.199><c> Benchmark</c><00:06:44.680><c> I'm</c><00:06:44.800><c> going</c>
+
+00:06:44.950 --> 00:06:44.960 align:start position:0%
+structures in this Benchmark I'm going
+ 
+
+00:06:44.960 --> 00:06:47.150 align:start position:0%
+structures in this Benchmark I'm going
+to<00:06:45.039><c> sort</c><00:06:45.240><c> an</c><00:06:45.360><c> array</c><00:06:45.800><c> of</c><00:06:46.000><c> 10,000</c><00:06:46.560><c> elements</c>
+
+00:06:47.150 --> 00:06:47.160 align:start position:0%
+to sort an array of 10,000 elements
+ 
+
+00:06:47.160 --> 00:06:48.909 align:start position:0%
+to sort an array of 10,000 elements
+we'll<00:06:47.319><c> use</c><00:06:47.479><c> the</c><00:06:47.639><c> JavaScript</c><00:06:48.120><c> sort</c><00:06:48.440><c> function</c>
+
+00:06:48.909 --> 00:06:48.919 align:start position:0%
+we'll use the JavaScript sort function
+ 
+
+00:06:48.919 --> 00:06:50.670 align:start position:0%
+we'll use the JavaScript sort function
+as<00:06:49.039><c> our</c><00:06:49.360><c> Baseline</c><00:06:50.000><c> and</c><00:06:50.120><c> when</c><00:06:50.240><c> we</c><00:06:50.319><c> run</c><00:06:50.560><c> this</c>
+
+00:06:50.670 --> 00:06:50.680 align:start position:0%
+as our Baseline and when we run this
+ 
+
+00:06:50.680 --> 00:06:52.309 align:start position:0%
+as our Baseline and when we run this
+Benchmark<00:06:51.160><c> we</c><00:06:51.280><c> get</c><00:06:51.400><c> some</c><00:06:51.560><c> pretty</c><00:06:51.800><c> interesting</c>
+
+00:06:52.309 --> 00:06:52.319 align:start position:0%
+Benchmark we get some pretty interesting
+ 
+
+00:06:52.319 --> 00:06:54.550 align:start position:0%
+Benchmark we get some pretty interesting
+results<00:06:52.880><c> bubble</c><00:06:53.199><c> sort</c><00:06:53.560><c> obviously</c><00:06:53.960><c> sucks</c><00:06:54.319><c> big</c>
+
+00:06:54.550 --> 00:06:54.560 align:start position:0%
+results bubble sort obviously sucks big
+ 
+
+00:06:54.560 --> 00:06:56.230 align:start position:0%
+results bubble sort obviously sucks big
+time<00:06:54.880><c> merge</c><00:06:55.199><c> sort</c><00:06:55.479><c> has</c><00:06:55.680><c> pretty</c><00:06:55.879><c> similar</c>
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+time merge sort has pretty similar
+ 
+
+00:06:56.240 --> 00:06:58.070 align:start position:0%
+time merge sort has pretty similar
+performance<00:06:57.000><c> but</c><00:06:57.160><c> quick</c><00:06:57.400><c> sort</c><00:06:57.680><c> is</c><00:06:57.840><c> almost</c>
+
+00:06:58.070 --> 00:06:58.080 align:start position:0%
+performance but quick sort is almost
+ 
+
+00:06:58.080 --> 00:06:59.790 align:start position:0%
+performance but quick sort is almost
+three<00:06:58.319><c> times</c><00:06:58.639><c> faster</c><00:06:59.240><c> that's</c><00:06:59.599><c> pretty</c>
+
+00:06:59.790 --> 00:06:59.800 align:start position:0%
+three times faster that's pretty
+ 
+
+00:06:59.800 --> 00:07:01.790 align:start position:0%
+three times faster that's pretty
+impressive<00:07:00.360><c> but</c><00:07:00.599><c> why</c><00:07:00.759><c> is</c><00:07:00.960><c> that</c><00:07:01.400><c> well</c><00:07:01.560><c> part</c><00:07:01.680><c> of</c>
+
+00:07:01.790 --> 00:07:01.800 align:start position:0%
+impressive but why is that well part of
+ 
+
+00:07:01.800 --> 00:07:03.230 align:start position:0%
+impressive but why is that well part of
+it<00:07:01.919><c> has</c><00:07:02.080><c> to</c><00:07:02.199><c> do</c><00:07:02.319><c> with</c><00:07:02.440><c> the</c><00:07:02.560><c> overhead</c><00:07:03.039><c> of</c>
+
+00:07:03.230 --> 00:07:03.240 align:start position:0%
+it has to do with the overhead of
+ 
+
+00:07:03.240 --> 00:07:05.230 align:start position:0%
+it has to do with the overhead of
+function<00:07:03.599><c> calls</c><00:07:03.879><c> and</c><00:07:04.080><c> sort</c><00:07:04.680><c> but</c><00:07:04.800><c> it</c><00:07:04.960><c> also</c>
+
+00:07:05.230 --> 00:07:05.240 align:start position:0%
+function calls and sort but it also
+ 
+
+00:07:05.240 --> 00:07:06.589 align:start position:0%
+function calls and sort but it also
+really<00:07:05.440><c> depends</c><00:07:05.840><c> on</c><00:07:06.000><c> the</c><00:07:06.120><c> thing</c><00:07:06.280><c> that</c><00:07:06.360><c> you're</c>
+
+00:07:06.589 --> 00:07:06.599 align:start position:0%
+really depends on the thing that you're
+ 
+
+00:07:06.599 --> 00:07:08.189 align:start position:0%
+really depends on the thing that you're
+actually<00:07:06.840><c> sorting</c><00:07:07.479><c> like</c><00:07:07.720><c> in</c><00:07:07.840><c> this</c><00:07:08.000><c> case</c>
+
+00:07:08.189 --> 00:07:08.199 align:start position:0%
+actually sorting like in this case
+ 
+
+00:07:08.199 --> 00:07:09.629 align:start position:0%
+actually sorting like in this case
+quicksort<00:07:08.639><c> is</c><00:07:08.720><c> able</c><00:07:08.919><c> to</c><00:07:09.000><c> do</c><00:07:09.120><c> a</c><00:07:09.280><c> really</c><00:07:09.440><c> good</c>
+
+00:07:09.629 --> 00:07:09.639 align:start position:0%
+quicksort is able to do a really good
+ 
+
+00:07:09.639 --> 00:07:11.390 align:start position:0%
+quicksort is able to do a really good
+job<00:07:09.840><c> with</c><00:07:10.000><c> numbers</c><00:07:10.720><c> but</c><00:07:10.919><c> let's</c><00:07:11.080><c> see</c><00:07:11.240><c> what</c>
+
+00:07:11.390 --> 00:07:11.400 align:start position:0%
+job with numbers but let's see what
+ 
+
+00:07:11.400 --> 00:07:13.150 align:start position:0%
+job with numbers but let's see what
+happens<00:07:11.680><c> if</c><00:07:11.800><c> we</c><00:07:11.960><c> change</c><00:07:12.360><c> the</c><00:07:12.560><c> actual</c><00:07:12.879><c> test</c>
+
+00:07:13.150 --> 00:07:13.160 align:start position:0%
+happens if we change the actual test
+ 
+
+00:07:13.160 --> 00:07:15.110 align:start position:0%
+happens if we change the actual test
+data<00:07:13.400><c> to</c><00:07:13.560><c> an</c><00:07:13.680><c> array</c><00:07:13.960><c> of</c><00:07:14.080><c> strings</c><00:07:14.680><c> when</c><00:07:14.800><c> we</c><00:07:14.919><c> run</c>
+
+00:07:15.110 --> 00:07:15.120 align:start position:0%
+data to an array of strings when we run
+ 
+
+00:07:15.120 --> 00:07:17.029 align:start position:0%
+data to an array of strings when we run
+the<00:07:15.199><c> same</c><00:07:15.400><c> Benchmark</c><00:07:15.960><c> but</c><00:07:16.199><c> with</c><00:07:16.319><c> strings</c>
+
+00:07:17.029 --> 00:07:17.039 align:start position:0%
+the same Benchmark but with strings
+ 
+
+00:07:17.039 --> 00:07:19.189 align:start position:0%
+the same Benchmark but with strings
+quick<00:07:17.240><c> sort</c><00:07:17.599><c> is</c><00:07:17.720><c> still</c><00:07:18.039><c> faster</c><00:07:18.639><c> but</c><00:07:18.840><c> only</c><00:07:19.080><c> just</c>
+
+00:07:19.189 --> 00:07:19.199 align:start position:0%
+quick sort is still faster but only just
+ 
+
+00:07:19.199 --> 00:07:20.950 align:start position:0%
+quick sort is still faster but only just
+a<00:07:19.360><c> little</c><00:07:19.520><c> bit</c><00:07:19.879><c> the</c><00:07:19.960><c> bottom</c><00:07:20.240><c> line</c><00:07:20.520><c> is</c><00:07:20.639><c> that</c><00:07:20.800><c> in</c>
+
+00:07:20.950 --> 00:07:20.960 align:start position:0%
+a little bit the bottom line is that in
+ 
+
+00:07:20.960 --> 00:07:23.070 align:start position:0%
+a little bit the bottom line is that in
+JavaScript<00:07:21.639><c> sort</c><00:07:22.000><c> is</c><00:07:22.199><c> probably</c><00:07:22.639><c> fast</c><00:07:22.879><c> enough</c>
+
+00:07:23.070 --> 00:07:23.080 align:start position:0%
+JavaScript sort is probably fast enough
+ 
+
+00:07:23.080 --> 00:07:24.990 align:start position:0%
+JavaScript sort is probably fast enough
+for<00:07:23.240><c> most</c><00:07:23.479><c> use</c><00:07:23.800><c> cases</c><00:07:24.360><c> and</c><00:07:24.440><c> the</c><00:07:24.560><c> fourth</c><00:07:24.800><c> rule</c>
+
+00:07:24.990 --> 00:07:25.000 align:start position:0%
+for most use cases and the fourth rule
+ 
+
+00:07:25.000 --> 00:07:27.070 align:start position:0%
+for most use cases and the fourth rule
+of<00:07:25.160><c> programming</c><00:07:25.759><c> is</c><00:07:25.919><c> that</c><00:07:26.120><c> fancy</c><00:07:26.479><c> algorithms</c>
+
+00:07:27.070 --> 00:07:27.080 align:start position:0%
+of programming is that fancy algorithms
+ 
+
+00:07:27.080 --> 00:07:28.909 align:start position:0%
+of programming is that fancy algorithms
+are<00:07:27.240><c> buggier</c><00:07:27.720><c> than</c><00:07:27.879><c> simple</c><00:07:28.199><c> ones</c><00:07:28.639><c> and</c><00:07:28.759><c> they're</c>
+
+00:07:28.909 --> 00:07:28.919 align:start position:0%
+are buggier than simple ones and they're
+ 
+
+00:07:28.919 --> 00:07:30.430 align:start position:0%
+are buggier than simple ones and they're
+much<00:07:29.039><c> harder</c><00:07:29.240><c> to</c><00:07:29.520><c> Implement</c><00:07:29.919><c> use</c><00:07:30.160><c> Simple</c>
+
+00:07:30.430 --> 00:07:30.440 align:start position:0%
+much harder to Implement use Simple
+ 
+
+00:07:30.440 --> 00:07:32.070 align:start position:0%
+much harder to Implement use Simple
+algorithms<00:07:31.080><c> as</c><00:07:31.199><c> well</c><00:07:31.360><c> as</c><00:07:31.520><c> simple</c><00:07:31.840><c> data</c>
+
+00:07:32.070 --> 00:07:32.080 align:start position:0%
+algorithms as well as simple data
+ 
+
+00:07:32.080 --> 00:07:33.589 align:start position:0%
+algorithms as well as simple data
+structures<00:07:32.800><c> but</c><00:07:32.919><c> if</c><00:07:33.000><c> you're</c><00:07:33.160><c> really</c><00:07:33.360><c> looking</c>
+
+00:07:33.589 --> 00:07:33.599 align:start position:0%
+structures but if you're really looking
+ 
+
+00:07:33.599 --> 00:07:35.550 align:start position:0%
+structures but if you're really looking
+to<00:07:33.840><c> optimize</c><00:07:34.199><c> a</c><00:07:34.280><c> sorting</c><00:07:34.680><c> algorithm</c><00:07:35.360><c> you</c>
+
+00:07:35.550 --> 00:07:35.560 align:start position:0%
+to optimize a sorting algorithm you
+ 
+
+00:07:35.560 --> 00:07:36.670 align:start position:0%
+to optimize a sorting algorithm you
+probably<00:07:35.800><c> shouldn't</c><00:07:36.080><c> be</c><00:07:36.199><c> messing</c><00:07:36.479><c> around</c>
+
+00:07:36.670 --> 00:07:36.680 align:start position:0%
+probably shouldn't be messing around
+ 
+
+00:07:36.680 --> 00:07:38.350 align:start position:0%
+probably shouldn't be messing around
+with<00:07:36.840><c> JavaScript</c><00:07:37.599><c> and</c><00:07:37.720><c> instead</c><00:07:38.000><c> use</c><00:07:38.199><c> a</c>
+
+00:07:38.350 --> 00:07:38.360 align:start position:0%
+with JavaScript and instead use a
+ 
+
+00:07:38.360 --> 00:07:40.710 align:start position:0%
+with JavaScript and instead use a
+systems<00:07:38.759><c> language</c><00:07:39.160><c> like</c><00:07:39.280><c> C</c><00:07:39.560><c> or</c><00:07:39.759><c> rust</c><00:07:40.280><c> Doo</c>
+
+00:07:40.710 --> 00:07:40.720 align:start position:0%
+systems language like C or rust Doo
+ 
+
+00:07:40.720 --> 00:07:42.469 align:start position:0%
+systems language like C or rust Doo
+itself<00:07:41.000><c> is</c><00:07:41.160><c> actually</c><00:07:41.400><c> written</c><00:07:41.639><c> in</c><00:07:41.800><c> Rust</c><00:07:42.319><c> while</c>
+
+00:07:42.469 --> 00:07:42.479 align:start position:0%
+itself is actually written in Rust while
+ 
+
+00:07:42.479 --> 00:07:44.189 align:start position:0%
+itself is actually written in Rust while
+the<00:07:42.599><c> bun</c><00:07:42.840><c> JavaScript</c><00:07:43.319><c> runtime</c><00:07:43.680><c> is</c><00:07:43.800><c> written</c><00:07:44.039><c> in</c>
+
+00:07:44.189 --> 00:07:44.199 align:start position:0%
+the bun JavaScript runtime is written in
+ 
+
+00:07:44.199 --> 00:07:46.869 align:start position:0%
+the bun JavaScript runtime is written in
+Zig<00:07:44.680><c> and</c><00:07:44.800><c> nodejs</c><00:07:45.400><c> and</c><00:07:45.639><c> C++</c><00:07:46.639><c> pretty</c>
+
+00:07:46.869 --> 00:07:46.879 align:start position:0%
+Zig and nodejs and C++ pretty
+ 
+
+00:07:46.879 --> 00:07:48.350 align:start position:0%
+Zig and nodejs and C++ pretty
+interesting<00:07:47.479><c> but</c><00:07:47.639><c> I</c><00:07:47.720><c> think</c><00:07:47.840><c> the</c><00:07:47.960><c> main</c><00:07:48.120><c> thing</c><00:07:48.240><c> I</c>
+
+00:07:48.350 --> 00:07:48.360 align:start position:0%
+interesting but I think the main thing I
+ 
+
+00:07:48.360 --> 00:07:49.950 align:start position:0%
+interesting but I think the main thing I
+learned<00:07:48.599><c> through</c><00:07:48.759><c> all</c><00:07:48.919><c> this</c><00:07:49.039><c> benchmarking</c><00:07:49.840><c> is</c>
+
+00:07:49.950 --> 00:07:49.960 align:start position:0%
+learned through all this benchmarking is
+ 
+
+00:07:49.960 --> 00:07:51.710 align:start position:0%
+learned through all this benchmarking is
+that<00:07:50.120><c> virtually</c><00:07:50.479><c> all</c><00:07:50.639><c> the</c><00:07:50.759><c> built-in</c><00:07:51.240><c> stuff</c><00:07:51.520><c> is</c>
+
+00:07:51.710 --> 00:07:51.720 align:start position:0%
+that virtually all the built-in stuff is
+ 
+
+00:07:51.720 --> 00:07:53.670 align:start position:0%
+that virtually all the built-in stuff is
+good<00:07:51.919><c> enough</c><00:07:52.280><c> benchmarking</c><00:07:52.800><c> is</c><00:07:53.000><c> fun</c><00:07:53.400><c> but</c><00:07:53.520><c> it's</c>
+
+00:07:53.670 --> 00:07:53.680 align:start position:0%
+good enough benchmarking is fun but it's
+ 
+
+00:07:53.680 --> 00:07:54.869 align:start position:0%
+good enough benchmarking is fun but it's
+far<00:07:53.840><c> more</c><00:07:54.000><c> important</c><00:07:54.280><c> to</c><00:07:54.400><c> get</c><00:07:54.520><c> your</c><00:07:54.639><c> code</c>
+
+00:07:54.869 --> 00:07:54.879 align:start position:0%
+far more important to get your code
+ 
+
+00:07:54.879 --> 00:07:56.990 align:start position:0%
+far more important to get your code
+working<00:07:55.360><c> first</c><00:07:55.919><c> and</c><00:07:56.039><c> that</c><00:07:56.159><c> brings</c><00:07:56.440><c> us</c><00:07:56.680><c> back</c><00:07:56.879><c> to</c>
+
+00:07:56.990 --> 00:07:57.000 align:start position:0%
+working first and that brings us back to
+ 
+
+00:07:57.000 --> 00:07:58.629 align:start position:0%
+working first and that brings us back to
+the<00:07:57.120><c> first</c><00:07:57.360><c> rule</c><00:07:57.639><c> of</c><00:07:57.800><c> programming</c><00:07:58.319><c> you</c><00:07:58.440><c> can't</c>
+
+00:07:58.629 --> 00:07:58.639 align:start position:0%
+the first rule of programming you can't
+ 
+
+00:07:58.639 --> 00:08:00.189 align:start position:0%
+the first rule of programming you can't
+tell<00:07:58.840><c> where</c><00:07:58.960><c> a</c><00:07:59.080><c> program</c><00:07:59.639><c> is</c><00:07:59.720><c> going</c><00:07:59.879><c> to</c><00:07:59.960><c> spend</c>
+
+00:08:00.189 --> 00:08:00.199 align:start position:0%
+tell where a program is going to spend
+ 
+
+00:08:00.199 --> 00:08:02.469 align:start position:0%
+tell where a program is going to spend
+its<00:08:00.440><c> time</c><00:08:00.960><c> bottlenecks</c><00:08:01.520><c> occur</c><00:08:01.759><c> in</c><00:08:01.919><c> surprising</c>
+
+00:08:02.469 --> 00:08:02.479 align:start position:0%
+its time bottlenecks occur in surprising
+ 
+
+00:08:02.479 --> 00:08:04.550 align:start position:0%
+its time bottlenecks occur in surprising
+places<00:08:03.039><c> so</c><00:08:03.199><c> don't</c><00:08:03.400><c> try</c><00:08:03.560><c> to</c><00:08:03.840><c> second</c><00:08:04.240><c> guess</c><00:08:04.400><c> and</c>
+
+00:08:04.550 --> 00:08:04.560 align:start position:0%
+places so don't try to second guess and
+ 
+
+00:08:04.560 --> 00:08:06.309 align:start position:0%
+places so don't try to second guess and
+put<00:08:04.680><c> in</c><00:08:04.759><c> a</c><00:08:04.879><c> speed</c><00:08:05.199><c> hack</c><00:08:05.520><c> until</c><00:08:05.759><c> you've</c><00:08:05.960><c> proven</c>
+
+00:08:06.309 --> 00:08:06.319 align:start position:0%
+put in a speed hack until you've proven
+ 
+
+00:08:06.319 --> 00:08:07.950 align:start position:0%
+put in a speed hack until you've proven
+that's<00:08:06.440><c> where</c><00:08:06.560><c> the</c><00:08:06.680><c> bottleneck</c><00:08:07.240><c> is</c><00:08:07.720><c> and</c><00:08:07.840><c> the</c>
+
+00:08:07.950 --> 00:08:07.960 align:start position:0%
+that's where the bottleneck is and the
+ 
+
+00:08:07.960 --> 00:08:09.710 align:start position:0%
+that's where the bottleneck is and the
+way<00:08:08.080><c> you</c><00:08:08.240><c> prove</c><00:08:08.560><c> that</c><00:08:08.759><c> is</c><00:08:08.919><c> by</c><00:08:09.039><c> measuring</c><00:08:09.560><c> with</c>
+
+00:08:09.710 --> 00:08:09.720 align:start position:0%
+way you prove that is by measuring with
+ 
+
+00:08:09.720 --> 00:08:11.670 align:start position:0%
+way you prove that is by measuring with
+tools<00:08:10.039><c> like</c><00:08:10.199><c> Dino</c><00:08:10.560><c> bench</c><00:08:11.000><c> make</c><00:08:11.159><c> sure</c><00:08:11.319><c> to</c><00:08:11.520><c> check</c>
+
+00:08:11.670 --> 00:08:11.680 align:start position:0%
+tools like Dino bench make sure to check
+ 
+
+00:08:11.680 --> 00:08:13.189 align:start position:0%
+tools like Dino bench make sure to check
+out<00:08:11.840><c> the</c><00:08:11.919><c> full</c><00:08:12.159><c> Dino</c><00:08:12.479><c> course</c><00:08:12.759><c> when</c><00:08:12.879><c> it</c><00:08:13.000><c> comes</c>
+
+00:08:13.189 --> 00:08:13.199 align:start position:0%
+out the full Dino course when it comes
+ 
+
+00:08:13.199 --> 00:08:15.149 align:start position:0%
+out the full Dino course when it comes
+out<00:08:13.440><c> next</c><00:08:13.680><c> week</c><00:08:14.039><c> and</c><00:08:14.199><c> here's</c><00:08:14.360><c> a</c><00:08:14.560><c> discount</c><00:08:14.919><c> code</c>
+
+00:08:15.149 --> 00:08:15.159 align:start position:0%
+out next week and here's a discount code
+ 
+
+00:08:15.159 --> 00:08:16.909 align:start position:0%
+out next week and here's a discount code
+for<00:08:15.319><c> making</c><00:08:15.599><c> it</c><00:08:15.720><c> to</c><00:08:15.840><c> the</c><00:08:15.919><c> end</c><00:08:16.080><c> of</c><00:08:16.199><c> this</c><00:08:16.400><c> video</c>
+
+00:08:16.909 --> 00:08:16.919 align:start position:0%
+for making it to the end of this video
+ 
+
+00:08:16.919 --> 00:08:18.469 align:start position:0%
+for making it to the end of this video
+thanks<00:08:17.120><c> for</c><00:08:17.360><c> watching</c><00:08:17.840><c> and</c><00:08:18.000><c> I</c><00:08:18.080><c> will</c><00:08:18.199><c> see</c><00:08:18.360><c> you</c>
+
+00:08:18.469 --> 00:08:18.479 align:start position:0%
+thanks for watching and I will see you
+ 
+
+00:08:18.479 --> 00:08:21.840 align:start position:0%
+thanks for watching and I will see you
+in<00:08:18.599><c> the</c><00:08:18.759><c> next</c><00:08:18.960><c> one</c>
+
