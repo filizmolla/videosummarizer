@@ -1,6 +1,8 @@
 from models import Base, Video, Summary
 from sqlalchemy import create_engine
 from videosummarize import summarize
+from videobatchsummarize import summarize_video_list
+from sqlalchemy.orm import Session
 
 db_user: str = 'postgres'
 db_port: int = 5432
@@ -11,10 +13,18 @@ SQLALCHEMY_DATABASE_URL = uri
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 Base.metadata.create_all(engine)
 
-from sqlalchemy.orm import Session
-with Session(engine) as session:
-    v = Video(url="https://www.youtube.com/watch?v=ITwW825L4zg")
-    summarize(v)
-    session.add_all([v])
+def add_videos_to_db(video_list):
+    with Session(engine) as session:
+        session.add_all(video_list)
+        session.commit()
 
-    session.commit()
+if __name__ == "__main__": 
+    vl_str = """https://www.youtube.com/watch?v=6h9sjYm9vTE
+https://www.youtube.com/watch?v=WxYC9-hBM_g
+https://www.youtube.com/watch?v=Wjrdr0NU4Sk
+    """
+    vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
+    summarize_video_list(vl)
+    print(vl)
+    add_videos_to_db(vl)
+    
