@@ -69,6 +69,7 @@ class Video(Base):
     tags: Mapped[Optional[str]]
 
     audio_path: Mapped[Optional[str]]
+    subtitles: Mapped[Optional[str]] = mapped_column(Text, nullable=True) # long string
     transcript: Mapped[Optional[str]] = mapped_column(Text, nullable=True)  # can hold arbitrarily long string
     transcript_path: Mapped[Optional[str]] 
     transcribing_start_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
@@ -88,7 +89,6 @@ class Video(Base):
     is_summarized: Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
     is_transcribed: Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
     status : Mapped[Optional[str]] = mapped_column(default="Pending.") # Pending / Done 
-    subtitles_human: Mapped[Optional[str]]
     
     playlist_id: Mapped[Optional[str]]
     playlist_order: Mapped[Optional[int]]

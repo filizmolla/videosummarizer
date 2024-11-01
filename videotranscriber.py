@@ -107,8 +107,7 @@ class VideoTranscriber:
             
             def clean_subtitles(subtitle_text):
                 """
-                This function takes subtitle text as input, removes the timestamp numbers,
-                the header line, and returns a continuous text.
+                This function takes subtitle text as input, removes the timestamp numbers, the header line, and returns a continuous text.
 
                 Parameters:
                 subtitle_text (str): The raw subtitle text.
@@ -140,7 +139,7 @@ class VideoTranscriber:
                 cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
                 
                 return cleaned_text
-
+    
             # if the video has human subtitles skip the transcribing part. 
             for lang in languages:
                 subtitle_name = f"{video.title}.{lang}.vtt"
@@ -150,7 +149,8 @@ class VideoTranscriber:
                     print("Exist")
                     with open(subtitle_file, 'r', encoding='utf-8') as f:
                         raw_subtitles = f.read().strip()
-                        transcript =  clean_subtitles(raw_subtitles)
+                        video.subtitles = raw_subtitles
+                        transcript = clean_subtitles(raw_subtitles)
                         video.transcript = transcript     
                     self.save_transcript(video, video.transcript)
                     video.transcript_from = "from_subtitles"
