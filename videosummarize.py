@@ -2,12 +2,18 @@ from videosummarizer import VideoSummarizer
 from videotranscriber import VideoTranscriber
 from models import Video
 
-def summarize(video):
+def transcribe_video(video):
     transcriber = VideoTranscriber(video)
     transcriber.start()
 
+def summarize_video(video):
     summarizer=VideoSummarizer(video)
-    summarizer.start()
+    s = summarizer.start()
+    return s
+
+def summarize(video):
+    transcribe_video(video)
+    summarize_video(video)
 
 if __name__ == "__main__":    
     v = Video(url="https://www.youtube.com/watch?v=aAy-B6KPld8")

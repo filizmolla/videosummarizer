@@ -35,8 +35,9 @@ class VideoSummarizer:
 
     def start(self):
         self.set_api_key()
-        self.summarize(self.video)
-
+        s = self.summarize(self.video)
+        return s
+    
     def set_api_key(self):
         with open('gemini-api-key.txt', 'r') as f:
             api_key = f.read().strip()
@@ -100,7 +101,7 @@ class VideoSummarizer:
         video.summaries.append(s)
         video.is_summarized = True
         video.status = "Done."
-        return summary
+        return s
     
     def get_text_information(self,text):
         word_count = len(text.split())
