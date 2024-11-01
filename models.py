@@ -31,7 +31,7 @@ class Summary(Base):
     title: Mapped[Optional[str]] 
     summary_text: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
     gpt_information: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
-    gpt_model_name: Mapped[Optional[str]]
+    gpt_model_name: Mapped[Optional[int]]
     gpt_input_token_count: Mapped[Optional[str]]
     gpt_output_token_count: Mapped[Optional[str]]
 

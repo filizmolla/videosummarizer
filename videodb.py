@@ -18,6 +18,12 @@ def add_videos_to_db(video_list):
         session.add_all(video_list)
         session.commit()
 
+def get_empty_videos():
+    with Session(engine) as session: 
+        results = session.query(Video).filter(Video.is_transcribed== False).all() 
+        print(results)
+        return results 
+
 if __name__ == "__main__": 
     vl_str = """https://www.youtube.com/watch?v=X1CM3rZwGn8
     """
@@ -25,4 +31,3 @@ if __name__ == "__main__":
     summarize_video_list(vl)
     print(vl)
     add_videos_to_db(vl)
-    
