@@ -19,7 +19,7 @@ def add_videos_to_db(video_list):
         session.commit()
 
 if __name__ == "__main__": 
-    vl_str = """https://www.youtube.com/watch?v=UbDyjIIGaxQ
+    vl_str = """https://www.youtube.com/watch?v=X1CM3rZwGn8
     """
     vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
     summarize_video_list(vl)

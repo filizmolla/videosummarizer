@@ -10,9 +10,12 @@ def print_model_information(model_name):
     print(f"{output_token_limit=}")
     return input_token_limit, output_token_limit
 
-# Return the word count, token count and 
-def get_prompt_info():
-    return 0 
+# Return the token count 
+def get_token_count(text):
+    ct = model.count_tokens(text)
+    token_count = ct.total_tokens
+    return token_count
+
 
 def get_token_count(response: CountTokensResponse) -> int:
     # Access the token count from the response object

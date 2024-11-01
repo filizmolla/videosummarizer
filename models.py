@@ -79,6 +79,7 @@ class Video(Base):
     transcript_word_count: Mapped[Optional[int]]
     transcript_token_count: Mapped[Optional[int]]
     transcript_character_count: Mapped[Optional[int]]
+    transcript_chunks: Mapped[Optional[str]]
 
     date_uploaded: Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
     download_start_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
@@ -99,15 +100,24 @@ class Video(Base):
     def __repr__(self) -> str:
         return f"Video(id={self.id!r}, url={self.url!r}, title={self.title!r})"
 
-class B(Base):
-    __tablename__ = "b"
+class PDFDocument(Base):
+    __tablename__ = "pdfdocuments"
     id: Mapped[int] = mapped_column(primary_key=True)
-    a_id: Mapped[int] = mapped_column(ForeignKey("a.id"))
-    data: Mapped[str]
+    title: Mapped[Optional[str]] 
+    author: Mapped[Optional[str]]
+    text: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    chapters: Mapped[List["PDFChapter"]] = relationship(back_populates="pdf_document", cascade="all,delete-orphan")
+    def __repr__(self) -> str:
+        return f"PDFDocument(id={self.id!r}, url={self.title!r}, title={self.author!r})"
 
-class A(Base):
-    __tablename__ = "a"
+class PDFChapter(Base): 
+    __tablename__ = "pdfchapters"
     id: Mapped[int] = mapped_column(primary_key=True)
-    data: Mapped[str]
-    create_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
-    bs: Mapped[List[B]] = relationship()
+    chapter_title: Mapped[Optional[str]] 
+    chapter_text: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    chapter_no: Mapped[Optional[str]]
+    summary: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    pdfdoc_id: Mapped[int] = mapped_column(ForeignKey("pdfdocuments.id"))
+    pdf_document: Mapped["PDFDocument"] = relationship(back_populates="chapters")
+    def __repr__(self) -> str:
+        return f"PDFDocument(id={self.id!r}, url={self.chapter_no!r}, title={self.chapter_title!r})"

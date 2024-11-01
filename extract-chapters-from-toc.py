@@ -4,13 +4,12 @@ import pymupdf4llm
 import pathlib
 
 
-BOOK = "linux2"
+BOOK = "pythonmath"
 pathlib.Path('test books/output/'+ BOOK + '/chapters/').mkdir(parents=True, exist_ok=True) 
 pathlib.Path('test books/output/'+BOOK+ '/markdown_chapters/').mkdir(parents=True, exist_ok=True) 
 
 def sanitize_filename(filename):
     return re.sub(r'[^a-zA-Z0-9_]', '_', filename)
-
 
 def get_table_of_contents(pdf_path):
     doc = fitz.open(pdf_path)
@@ -76,8 +75,6 @@ def chapter_doc_to_markdown(filename):
     path = f"test books/output/{BOOK}/chapters/"
     md_text = pymupdf4llm.to_markdown(path + filename + ".pdf")
     pathlib.Path(f"test books/output/{BOOK}/markdown_chapters/{filename}.md").write_bytes(md_text.encode())
-
-
 
 pdf_path = f"test books/{BOOK}.pdf"
 toc = get_table_of_contents(pdf_path)

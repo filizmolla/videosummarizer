@@ -8,6 +8,7 @@ from models import Video, Summary
 import google.generativeai as genai 
 import json
 
+WORDS_PER_CHUNK = 3000 #800
 
 class VideoSummarizer:
     PATH = os.getcwd()
@@ -44,26 +45,26 @@ class VideoSummarizer:
             self.api_key = api_key
             genai.configure(api_key=api_key)
         
-    def summarize(self, video: Video):
-        start_time = time.time()
-        print("#######################################")
-        print(self.user_prompt.format(title=video.title, transcript=video.transcript))
-        print(video)
-        
-        prompt = self.user_prompt.format(title=video.title, transcript=video.transcript)
-        response = self.client.generate_content(prompt)
-        word, char, token = self.get_text_information(prompt)
-        video.transcript_word_count = word # video.prompt_word_count? 
-        video.transcript_character_count = char 
-        video.transcript_token_count = token
+    def split_text_by_words(self, text, words_per_chunk):
+        words = text.split()
+        chunks = [" ".join(words[i:i + words_per_chunk]) for i in range(0, len(words), words_per_chunk)]
+        return chunks
 
+    def get_summary(self, video, transcript_part):
+        prompt = f"Please summarize the following text:\n\n{transcript_part}\n\nSummary:"
+        response = self.client.generate_content(prompt)
+        summary = self.set_summary(video, response)
+        print(f"Summary-----------------------\n")
+        print(summary)
+        return summary
+
+    def set_summary(self, video, response):
         summary = ""
         try:
             if hasattr(response, 'text') and response.text is not None:
                 summary = response.text
                 print(f"Summary for {video.title}: {summary}")
             else:
-                # Log when there's no valid part or summary text
                 finish_reason = getattr(response, 'finish_reason', 'Unknown')
                 print(f"No valid summary returned for {video.title}. Reason: {finish_reason}")
                 summary = f"No valid summary returned for {video.title}. Reason: {finish_reason}"
@@ -73,9 +74,32 @@ class VideoSummarizer:
         except Exception as e:
             summary = f"Unexpected error for {video.title}: {e}"
             print(f"Unexpected error for {video.title}: {e}")
- 
-
         print(response.usage_metadata)
+        return summary 
+
+    def summarize(self, video: Video):
+        start_time = time.time()
+        print("#######################################")
+        prompt = self.user_prompt.format(title=video.title, transcript=video.transcript)
+        word, char, token = self.get_text_information(prompt)
+        video.transcript_word_count = word # video.prompt_word_count? 
+        video.transcript_character_count = char 
+        video.transcript_token_count = token
+        # TODO: The maximum number of api calls for a minute is 15. So i need to make sure  transcript word count / words_per_chunk < 15 
+
+        if video.transcript_word_count < WORDS_PER_CHUNK:
+            response = self.client.generate_content(prompt)
+            summary = self.set_summary(video, response)
+        else:
+            transcript_chunks = self.split_text_by_words(video.transcript, WORDS_PER_CHUNK) # split the transcript into chunks!   
+            for chunk in transcript_chunks: 
+                print(chunk[:100])
+                print("\n")
+            video.transcript_chunks = transcript_chunks
+            summaries = [self.get_summary(video, chunk) for chunk in transcript_chunks] # get summary of each chunk! 
+            final_summary = " ".join(summaries)
+            summary = final_summary
+
         end_time = time.time()
         summary_time = end_time - start_time 
         note_filename = self.notes_path + "\\" + video.title + ".txt" 
@@ -103,7 +127,10 @@ class VideoSummarizer:
         video.status = "Done."
         return s
     
-    def get_text_information(self,text):
+
+
+
+    def get_text_information(self, text):
         word_count = len(text.split())
         char_count = len(text)
         ct = self.client.count_tokens(text)
