@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import List
-from sqlalchemy import ForeignKey
+from sqlalchemy import UUID, ForeignKey
 from sqlalchemy import func
 from sqlalchemy.ext.asyncio import AsyncAttrs
 from sqlalchemy.orm import DeclarativeBase
@@ -20,20 +20,20 @@ from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
 from sqlalchemy import DateTime, func, Boolean, Text
-
+import uuid
 
 class Base(AsyncAttrs, DeclarativeBase):
     pass
 
 class Summary(Base): 
-    __tablename__ = "videos_summary"
-    id: Mapped[int] = mapped_column(primary_key=True)
+    __tablename__ = "Summaries"
+    Id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     title: Mapped[Optional[str]] 
     summary_text: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
     gpt_information: Mapped[Optional[str]] = mapped_column(Text, nullable=True) 
-    gpt_model_name: Mapped[Optional[int]]
-    gpt_input_token_count: Mapped[Optional[str]]
-    gpt_output_token_count: Mapped[Optional[str]]
+    gpt_model_name: Mapped[Optional[str]]
+    gpt_input_token_count: Mapped[Optional[int]]
+    gpt_output_token_count: Mapped[Optional[int]]
 
     summary_path: Mapped[Optional[str]] 
     summary_start_date: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
@@ -45,15 +45,16 @@ class Summary(Base):
     created_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
     updated_at: Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), onupdate=func.now(), nullable=False)
 
-    video_id: Mapped[int] = mapped_column(ForeignKey("videos_video.id"))
+    video_id: Mapped[int] = mapped_column(ForeignKey("Videos.Id"))
+    #videoId: Mapped[int] = mapped_column(ForeignKey("Videos.Id"))
     video: Mapped["Video"] = relationship(back_populates="summaries")
 
     def __repr__(self) -> str:
-        return f"Summary(id={self.id!r}, title={self.title!r}, summary={self.summary_text[10]!r})"
+        return f"Summary(id={self.Id!r}, title={self.title!r}, summary={self.summary_text[10]!r})"
     
 class Video(Base): 
-    __tablename__ = "videos_video"
-    id: Mapped[int] = mapped_column(primary_key=True)
+    __tablename__ = "Videos"
+    Id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     url: Mapped[str]
     title: Mapped[Optional[str]]    
     ext: Mapped[Optional[str]]
@@ -98,7 +99,7 @@ class Video(Base):
     summaries: Mapped[List["Summary"]] = relationship(back_populates="video", cascade="all, delete-orphan", lazy='select')
 
     def __repr__(self) -> str:
-        return f"Video(id={self.id!r}, url={self.url!r}, title={self.title!r})"
+        return f"Video(id={self.Id!r}, url={self.url!r}, title={self.title!r})"
 
 class PDFDocument(Base):
     __tablename__ = "pdfdocuments"

@@ -25,7 +25,7 @@ def get_empty_videos():
         return results 
 
 if __name__ == "__main__": 
-    vl_str = """https://www.youtube.com/watch?v=X1CM3rZwGn8
+    vl_str = """https://www.youtube.com/watch?v=HKUMpT1yigM
     """
     vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
     summarize_video_list(vl)
