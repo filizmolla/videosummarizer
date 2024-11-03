@@ -1,0 +1,36 @@
+**Introduction**
+
+- Asynchronous I/O (AsyncIO) addresses communication delays (e.g., on Jupiter's moon) by managing multiple tasks simultaneously.
+- AsyncIO provides the `await` and `async` keywords to facilitate this.
+
+**Synchronous vs. Asynchronous Programming**
+
+- **Synchronous:** Tasks execute one at a time, with each task completing before the next begins.
+- **Asynchronous:** Different tasks can start, process, and finish at different times, overlapping in execution.
+
+**Subroutines vs. Co-routines**
+
+- **Subroutines:** Cannot be paused or resumed, running until completion.
+- **Co-routines:** Can be paused and resumed while maintaining their state.
+
+**Concurrency and Parallelism**
+
+- **Concurrency:** Overlapping execution of multiple co-routines.
+- **Parallelism:** Execution of multiple threads simultaneously.
+
+**Using AsyncIO in Python with `async` and `await`**
+
+- Add `async` before function declarations to create co-routines.
+- Use `await` before commands that need to be paused (e.g., I/O operations).
+
+**Running Co-routines Concurrently**
+
+- Use the `gather` function from the AsyncIO module to group co-routines for concurrent execution.
+- Await the return values of the co-routines in the same order they were passed to `gather`.
+- Main function must be declared as `async` if it contains `await` keywords.
+- Call the main co-routine using the `run` function from the AsyncIO module.
+
+**Alternative to `gather` Function**
+
+- Use the `create_task` function from the AsyncIO module to create tasks for individual co-routines.
+- Await each co-routine individually.

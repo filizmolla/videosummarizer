@@ -1,0 +1,32 @@
+**Asyncio in Python**
+
+**What is Async/Await?**
+
+- Async/Await enables asynchronous programming in Python.
+- Marking functions with `async` creates coroutines, which can be paused and resumed without blocking other tasks.
+
+**Benefits of Async/Await**
+
+- Concurrent execution of tasks, resulting in faster and more responsive programs.
+
+**Example: Synchronous vs. Asynchronous Functions**
+
+- Asynchronous functions execute tasks concurrently, completing tasks more quickly than synchronous functions.
+
+**Another Example: Loading Data and Executing Tasks**
+
+- Async/Await allows for loading heavy data and executing other tasks concurrently.
+- The program exits once the data is loaded.
+
+**Key Concepts**
+
+- Asynchronous programming in Python involves using `async` functions and the `await` keyword.
+- Coroutines can be paused and resumed, allowing other tasks to run.
+
+**Actionable Advice**
+
+- Use Async/Await to improve program speed and responsiveness.
+
+**Research and Further Reading**
+
+- [Python Coroutines and Asynchronous Programming](https://www.python.org/dev/peps/pep-3155/)
