@@ -1,0 +1,1031 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.060 --> 00:00:01.350
+You thought you were done, but no.
+
+00:00:01.380 --> 00:00:04.410
+There are 35 more Windows commands
+you need to know. Let's get right to,
+
+00:00:04.440 --> 00:00:07.680
+the first thing we'll do is launch our
+command prompt and B mode. Mr. B mode.
+
+00:00:07.770 --> 00:00:12.090
+So either hit Windows key S on your
+keyboard or click the Windows icons as far
+
+00:00:12.390 --> 00:00:16.680
+from there. Type in cmd, right click
+and run as administrator. But hold up.
+
+00:00:16.830 --> 00:00:19.860
+What if it just ran as administrator
+by default all the time?
+
+00:00:20.010 --> 00:00:23.550
+Instead of clicking run as administrator,
+click on open file location.
+
+00:00:23.700 --> 00:00:26.550
+There we have our command prompt
+shortcut. Go ahead and right click back.
+
+00:00:26.580 --> 00:00:31.260
+Click on properties advanced and click
+on Run as administrator by default.
+
+00:00:31.260 --> 00:00:35.640
+Sucker click okay, apply. Okay, so now
+every time you run command prompts,
+
+00:00:35.820 --> 00:00:37.830
+it will default to beast mode every time.
+
+00:00:37.860 --> 00:00:41.340
+This command will help you hide all your
+deep dark secrets, the weird photos,
+
+00:00:41.340 --> 00:00:42.780
+the journal, everything.
+First,
+
+00:00:42.780 --> 00:00:45.930
+I'll take all my images and my
+journal and send them to a zip folder.
+
+00:00:45.960 --> 00:00:49.200
+And then with the copy command I can
+hide the zip file inside a photo of a
+
+00:00:49.200 --> 00:00:51.390
+kitten. Copy slash b,
+
+00:00:51.780 --> 00:00:55.020
+specify the image plus
+the name of your folder,
+
+00:00:55.050 --> 00:00:58.560
+and then the name of your new secret
+photo done to the random person.
+
+00:00:58.590 --> 00:01:02.610
+It's just a photo to you. It's a safe
+with all your stuff. With this command,
+
+00:01:02.670 --> 00:01:05.850
+we can encrypt every file in that
+folder so that no one can even open it.
+
+00:01:05.860 --> 00:01:09.420
+If they do find it. Cipher
+slash e and the folder,
+
+00:01:09.420 --> 00:01:11.310
+I'm in every file encrypted.
+
+00:01:11.460 --> 00:01:15.420
+So now only I can open these files and
+no one else can. This command is crazy.
+
+00:01:15.450 --> 00:01:19.260
+We can hide our folders from everyone
+like this folder here with all my secrets.
+
+00:01:19.320 --> 00:01:20.700
+Keep an eye on it, it's gonna disappear.
+
+00:01:20.730 --> 00:01:25.200
+I'll type in a trip plus H plus S plus R,
+
+00:01:25.260 --> 00:01:29.070
+and the name of our folder, boom,
+it's gone. Even we can't see it.
+
+00:01:29.100 --> 00:01:32.160
+To bring it back, just do the opposite.
+Change your pluses to minuses,
+
+00:01:32.190 --> 00:01:35.520
+removing those attributes and the
+invisibility cloak and there it is.
+
+00:01:35.550 --> 00:01:37.560
+Net sh w n Show profile.
+
+00:01:37.620 --> 00:01:40.620
+This command will show you every wifi
+network you've ever connected to.
+
+00:01:40.650 --> 00:01:44.430
+And what's even crazier is you can see
+the wifi passwords for every network
+
+00:01:44.640 --> 00:01:48.000
+right here in your terminal. Same
+command net SH WLAN Show profile.
+
+00:01:48.240 --> 00:01:51.000
+Specify the wireless network.
+I'll say see butterfly
+
+00:01:52.590 --> 00:01:56.490
+and then type in key equals clear to
+see the wifi password in plain text.
+
+00:01:56.970 --> 00:01:58.470
+There it is right here.
+
+00:01:58.530 --> 00:02:01.830
+If you wanna see all wifi passwords for
+everything you have stored this crazy
+
+00:02:01.830 --> 00:02:06.090
+command, this one-liner will send you
+all of them. Now that's too much info,
+
+00:02:06.090 --> 00:02:08.190
+too much to parse through in a
+command prompt, what do you say?
+
+00:02:08.190 --> 00:02:10.710
+We put it into a file. Let's
+do that same command once more,
+
+00:02:10.770 --> 00:02:13.680
+but at the very end we'll
+do side arrow, side arrow,
+
+00:02:14.070 --> 00:02:15.870
+I think it's what they're called.
+And then the name of our file,
+
+00:02:16.110 --> 00:02:20.970
+wifi passwords dot txt and bam.
+All right there in a file. Austin.
+
+00:02:20.970 --> 00:02:23.850
+Blur these please. Now you're never
+gonna remember that command ever.
+
+00:02:23.970 --> 00:02:27.150
+So let's say we put it into a batch
+file for safekeeping open notepad.
+
+00:02:28.530 --> 00:02:31.110
+I'll paste in this command and
+these will all be below by the way,
+
+00:02:31.260 --> 00:02:35.400
+file save as all files and
+we'll call it wifi dot bat.
+
+00:02:35.730 --> 00:02:39.360
+Now we just type in wifi
+dot bat and there they are.
+
+00:02:39.420 --> 00:02:42.030
+This is a quick way to find out
+all the info on your system.
+
+00:02:42.030 --> 00:02:43.980
+You simply type in system info
+
+00:02:45.600 --> 00:02:48.480
+like this and it shows
+you your system info. S,
+
+00:02:48.480 --> 00:02:53.040
+P or secure copy lets you copy a file to
+a remote server securely type in s sep
+
+00:02:53.160 --> 00:02:56.310
+the file you want to copy and then the
+username and the server you want copy to
+
+00:02:56.850 --> 00:02:58.530
+mine will be route at the IP address,
+
+00:02:58.590 --> 00:03:02.140
+then colon and where you want to
+store it on that server. Hit enter,
+
+00:03:02.170 --> 00:03:05.050
+authenticate with your password
+and bam, that file is copied.
+
+00:03:05.050 --> 00:03:07.330
+I use this all the time now I
+bet you didn't know this one.
+
+00:03:07.330 --> 00:03:10.930
+Check this out right from Explorer,
+wherever I am, well say and Call of Duty.
+
+00:03:11.170 --> 00:03:15.730
+I can go up to the address bar, type
+in CMD, and suddenly a terminal,
+
+00:03:15.790 --> 00:03:18.910
+a command prompt and Call of Duty
+just like that. That's awesome.
+
+00:03:19.060 --> 00:03:21.790
+I can also do it in reverse where I'm
+at right now in the command prompt.
+
+00:03:21.940 --> 00:03:23.200
+I'll type in explorer
+
+00:03:24.790 --> 00:03:28.570
+and then dot right after that
+explorer window open right where I am.
+
+00:03:28.870 --> 00:03:29.620
+That's awesome.
+
+00:03:29.620 --> 00:03:33.200
+Did you know you can map any folder
+on your system as a mounted tribes?
+
+00:03:33.200 --> 00:03:33.850
+For real, check this out.
+
+00:03:33.940 --> 00:03:38.380
+The command will be S U B S T subs and
+then a drive letter. Let's say S for,
+
+00:03:39.190 --> 00:03:40.630
+do you want some more coffee?
+
+00:03:40.660 --> 00:03:42.580
+Don't put a colon after that.
+And then the location,
+
+00:03:42.580 --> 00:03:43.930
+let's just use the one we have right here.
+
+00:03:44.020 --> 00:03:48.820
+I'll put that inside quotations and
+I think it did it. Let's go check.
+
+00:03:48.910 --> 00:03:53.470
+Let's open up explorer and yeah, there
+it is. Drive S. If I click on that,
+
+00:03:53.740 --> 00:03:57.310
+it goes right to the call of duty folder
+like I mapped it. That's so weird.
+
+00:03:57.340 --> 00:03:58.660
+It'll probably want to undo that.
+
+00:03:58.870 --> 00:04:02.680
+So the command is subs slash
+d and then the drive letter,
+
+00:04:03.040 --> 00:04:06.100
+which was oh S for some more coffee. Okay,
+
+00:04:06.110 --> 00:04:09.400
+time for a quick coffee break and this
+coffee break and the entire video is
+
+00:04:09.400 --> 00:04:13.150
+sponsored by IT pro tv, which
+is now it pro from ACI learning.
+
+00:04:13.210 --> 00:04:15.430
+Now you're gonna need them because
+of what I'm showing you here is just
+
+00:04:15.430 --> 00:04:16.840
+scratching the surface on it.
+
+00:04:17.020 --> 00:04:19.150
+If you wanna get a job and
+change your stink and life,
+
+00:04:19.270 --> 00:04:22.540
+they've got all the training you need to
+start learning and growing. So I don't
+
+00:04:22.550 --> 00:04:24.670
+care if you're just getting started
+or you're a seasoned veteran,
+
+00:04:24.670 --> 00:04:26.230
+there are always things
+you have to learn cuz hey,
+
+00:04:26.230 --> 00:04:28.450
+we're in it and things
+are constantly changing.
+
+00:04:28.460 --> 00:04:31.240
+So whether it's that first cert or
+you finally wanna learn hacking,
+
+00:04:31.320 --> 00:04:33.340
+they've got your back. And
+I'm scared to say this,
+
+00:04:33.340 --> 00:04:36.280
+but you probably don't even need
+coffee. No, what am I saying?
+
+00:04:36.280 --> 00:04:37.270
+Of course you need coffee,
+
+00:04:37.540 --> 00:04:40.240
+but if you don't drink coffee you
+may not need it because they're so
+
+00:04:40.240 --> 00:04:42.280
+entertaining they won't put
+you to sleep. Like seriously,
+
+00:04:42.280 --> 00:04:45.250
+if you hang out with my friends
+like Daniel Lowry and Ronnie Wong,
+
+00:04:45.430 --> 00:04:48.850
+you're gonna have a good time.
+So ccna a plus cloud stuff,
+
+00:04:48.850 --> 00:04:51.760
+ethical hacking that got everything
+and when you're done watching,
+
+00:04:52.090 --> 00:04:53.380
+you can actually just start doing.
+
+00:04:53.380 --> 00:04:58.150
+They've got labs baked in and practice
+exams that'll help prepare you for exams.
+
+00:04:58.150 --> 00:05:01.690
+Let's probably self-explanatory,
+so if you wanna learn it like me,
+
+00:05:01.990 --> 00:05:06.910
+check out it pro TV like below.
+And if you use my code network, Chuck,
+
+00:05:07.000 --> 00:05:11.560
+you get 30% off forever.
+So just just do it.
+
+00:05:11.620 --> 00:05:15.730
+It's cool. Coffee break over now it's
+time to make your command prompt.
+
+00:05:15.820 --> 00:05:19.180
+Pretty first command is color. Type in
+color and just pick some random numbers.
+
+00:05:19.180 --> 00:05:23.140
+Like two and four. What? No, I can't,
+I can't see anything. Zero one.
+
+00:05:23.150 --> 00:05:26.960
+Well that's kind of nice. Four,
+two. Okay. Okay, so &lt;laugh&gt;,
+
+00:05:27.400 --> 00:05:30.670
+let me uh get some help here.
+Color slash question mark. Ah,
+
+00:05:30.970 --> 00:05:34.600
+so here's the colors. Let's
+get it back. Seven, zero, nope.
+
+00:05:34.690 --> 00:05:38.200
+Opposite zero seven. Actually I
+wanna change it for the entire video.
+
+00:05:38.230 --> 00:05:41.980
+Let's go green on black old
+school. So two will be green.
+
+00:05:42.010 --> 00:05:45.880
+That's the text black
+zero the background. Nope,
+
+00:05:46.840 --> 00:05:50.720
+I had it wrong. There we go. I spent
+way too long in this command &lt;laugh&gt;.
+
+00:05:50.980 --> 00:05:52.480
+The first number is the background,
+
+00:05:52.660 --> 00:05:55.930
+second number is the text. Now we can do
+more to make this thing pretty like we
+
+00:05:55.930 --> 00:05:59.000
+can change this. Check it out,
+type in prompt bracket. Hey,
+
+00:05:59.000 --> 00:06:01.790
+beautiful closing bracket and
+then dollar sign, capital G.
+
+00:06:01.940 --> 00:06:03.920
+Now that's how you have
+a prompt right there.
+
+00:06:04.100 --> 00:06:06.290
+Now you didn't need the brackets but
+I thought it was prettier since we're
+
+00:06:06.300 --> 00:06:09.050
+talking about pretty, you could do it
+just like this, but that's not as pretty.
+
+00:06:09.080 --> 00:06:12.860
+Now if this is not your thing, just simply
+type in prompts and it will reset it.
+
+00:06:12.890 --> 00:06:15.770
+Now if you wanna be even more
+extra, cuz you do and I do too,
+
+00:06:15.860 --> 00:06:17.840
+you can change the title
+of your window as well.
+
+00:06:17.930 --> 00:06:19.610
+For some reason it's all for prettiness.
+
+00:06:19.670 --> 00:06:23.780
+So just type in title and then what
+you wanna title it home. Sweet Home,
+
+00:06:24.530 --> 00:06:27.980
+look at that. It changed the name.
+That's nice. How much can you curl?
+
+00:06:27.980 --> 00:06:31.640
+This next section is crazy. You ready
+for this? Modern windows like Windows 11,
+
+00:06:31.640 --> 00:06:35.210
+I think 10 has curl built
+in. Curl is amazing.
+
+00:06:35.270 --> 00:06:38.540
+So with the curl command we can do
+things like, hey, what's the weather?
+
+00:06:38.780 --> 00:06:43.760
+We can check the weather in our command.
+Prompt curl w ttr, dash i n slash,
+
+00:06:43.820 --> 00:06:47.660
+where are you? I'm in Dallas. The weather
+right there in your command prompt.
+
+00:06:47.690 --> 00:06:50.180
+This is the coolest way to
+check the weather. Hands down,
+
+00:06:50.240 --> 00:06:53.240
+this one's pretty cool. You can
+actually unor shorten links,
+
+00:06:53.240 --> 00:06:54.770
+see where it goes before you open it,
+
+00:06:54.920 --> 00:06:57.560
+type in curl and a few parameters
+like head and location.
+
+00:06:58.130 --> 00:07:01.220
+And then these shorten your url, just
+paste it in there and we'll get some info.
+
+00:07:01.550 --> 00:07:04.190
+And then, because we only care about
+the location of it, where it's going,
+
+00:07:04.250 --> 00:07:08.150
+we'll do a bracket, type in fine
+string and type in location. Bam,
+
+00:07:08.180 --> 00:07:11.300
+shorten link goes here. And also you
+should go there and check it out.
+
+00:07:11.540 --> 00:07:12.950
+It pro tv. Shameless plug.
+
+00:07:12.950 --> 00:07:15.620
+You can also check these status
+of a website to see if it's up.
+
+00:07:15.710 --> 00:07:20.210
+Type in curl dash capital I then
+lowercase s and the website networks
+
+00:07:20.210 --> 00:07:24.470
+chuck.com. Is it up right now? Sure.
+Hope so. Yeah, it is 200. Okay,
+
+00:07:24.560 --> 00:07:26.930
+which also happens to be the name of
+the coffee I'm drinking right now.
+
+00:07:27.350 --> 00:07:29.520
+Wow. Oh my goodness. Where do I buy.
+
+00:07:29.520 --> 00:07:32.570
+Some Curl Continues. What's
+your public IP address?
+
+00:07:32.630 --> 00:07:36.800
+Find out right from the
+command line Curl check IP
+
+00:07:37.700 --> 00:07:42.110
+amazon aws.com. Bam. Public
+ip, but you can't see mine.
+
+00:07:42.110 --> 00:07:44.750
+I've blurred it out, right? Austin,
+you blurred that, right? Thank you.
+
+00:07:45.080 --> 00:07:46.850
+This one's kind of dumb
+but it's still pretty cool.
+
+00:07:47.030 --> 00:07:51.050
+You can use Curl from your command prompt
+to create a QR code type in Curl and
+
+00:07:51.050 --> 00:07:55.760
+then QR, e n c o.de, and then slash the
+website. You wanna make a QR code for?
+
+00:07:56.120 --> 00:08:00.920
+Let's do network chuck.coffee
+and &lt;laugh&gt; QR code
+
+00:08:00.920 --> 00:08:03.890
+right here in your command prompt.
+That's just the coolest way to do it.
+
+00:08:03.890 --> 00:08:07.790
+Let's see if it works. Dude, it totally
+worked. That's awesome. You're welcome.
+
+00:08:07.910 --> 00:08:08.810
+Now I have good news.
+
+00:08:08.900 --> 00:08:11.780
+You no longer have to rely on YouTube
+to know when I upload a video.
+
+00:08:11.840 --> 00:08:14.660
+You can use the command prompt.
+It does everything fact curl,
+
+00:08:14.750 --> 00:08:17.720
+you can curl dash s and then this address,
+
+00:08:17.720 --> 00:08:21.020
+which is kind of long and at the end just
+say user equals whoever you wanna see,
+
+00:08:21.650 --> 00:08:24.170
+and it will show you the latest
+video from your favorite YouTuber,
+
+00:08:24.620 --> 00:08:27.230
+at least the name of it. &lt;laugh&gt;, not
+the entire video. That'd be kind of cool.
+
+00:08:27.290 --> 00:08:31.880
+And you can even do it for Twitter.
+Check this out. Same story, curl dash s,
+
+00:08:31.970 --> 00:08:34.370
+but a Twitter U url. And
+there's my latest tweet.
+
+00:08:34.430 --> 00:08:37.700
+You never ever have to leave the command
+line. That's the point of this video.
+
+00:08:38.240 --> 00:08:42.230
+Stay here. I told you it's home.
+Sweet home buddy. No curls not done.
+
+00:08:42.230 --> 00:08:45.680
+A few more you can define a word
+dictionary right in command,
+
+00:08:45.680 --> 00:08:50.180
+prompt curl dick.org/d for
+
+00:08:50.180 --> 00:08:55.120
+definition colon, and then a word. Let's
+do the word of the day. Contra tense.
+
+00:08:56.160 --> 00:09:00.420
+An unexpected and untoward accident.
+Something inopportune or embarrassing,
+
+00:09:00.780 --> 00:09:05.130
+A hitch &lt;laugh&gt;. Use it in a word
+in this unhappy contra tenses.
+
+00:09:05.190 --> 00:09:06.240
+I'm never gonna use that word.
+
+00:09:06.270 --> 00:09:10.080
+Now this is probably the coolest use
+of Curl and it's where worlds collide.
+
+00:09:10.230 --> 00:09:10.800
+Twin Worlds.
+
+00:09:10.800 --> 00:09:15.060
+Collide. Now did you know you can
+use chat G p t from the command line?
+
+00:09:15.120 --> 00:09:18.120
+This is crazy. Check this out.
+Now we're also still using Curl.
+
+00:09:18.270 --> 00:09:20.220
+I'm gonna paste in as long
+command. I'll have it below.
+
+00:09:20.460 --> 00:09:24.000
+Now let's ask it a question.
+Who has the longest beard?
+
+00:09:25.050 --> 00:09:27.510
+And there it is right there in
+the command prompt. Eight feet,
+
+00:09:27.600 --> 00:09:31.260
+two and a half inches. How do you
+live? Dude must know so much about it.
+
+00:09:31.560 --> 00:09:34.140
+Now we can use chat, G p, T
+and Windows command prompt.
+
+00:09:34.200 --> 00:09:38.220
+It's only fair that chat G P T can
+then use command prompt on it, right?
+
+00:09:38.370 --> 00:09:41.460
+You can do that. By the way, found this
+post on Reddit with a pretty fun prompt.
+
+00:09:41.550 --> 00:09:42.383
+Let's try it out.
+
+00:09:47.310 --> 00:09:50.490
+Okay, we gotta set up. Let's see if
+it works. Yeah, I think so. Okay,
+
+00:09:50.490 --> 00:09:54.630
+well you can't curl or do anything else.
+Bust it is stupid. Here's a fun one.
+
+00:09:54.630 --> 00:09:56.280
+You can open a website
+right from your terminal.
+
+00:09:56.310 --> 00:10:00.810
+Just type in start the website and
+it opens. With these two commands,
+
+00:10:00.820 --> 00:10:03.960
+you can delete all the temporary files
+to save some space if you're running
+
+00:10:03.960 --> 00:10:07.020
+outta space. So you can download that new
+Call of Duty update, run that command,
+
+00:10:07.080 --> 00:10:11.130
+and then run this command space restored.
+This one's pretty dumb and pretty fun.
+
+00:10:11.160 --> 00:10:13.680
+You may not have this command. Type in
+Telenet and just see if you have it.
+
+00:10:13.860 --> 00:10:16.620
+Hit enter. Oh, you don't have it.
+Let's make sure you have it real quick.
+
+00:10:16.650 --> 00:10:20.430
+Hit Windows key S and just search for
+features and click on that first option
+
+00:10:20.430 --> 00:10:22.500
+here. Turn Windows features on or off.
+
+00:10:22.500 --> 00:10:26.760
+We're going to enable Telenet a very old
+protocol that's probably not safer to
+
+00:10:26.760 --> 00:10:30.720
+use for most things. Find Telenet,
+click on it to enable it, click okay.
+
+00:10:30.960 --> 00:10:34.500
+It's gonna install it real quick. Done
+super fast. Now if you type in Telenet,
+
+00:10:34.980 --> 00:10:38.370
+it should work. How do I get out of
+here? Oh, type in Q. Okay, type in Q,
+
+00:10:38.370 --> 00:10:40.560
+take me a minute, figure it
+out. Now time for the fun stuff.
+
+00:10:40.650 --> 00:10:45.210
+Type in Telenet and then
+tele hack.com. Ready? Go.
+
+00:10:45.270 --> 00:10:48.990
+Now pick your po, like maybe you wanna
+watch Star Wars and your terminal.
+
+00:10:49.290 --> 00:10:51.000
+Why not type in Star Wars?
+
+00:10:51.330 --> 00:10:52.980
+And we're just gonna watch
+this for the rest of the video.
+
+00:10:56.210 --> 00:11:00.000
+Ah, I'm got to this. Okay, that's
+enough. Let's get out of there.
+
+00:11:00.120 --> 00:11:05.120
+I had control C to stop it. Let's
+try one more like Aquarium. Aquarium.
+
+00:11:05.400 --> 00:11:09.150
+I hear it. I mean that's just
+nice to have. Now time for the Fs.
+
+00:11:10.200 --> 00:11:12.780
+F1 through nine can actually make
+you pretty awesome on your command.
+
+00:11:12.780 --> 00:11:17.160
+Prompt F1 will type in each
+letter from the last command.
+
+00:11:17.670 --> 00:11:20.460
+It's kinda strange. That's cool though.
+Let me try it again with a real command.
+
+00:11:21.540 --> 00:11:24.750
+Yeah, like I don't know what the use
+case is for that. F two is even weirder.
+
+00:11:24.810 --> 00:11:26.910
+So like for example,
+if I type in IP config,
+
+00:11:27.390 --> 00:11:29.190
+that's the previous
+command I type in F two,
+
+00:11:29.190 --> 00:11:33.420
+it's gonna prompt me to copy the previous
+command up to a certain character.
+
+00:11:33.420 --> 00:11:37.800
+If I type in like I, it's just gonna
+copy some of it. It's, I don't know,
+
+00:11:37.800 --> 00:11:41.760
+it's why common Blue If you
+have a use case for that,
+
+00:11:42.060 --> 00:11:45.810
+I don't know. F three is more useful.
+It'll copy the entire previous line.
+
+00:11:46.770 --> 00:11:49.320
+Okay, get that. F four
+is weird too. &lt;laugh&gt;,
+
+00:11:49.320 --> 00:11:52.080
+I'll type in IP and think again and I
+have to go to the beginning of the line.
+
+00:11:52.140 --> 00:11:53.650
+I'll type in F four and I'll say like,
+
+00:11:53.680 --> 00:11:57.550
+where do you wanna delete the character
+up to? Okay, let's delete it up to I.
+
+00:11:57.940 --> 00:12:00.280
+Okay, that's weird. I don't know. Again,
+
+00:12:00.520 --> 00:12:03.790
+I'm sure people like are amazing
+at this and find a great use case.
+
+00:12:03.800 --> 00:12:06.880
+I don't get it. F five is pretty cool.
+You can cycle through previous commands.
+
+00:12:07.870 --> 00:12:10.090
+Just F five at, yeah, I like it.
+
+00:12:10.120 --> 00:12:13.060
+F six enters the EEO F or
+the end of file indicator.
+
+00:12:13.120 --> 00:12:15.730
+That's handy for when you're hiding
+stuff. F seven is pretty cool.
+
+00:12:15.760 --> 00:12:18.190
+It opens up a list of previous commands.
+
+00:12:18.220 --> 00:12:20.110
+Now this is probably the coolest one here.
+
+00:12:20.200 --> 00:12:24.760
+I wanna do that one. Like that's
+awesome, right? Like, okay, that's, yep.
+
+00:12:24.850 --> 00:12:28.630
+F eight will like enter the very first
+command you typed in ever in this
+
+00:12:28.630 --> 00:12:31.480
+terminal or this command prompt,
+which apparently was cls.
+
+00:12:31.570 --> 00:12:35.440
+And then F nine is pretty weird.
+Um, it'll enter a previous command,
+
+00:12:35.680 --> 00:12:40.030
+but it'll prompt you for the number.
+So like, I don't know, 24. Okay,
+
+00:12:40.030 --> 00:12:44.350
+that was the 24th command I entered in
+this terminal. Again, weird use case.
+
+00:12:44.380 --> 00:12:46.690
+Now to get a proper list of
+all your commands printed out,
+
+00:12:46.690 --> 00:12:51.220
+you can do this dokey dokey slash history.
+
+00:12:51.550 --> 00:12:53.650
+Everything you ever did written
+right here. It's pretty cool.
+
+00:12:53.830 --> 00:12:56.380
+Now this next command is gonna break your
+brain a little bit because what we're
+
+00:12:56.380 --> 00:12:59.320
+using right now, the command
+prompt, it's old news, it's stupid.
+
+00:12:59.530 --> 00:13:00.880
+I shouldn't even showed you this.
+
+00:13:00.940 --> 00:13:04.360
+The new kid on the block is
+terminal built into Windows 11.
+
+00:13:04.370 --> 00:13:07.510
+You can install on Windows 10. We're
+gonna close command prompt and now search
+
+00:13:07.510 --> 00:13:10.180
+for terminal. This thing's pretty slick.
+
+00:13:10.270 --> 00:13:12.910
+You can do everything we just did
+in Command Prompt, for example,
+
+00:13:12.910 --> 00:13:15.640
+we'll probably want an open command
+prompt cause the default into Power Shop.
+
+00:13:15.730 --> 00:13:19.120
+I'll cover that in a second. Click on the
+little tab here and do Command Prompt.
+
+00:13:19.150 --> 00:13:22.510
+But that's the killer feature,
+right? Tabs. Oh my gosh. So cool.
+
+00:13:22.570 --> 00:13:25.480
+Now because we're in terminal, it opens
+up some new features we can talk about.
+
+00:13:25.480 --> 00:13:28.390
+For example, maybe you're trying
+to use secure copy to copy a file,
+
+00:13:28.570 --> 00:13:30.610
+but you're like, man, what's
+that file name? I don't want to,
+
+00:13:30.610 --> 00:13:32.230
+I don't know where it is.
+I don't wanna type it out.
+
+00:13:32.350 --> 00:13:34.810
+You can just open it and explore, find it,
+
+00:13:34.930 --> 00:13:37.450
+and just drag it there and it copies it.
+
+00:13:37.720 --> 00:13:40.090
+Could you imagine typing this
+out or trying to find it?
+
+00:13:40.570 --> 00:13:43.510
+That's awesome. Another cool thing is
+that no matter where you are an explorer,
+
+00:13:43.570 --> 00:13:48.040
+you can shift, right? Click a
+folder and say Open a terminal,
+
+00:13:48.220 --> 00:13:51.910
+and bam, there you are. If you need help,
+just simply ask for it. Type in help,
+
+00:13:52.360 --> 00:13:56.200
+and it'll give you pretty much
+every command you could ever want.
+
+00:13:56.260 --> 00:13:57.460
+I think that's a lot of 'em.
+
+00:13:57.910 --> 00:14:02.620
+And typing in any of these
+commands like subst or start,
+
+00:14:03.430 --> 00:14:06.490
+you can do a slash question
+mark to see how to use it.
+
+00:14:06.640 --> 00:14:10.720
+This command is not one at all.
+It's this advice. Use this &lt;laugh&gt;.
+
+00:14:10.840 --> 00:14:11.680
+Use PowerShell.
+
+00:14:12.010 --> 00:14:15.370
+PowerShell is better than Windows
+Command for prompt in a lot of ways. Now,
+
+00:14:15.400 --> 00:14:18.010
+don't get me wrong, I still use
+Command Prompt for a lot of things.
+
+00:14:18.190 --> 00:14:20.590
+It's just outta habit. It's
+what I've used my entire career.
+
+00:14:20.650 --> 00:14:24.010
+But if you wanna learn anything, you
+wanna dive deep. PowerShell is powerful.
+
+00:14:24.100 --> 00:14:26.230
+It's like command prompt but
+better. And you can do a lot more.
+
+00:14:26.410 --> 00:14:28.660
+And to use PowerShell, it's
+already right here and terminal.
+
+00:14:28.720 --> 00:14:32.170
+You can switch back and forth between
+actually Azure Cloud Shell Command Prompt
+
+00:14:32.170 --> 00:14:34.660
+and Windows Power Shell. That's
+the video. See you later.
+

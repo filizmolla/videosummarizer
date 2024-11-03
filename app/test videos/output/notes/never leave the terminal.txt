@@ -1,0 +1,47 @@
+**Features:**
+
+- **Runs within the terminal**
+- **Blocks ads**
+
+**Installation:**
+
+**Linux:**
+
+- Debian: sudo apt install links
+- Fedora: sudo dnf install links
+- Arch: sudo pacman -S links
+
+**Usage:**
+
+- **Move:** Up and down arrow keys
+- **Follow link:** Right arrow key
+- **Go back:** Left arrow key
+- **Options:** Press "o"
+- **Help:** Press "?"
+
+**Keyboard Shortcuts:**
+
+- **VIM Mode:** Tab
+- **Resize browser:** F11
+- **Quit:** Ctrl + Alt + Q
+
+**Limitations:**
+
+- **Does not support sites that require JavaScript or login forms**
+- **Unable to view dynamic content (e.g., videos)**
+- **Cannot save documents**
+
+**Using with Cookies:**
+
+- By default, cookies are not accepted.
+- To accept cookies permanently:
+    - Press "o" for options
+    - Select "Accept all"
+
+**Resources:**
+
+- **Links website:** https://links.twibright.com/
+- **User guide:** https://links.twibright.com/guide/
+- **ACI Learning IT Pro:** https://www.acilearning.com/it-pro
+- **YouTube:** https://www.youtube.com/
+- **Bleeping Computer:** https://www.bleepingcomputer.com/

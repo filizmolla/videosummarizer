@@ -1,0 +1,85 @@
+**30 Windows Commands You Can't Live Without**
+
+**Run Command Prompt as Administrator by Default**
+
+* Run command prompt shortcut.
+* Right-click and select "Properties" > "Advanced".
+* Check "Run as administrator by default".
+* Click "OK", then "Apply".
+
+**Hide Secret Files**
+
+* Copy a zip file containing hidden files into an image.
+* Encrypt the zip file using: `cipher /e [folder]`
+
+**Hide a Folder**
+
+* Use: `attrib +H +S +R [folder]`
+
+**Show All WiFi Passwords**
+
+* Run: `netsh wlan show profile`
+* For a specific network: `netsh wlan show profile [network name] key=clear`
+* Export all profiles to a file: `netsh wlan show profile >> wifi_passwords.txt`
+
+**System Information**
+
+* Run: `systeminfo`
+
+**Secure Copy Files**
+
+* Run: `scp [file] [username]@[server]:[destination]`
+
+**Open Command Prompt in File Explorer**
+
+* Type `CMD` in the address bar.
+
+**Map a Folder as a Drive**
+
+* Run: `subst [drive letter] [folder path]`
+
+**Customize Command Prompt**
+
+* Change colors with: `color [foreground color] [background color]`
+* Change text color with: `prompt [text color]`
+* Change background color with: `prompt $G`
+* Change window title with: `title [new title]`
+
+**Use Curl**
+
+* Check the weather: `curl wttr.in/[location]`
+* Unshorten links: `curl -I -L -s [shortened link]`
+* Check website status: `curl -Is https://[website address]`
+* Find your public IP address: `curl checkip.amazonaws.com`
+* Create QR codes: `curl -s QR -e [website address]`
+* Access YouTube user videos: `curl -s https://www.youtube.com/user/[user name]`
+* Access Twitter user tweets: `curl -s https://twitter.com/[user name]`
+* Define a word: `curl dict.org/d/define:[word]`
+* Use ChatGPT from the command line: `curl -s "https://generativelanguage.googleapis.com/v1beta2/models/[model ID]:generateText?key=[API Key]" -H "Content-Type: application/json" -d "{`text`: `[question]`}" -o [output file] -w "%{http_code}"`
+
+**Other Commands**
+
+* Delete temporary files: `del /q /f /s %temp%`
+* Free up disk space: `cleanmgr /sageset:60 /sagerun:60`
+* Use Telnet to watch movies in the terminal: `telnet telehack.com`
+* Use Function Keys (F1-F9) for command completion:
+    * F1: Repeat the last command letter by letter.
+    * F2: Copy the previous command up to a specified character.
+    * F3: Copy the entire previous line.
+    * F4: Delete characters up to a specified character.
+    * F5: Cycle through previous commands.
+    * F6: Enter the End of File indicator.
+    * F7: List previous commands.
+    * F8: Enter the first command typed in the terminal.
+    * F9: Enter a previous command by number.
+* Print command history: `doskey /history`
+
+**Terminal**
+
+* Terminal is a more advanced command-line interface for Windows 11.
+* Features:
+    * Tabs
+    * Drag-and-drop file management
+    * Integrated help
+    * Supports secure copy with file browsing
+* **Note:** PowerShell is recommended as it offers more functionality than both Command Prompt and Terminal.
