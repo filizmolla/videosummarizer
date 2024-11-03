@@ -1,0 +1,21 @@
+{% extends "videos/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <h1>Add Video To Database</h1>
+    <br/>
+    {% if submitted %}
+    Your Video was submitted successfully!
+    
+    {% else %}
+
+    <form action="" method=POST>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit" class="btn btn-secondary">
+
+    </form>
+{% endif %}
+
+{% endblock %}

@@ -1,9 +1,0 @@
-ValueError encountered for Google HACKING (use google search to HACK!): ("Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 3. The candidate's safety_ratings are: [category: HARM_CATEGORY_SEXUALLY_EXPLICIT\nprobability: NEGLIGIBLE\n, category: HARM_CATEGORY_HATE_SPEECH\nprobability: NEGLIGIBLE\n, category: HARM_CATEGORY_HARASSMENT\nprobability: NEGLIGIBLE\n, category: HARM_CATEGORY_DANGEROUS_CONTENT\nprobability: MEDIUM\n].", [category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-probability: NEGLIGIBLE
-, category: HARM_CATEGORY_HATE_SPEECH
-probability: NEGLIGIBLE
-, category: HARM_CATEGORY_HARASSMENT
-probability: NEGLIGIBLE
-, category: HARM_CATEGORY_DANGEROUS_CONTENT
-probability: MEDIUM
-])

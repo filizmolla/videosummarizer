@@ -1,0 +1,138 @@
+{% extends 'videos/base.html' %}
+{% load markdownify %}
+{% load static %}
+
+{% block title %}Unlimited Nav Tabs{% endblock %}
+
+{% block content %}
+	<!-- BEGIN breadcrumb -->
+	<ol class="breadcrumb float-xl-end">
+		<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+		<li class="breadcrumb-item"><a href="javascript:;">Videos</a></li>
+		<li class="breadcrumb-item active">{{video.id}}</li>
+	</ol>
+	<!-- END breadcrumb -->
+	<!-- BEGIN page-header -->
+	<h1 class="page-header">{{video.title}} <small>{{video.url}}</small></h1>
+	<!-- END page-header -->
+	
+	<!-- BEGIN row -->
+	<div class="row">
+		<!-- BEGIN col-3 -->
+		 		<!-- BEGIN col-3 -->
+		<div class="col-xl-3">
+			<div class="mb-3 fw-bold fs-13px">
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-laptop fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.channel_name }}</div>
+				</div>
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-clock fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.upload_date_youtube }}</div>
+				</div>
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-clock fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.duration }}</div>
+				</div>
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-heart fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.like_count }}</div>
+				</div>
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-eye fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.view_count }}</div>
+				</div>
+				<div class="d-flex align-items-center mb-3">
+					<i class="fa fa-tag fa-lg fa-fw me-10px text-gray-600"></i>
+					<div>{{ video.categories }}</div>
+				</div>
+			</div>
+		</div>
+		<!-- END col-3 -->
+
+		<!-- END col-3 -->
+		<!-- BEGIN col-9 -->
+		<div class="col-xl-9">
+			<!-- BEGIN panel -->
+			<div class="panel panel-inverse panel-with-tabs">
+				<!-- BEGIN panel-heading -->
+				<div class="panel-heading p-0">
+					<!-- BEGIN nav-tabs -->
+					<div class="tab-overflow">
+						<ul class="nav nav-tabs nav-tabs-inverse">
+							<li class="nav-item prev-button"><a href="javascript:;" data-click="prev-tab" class="nav-link text-primary"><i class="fa fa-arrow-left"></i></a></li>
+							<li class="nav-item"><a href="#nav-tab-1" data-bs-toggle="tab" class="nav-link active">Transcript</a></li>
+							<li class="nav-item"><a href="#nav-tab-2" data-bs-toggle="tab" class="nav-link">Summary</a></li>
+							<!--li class="nav-item"><a href="#nav-tab-3" data-bs-toggle="tab" class="nav-link">Nav Tab 3</a></li-->
+							<li class="nav-item next-button"><a href="javascript:;" data-click="next-tab" class="nav-link text-primary"><i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+					<!-- END nav-tabs -->
+					<div class="panel-heading-btn me-2 ms-2 d-flex">
+						<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-secondary" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
+					</div>
+				</div>
+				<!-- END panel-heading -->
+				<!-- BEGIN tab-content -->
+				<div class="panel-body tab-content">
+					<!-- BEGIN tab-pane -->
+					<div class="tab-pane fade active show" id="nav-tab-1">
+						<p>
+                            <h1 class="mt-10px">{{video.title}}</h3>
+                                <p>
+                                    {{video.transcript}}
+                                </p>
+                        </p>
+					</div>
+					<!-- END tab-pane -->
+					<!-- BEGIN tab-pane -->
+					<div class="tab-pane fade" id="nav-tab-2">
+                        <form>
+                            {% csrf_token %}
+                            <fieldset>
+                                <legend><h1 class="mt-10px">{{ video.title }}</h1></legend>
+                                {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+                                {% for summary in video.summary_set.all %}
+                                    <label for="summary{{ forloop.counter }}">{{ summary.summary_text| markdownify }}</label><br>
+                                {% endfor %}
+                            </fieldset>
+                            </form>						
+					</div>
+					<!-- END tab-pane -->
+					<!-- BEGIN tab-pane -->
+					<div class="tab-pane fade" id="nav-tab-3">
+						<h3 class="mt-10px">Nav Tab 3</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor, 
+							est diam sagittis orci, a ornare nisi quam elementum tortor. 
+							Proin interdum ante porta est convallis dapibus dictum in nibh. 
+							Aenean quis massa congue metus mollis fermentum eget et tellus. 
+							Aenean tincidunt, mauris ut dignissim lacinia, nisi urna consectetur sapien, 
+							nec eleifend orci eros id lectus.
+						</p>
+						<p>
+							Aenean eget odio eu justo mollis consectetur non quis enim. 
+							Vivamus interdum quam tortor, et sollicitudin quam pulvinar sit amet. 
+							Donec facilisis auctor lorem, quis mollis metus dapibus nec. Donec interdum tellus vel mauris vehicula, 
+							at ultrices ex gravida. Maecenas at elit tincidunt, vulputate augue vitae, vulputate neque.
+							Aenean vel quam ligula. Etiam faucibus aliquam odio eget condimentum. 
+							Cras lobortis, orci nec eleifend ultrices, orci elit pellentesque ex, eu sodales felis urna nec erat. 
+							Fusce lacus est, congue quis nisi quis, sodales volutpat lorem.
+						</p>
+					</div>
+					<!-- END tab-pane -->
+				</div>
+				<!-- END tab-content -->
+				<!-- BEGIN hljs-wrapper -->
+				<div class="hljs-wrapper">
+					<pre><code class="html" data-url="{% static 'data/ui-unlimited-tabs/code-1.json' %}"></code></pre>
+				</div>
+				<!-- END hljs-wrapper -->
+			</div>
+			<!-- END panel -->
+		</div>
+		<!-- END col-9 -->
+	</div>
+	<!-- END row -->
+{% endblock %}

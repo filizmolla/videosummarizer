@@ -1,0 +1,12 @@
+{% extends 'videos/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h2>Are you sure you want to delete "{{ video.title }}"?</h2>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Yes, delete</button>
+  <a href="{% url 'Video_Tablosu' %}">Cancel</a>
+</form>
+{% endblock %}
