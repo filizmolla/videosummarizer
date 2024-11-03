@@ -7,7 +7,17 @@
 {% block css %}
 	<link href="{% static 'plugins/datatables.net-bs5/css/dataTables.bootstrap5.min.css' %}" rel="stylesheet" />
 	<link href="{% static 'plugins/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css' %}" rel="stylesheet" />
-{% endblock %}
+<style>
+	.text-danger i {
+    font-size: 1.2em; 
+}
+
+.text-danger i:hover {
+    color: #d9534f; 
+    cursor: pointer;
+}
+</style>
+	{% endblock %}
 
 {% block js %}
 	<script src="{% static 'plugins/datatables.net/js/dataTables.min.js' %}"></script>
@@ -53,6 +63,8 @@
 						<th class="text-nowrap">Created At </th>
 						<th class="text-nowrap">Updated At </th>
 						<th class="text-nowrap">Status</th>
+						<th class="text-nowrap"> </th>
+						
 					</tr>
 				</thead>
 				<tbody>
@@ -67,6 +79,13 @@
 						<td >{{video.created_at}}</td>
 						<td >{{video.updated_at}}</td>
 						<td >{{video.status}}</td>
+						<td>
+							<a href="{% url 'delete_video' video.id %}" class="text-secondary">
+							  <i class="fas fa-trash-alt"></i>
+							</a>
+						  </td>
+						  
+					
 				  </tr>
 					{% endfor %}
 				</tbody>

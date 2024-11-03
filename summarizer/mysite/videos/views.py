@@ -1,5 +1,5 @@
 from django.db.models.query import QuerySet
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.http import HttpResponse
 from django.views import generic
 from videos.models import Video
@@ -68,6 +68,14 @@ class DetailView(generic.DetailView):
 
     def get_queryset(self):
         return Video.objects.all()
+    
+
+def delete_video(request, video_id):
+    video = get_object_or_404(Video, id=video_id)
+    if request.method == "POST":
+        video.delete()
+        return redirect('Video_Tablosu')  
+    return render(request, 'videos/confirm_delete.html', {'video': video})
 
 @api_view()
 def view_dtl(request):
