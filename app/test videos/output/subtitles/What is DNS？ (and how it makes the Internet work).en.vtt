@@ -1,0 +1,1762 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:02.070
+Your web browser is kind of dumb. You see,
+
+00:00:02.070 --> 00:00:05.010
+when you type in a website address
+like academy.network shock.com,
+
+00:00:05.250 --> 00:00:08.730
+it has no idea how to get there
+because to actually visit the website,
+
+00:00:08.730 --> 00:00:11.100
+you have to know the IP address
+of the server it lives on.
+
+00:00:11.220 --> 00:00:13.770
+It's essentially its phone number
+and your web browser doesn't know it,
+
+00:00:13.860 --> 00:00:16.830
+but if you press enter, it does
+get there. What am I talking about?
+
+00:00:16.890 --> 00:00:18.780
+It's kind of like this.
+If I actually, hold on.
+
+00:00:21.690 --> 00:00:25.920
+If I handed you an old phone and said,
+here, call your friend Bernard. Go ahead.
+
+00:00:26.490 --> 00:00:28.500
+There you go. Put the number
+in. You couldn't do it.
+
+00:00:28.560 --> 00:00:31.560
+You don't know Bernard's phone number.
+We don't memorize those anymore.
+
+00:00:31.650 --> 00:00:35.520
+You just know his name, Bernard.
+But if you could grab your phone,
+
+00:00:35.640 --> 00:00:38.880
+open up your contacts app
+and type in Bernard Boom,
+
+00:00:38.880 --> 00:00:43.410
+you would see his phone number and
+then you could dial the number. Oh,
+
+00:00:43.410 --> 00:00:44.310
+that's really fun.
+
+00:00:48.600 --> 00:00:50.850
+That is DNS the domain name system.
+
+00:00:50.910 --> 00:00:53.700
+Your browser doesn't know Bernard's
+phone number or the IP address for
+
+00:00:53.700 --> 00:00:56.790
+academy.network check.com, so
+it has to check its contacts,
+
+00:00:56.850 --> 00:00:58.890
+and in this case that'll be a DNS server.
+
+00:00:59.010 --> 00:01:03.330
+A server that's similar to your contacts
+app will map domain names or website
+
+00:01:03.330 --> 00:01:07.410
+names to an IP address, Bernard's name,
+Bernard's phone number, website name,
+
+00:01:07.410 --> 00:01:11.010
+IP address, so your browser will
+query or ask the DNS server, Hey,
+
+00:01:11.640 --> 00:01:13.890
+what's the IP address for
+Academy network check.com?
+
+00:01:13.890 --> 00:01:17.730
+I got to get there and the DNS server
+will respond with the IP address and boom,
+
+00:01:17.790 --> 00:01:19.620
+you're good to go. You
+can visit that website.
+
+00:01:19.740 --> 00:01:24.090
+This DNS process is vital to how the
+internet works without it, websites,
+
+00:01:24.150 --> 00:01:27.240
+emails, and pretty much anything to
+do with the internet would break,
+
+00:01:27.420 --> 00:01:29.550
+and it often does when DNS stops working,
+
+00:01:29.700 --> 00:01:34.080
+which often happens because this process
+I outlined here is a bit more complex
+
+00:01:34.080 --> 00:01:36.420
+than I've shown. Also,
+this process can be hacked.
+
+00:01:36.540 --> 00:01:39.780
+There are ways to secure yourself.
+I use secure DNS from Twin Gate,
+
+00:01:39.780 --> 00:01:42.720
+the sponsor of this video, twin
+Gate is my VPN replacement,
+
+00:01:42.720 --> 00:01:46.230
+and they have amazing DNS features.
+We'll talk more about them here in a bit.
+
+00:01:46.350 --> 00:01:47.183
+This is going to be fun.
+
+00:01:47.370 --> 00:01:51.060
+We're going to trace all the DNS queries
+that your computer will use to get to
+
+00:01:51.060 --> 00:01:54.180
+academy.network chuck.com,
+and there's quite a few.
+
+00:01:54.300 --> 00:01:56.460
+You're about to see how the
+internet works. So here we go.
+
+00:01:56.520 --> 00:01:57.390
+You open your browser,
+
+00:01:57.480 --> 00:02:00.480
+you're ready to learn because you want
+to go out to academy.network chuck.com
+
+00:02:00.720 --> 00:02:03.090
+where I teach on this and many
+other things like our new course,
+
+00:02:03.090 --> 00:02:06.480
+intro to laptops and mobile devices,
+part of our new a plus course.
+
+00:02:06.600 --> 00:02:09.180
+If you're just getting started in
+it, oh, by the way, here's you,
+
+00:02:09.360 --> 00:02:12.120
+you're excited and you got a cup of
+coffee so you're ready to learn it.
+
+00:02:12.510 --> 00:02:14.010
+That just gave you a refill coffee break.
+
+00:02:16.230 --> 00:02:19.950
+So you launch your browser and type
+in academy.network chuck.com. Now,
+
+00:02:19.950 --> 00:02:21.480
+before your computer goes anywhere,
+
+00:02:21.570 --> 00:02:25.140
+he might actually already know the IP
+address of academy.network chuck.com.
+
+00:02:25.170 --> 00:02:29.040
+He'll use his stub resolver, which
+sounds hilarious. I love saying that.
+
+00:02:29.100 --> 00:02:31.440
+It's just the term for the DNS
+client running on your machine,
+
+00:02:31.500 --> 00:02:32.790
+but it's called a stub Resolver.
+
+00:02:32.880 --> 00:02:35.910
+The Stub Resolver will check your cache
+because if you've recently been to
+
+00:02:35.910 --> 00:02:37.410
+academy.network check.com,
+
+00:02:37.440 --> 00:02:40.770
+the IP address might be there stored
+in your cache for safekeeping,
+
+00:02:40.890 --> 00:02:41.880
+and if it is, you're good to go.
+
+00:02:41.880 --> 00:02:45.060
+You don't have to go out to a DNS server
+and ask it questions, but in this case,
+
+00:02:45.660 --> 00:02:47.940
+this is your first time. You've never
+been there before. That's crazy.
+
+00:02:47.940 --> 00:02:49.680
+How have you never been there
+before? Let's keep going.
+
+00:02:49.860 --> 00:02:53.910
+So your step Resolver knows he needs some
+help. It's time to ask his DNS server,
+
+00:02:53.940 --> 00:02:56.670
+his DNS server. What do you
+mean your computer will have?
+
+00:02:56.670 --> 00:02:59.100
+And it's a network configuration
+along with its IP address,
+
+00:02:59.140 --> 00:03:00.490
+A DNS server that I can talk to.
+
+00:03:00.580 --> 00:03:03.790
+This is something that you configure
+or it's just given to you by the D HT P
+
+00:03:03.790 --> 00:03:05.530
+server in your network. What is that?
+
+00:03:05.560 --> 00:03:07.720
+You'll learn about that in Network
+Check Academy. Check it out.
+
+00:03:07.900 --> 00:03:08.860
+You're about to go there right now.
+
+00:03:09.040 --> 00:03:11.290
+A very common DNS server
+you might use is Google.
+
+00:03:11.350 --> 00:03:15.340
+They have a DNS server found
+at the IP address, 8 8 8 8.
+
+00:03:15.400 --> 00:03:17.950
+It's one of the very few IP
+addresses I have memorized.
+
+00:03:18.070 --> 00:03:21.400
+So your Stub Resolver will send
+a query a DNS query saying, Hey,
+
+00:03:21.610 --> 00:03:23.410
+Google my public DNS server.
+
+00:03:23.500 --> 00:03:26.680
+Surely you know the IP address of
+academy.network chuck.com, right?
+
+00:03:26.740 --> 00:03:31.630
+And Google might go, actually,
+no, I don't Wait, wait, what?
+
+00:03:31.840 --> 00:03:35.830
+Yes. You see Google's public DNS
+server is a recursive DNS server,
+
+00:03:35.950 --> 00:03:38.890
+which means he may not know all
+the IP addresses for every website,
+
+00:03:39.280 --> 00:03:42.130
+but he knows a guy who knows the guy
+who can tell him he's going to make
+
+00:03:42.130 --> 00:03:45.070
+multiple requests to other
+DNS servers to find out,
+
+00:03:45.130 --> 00:03:48.190
+are you ready for this adventure? I'm
+telling you, it's a crazy one. Now,
+
+00:03:48.190 --> 00:03:51.490
+sometimes he may not have to ask anybody
+because similar to your Stub Resolver,
+
+00:03:51.670 --> 00:03:52.780
+he may have some cash.
+
+00:03:52.840 --> 00:03:55.750
+Someone may have already been
+to academy.network check.com,
+
+00:03:55.870 --> 00:03:58.570
+and he's got the IP address saved
+in his cash, and in that case,
+
+00:03:58.570 --> 00:04:00.670
+he'll just tell you, but we're
+going to assume he doesn't.
+
+00:04:00.790 --> 00:04:02.830
+So if Google doesn't know then who does?
+
+00:04:02.920 --> 00:04:06.520
+Now the next step involves some mafia
+bosses. Yes, DNS does have a hierarchy,
+
+00:04:06.640 --> 00:04:10.180
+and at the very top are the DNS
+mafia bosses. I'm not kidding.
+
+00:04:10.180 --> 00:04:13.540
+It's kind of crazy. They're
+called the Roots. That's for real.
+
+00:04:13.690 --> 00:04:18.580
+The roots are run by these 12 companies
+or organizations, big names like nasa,
+
+00:04:18.700 --> 00:04:20.080
+the DOD ign,
+
+00:04:20.110 --> 00:04:24.820
+they control and manage 13 server
+groups or 13 named authorities,
+
+00:04:24.880 --> 00:04:28.240
+and these are hundreds of servers strewn
+about the world. Here's the map. Oh,
+
+00:04:28.240 --> 00:04:31.450
+did I say hundreds? I meant 1,865.
+
+00:04:31.690 --> 00:04:35.140
+So Google will reach out to one of
+the root servers, the mafia bosses,
+
+00:04:35.230 --> 00:04:36.340
+because surely of anyone,
+
+00:04:36.340 --> 00:04:40.180
+they would know the IP address of
+academy.network chuck.com, right? Wrong.
+
+00:04:40.270 --> 00:04:41.170
+These are the bosses.
+
+00:04:41.260 --> 00:04:45.010
+They don't deal with the peasant work
+of domain to IP address mapping. Now,
+
+00:04:45.040 --> 00:04:46.060
+they're all big picture.
+
+00:04:46.180 --> 00:04:51.130
+All they care about and know about are
+top level domains or TLDs. What is that?
+
+00:04:51.550 --> 00:04:55.330
+Well, when Google talks to these root
+servers, he's only asking about one thing.
+
+00:04:55.390 --> 00:04:57.820
+This section of our URL
+right here, the.com,
+
+00:04:57.970 --> 00:05:02.770
+this is a top level domain
+or a T ld, so.com, dot net,
+
+00:05:02.830 --> 00:05:06.310
+dot co, dot coffee, these
+are all top level domains.
+
+00:05:06.370 --> 00:05:11.260
+Also country specific ones like.jp for
+Japan or pH for the Philippines. Now,
+
+00:05:11.260 --> 00:05:13.630
+what does it mean they handle
+the top level domains? Well,
+
+00:05:13.630 --> 00:05:15.820
+it means they're lazy.
+They delegate everything,
+
+00:05:15.880 --> 00:05:19.270
+meaning they're not going to tell
+you any IP addresses for any domains,
+
+00:05:19.270 --> 00:05:22.300
+but they'll say, you know what? I know
+who can help you. Middle management,
+
+00:05:22.420 --> 00:05:23.253
+my underling.
+
+00:05:23.320 --> 00:05:28.210
+So what they maintain is a list of
+other DNS servers that can help you with
+
+00:05:28.210 --> 00:05:30.130
+these top level domains.
+So in our example here,
+
+00:05:30.130 --> 00:05:34.660
+our Google recursive DNS server is
+only asking about the.com top level
+
+00:05:34.660 --> 00:05:35.290
+domain,
+
+00:05:35.290 --> 00:05:40.090
+and our root server will return a list
+of other DNS servers that are responsible
+
+00:05:40.090 --> 00:05:44.680
+for that.com domain. And when I say
+responsible, I also mean authoritative.
+
+00:05:44.770 --> 00:05:47.470
+They're the bosses of those
+domains. Using NS lookup,
+
+00:05:47.470 --> 00:05:50.740
+the query might look like this, and we'll
+pick up one of the root servers here.
+
+00:05:50.800 --> 00:05:54.550
+I'll choose J, and we'll ask
+that mafia boss root server, Hey,
+
+00:05:54.580 --> 00:05:56.680
+who manages the.com top level domain,
+
+00:05:56.960 --> 00:05:59.750
+and the Mafia Boss root server
+responds with a database,
+
+00:05:59.750 --> 00:06:02.000
+a list of servers that are authoritative,
+
+00:06:02.030 --> 00:06:05.870
+responsible for the.com top
+level domain. These servers here,
+
+00:06:05.870 --> 00:06:10.430
+these DNS servers are referred to as
+top level domain servers or TLD servers,
+
+00:06:10.790 --> 00:06:13.610
+but I want to make sure I'm labeling
+our journey here. The steps.
+
+00:06:13.760 --> 00:06:17.810
+So our Google DS server asks for it,
+the root server responds. He says,
+
+00:06:17.810 --> 00:06:22.010
+you can ask a gtld
+servers.net. He manages.com,
+
+00:06:22.250 --> 00:06:23.960
+talk to him. So armed with that knowledge,
+
+00:06:23.960 --> 00:06:28.490
+our Google recursive DNS server will
+send another query to a dot gtld
+
+00:06:28.490 --> 00:06:32.330
+servers.net because surely he knows
+the IP address for academy.network
+
+00:06:32.330 --> 00:06:36.560
+check.com. Right? Wrong, he does
+it. It's a whole journey I told you,
+
+00:06:36.710 --> 00:06:39.770
+but Google knows that he's only asking
+about one very specific piece of
+
+00:06:39.770 --> 00:06:43.370
+information. This right
+here me network, Chuck,
+
+00:06:43.490 --> 00:06:47.810
+this part of our domain is called
+the second level domain or an SLD.
+
+00:06:47.930 --> 00:06:50.060
+So Google's not asking
+this T LD server, Hey,
+
+00:06:50.060 --> 00:06:53.870
+what's CIP address for academy.network
+chuck.com. Now he's asking, Hey,
+
+00:06:53.900 --> 00:06:56.630
+who manages network chuck.com?
+
+00:06:56.780 --> 00:06:59.240
+Who is the authority for
+that second level domain?
+
+00:06:59.270 --> 00:07:01.160
+And that's what top
+level domain servers do.
+
+00:07:01.220 --> 00:07:06.050
+They keep a database or list of
+authoritative servers for website domains.
+
+00:07:06.320 --> 00:07:10.760
+I know it kind of feels like a, I
+know a guy who knows a guy situation
+
+00:07:13.550 --> 00:07:15.800
+With NS lookup. The query
+might look like this,
+
+00:07:17.630 --> 00:07:22.010
+and the.com TLD server will respond
+with an authoritative server or servers
+
+00:07:22.070 --> 00:07:26.720
+for network check.com. The second
+level domain, and as you can see here,
+
+00:07:27.050 --> 00:07:31.010
+the authoritative server for my
+network check.com domain is CloudFlare.
+
+00:07:31.190 --> 00:07:33.620
+That is who manages my
+stuff. So now finally,
+
+00:07:33.770 --> 00:07:35.960
+the Google recursive DNS
+server knows who to ask.
+
+00:07:36.200 --> 00:07:39.980
+This whole process so far
+has been like, Hey, hey,
+
+00:07:41.600 --> 00:07:45.590
+to find out who might know, and now
+he knows the server is CloudFlare,
+
+00:07:45.740 --> 00:07:48.800
+his name is Pablo. I love their
+DNS server name server schemes.
+
+00:07:48.980 --> 00:07:52.970
+So Google sends one last
+DNS query, please, sir,
+
+00:07:53.090 --> 00:07:54.380
+you're the last top of my journey.
+
+00:07:54.560 --> 00:07:57.680
+Do you know the IP address
+for academy.network chuck.com?
+
+00:07:57.920 --> 00:08:00.560
+And guess what Pablo does? Pablo does.
+
+00:08:02.990 --> 00:08:07.310
+Pablo knows everything about
+the domain network, chuck.com.
+
+00:08:07.400 --> 00:08:10.160
+He's got what's called the zone file,
+which looks something like this.
+
+00:08:10.220 --> 00:08:13.550
+Here's an example of a zone file starting
+with a state of authority record,
+
+00:08:13.670 --> 00:08:17.060
+an SOA essentially, Hey, who's
+in charge here? It's Pablo.
+
+00:08:17.120 --> 00:08:20.090
+He's the name server that you can contact
+to find out anything you want to know
+
+00:08:20.090 --> 00:08:21.260
+about network chuck.com,
+
+00:08:21.470 --> 00:08:25.730
+including things like and not limited
+to the IP address for network chuck.com.
+
+00:08:25.730 --> 00:08:27.920
+If you want to visit the main
+website, you should. It's really cool.
+
+00:08:28.100 --> 00:08:29.180
+And the reason we came here,
+
+00:08:29.330 --> 00:08:34.130
+the record for academy.network
+chuck.com and the IP address it belongs
+
+00:08:34.130 --> 00:08:38.630
+to. Finally, oh my gosh, it's here.
+And that's what Pablo responds with.
+
+00:08:38.690 --> 00:08:42.770
+Good old 1 0 4 18 do
+40 two.one three nine.
+
+00:08:42.950 --> 00:08:44.150
+Google has done it.
+
+00:08:44.270 --> 00:08:48.260
+He quickly updates his cash saving
+that precious tidbit of information for
+
+00:08:48.260 --> 00:08:53.120
+later. And then finally, he can tell
+us our computer, our stub resolver,
+
+00:08:53.150 --> 00:08:56.220
+the IP address for academy.network
+shock. And by the way,
+
+00:08:56.370 --> 00:09:00.240
+the academy portion of this domain to
+the left of the second level domain,
+
+00:09:00.360 --> 00:09:02.220
+this is called a subdomain,
+
+00:09:02.310 --> 00:09:07.230
+which allows me to do cool things like
+make an academy and point just that URL,
+
+00:09:07.260 --> 00:09:09.570
+that website name to a different location,
+
+00:09:09.630 --> 00:09:13.620
+my actual academy from my main
+website network, chuck.com. Now,
+
+00:09:13.620 --> 00:09:15.300
+step back for a second
+and think about this.
+
+00:09:15.360 --> 00:09:19.170
+All of this happens every time
+you visit a website. It's magic,
+
+00:09:19.230 --> 00:09:22.470
+and it happens like that because when
+you visit a website you've never been to
+
+00:09:22.470 --> 00:09:26.190
+before, you just go there. No time
+really goes by. You don't even notice it.
+
+00:09:26.280 --> 00:09:29.700
+But behind the scenes, all this
+stuff is happening. That's so crazy.
+
+00:09:29.760 --> 00:09:31.530
+But what's also pretty stinking crazy,
+
+00:09:32.040 --> 00:09:35.910
+the fact that this process is
+often done insecurely. You see,
+
+00:09:35.910 --> 00:09:39.510
+when you're PC your client, your
+stub resolver queries a DNS server.
+
+00:09:39.570 --> 00:09:44.070
+It will by default use UDP port
+53. This is done in plain text,
+
+00:09:44.100 --> 00:09:47.190
+meaning it's not encrypted. It's
+naked for all the world to see.
+
+00:09:47.310 --> 00:09:51.090
+So if I were a hacker, if I were a hacker,
+
+00:09:51.450 --> 00:09:53.730
+and I've demonstrated this
+numerous times on my channel,
+
+00:09:53.820 --> 00:09:58.440
+I could sniff or get in the middle
+of that traffic, take that traffic,
+
+00:09:58.470 --> 00:10:00.450
+and I could just look at
+it without any problems.
+
+00:10:00.480 --> 00:10:03.330
+I could see what websites you're
+visiting. If I really wanted to be bad,
+
+00:10:03.360 --> 00:10:08.010
+I could pretend to be a DNS server
+and respond with another IP address,
+
+00:10:08.040 --> 00:10:11.340
+maybe an IP address that goes
+to another server that's bad.
+
+00:10:11.430 --> 00:10:14.550
+This is what happens all the
+time. It's called DNS spoofing,
+
+00:10:14.730 --> 00:10:17.280
+and it's not just the hackers.
+You want to worry about your ISP,
+
+00:10:17.280 --> 00:10:18.480
+your internet service provider,
+
+00:10:18.480 --> 00:10:21.390
+the person providing you internet
+can also see your DNS queries,
+
+00:10:21.390 --> 00:10:23.310
+which means they can see what
+websites you're visiting.
+
+00:10:23.400 --> 00:10:25.350
+I don't want them to know
+that get out of here.
+
+00:10:25.590 --> 00:10:29.550
+That's why DNS security has become
+a pretty big thing. Thankfully,
+
+00:10:29.550 --> 00:10:30.360
+we do have a solution.
+
+00:10:30.360 --> 00:10:33.240
+Let me talk about how you can
+secure your own DNS right now.
+
+00:10:33.390 --> 00:10:37.530
+A big hero to the rescue was a thing
+called DOH, which is really cool.
+
+00:10:37.530 --> 00:10:42.060
+It stands for DNS over H-T-T-P-S.
+This is actually pretty crazy.
+
+00:10:42.060 --> 00:10:43.170
+So H-T-T-P-S,
+
+00:10:43.500 --> 00:10:47.580
+this is the protocol we use
+to securely access websites.
+
+00:10:47.640 --> 00:10:49.140
+So right now as you're
+watching this video,
+
+00:10:49.140 --> 00:10:52.650
+you're on YouTube and you're
+connected to YouTube via H-T-T-P-S.
+
+00:10:52.740 --> 00:10:56.130
+That connection is secure and encrypted
+hackers can't see inside of that.
+
+00:10:56.160 --> 00:10:58.620
+They don't know what videos
+you're watching. No one does,
+
+00:10:58.620 --> 00:11:00.900
+but you and that guy standing
+behind you watch out.
+
+00:11:01.140 --> 00:11:04.290
+So H TT PS is a secure
+encrypted connection. DNS,
+
+00:11:04.290 --> 00:11:08.400
+when it goes over H-T-T-P-S also
+becomes a secure connection.
+
+00:11:08.640 --> 00:11:10.200
+So we get things like encryption.
+
+00:11:10.260 --> 00:11:12.600
+Even if a hacker happened to be
+in the middle of a conversation,
+
+00:11:12.600 --> 00:11:14.040
+they were sniffing your web traffic,
+
+00:11:14.100 --> 00:11:18.180
+they wouldn't be able to see that DNS
+query, it's hidden. Not only is it hidden,
+
+00:11:18.360 --> 00:11:21.750
+it's wearing a costume. It's
+wearing an H TT PS costume. You see,
+
+00:11:21.750 --> 00:11:25.890
+normally it's pretty easy to identify DNS
+traffic when you're looking at traffic
+
+00:11:25.890 --> 00:11:29.130
+captures. You can search for
+things that are using UDP Port 53,
+
+00:11:29.220 --> 00:11:33.060
+but if DNS is using H-T-T-P-S along
+with all the other web traffic,
+
+00:11:33.120 --> 00:11:36.360
+I can't identify DNS traffic,
+it's just all the website traffic.
+
+00:11:36.420 --> 00:11:39.330
+DNS is hiding in a crowd of
+people. It's like, where's Waldo?
+
+00:11:39.450 --> 00:11:42.780
+Except he's not wearing a bright
+shirt. He's just as a regular person,
+
+00:11:42.780 --> 00:11:44.610
+you would never know, okay,
+this sounds great, right?
+
+00:11:44.610 --> 00:11:48.450
+So how do you use DNS over https? Well,
+the short answer is it's pretty easy.
+
+00:11:48.540 --> 00:11:51.600
+There are a couple of considerations. You
+have to know, for example, the client,
+
+00:11:51.780 --> 00:11:54.970
+you, your browser has to support DOH,
+
+00:11:55.120 --> 00:11:59.110
+which thankfully most do nowadays. Also,
+the DNS server you're connecting to,
+
+00:11:59.170 --> 00:12:02.500
+the one you choose to connect
+to also needs to support DOH.
+
+00:12:02.560 --> 00:12:06.190
+Choose a DNS server that supports DOH.
+Just search that CloudFlare Google.
+
+00:12:06.190 --> 00:12:09.520
+They all have it and makes sure
+your client has DOH enabled. Cool,
+
+00:12:09.550 --> 00:12:12.460
+that's great for you. But what about
+your family? What about your employees?
+
+00:12:12.520 --> 00:12:16.600
+Are you going to go to every device and
+make sure they're using DOH and they
+
+00:12:16.600 --> 00:12:19.450
+have the appropriate settings enabled
+and they're connected to the right DNS
+
+00:12:19.450 --> 00:12:23.260
+server? You could do that, but
+I don't have that time you.
+
+00:12:23.320 --> 00:12:25.750
+This is why I like to rely
+on tools like Twin Gate. Now,
+
+00:12:25.750 --> 00:12:27.610
+twin Gate is my remote access solution.
+
+00:12:27.610 --> 00:12:29.950
+So when I'm out and about
+traveling the world,
+
+00:12:29.950 --> 00:12:33.400
+like I for real use this when I was in
+Japan or when my employees are working
+
+00:12:33.400 --> 00:12:36.760
+from home like Florida, Nick, this is
+what he uses to access our stuff here.
+
+00:12:36.820 --> 00:12:40.240
+He'll connect to our network in the
+studio using his Twin Gate client from
+
+00:12:40.240 --> 00:12:44.350
+Florida, getting a super secure
+connection to us. That's cool by itself,
+
+00:12:44.410 --> 00:12:46.660
+you should definitely try it.
+It's free for up to five users.
+
+00:12:46.870 --> 00:12:50.920
+It's zero trust access.
+You've got granular control
+over what anyone can access.
+
+00:12:50.920 --> 00:12:53.980
+I love it. I've been using it
+for a long time. But back to DNS,
+
+00:12:54.340 --> 00:12:58.180
+A cool feature we can enable is secure
+DNS. Lemme show you what it looks like.
+
+00:12:58.300 --> 00:13:00.700
+I'm going to log into my Twin
+Gate dashboard, and by the way,
+
+00:13:00.700 --> 00:13:03.220
+I don't pay for Twin Gate and
+they don't give it to me for free.
+
+00:13:03.220 --> 00:13:06.220
+I'm using the free version right now.
+So in their internet security settings,
+
+00:13:06.220 --> 00:13:08.920
+they have what's called secure
+DNS. So essentially any Mac,
+
+00:13:08.920 --> 00:13:13.690
+windows or Linux computer with my Twin
+Gate client installed this policy forces
+
+00:13:13.690 --> 00:13:17.650
+them to use DOH. I can actually enforce
+that and make sure this is happening.
+
+00:13:17.860 --> 00:13:21.220
+I can choose which DOH server I
+want to use so I can use CloudFlare,
+
+00:13:21.580 --> 00:13:25.360
+Google Open DNS, next DNS. All
+these are public DNS servers,
+
+00:13:25.360 --> 00:13:28.420
+DNS or cursive resolvers
+that support DOH. Now,
+
+00:13:28.420 --> 00:13:30.940
+if I had some restrictions on what
+DNS servers my company could use,
+
+00:13:30.940 --> 00:13:33.010
+I can specify a custom DNS server here,
+
+00:13:33.250 --> 00:13:35.290
+and this is pretty cool
+with client configuration,
+
+00:13:35.380 --> 00:13:39.340
+I can add this machine key to my clients
+and I can deploy this with any kind of
+
+00:13:39.340 --> 00:13:43.120
+MDM solution I have. And as long as
+this machine key is on their computer,
+
+00:13:43.180 --> 00:13:43.600
+it doesn't matter.
+
+00:13:43.600 --> 00:13:46.150
+If the Twin Gate connection is
+open and connected to my network,
+
+00:13:46.210 --> 00:13:48.700
+it'll still make sure they're using DOH,
+
+00:13:48.760 --> 00:13:52.180
+making sure the DNS queries are always
+encrypted and secure. It's persistent.
+
+00:13:52.330 --> 00:13:55.270
+Now, you also got fallback in
+case something loses connection,
+
+00:13:55.270 --> 00:13:56.890
+whatever that might be.
+You can say, you know what?
+
+00:13:56.890 --> 00:13:59.140
+Just fall back to the system's DNS.
+
+00:13:59.230 --> 00:14:02.590
+Maybe you got your DNS server
+handed to you from your ISP,
+
+00:14:02.680 --> 00:14:05.290
+and it's actually their DNS
+providers. You don't want to do that.
+
+00:14:05.290 --> 00:14:07.300
+Then they're really seeing what
+you're doing. So in that case,
+
+00:14:07.300 --> 00:14:10.300
+you might want to go, Hey, I want
+to be pretty strict, require DOH,
+
+00:14:10.330 --> 00:14:13.540
+even when resolvers fail,
+and the resolvers would be
+the DNS servers themselves.
+
+00:14:13.570 --> 00:14:17.170
+Hey, network, Chuck from the future here.
+Twin Gate just gave me DNS filtering.
+
+00:14:17.230 --> 00:14:19.870
+They unlocked it for me. Thank you.
+Twin Gate. I'm going to enable it.
+
+00:14:19.930 --> 00:14:24.490
+Enable it for everyone. Okay, now let's
+edit our filtering profile. Allow list,
+
+00:14:24.490 --> 00:14:28.000
+deny list security categories that's
+already blocking threat intelligence feeds
+
+00:14:28.060 --> 00:14:31.240
+content restrictions. Oh yeah,
+Mike has a gambling problem.
+
+00:14:31.630 --> 00:14:35.620
+Alex is always on Facebook. We'll
+leave YouTube on privacy protection.
+
+00:14:35.680 --> 00:14:39.580
+We can block ads and trackers done. This
+is pretty cool. Thank you. Twin Gate.
+
+00:14:40.180 --> 00:14:43.450
+I just turned it on and we already have
+so much in there. It's all from Nick,
+
+00:14:43.630 --> 00:14:46.810
+Florida, Nick and Austin's MacBook.
+I'm actually really excited about this.
+
+00:14:46.810 --> 00:14:49.150
+It's already doing stuff. If
+you're not already using Twin Gate,
+
+00:14:49.240 --> 00:14:52.220
+you need to use it. Check it out.
+Link below. I'm a massive fan of it,
+
+00:14:52.280 --> 00:14:55.100
+and I've got a video up here somewhere
+where I show you how to set this up and
+
+00:14:55.100 --> 00:14:57.950
+some really cool features of how
+it handles additional DNS. Now,
+
+00:14:57.950 --> 00:15:00.530
+back to DNS security. DOH
+is not the only option,
+
+00:15:00.740 --> 00:15:05.540
+even though it is one of the more popular
+ones. We've got DOT or DNS over TLS,
+
+00:15:05.600 --> 00:15:08.510
+transport layer security, which
+also is secure and encrypted.
+
+00:15:08.600 --> 00:15:12.200
+We've got DNS Crypt doing a lot
+of the same things. DNS sec,
+
+00:15:12.260 --> 00:15:16.280
+which is actually a suite of tools on
+how to make sure every query and response
+
+00:15:16.310 --> 00:15:17.960
+is valid, not just encrypted.
+
+00:15:18.020 --> 00:15:21.560
+And then you have DNS servers like Quad
+nine that do advanced things like when
+
+00:15:21.560 --> 00:15:24.440
+you use them as your DNS server,
+they could do malware prevention.
+
+00:15:24.470 --> 00:15:28.340
+If you happen to be going to a
+website or URL, that's bad known bad,
+
+00:15:28.580 --> 00:15:30.260
+they can prevent you from doing that. Now,
+
+00:15:30.260 --> 00:15:34.460
+DNS is more than just domain names to
+IP address mapping. Check this out.
+
+00:15:34.550 --> 00:15:37.340
+So looking back at our zone
+file for network check.com,
+
+00:15:37.610 --> 00:15:39.860
+there's a lot of stuff going on.
+Some things you're familiar with.
+
+00:15:39.860 --> 00:15:41.720
+Others we're like, what? So for example,
+
+00:15:41.720 --> 00:15:44.060
+right here we have
+what's called a records.
+
+00:15:44.150 --> 00:15:49.100
+These are our domain names to IP address
+mappings probably the most popular
+
+00:15:49.100 --> 00:15:49.940
+one you're aware of.
+
+00:15:50.240 --> 00:15:53.720
+Another one that we just saw as we were
+looking at our life of a query going
+
+00:15:53.720 --> 00:15:58.010
+through that process was a name server,
+otherwise known as an NS record.
+
+00:15:58.130 --> 00:16:01.310
+The NS record or name server
+record tells us what server,
+
+00:16:01.310 --> 00:16:05.030
+what authoritative DNS server is
+responsible for a second level domain.
+
+00:16:05.210 --> 00:16:08.810
+So network shuck.com, this is his
+name server, or at least one of them.
+
+00:16:09.050 --> 00:16:10.880
+If you scroll down just a little bit more,
+
+00:16:11.120 --> 00:16:14.870
+you'll see this crazy thing
+quadruple a records overpowered.
+
+00:16:15.080 --> 00:16:19.850
+All it is is a domain name
+mapping to an IPV six address.
+
+00:16:20.000 --> 00:16:24.530
+I'm not going to cover IPV six and this
+video here just know it's bigger and
+
+00:16:24.530 --> 00:16:27.260
+more than IPD four addresses,
+but they have the same function.
+
+00:16:27.440 --> 00:16:29.960
+And if we scroll down a bit more, we're
+getting to some more exciting things.
+
+00:16:29.990 --> 00:16:31.310
+This is kind of crazy.
+
+00:16:31.370 --> 00:16:35.240
+We have what's called MX Records
+or Mail Exchanger Records.
+
+00:16:35.330 --> 00:16:39.380
+These records identify what
+servers for a domain handle email.
+
+00:16:39.830 --> 00:16:42.320
+What does that mean? What means if
+you were to send an email to me,
+
+00:16:42.410 --> 00:16:45.080
+which my email address is
+chuck@networkchuck.com,
+
+00:16:45.290 --> 00:16:46.340
+let's draw it up here real quick.
+
+00:16:46.400 --> 00:16:48.740
+And if you're interested in
+sponsoring one of my videos,
+
+00:16:48.770 --> 00:16:50.750
+it'll be sponsor@networkchuck.com.
+
+00:16:50.900 --> 00:16:54.950
+When you type in this email address into
+your email client and you click send,
+
+00:16:55.310 --> 00:16:59.330
+your email server has to figure out
+who manages the emails for a network
+
+00:16:59.330 --> 00:17:02.780
+chuck.com, which server does that?
+So here is just a demo record.
+
+00:17:02.780 --> 00:17:05.750
+You might see mail.network
+chuck.com. In reality,
+
+00:17:05.750 --> 00:17:07.760
+I use Gmail or Google Workspace,
+
+00:17:07.820 --> 00:17:11.660
+and it would reply with a bunch of
+Google servers that handle my email.
+
+00:17:11.960 --> 00:17:15.380
+Then we have a fun one down here,
+PTR records or pointer records,
+
+00:17:15.380 --> 00:17:18.110
+how I like to refer to 'em.
+These are for reverse DNS,
+
+00:17:18.200 --> 00:17:23.000
+very important for security. These allow
+you to take an IP address and go, boom,
+
+00:17:23.180 --> 00:17:26.750
+which domain name belongs to this IP
+address? You're like doing DNS in reverse.
+
+00:17:26.810 --> 00:17:30.140
+So this allows you to verify that
+when you have just the IP address,
+
+00:17:30.200 --> 00:17:32.540
+that's a great situation. You
+don't have to query anything,
+
+00:17:32.540 --> 00:17:35.930
+but maybe it's not the right one. Maybe
+it's not secure. Let's verify that.
+
+00:17:36.020 --> 00:17:39.620
+So you can query a DNS server and say,
+do you have a pointer record for this,
+
+00:17:39.620 --> 00:17:42.770
+A PTR? And it'll reply with the
+actual domain name it belongs to.
+
+00:17:42.890 --> 00:17:45.860
+It'll look crazy like this often,
+but that's what it's doing.
+
+00:17:46.070 --> 00:17:48.830
+Kind of a crazy concept.
+Now, C names are really fun.
+
+00:17:49.020 --> 00:17:52.380
+They stand for canonical name.
+Just kind of a fun word to say.
+
+00:17:52.560 --> 00:17:57.090
+And isn't that the company that runs
+Ubuntu Canonical? Yes, it is canonical.
+
+00:17:57.090 --> 00:17:58.950
+Can I spell this first
+time? I think I did.
+
+00:17:59.040 --> 00:18:02.040
+This allows you to create an alias
+for a domain. So for example,
+
+00:18:02.040 --> 00:18:06.000
+shop network check.com, or
+even www.network chuck.com,
+
+00:18:06.090 --> 00:18:09.450
+and point it to another
+domain, a canonical domain,
+
+00:18:09.570 --> 00:18:13.260
+which means true the real
+one, so alias to real.
+
+00:18:13.290 --> 00:18:16.710
+So just think when you want to point
+a domain name to a domain name,
+
+00:18:16.920 --> 00:18:19.050
+it's usually going to
+be a C name. And yes,
+
+00:18:19.110 --> 00:18:22.560
+when you want to go to
+www.whateverwebsite.com,
+
+00:18:23.070 --> 00:18:27.300
+that's going to be a C name record
+pointed to the real domain name.
+
+00:18:27.480 --> 00:18:29.190
+And then finally, one more
+record we'll talk about,
+
+00:18:29.340 --> 00:18:31.470
+this is not exhaustive
+because DNS is a whole thing,
+
+00:18:31.620 --> 00:18:33.000
+even though we've covered a lot so far.
+
+00:18:33.240 --> 00:18:35.520
+You are going to know DNS by
+the end of this video. I mean,
+
+00:18:35.520 --> 00:18:38.700
+you already are there. Last thing we're
+going to talk about is TXT records,
+
+00:18:38.790 --> 00:18:40.260
+which just stand for text records.
+
+00:18:40.320 --> 00:18:44.310
+These back in the day were made just
+to kind of share messages with admins.
+
+00:18:44.460 --> 00:18:47.370
+I dunno, would they leave notes
+when they would do DNS requests?
+
+00:18:47.460 --> 00:18:48.810
+Sounds kind of fun. Tell you what,
+
+00:18:49.320 --> 00:18:53.070
+I'm going to leave a secret message
+for you guys. If you can query this,
+
+00:18:53.190 --> 00:18:55.740
+it's going to be secret
+message.network chuck.com.
+
+00:18:55.920 --> 00:18:59.460
+Query that using your favorite DNS
+querying tool and see what it says.
+
+00:18:59.490 --> 00:19:01.710
+And please comment that below.
+That's your homework. Now,
+
+00:19:01.770 --> 00:19:04.590
+text records are used for a lot more
+than just playing around. In fact,
+
+00:19:04.590 --> 00:19:07.890
+they're vital in how we secure
+email. Now, yes, we're back to email.
+
+00:19:08.250 --> 00:19:08.640
+For example,
+
+00:19:08.640 --> 00:19:13.410
+this one right here is an SPF record or
+a TXT record specifying an SPF server.
+
+00:19:13.470 --> 00:19:17.880
+This TXT record defines which servers
+are legit for a domain. So for example,
+
+00:19:17.880 --> 00:19:22.590
+this one might say only mail
+from mail.network chuck.com is
+
+00:19:22.590 --> 00:19:26.670
+valid for our domain. If it comes
+from anywhere else, any fishy area,
+
+00:19:26.760 --> 00:19:29.880
+that's not it. Deny it, reject
+it. You don't want this.
+
+00:19:29.940 --> 00:19:34.410
+And other mail servers can query these
+TXT records to see that list of verified
+
+00:19:34.410 --> 00:19:35.220
+mail servers.
+
+00:19:35.220 --> 00:19:39.180
+You also might see D-K-I-M-T-X-T records
+to verify that emails weren't messed
+
+00:19:39.180 --> 00:19:41.940
+with in transit or DM a C,
+which is a fairly new thing.
+
+00:19:42.150 --> 00:19:45.240
+We actually have a course on DAC
+on academy.network check.com,
+
+00:19:45.300 --> 00:19:49.020
+and this is all about configuring policies
+on how to deal with mail that doesn't
+
+00:19:49.020 --> 00:19:53.790
+pass DKIM or SPF and how a domain
+will utilize SPF and DKIM telling you
+
+00:19:53.790 --> 00:19:58.080
+DNS is extremely powerful. Now for you,
+if you want to get your own domain,
+
+00:19:58.260 --> 00:20:00.300
+this is not sponsored by
+any kind of domain provider.
+
+00:20:00.480 --> 00:20:03.180
+Let's say you wanted to
+buy, I love coffee. Coffee.
+
+00:20:03.210 --> 00:20:07.140
+How does that process work and how do
+all the DNS servers we talked about find
+
+00:20:07.140 --> 00:20:11.070
+out about you? Well, it starts with
+going to a domain registrar. Registrar.
+
+00:20:11.130 --> 00:20:12.960
+It's kind of fun to say, go ahead
+and say it for me real quick,
+
+00:20:13.380 --> 00:20:14.430
+say it out loud so I can hear you.
+
+00:20:14.490 --> 00:20:18.060
+Squarespace is one of those main domain
+registrars now because they bought
+
+00:20:18.060 --> 00:20:18.893
+Google Domains.
+
+00:20:18.990 --> 00:20:23.970
+Now there's actually one boss I didn't
+talk about that's above the mafia bosses.
+
+00:20:24.030 --> 00:20:26.280
+This organization has ultimate authority.
+
+00:20:26.340 --> 00:20:29.460
+They're called I can because
+they can do whatever they want.
+
+00:20:29.730 --> 00:20:33.420
+They're the internet corporation
+for assigned names and numbers.
+
+00:20:33.450 --> 00:20:36.180
+That's a mouthful. I really don't want
+to write this, so I'm going to do anyway.
+
+00:20:36.330 --> 00:20:39.930
+These guys help govern DNS
+making sure it's run smoothly.
+
+00:20:39.960 --> 00:20:43.260
+They're actually the ones who can
+delegate, who can become a TLD server.
+
+00:20:43.470 --> 00:20:47.980
+And another main role they have is they
+accredit domain registrars. Registrar,
+
+00:20:48.070 --> 00:20:50.800
+meaning they sign off on
+these guys. They're legit.
+
+00:20:50.800 --> 00:20:52.840
+You can buy a domain from
+them. We said you could.
+
+00:20:53.020 --> 00:20:56.830
+Now I am curious if I love coffee,
+coffee is available. Let's see,
+
+00:20:57.190 --> 00:20:59.650
+because that's one of the biggest
+things you got to worry about is if your
+
+00:20:59.650 --> 00:21:04.390
+domain is available, it is
+for 50 bucks. No one steal it.
+
+00:21:04.450 --> 00:21:06.040
+Once I buy it, I then have a choice.
+
+00:21:06.100 --> 00:21:08.890
+I can actually use
+Squarespace as my name server,
+
+00:21:08.950 --> 00:21:11.890
+so my authoritative name
+server for my domain,
+
+00:21:12.040 --> 00:21:16.210
+which means they would hold my zone
+file DNS servers would ask them for any
+
+00:21:16.210 --> 00:21:18.550
+information about my domain.
+Now, if I didn't want to do that,
+
+00:21:18.550 --> 00:21:19.570
+and this is a common thing,
+
+00:21:19.630 --> 00:21:22.630
+let's say I wanted to use CloudFlare as
+a name server because CloudFlare has a
+
+00:21:22.630 --> 00:21:25.960
+bunch of cool features to protect your
+websites and assets. So I might say,
+
+00:21:25.960 --> 00:21:28.360
+you know what, Squarespace,
+you're cool is a domain registrar.
+
+00:21:28.420 --> 00:21:31.180
+I love you for it. I don't want
+to use you as a name server.
+
+00:21:31.270 --> 00:21:34.990
+So here are the name servers I want to
+use. So you would tell Squarespace that.
+
+00:21:35.170 --> 00:21:38.620
+So I want it to be Pablo. Pablo,
+I trust this man with my life.
+
+00:21:38.710 --> 00:21:41.590
+This is the guy I'm going to tell
+everything about me. You can ask him.
+
+00:21:41.650 --> 00:21:45.730
+He knows. So Squarespace now armed with
+the knowledge of your name servers,
+
+00:21:46.180 --> 00:21:49.360
+has a duty of updating the T LD registry,
+
+00:21:49.360 --> 00:21:54.250
+the top level domain registry with these
+name server records or NS records. Now,
+
+00:21:54.250 --> 00:21:57.220
+I'm curious, who operates
+coffee? I've got to find out.
+
+00:21:58.000 --> 00:22:01.540
+I'm going to query I I'm
+for an NS record for coffee.
+
+00:22:02.230 --> 00:22:06.190
+I'll ask one of the root servers.
+I'll ask Jay again. I trust him. Okay,
+
+00:22:06.190 --> 00:22:10.690
+so V zero N zero.nick.coffee.
+That's interesting. Who is that?
+
+00:22:10.840 --> 00:22:14.560
+That's a great segue into who
+is when you register a domain,
+
+00:22:14.560 --> 00:22:17.680
+you actually kind of register a lot of
+stuff about you as the owner of that
+
+00:22:17.680 --> 00:22:20.200
+domain, the name, the company address,
+
+00:22:20.260 --> 00:22:23.140
+and that information is
+maintained in the who is database.
+
+00:22:24.580 --> 00:22:26.890
+I'm going to discover
+who this Vic Coffee is.
+
+00:22:27.100 --> 00:22:28.930
+So I looked it up and check it out.
+
+00:22:29.620 --> 00:22:34.000
+I can't see it because you can also pay
+your DNS registrar when you register to
+
+00:22:34.000 --> 00:22:36.100
+make your information
+private. It's an extra fee,
+
+00:22:36.340 --> 00:22:39.010
+but I can see that it
+says Identity Digital Inc.
+
+00:22:39.040 --> 00:22:41.410
+I dunno if that's real or not
+because everything's redacted.
+
+00:22:41.560 --> 00:22:45.130
+But if I searched for google.com
+or let's do a cia.gov,
+
+00:22:46.420 --> 00:22:50.650
+everything's redacted. Let's try
+someone real Facebook. Okay, cool.
+
+00:22:50.650 --> 00:22:52.840
+We got some stuff for
+Facebook. There it all is.
+
+00:22:53.020 --> 00:22:54.550
+So I don't know who nick.coffee is,
+
+00:22:54.790 --> 00:22:58.960
+but Squarespace would have to tell them
+if I bought. I love Coffee. Coffee. Now,
+
+00:22:58.960 --> 00:23:00.190
+two more things I want to talk about.
+
+00:23:00.190 --> 00:23:03.460
+At the risk of making this video way
+too long. I don't care. It's my video.
+
+00:23:03.820 --> 00:23:06.160
+And if you're still here, thank
+you so much. You're awesome.
+
+00:23:06.790 --> 00:23:08.080
+Let's take a little
+sip of coffee together.
+
+00:23:09.970 --> 00:23:13.900
+First thing is you can actually run
+your own DNS server inside your house.
+
+00:23:13.960 --> 00:23:15.610
+It'll be a recursive DNS server,
+
+00:23:15.670 --> 00:23:20.140
+similar to a public Google server where
+it'll have a cache of a records domain,
+
+00:23:20.140 --> 00:23:23.290
+names to IP addresses that it's
+remembered that you've been to before.
+
+00:23:23.350 --> 00:23:24.760
+And if it doesn't know an IP address,
+
+00:23:24.790 --> 00:23:27.820
+it'll be configured to go to an
+upstream DNS server. So for example,
+
+00:23:27.820 --> 00:23:32.290
+right now I've got a raspberry pie in
+my server room running as my local DNS
+
+00:23:32.290 --> 00:23:34.570
+server for my studio. It's
+running what's called ad guard,
+
+00:23:34.660 --> 00:23:36.760
+which is fantastic
+because it can block ads.
+
+00:23:36.820 --> 00:23:40.390
+But when it doesn't know about a website,
+it'll just ask the upstream server,
+
+00:23:40.390 --> 00:23:43.660
+which I've configured as Quad nine,
+CloudFlare, Google. I've got a few,
+
+00:23:43.660 --> 00:23:46.580
+actually, another popular one.
+Pi Hole. Pi Hole is very fun,
+
+00:23:46.760 --> 00:23:48.920
+but you can absolutely run your
+own DNS server in your house.
+
+00:23:49.280 --> 00:23:51.470
+It's a really fun project.
+Fairly easy to do.
+
+00:23:51.680 --> 00:23:54.080
+I've got two videos on it right
+up here. Go check 'em out.
+
+00:23:54.290 --> 00:23:56.840
+Last thing I want to talk about,
+it's a bit of foreshadowing,
+
+00:23:57.050 --> 00:23:59.150
+is that I talked about
+how DNS can be hacked.
+
+00:23:59.420 --> 00:24:03.380
+And what I want to do is walk you through
+how those hacks look and how you can
+
+00:24:03.380 --> 00:24:06.590
+actually learn those hacks
+yourself. Not for various purposes,
+
+00:24:06.590 --> 00:24:10.280
+but for ethical hacking purposes. And
+that'll be a part two of this video.
+
+00:24:10.700 --> 00:24:14.180
+How to hack DNS. It may already be
+out. Go ahead and go there right now.
+
+00:24:14.420 --> 00:24:16.730
+That's all I got for this
+video. See you guys later.
+
+00:24:20.085 --> 00:24:20.205
+I.
+

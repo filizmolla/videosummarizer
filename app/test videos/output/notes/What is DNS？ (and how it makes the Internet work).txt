@@ -1,0 +1,47 @@
+**What is DNS? (and how it makes the Internet work)**
+
+**DNS - Domain Name System:**
+- Translates human-readable website addresses into IP addresses (computer-readable).
+- Operates like a phonebook for websites, mapping names to IP addresses.
+
+**Process Overview:**
+
+1. **Browser Query:** User types in a website address, e.g., academy.network chuck.com.
+2. **Local DNS Resolver (Stub Resolver):** Checks local cache for IP address.
+3. **Public DNS Server (e.g., Google's):** Queries DNS servers for IP address.
+
+**DNS Hierarchy:**
+
+- **Root Servers (12):** Managed by large organizations like NASA and DOD.
+- **Top Level Domain Servers (TLD):** Responsible for top-level domains (.com, .net).
+- **Authoritative DNS Servers:** Manage specific domains (e.g., academy.network chuck.com).
+
+**DNS Security:**
+
+- **DNS over HTTPS (DOH):** Encrypted DNS traffic, protecting user privacy.
+- **Twin Gate:** VPN alternative that provides secure DNS.
+
+**DNS Records:**
+
+- **A Records:** Map domain names to IP addresses.
+- **NS Records:** Specify authoritative DNS servers for domains.
+- **MX Records:** Identify email servers for domains.
+- **PTR Records:** Reverse DNS lookups, identifying domains associated with IP addresses.
+- **CNAME Records:** Create domain name aliases.
+- **TXT Records:** Used for various purposes, including SPF and DMARC records for email security.
+
+**Domain Registration:**
+
+- Acquired through a domain registrar (e.g., Squarespace).
+- ICANN (Internet Corporation for Assigned Names and Numbers) governs DNS.
+- Whois database stores registration information (name, address), which can be redacted for privacy.
+
+**Running Your Own DNS Server:**
+
+- Possible using a Raspberry Pi or similar device.
+- Caches frequently visited websites and forwards unknown queries to upstream DNS servers.
+- Can be customized to block ads.
+
+**DNS Hacking (Foreshadowing):**
+
+- Part 2 of this video will demonstrate how DNS can be hacked and how to perform ethical hacking to protect against these threats.
