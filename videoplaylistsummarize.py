@@ -2,6 +2,7 @@ import re
 import yt_dlp
 from videobatchsummarize import summarize_video_list
 from models import Video
+from videodb import add_videos_to_db
 
 def get_playlist_id(url):
     # Use regex to find the playlist ID
@@ -67,7 +68,8 @@ def get_video_list_formatted_from_url(playlist_url):
 def summarize_playlist(playlist_url):
     vl = get_video_list_formatted_from_url(playlist_url)
     summarize_video_list(vl)
+    add_videos_to_db(vl)
 
 if __name__ == "__main__":
-    url = 'https://www.youtube.com/playlist?list=PLIhvC56v63ILPDA2DQBv0IKzqsWTZxCkp'
+    url = 'https://www.youtube.com/watch?v=mRMmlo_Uqcs&list=PLIhvC56v63ILPDA2DQBv0IKzqsWTZxCkp'
     summarize_playlist(url)

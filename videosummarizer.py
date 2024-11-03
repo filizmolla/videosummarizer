@@ -8,7 +8,7 @@ from models import Video, Summary
 import google.generativeai as genai 
 import json
 
-WORDS_PER_CHUNK = 3000 #800
+WORDS_PER_CHUNK = 50000 #800
 
 class VideoSummarizer:
     PATH = os.getcwd()

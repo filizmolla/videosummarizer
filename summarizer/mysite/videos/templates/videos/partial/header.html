@@ -1,0 +1,42 @@
+{% load static %}
+<!-- BEGIN #header -->
+<div id="header" class="app-header" data-bs-theme="{% if appHeaderInverse %}dark{% endif %}">
+	<!-- BEGIN navbar-header -->
+	<div class="navbar-header">
+		{% if appSidebarTwo %}
+			<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-end-mobile">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		{% endif %}
+		<a href="/" class="navbar-brand"><span class="navbar-logo"></span> <b class="me-3px">Gemini</b> Summarizer</a>
+		{% if appHeaderMegaMenu %}
+			<button type="button" class="navbar-mobile-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#top-navbar" aria-expanded="false">
+				<span class="fa-stack fa-lg">
+					<i class="far fa-square fa-stack-2x"></i>
+					<i class="fa fa-cog fa-stack-1x"></i>
+				</span>
+			</button>
+		{% endif %}
+		<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- END navbar-header -->
+	<!-- BEGIN header-nav -->
+	<div class="navbar-nav">
+		<div class="navbar-item navbar-form">
+			<form action="" method="POST" name="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Enter keyword" />
+					<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- END header-nav -->
+</div>
+<!-- END #header -->

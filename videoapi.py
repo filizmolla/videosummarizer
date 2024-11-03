@@ -3,10 +3,9 @@ from fastapi.responses import JSONResponse
 from models import Video
 import uvicorn
 from videosummarize import summarize
+from videodb import add_videos_to_db
 app = FastAPI()
 
-
-# get one video
 @app.post("/notify_new_data")
 async def notify_new_data(request: Request):
     print("New record has been added to the database!")
@@ -17,7 +16,7 @@ async def notify_new_data(request: Request):
     print(video_url)
     v = Video(url=video_url)
     summarize(v)
-    
+    add_videos_to_db([v])
     if not video_url:
         return JSONResponse(content={"message": "Record URL not provided"}, status_code=400)
     

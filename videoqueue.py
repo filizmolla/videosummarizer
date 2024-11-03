@@ -3,13 +3,17 @@ import threading
 import time
 import signal
 from typing import List
+from models import Video
+from videosummarize import summarize
+from videodb import get_empty_videos, Session
 
 class Singleton(object):
     _instance = None
-    def __new__(class_, *args, **kwargs):
-        if not isinstance(class_._instance, class_):
-            class_._instance = object.__new__(class_, *args, **kwargs)
-        return class_._instance
+
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:  
+            cls._instance = super(Singleton, cls).__new__(cls) 
+        return cls._instance
 
 
 class VideoQueue(Singleton):    
@@ -19,6 +23,7 @@ class VideoQueue(Singleton):
         self.queue = []
 
     def enqueue(self, item):
+        print(f"Video {item[0].id} kuyruğa eklendi.")
         self.queue.append(item)
 
     def dequeue(self, head):
@@ -66,7 +71,6 @@ def operation(item):
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 
-
 videoQueue = VideoQueue()
 videoQueue.run(operation=operation)
 
@@ -110,10 +114,13 @@ def enqueueWaitingURLs():
 
 
 class VideoProcessor(Singleton):
+    _instance = None
 
     def __init__(self, enqueueWaitingURLs):
         self.enqueueWaitingURLs = enqueueWaitingURLs
-        self.checkdb_thread = None
+        if not hasattr(self, 'initialized'):
+            self.initialized = True
+            self.checkdb_thread = None
 
     def run(self):
         if self.checkdb_thread == None or not self.checkdb_thread.is_alive():
@@ -123,7 +130,7 @@ class VideoProcessor(Singleton):
     def is_thread_running(self):
         return self.checkdb_thread.is_alive()
 
-videoprocessor = VideoProcessor()
+videoprocessor = VideoProcessor(enqueueWaitingURLs=enqueueWaitingURLs)
 
 videoprocessor.run()
 videoprocessor.run()
