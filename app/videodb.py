@@ -21,13 +21,14 @@ def add_videos_to_db(video_list):
 def get_empty_videos():
     with Session(engine) as session: 
         results = session.query(Video).filter(Video.is_transcribed== False).all() 
-        print(results)
         return results         
 
 if __name__ == "__main__": 
-    vl_str = """https://www.youtube.com/watch?v=X1CM3rZwGn8
-    """
-    vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
-    summarize_video_list(vl)
+    #vl_str = """https://www.youtube.com/watch?v=X1CM3rZwGn8
+    #"""
+    #vl = [Video(url=vid.strip()) for vid in vl_str.splitlines() if vid.strip()]
+    #summarize_video_list(vl)
+    #print(vl)
+    #add_videos_to_db(vl)
+    vl = get_empty_videos()
     print(vl)
-    add_videos_to_db(vl)
