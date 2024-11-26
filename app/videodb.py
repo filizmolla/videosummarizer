@@ -30,5 +30,6 @@ if __name__ == "__main__":
     #summarize_video_list(vl)
     #print(vl)
     #add_videos_to_db(vl)
+    
     vl = get_empty_videos()
     print(vl)
