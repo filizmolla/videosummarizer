@@ -48,9 +48,6 @@ class VideoQueue(Singleton):
     def stop(self):
         self._stop_event.set()
 
-
-
-
 class Video:
     id: int
     url: str
