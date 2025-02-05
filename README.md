@@ -1,33 +1,48 @@
-## Video Summarizer using Gemini
-This project is web project that takes youtube URL's and summarizes the youtube video using Gemini LLM. Project uses whisper to transcribe the videos and Gemini's genai API the transcript is summarized. Project consists of two different apps one is a web app made with django that contains the frontend and the other is a python app that has FastAPI api. The user enters the url in the front end, than API sends app a request and url is sent to the python app to summarize. 
+# Video Summarizer using Gemini
 
-This project uses: Python, django web framework. 
-Database: postgreSQL
+## About
+This project is web project that takes youtube URL's and summarizes the youtube video using Gemini LLM. Project uses yt-dlp to download the video audios then uses whisper to transcribe the downloaded audios, then uses Gemini's Genai API to generate summaries from the transcripts. 
+
+This project has two folders: 
+1. summarizer 
+2. sumarizer-web
+summarizer is a Python app that manages the downloading, summarizing and an API that is listening to the Web Application. summarizer-web is the Web Application. When user enters a youtube url, the application sends a request to the API so that it can start summarizing. 
+
+This project uses Django Web Framework which is a web framework for Python. Python FastAPI is used for the API. 
 
 ## Running 
-- To create a miniconda/conda environment for this project: 
+
+### Getting Dependencies
+Using pip: 
 ```
-conda create --name <env_name> --file requirements.txt
-conda activate <env_name>
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
 ```
 
-- Change the database connection to your database in the ``Summarizer/summarizer/mysite/settings.py`` change DATABASES variable. 
-- Change the database connection in the videodb.py. 
-- Make migrations to create the database using the commands.
+### Database
+1. Change the database connection to your database in the ``summarizer-web/mysite/settings.py`` change DATABASES variable. 
+2. Change the database connection in the ``summarizer/videodb.py``.
+
+3. Make migrations to create the database using the commands:
 ```
-cd Summarizer\summarizer\mysite
+cd summarizer-web
 python manage.py makemigrations
 python manage.py migrate 
 ```
 
-To start the web application: 
-```
-cd Summarizer\summarizer\mysite
-python manage.py runserver  
-```
+### Gemini API Key
+1. Create a ``gemini-api-key.txt`` file in the ``summarizer`` folder and copy paste your Gemini API. 
 
+### Start the Web Application and API   
 To start the API: 
 ```
-cd Summarizer\app
+cd summarizer
 python videoapi.py 
+```
+
+To start the web application: 
+```
+cd summarizer-web
+python manage.py runserver  
 ```
