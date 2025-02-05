@@ -1,3 +1,4 @@
+## Video Summarizer using Gemini
 This project is web project that takes youtube URL's and summarizes the youtube video using Gemini LLM. Project uses whisper to transcribe the videos and Gemini's genai API the transcript is summarized. Project consists of two different apps one is a web app made with django that contains the frontend and the other is a python app that has FastAPI api. The user enters the url in the front end, than API sends app a request and url is sent to the python app to summarize. 
 
 This project uses: Python, django web framework. 
