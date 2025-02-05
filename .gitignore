@@ -2,7 +2,6 @@ gemini-api-key.txt
 \test books
 \test videos 
 audios
-__pycache__
-__pycache__/
+\__pycache__
 *.pyc
 summarizer\mysite\videos\utils\__pycache__
