@@ -126,9 +126,6 @@ class VideoSummarizer:
         video.is_summarized = True
         video.status = "Done."
         return s
-    
-
-
 
     def get_text_information(self, text):
         word_count = len(text.split())
