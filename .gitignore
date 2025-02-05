@@ -1,6 +1,11 @@
 gemini-api-key.txt
-\test books
-\test videos 
-audios
-\__pycache__
+/summarizer/test videos/output/audios/*
+/summarizer/test videos/output/notes/*
+/summarizer/test videos/output/subtitles/*
+/summarizer/test videos/output/transcripts/*
+!/summarizer/test videos/output/audios/.gitkeep
+!/summarizer/test videos/output/notes/.gitkeep
+!/summarizer/test videos/output/subtitles/.gitkeep
+!/summarizer/test videos/output/transcripts/.gitkeep
+/__pycache__
 *.pyc
