@@ -1,14 +1,16 @@
 # Video Summarizer using Gemini
 
 ## About
-This project is web project that takes youtube URL's and summarizes the youtube video using Gemini LLM. Project uses yt-dlp to download the video audios then uses whisper to transcribe the downloaded audios, then uses Gemini's Genai API to generate summaries from the transcripts. 
+This project is web project that takes YouTube URL's and summarizes the YouTube video using Gemini LLM. Project uses yt-dlp to download the video audios then uses whisper to transcribe the downloaded audios, then uses Gemini's Genai API to generate summaries from the transcripts. 
 
 This project has two folders: 
 1. summarizer 
 2. sumarizer-web
-summarizer is a Python app that manages the downloading, summarizing and an API that is listening to the Web Application. summarizer-web is the Web Application. When user enters a youtube url, the application sends a request to the API so that it can start summarizing. 
+summarizer is a Python app that manages the downloading, transcribing, summarizing the videos. There is also an API that is listening to the Web Application. summarizer-web is the Web Application. When user enters a youtube url, the application sends a request to the API so that it can start summarizing. 
 
 This project uses Django Web Framework which is a web framework for Python. Python FastAPI is used for the API. 
+
+You can also see the downloaded audios, summarized notes, transcripts and subtitles (if they exist) in the ``summarizer/test videos/output/`` folder. (If there is human generated subtitles for the video it skips the transcribing.)
 
 ## Running 
 
