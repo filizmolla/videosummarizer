@@ -2,6 +2,7 @@ import datetime
 from django.db import models
 from django.utils import timezone
 from django.contrib import admin
+from pgvector.django import VectorField
 
 class Video(models.Model):
     url = models.CharField()
@@ -27,6 +28,7 @@ class Video(models.Model):
     transcript_token_count = models.IntegerField(null=True)
     transcript_character_count = models.IntegerField(null=True)
     transcript_chunks = models.CharField(null=True)
+    transcript_embedding = VectorField(dimensions=1536, null=True)
 
     date_uploaded = models.DateTimeField(null=True)
     download_start_datetime = models.DateTimeField(null=True)

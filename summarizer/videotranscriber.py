@@ -8,6 +8,7 @@ import time
 from time import localtime, strftime
 from datetime import datetime as PyDateTime
 from models import Video
+from openai import OpenAI
 
 class VideoTranscriber: 
         PATH = os.getcwd()
@@ -166,10 +167,6 @@ class VideoTranscriber:
             print("Video does not have subtitles with the languages selected!")
             self.transcribe_video(self.video)
             return video
-        
-
-
-
 
         def format_time(self, start_time, end_time):
             start_time_str = strftime('%Y-%m-%d %H:%M:%S', localtime(start_time))
@@ -203,6 +200,15 @@ class VideoTranscriber:
             video.transcribing_end_date = end_time 
             video.transcribing_time = transcribing_time
             self.save_transcript(video, transcript_text)
+            #save transcript as embedding 
+            client = OpenAI()
+            response = client.embeddings.create(
+                input=transcript_text,
+                model="text-embedding-3-small"
+            )
+
+            print(response.data[0].embedding)
+            video.transcript_embedding = response.data[0].embedding
             video.transcript_from = "whisper"
             return transcript_text
         

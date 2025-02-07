@@ -21,6 +21,7 @@ from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
 from sqlalchemy import DateTime, func, Boolean, Text
 
+from pgvector.sqlalchemy import Vector
 
 class Base(AsyncAttrs, DeclarativeBase):
     pass
@@ -80,6 +81,7 @@ class Video(Base):
     transcript_token_count: Mapped[Optional[int]]
     transcript_character_count: Mapped[Optional[int]]
     transcript_chunks: Mapped[Optional[str]]
+    transcript_embedding = mapped_column(Vector(1536))
 
     date_uploaded: Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
     download_start_datetime: Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
