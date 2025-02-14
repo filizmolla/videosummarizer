@@ -10,19 +10,20 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 from django.http import JsonResponse
 import requests
-
-
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-
 from videos.forms import NameForm, VideoForm
 import json
 
 def get_item_details(request, item_id):
     video = get_object_or_404(Video, id=item_id)
-    print(video)
+    #print(video)
+    print(request)
     return render(request, 'videos/modal.html', {'video': video})
 
+def get_item_details_for_delete(request, item_id):
+    video = get_object_or_404(Video, id=item_id)
+    return render(request, 'videos/modal_warning.html', {'video': video})
 
 def add_video(request):
     submitted = False 
@@ -38,7 +39,6 @@ def add_video(request):
         if 'submitted' in request.GET:
             submitted = True
     return render(request, 'videos/add_video.html', {'form': form, 'submitted':submitted })
-
 
 class IndexView(generic.ListView):
     template_name = "videos/index.html"
@@ -60,7 +60,6 @@ class VideoTableView(generic.ListView):
         """
         return Video.objects.all()
     
-
 class VideoTabloView(generic.ListView):
     template_name = "videos/liste.html"
     context_object_name = "video_list"
@@ -74,7 +73,6 @@ class DetailView(generic.DetailView):
 
     def get_queryset(self):
         return Video.objects.all()
-    
 
 def delete_video(request, video_id):
     video = get_object_or_404(Video, id=video_id)
@@ -104,7 +102,6 @@ def create_record_and_notify(request):
     except requests.exceptions.RequestException as e:
         return JsonResponse({"error": f"Failed to notify Python app: {str(e)}"}, status=500)
 
-
 @api_view(['POST'])
 def notify_app(request):
     python_app_url = "http://127.0.0.1:5000/notify_new_data"
@@ -114,6 +111,3 @@ def notify_app(request):
         return JsonResponse({"message": "Record created and Python app notified."}, status=201)
     except requests.exceptions.RequestException as e:
         return JsonResponse({"error": f"Failed to notify Python app: {str(e)}"}, status=500)
-
-
-

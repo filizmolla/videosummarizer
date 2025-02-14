@@ -10,5 +10,5 @@ urlpatterns = [
     path('add_video', views.add_video, name='add_video'),
     path('delete/<int:video_id>/', views.delete_video, name='delete_video'),
     path('get_item_details/<int:item_id>/', views.get_item_details, name='get_item_details'),
-
+    path('get_item_details_for_delete/<int:item_id>/', views.get_item_details_for_delete, name='get_item_details_for_delete'),
 ]

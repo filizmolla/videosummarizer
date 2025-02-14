@@ -44,7 +44,25 @@
 				$(document).on("hidden.bs.modal", "#videoModal", function () {
             		$("#modalContainer").html("");
 		        });
+
+
+				$(document).on("click", ".open-modal2", function () {
+					var itemId = $(this).data("id");
+
+					$("#modalContainer2").html("");
+
+					$.get("/get_item_details_for_delete/" + itemId, function (data) {
+						$("#modalContainer2").html(data); 
+						$("#deleteWarningModal").modal("show");
+					});
+				});
+
+				$(document).on("hidden.bs.modal", "#deleteWarningModal", function () {
+            		$("#modalContainer2").html("");
+		        });
+
 			});
+
 		</script>
 {% endblock %}
 
@@ -83,34 +101,28 @@
 						<th class="text-nowrap">Updated At </th>
 						<th class="text-nowrap">Status</th>
 						<th class="text-nowrap"> </th>
-						
 					</tr>
 				</thead>
 				<tbody>
 					{% for video in video_list %}
-					
-					<tr  class="odd gradeX">
-						<td width="1%" class="fw-bold">{{video.id}}</td>
-						<td ><a href="{% url 'detail' video.id %}">{{video.title}}</a></td>
-						<td >{{video.channel_name}}</td>
-						<td >{{video.duration}}</td>
-						<td >{{video.categories}}</td>
-						<td >{{video.created_at}}</td>
-						<td >{{video.updated_at}}</td>
-						<td >{{video.status}}</td>
-						<!--td>
-							<a href="{% url 'delete_video' video.id %}" class="text-secondary">
-							  <i class="fas fa-trash-alt"></i>
-							</a>
-						  </td-->					
-						<td >
+						<tr  class="odd gradeX">
+							<td width="1%" class="fw-bold">{{video.id}}</td>
+							<td ><a href="{% url 'detail' video.id %}">{{video.title}}</a></td>
+							<td >{{video.channel_name}}</td>
+							<td >{{video.duration}}</td>
+							<td >{{video.categories}}</td>
+							<td >{{video.created_at}}</td>
+							<td >{{video.updated_at}}</td>
+							<td >{{video.status}}</td>
+							<td >
 								<button class="btn btn-primary open-modal" data-id="{{ video.id }}" data-bs-toggle="modal" data-bs-target="#videoModal">
 									Details
-								</button>						
-						</td>
-
-				  </tr>
-
+								</button>	
+								<button class="btn btn-danger open-modal2" data-id="{{ video.id }}" data-bs-toggle="modal" data-bs-target="#deleteWarningModal">
+									<i class="fas fa-trash-alt"></i>  Delete 
+								</button>	
+							</td>
+						</tr>
 					{% endfor %}
 				</tbody>
 			</table>
@@ -120,17 +132,10 @@
 		<div class="hljs-wrapper">
 			<pre><code class="html" data-url="{% static 'data/table-manage/default.json' %}"></code></pre>
 		</div>
-		<!-- END hljs-wrapper -->
-
-	
-		  
+		<!-- END hljs-wrapper -->	  
 	</div>
 	<!-- END panel -->
 
 	<div id="modalContainer"></div>
-
-
-
-	  
-
+	<div id="modalContainer2"></div>
 {% endblock %}

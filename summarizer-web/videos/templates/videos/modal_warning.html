@@ -1,0 +1,25 @@
+<div class="modal fade" id="deleteWarningModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Detay</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+            </div>
+            <div class="modal-body" id="#modalContent">
+                <p> Are you sure you want to delete the <strong> Video:</strong> {{ video.title }}</p> 
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal">Close</a>
+                <!--a href="javascript:;" class="btn btn-danger">Delete</a-->
+            
+            	<form action="{% url 'delete_video' video.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                        Delete
+                    </button>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</div>
