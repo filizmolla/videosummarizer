@@ -27,6 +27,25 @@
 	<script src="{% static 'js/demo/table-manage-default.demo.js' %}"></script>
 	<!--script src="{% static 'plugins/@highlightjs/cdn-assets/highlight.min.js' %}"></script>
 	<script src="{% static 'js/demo/render.highlight.js' %}"></script-->
+
+		<script>
+			$(document).ready(function () {
+				$(document).on("click", ".open-modal", function () {
+					var itemId = $(this).data("id");
+
+					$("#modalContainer").html("");
+
+					$.get("/get_item_details/" + itemId, function (data) {
+						$("#modalContainer").html(data);
+						$("#videoModal").modal("show");
+					});
+				});
+
+				$(document).on("hidden.bs.modal", "#videoModal", function () {
+            		$("#modalContainer").html("");
+		        });
+			});
+		</script>
 {% endblock %}
 
 {% block content %}
@@ -79,20 +98,21 @@
 						<td >{{video.created_at}}</td>
 						<td >{{video.updated_at}}</td>
 						<td >{{video.status}}</td>
-						<td>
+						<!--td>
 							<a href="{% url 'delete_video' video.id %}" class="text-secondary">
 							  <i class="fas fa-trash-alt"></i>
 							</a>
-						  </td>
-						  
-					
+						  </td-->					
+						<td >
+								<button class="btn btn-primary open-modal" data-id="{{ video.id }}" data-bs-toggle="modal" data-bs-target="#videoModal">
+									Details
+								</button>						
+						</td>
+
 				  </tr>
+
 					{% endfor %}
 				</tbody>
-				
-
-
-
 			</table>
 		</div>
 		<!-- END panel-body -->
@@ -101,6 +121,16 @@
 			<pre><code class="html" data-url="{% static 'data/table-manage/default.json' %}"></code></pre>
 		</div>
 		<!-- END hljs-wrapper -->
+
+	
+		  
 	</div>
 	<!-- END panel -->
+
+	<div id="modalContainer"></div>
+
+
+
+	  
+
 {% endblock %}

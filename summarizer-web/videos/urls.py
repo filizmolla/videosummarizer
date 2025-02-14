@@ -9,4 +9,6 @@ urlpatterns = [
     path("videos/<int:pk>/", views.DetailView.as_view(), name="detail"),
     path('add_video', views.add_video, name='add_video'),
     path('delete/<int:video_id>/', views.delete_video, name='delete_video'),
+    path('get_item_details/<int:item_id>/', views.get_item_details, name='get_item_details'),
+
 ]

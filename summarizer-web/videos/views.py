@@ -18,6 +18,12 @@ from django.shortcuts import render
 from videos.forms import NameForm, VideoForm
 import json
 
+def get_item_details(request, item_id):
+    video = get_object_or_404(Video, id=item_id)
+    print(video)
+    return render(request, 'videos/modal.html', {'video': video})
+
+
 def add_video(request):
     submitted = False 
     if request.method == "POST":
