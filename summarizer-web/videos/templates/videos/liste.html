@@ -29,6 +29,7 @@
 	<script src="{% static 'js/demo/render.highlight.js' %}"></script-->
 
 		<script>
+			// Detail Modal
 			$(document).ready(function () {
 				$(document).on("click", ".open-modal", function () {
 					var itemId = $(this).data("id");
@@ -45,7 +46,7 @@
             		$("#modalContainer").html("");
 		        });
 
-
+				// Delete modal
 				$(document).on("click", ".open-modal2", function () {
 					var itemId = $(this).data("id");
 
