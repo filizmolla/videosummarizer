@@ -1,6 +1,7 @@
 {% extends 'videos/base.html' %}
 
 {% load static %}
+{% load mathfilters %}
 
 {% block title %}Videolar{% endblock %}
 
@@ -107,7 +108,14 @@
 							<td width="1%" class="fw-bold">{{video.id}}</td>
 							<td ><a href="{% url 'detail' video.id %}">{{video.title}}</a></td>
 							<td >{{video.channel_name}}</td>
-							<td >{{video.duration}}</td>
+							<td>
+
+								{% if video.duration >= 3600 %}
+									{% widthratio video.duration 3600 1  %}:
+								{% endif %}
+								{% widthratio video.duration 60 1 %}:{{video.duration|mod:60 }}
+							
+							</td>
 							<td >{{video.categories}}</td>
 							<td >{{video.created_at}}</td>
 							<td >{{video.status}}</td>
