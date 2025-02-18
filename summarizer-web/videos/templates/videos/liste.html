@@ -61,9 +61,7 @@
 				$(document).on("hidden.bs.modal", "#deleteWarningModal", function () {
             		$("#modalContainer2").html("");
 		        });
-
 			});
-
 		</script>
 {% endblock %}
 
@@ -99,7 +97,6 @@
 						<th class="text-nowrap">Duration</th>
 						<th class="text-nowrap">Categories</th>
 						<th class="text-nowrap">Created At </th>
-						<th class="text-nowrap">Updated At </th>
 						<th class="text-nowrap">Status</th>
 						<th class="text-nowrap"> </th>
 					</tr>
@@ -113,7 +110,6 @@
 							<td >{{video.duration}}</td>
 							<td >{{video.categories}}</td>
 							<td >{{video.created_at}}</td>
-							<td >{{video.updated_at}}</td>
 							<td >{{video.status}}</td>
 							<td >
 								<button class="btn btn-primary open-modal" data-id="{{ video.id }}" data-bs-toggle="modal" data-bs-target="#videoModal">
