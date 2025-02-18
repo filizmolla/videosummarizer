@@ -10,6 +10,6 @@ class VideoForm(ModelForm):
         model = Video
         fields = ['url']
 
-        #widgets = {
-        #    'url': forms.TextInput(attrs={'class': 'form-control'})
-        #}
+        widgets = {
+            'url': forms.TextInput(attrs={'class': 'form-control'})
+        }
