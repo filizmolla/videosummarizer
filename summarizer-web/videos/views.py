@@ -48,8 +48,9 @@ class IndexView(generic.ListView):
         """    
         Return the last five created videos. 
         """
-        return Video.objects.filter().order_by("-created_at")[:5]
-
+        #return Video.objects.filter().order_by("-created_at")[:5]
+        return Video.objects.filter(status="Pending")
+    
 class VideoTableView(generic.ListView):
     template_name = "videos/list.html"
     context_object_name = "video_list"
