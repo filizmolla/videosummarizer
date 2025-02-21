@@ -131,7 +131,7 @@ class VideoSummarizer:
         
         gpt_info = self.llm_model.getModelInfo()
         s.gpt_information = gpt_info
-        
+
         word, char, token = self.get_text_information(summary)
         s.summary_word_count = word 
         s.summary_char_count = char

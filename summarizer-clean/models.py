@@ -97,7 +97,7 @@ class ChatGPTModel(LLMModel):
     def setTemperature(self, temperature):
         self.temperature = temperature
 
-    def generateContent(self, prompt, system_prompt="You are a helpful assistant."):
+    def generateContent(self, prompt, system_prompt="You are a helpful assistant"):
         completion = self.client.chat.completions.create(
         model=self.model_name,
             messages=[
