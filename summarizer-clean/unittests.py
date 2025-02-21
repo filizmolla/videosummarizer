@@ -1,8 +1,9 @@
 from __future__ import annotations
-from models import GemineModel
+from models import GemineModel, ChatGPTModel, OllamaModel
 import unittest
 from logic import VideoSummarizer, VideoSummaryRequest
 import unittest
+import os 
 
 class Test_GemineModel(unittest.TestCase):
 
@@ -15,15 +16,6 @@ class Test_GemineModel(unittest.TestCase):
         result = model.generateContent("Hello")
         print(result.text)
 
-    # def test_gemini_is_reponse_failed(self):
-    #     with self.assertRaises(Exception) as context:
-    #         model = GemineModel()
-    #         model.setApiKey(f"{self.api_key}wrong_api_key")
-    #         result = model.generateContent("Hello")
-    #         print(result.text)
-    #     self.assertIn("API key not valid.", str(context.exception))
-    #     self.assertEqual(type(context.exception).__name__, "InvalidArgument")
-
     def test_gemini_is_reponse_failed(self):
         model = GemineModel()
         model.setApiKey(f"{self.api_key}wrong_api_key")
@@ -34,7 +26,7 @@ class Test_GemineModel(unittest.TestCase):
         self.assertEqual(type(result.exception).__name__, "InvalidArgument")
  
 
-class Test_GemineModel(unittest.TestCase):
+class Test_GeminiModel(unittest.TestCase):
 
     def setUp(self):
 
@@ -55,11 +47,59 @@ class Test_GemineModel(unittest.TestCase):
         result = summarizer.summarize(request)
         print(result.summary.summary_text)
 
-        self.assertIn("ResourceExhausted", str(result.summary.summary_text))
         self.assertIn("Fluid", str(result.summary.summary_text))
         self.assertIn("Flexbox", str(result.summary.summary_text))
         self.assertIn("MDN", str(result.summary.summary_text))
         # self.assertEqual(type(result.exception).__name__, "InvalidArgument")
-                
+
+
+class Test_ChatGPTModel(unittest.TestCase):
+    
+    def setUp(self):
+        self.ollama_model =  ChatGPTModel()
+        self.ollama_model.setApiKey(os.getenv("OPENAI_API_KEY"))
+
+    def test_ollama_is_response_pass(self):
+        title = "My favorite resources and tools for coding"
+        filename = f".\\..\\summarizer\\test videos\\output\\transcripts\\{title}.txt"
+        transcript = ""
+        with open(filename, 'r') as f:
+            transcript = f.read()
+
+        summarizer = VideoSummarizer(llm_model=self.ollama_model)
+
+        request = VideoSummaryRequest(id = "123", title = filename, transcript=transcript)
+        result = summarizer.summarize(request)
+        print(result.summary.summary_text)
+
+        self.assertIn("Fluid", str(result.summary.summary_text))
+        self.assertIn("Flexbox", str(result.summary.summary_text))
+        self.assertIn("MDN", str(result.summary.summary_text))
+
+
+#class Test_OllamaModel(unittest.TestCase):
+#    
+#    def setUp(self):
+#        self.ollama_model =  OllamaModel()
+#        self.ollama_model.setApiKey(api_key="ollama")
+#        
+#    def test_ollama_is_response_pass(self):
+#        title = "My favorite resources and tools for coding"
+#        filename = f".\\..\\summarizer\\test videos\\output\\transcripts\\{title}.txt"
+#        transcript = ""
+#        with open(filename, 'r') as f:
+#            transcript = f.read()
+#
+#        summarizer = VideoSummarizer(llm_model=self.ollama_model)
+#
+#        request = VideoSummaryRequest(id = "123", title = filename, transcript=transcript)
+#        result = summarizer.summarize(request)
+#        print(result.summary.summary_text)
+#
+#        #self.assertIn("Fluid", str(result.summary.summary_text))
+#        self.assertIn("Flexbox", str(result.summary.summary_text))
+#        self.assertIn("MDN", str(result.summary.summary_text))
+
+
 if __name__ == '__main__':
      unittest.main()

@@ -6,6 +6,7 @@ import google.generativeai as genai
 from openai import OpenAI
 import os 
 import tiktoken 
+import json
 
 #class LLMCompletionUsage:
 #    
@@ -16,7 +17,6 @@ import tiktoken
 #
 #    def __str__(self):
 #        return "Response token count:" + self.completion_tokens + " Prompt token count:" + self.prompt_tokens + " Sum:" + self.total_tokens
-#
 
 class LLMModelResponse:
 
@@ -70,13 +70,19 @@ class GemineModel(LLMModel):
             return LLMModelResponse(f"Unexpected error: {repr(e)}", False, e)
 
     def countTokens(self, text):
-        return self.client.count_tokens(text)
+        ct = self.client.count_tokens(text)
+        token_count = ct.total_tokens
+        return token_count
 
     def getModelName(self):
         return self.model_name
     
     def getModelInfo(self):
-        return genai.get_model(f"models/{self.model_name}") 
+        gpt_info = genai.get_model(f"models/{self.model_name}")
+        gpt_information = json.dumps(gpt_info.__dict__)
+        gpt_input_token_count = gpt_info.input_token_limit
+        gpt_output_token_count = gpt_info.output_token_limit 
+        return "GPT info: " + str(gpt_information) + " GPT Input Token Count: " + str(gpt_input_token_count) + " GPT Output Token Count: " + str(gpt_output_token_count)
 
 class ChatGPTModel(LLMModel):
 
@@ -139,7 +145,6 @@ class OllamaModel(LLMModel):
     
     def countTokens(self, text):
         tiktoken.model.MODEL_TO_ENCODING["llama3.1"] = "cl100k_base"
-
         enc = tiktoken.encoding_for_model(self.model_name)
         tokens = enc.encode(text)
         return len(tokens)

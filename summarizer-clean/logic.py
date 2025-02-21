@@ -1,5 +1,5 @@
 from __future__ import annotations
-from models import LLMModel, GemineModel
+from models import LLMModel, GemineModel, ChatGPTModel
 import os 
 import time
 import json
@@ -128,10 +128,10 @@ class VideoSummarizer:
         s = SummaryResult(title=request.title, summary_text=summary)
         s.summary_time = summary_time 
         s.gpt_model_name = self.llm_model.model_name
+        
         gpt_info = self.llm_model.getModelInfo()
-        s.gpt_information = json.dumps(gpt_info.__dict__)
-        s.gpt_input_token_count = gpt_info.input_token_limit # not that necessary?
-        s.gpt_output_token_count = gpt_info.output_token_limit
+        s.gpt_information = gpt_info
+        
         word, char, token = self.get_text_information(summary)
         s.summary_word_count = word 
         s.summary_char_count = char
@@ -150,10 +150,8 @@ class VideoSummarizer:
     def get_text_information(self, text):
         word_count = len(text.split())
         char_count = len(text)
-        ct = self.llm_model.countTokens(text=text)
-        token_count = ct.total_tokens
+        token_count = self.llm_model.countTokens(text=text)
         return word_count, char_count, token_count
-
 
 
 class VideoChunkSummarizer:
