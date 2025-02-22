@@ -12,49 +12,88 @@ class VideoResult:
     
     def __init__(self, url: str):
         self.url= url
-        self.id = None # Mapped[int] = mapped_column(primary_key=True)
-        self.title = None # Mapped[Optional[str]]    
-        self.ext = None # Mapped[Optional[str]]
-        self.title_with_ext = None # Mapped[Optional[str]]
-        self.description = None # Mapped[Optional[str]]
-        self.channel_name = None # Mapped[Optional[str]]
-        self.channel_url = None # Mapped[Optional[str]]
-        self.upload_date_youtube = None # Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-        self.duration = None # Mapped[Optional[int]]
-        self.view_count = None # Mapped[Optional[int]]
-        self.like_count = None # Mapped[Optional[int]]
-        self.categories = None # Mapped[Optional[str]] 
-        self.tags = None # Mapped[Optional[str]]
-        self.audio_path = None # Mapped[Optional[str]]
-        self.subtitles = None # Mapped[Optional[str]] = mapped_column(Text, nullable=True) # long string
-        self.transcript = None# Mapped[Optional[str]] = mapped_column(Text, nullable=True)  # can hold arbitrarily long string
-        self.transcript_path = None# Mapped[Optional[str]] 
-        self.transcribing_start_date = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-        self.transcribing_end_date = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-        self.transcribing_time = None# Mapped[Optional[int]]
-        self.transcript_from = None# Mapped[Optional[str]]
-        self.transcript_word_count = None# Mapped[Optional[int]]
-        self.transcript_token_count = None# Mapped[Optional[int]]
-        self.transcript_character_count = None# Mapped[Optional[int]]
-        self.transcript_chunks = None# Mapped[Optional[str]]
-        self.transcript_embedding  = None# mapped_column(Vector(1536))
-        self.date_uploaded = None# Mapped[Optional[DateTime]] =  mapped_column(DateTime, nullable=True)
-        self.download_start_datetime = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-        self.download_end_datetime = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, nullable=True)
-        self.download_time = None# Mapped[Optional[int]]
-        self.created_at = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), nullable=False)
-        self.updated_at = None# Mapped[Optional[DateTime]] = mapped_column(DateTime, default=func.now(), onupdate=func.now(), nullable=False)
-        self.is_summarized = None# Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
-        self.is_transcribed = None# Mapped[Optional[Boolean]] = mapped_column(Boolean, default=False)
-        self.status  = None# Mapped[Optional[str]] = mapped_column(default="Pending.") # Pending / Done 
-        self.playlist_id = None# Mapped[Optional[str]]
-        self.playlist_order = None# Mapped[Optional[int]]
-        self.is_in_playlist = None# Mapped[Optional[Boolean]]= mapped_column(Boolean, default=False)
-        #self.summaries = None# Mapped[List["Summary"]] = relationship(back_populates="video", cascade="all, delete-orphan", lazy='select')
+        self.id = None 
+        self.title = None 
+        self.ext = None 
+        self.title_with_ext = None 
+        self.description = None 
+        self.channel_name = None 
+        self.channel_url = None 
+        self.upload_date_youtube = None
+        self.duration = None 
+        self.view_count = None 
+        self.like_count = None 
+        self.categories = None  
+        self.tags = None 
+        self.audio_path = None 
+        self.subtitles = None 
+        self.transcript = None
+        self.transcript_path = None
+        self.transcribing_start_date = None
+        self.transcribing_end_date = None
+        self.transcribing_time = None
+        self.transcript_from = None
+        self.transcript_word_count = None
+        self.transcript_token_count = None
+        self.transcript_character_count = None
+        self.transcript_chunks = None
+        self.transcript_embedding  = None
+        self.date_uploaded = None
+        self.download_start_datetime = None
+        self.download_end_datetime = None
+        self.download_time = None
+        self.created_at = None
+        self.updated_at = None
+        self.is_summarized = None
+        self.is_transcribed = None
+        self.status  = None 
+        self.playlist_id = None
+        self.playlist_order = None
+        self.is_in_playlist = None
+        #self.summaries = None
 
     def __repr__(self) -> str:
-        return f"Video(id={self.id!r}, url={self.url!r}, title={self.title!r})"
-
+        #return f"Video(id={self.id!r}, url={self.url!r}, title={self.title!r})"
+        return f"""id= {self.id}
+            url= {self.url}
+            title= {self.title}
+            ext= {self.ext}
+            title_with_ext= {self.title_with_ext}
+            description= {self.description}
+            channel_name= {self.channel_name}
+            channel_url= {self.channel_url}
+            upload_date_youtube= {self.upload_date_youtube}
+            duration= {self.duration}
+            view_count= {self.view_count}
+            like_count= {self.like_count}
+            categories= {self.categories}
+            tags= {self.tags}
+            audio_path= {self.audio_path}
+            subtitles= {self.subtitles}
+            transcript= {self.transcript}
+            transcript_path= {self.transcript_path}
+            transcribing_start_date= {self.transcribing_start_date}
+            transcribing_end_date= {self.transcribing_end_date}
+            transcribing_time= {self.transcribing_time}
+            transcript_from= {self.transcript_from}
+            transcript_word_count= {self.transcript_word_count}
+            transcript_token_count= {self.transcript_token_count}
+            transcript_character_count= {self.transcript_character_count}
+            transcript_chunks= {self.transcript_chunks}
+            transcript_embedding= {self.transcript_embedding}
+            date_uploaded= {self.date_uploaded}
+            download_start_datetime= {self.download_start_datetime}
+            download_end_datetime= {self.download_end_datetime}
+            download_time= {self.download_time}
+            created_at= {self.created_at}
+            updated_at= {self.updated_at}
+            is_summarized= {self.is_summarized}
+            is_transcribed= {self.is_transcribed}
+            status= {self.status}
+            playlist_id= {self.playlist_id}
+            playlist_order= {self.playlist_order}
+            is_in_playlist= {self.is_in_playlist}"""
+    
 class TimeFormatter:
 
     def __init__(self, start_time, end_time):
@@ -169,5 +208,5 @@ class VideoDownloader:
 if __name__ == "__main__":
     video = VideoResult("https://www.youtube.com/watch?v=QspjKVTMlL8")
     downloader = VideoDownloader(video)
-    downloader.download_video()
-
+    videresult =    downloader.download_video()
+    print(videresult)
