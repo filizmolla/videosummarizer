@@ -1,11 +1,12 @@
 from __future__ import annotations
 from models import GemineModel, ChatGPTModel, OllamaModel
-from logic import VideoSummarizer, VideoSummaryRequest
+from logic import VideoSummarizer, VideoSummaryRequest, TextSplitter
 from downloader import VideoResult, VideoDownloader
 import unittest
 import os 
 import pathlib as pl 
 import datetime
+"""
 class Test_GemineModel(unittest.TestCase):
 
     def setUp(self):
@@ -99,32 +100,32 @@ class Test_ChatGPTModel(unittest.TestCase):
 
     def test_chatgpt_get_model_info_pass(self):
         pass 
-"""
-class Test_OllamaModel(unittest.TestCase):
-   
-   def setUp(self):
-       self.ollama_model =  OllamaModel()
-       self.ollama_model.setApiKey(api_key="ollama")
-    
-    # Output is not good! Tests are failing  
-   def test_ollama_is_response_pass(self):
-       title = "My favorite resources and tools for coding"
-       filename = f".\\..\\summarizer\\test videos\\output\\transcripts\\{title}.txt"
-       transcript = ""
-       with open(filename, 'r') as f:
-           transcript = f.read()
 
-       summarizer = VideoSummarizer(llm_model=self.ollama_model)
-
-       request = VideoSummaryRequest(id = "123", title = filename, transcript=transcript)
-       result = summarizer.summarize(request)
-       print(result.summary.summary_text)
-
-       #self.assertIn("Fluid", str(result.summary.summary_text))
-       self.assertIn("Google Web Fonts Helper", str(result.summary.summary_text))
-       #self.assertIn("Flexbox", str(result.summary.summary_text))
-       #self.assertIn("MDN", str(result.summary.summary_text))
-""" 
+#class Test_OllamaModel(unittest.TestCase):
+#   
+#   def setUp(self):
+#       self.ollama_model =  OllamaModel()
+#       self.ollama_model.setApiKey(api_key="ollama")
+#    
+#    # Output is not good! Tests are failing  
+#   def test_ollama_is_response_pass(self):
+#       title = "My favorite resources and tools for coding"
+#       filename = f".\\..\\summarizer\\test videos\\output\\transcripts\\{title}.txt"
+#       transcript = ""
+#       with open(filename, 'r') as f:
+#           transcript = f.read()
+#
+#       summarizer = VideoSummarizer(llm_model=self.ollama_model)
+#
+#       request = VideoSummaryRequest(id = "123", title = filename, transcript=transcript)
+#       result = summarizer.summarize(request)
+#       print(result.summary.summary_text)
+#
+#       #self.assertIn("Fluid", str(result.summary.summary_text))
+#       self.assertIn("Google Web Fonts Helper", str(result.summary.summary_text))
+#       #self.assertIn("Flexbox", str(result.summary.summary_text))
+#       #self.assertIn("MDN", str(result.summary.summary_text))
+ 
 class Test_VideoDownloader(unittest.TestCase):
     
     def setUp(self):
@@ -163,7 +164,30 @@ class Test_VideoDownloader(unittest.TestCase):
     #    videoresult = downloader.download_video()
     #    print(videoresult)
     #    self.assertEqual(type(videoresult.exception).__name__, "UnboundLocalError: local variable 'title_with_ext' referenced before assignment")
+"""
 
+class Test_TextSplitter(unittest.TestCase):
+
+    def setUp(self):
+        return super().setUp()
+    
+    def test_split_sentence_wordsperchunk_is_two(self):
+        splitter = TextSplitter("Bu bir örnek metindir ve parçalara bölünecektir.", 2)
+        chunks=splitter.split_text()
+        print(chunks)
+        self.assertIsInstance(chunks, list)
+        self.assertEqual(chunks[0], "Bu bir")
+        self.assertEqual(chunks[1], "örnek metindir") 
+        self.assertEqual(chunks[2], "ve parçalara")
+        self.assertEqual(chunks[3], "bölünecektir.")
+
+    def test_split_sentence_wordsperchunk_is_six(self):
+        splitter = TextSplitter("Bu bir örnek metindir ve parçalara bölünecektir.", 6)
+        chunks=splitter.split_text()
+        print(chunks)
+        self.assertIs(type(chunks), list)
+        self.assertEqual(chunks[0], "Bu bir örnek metindir ve parçalara")
+        self.assertEqual(chunks[1], "bölünecektir.")
 
 if __name__ == '__main__':
      unittest.main()

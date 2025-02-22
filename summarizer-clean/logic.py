@@ -172,8 +172,12 @@ class VideoChunkSummarizer:
     
     def __init__(self, llm_model: LLMModel):
         self.llm_model = LLMModel
-    
-class VideoChunkSumaryCombiner:
+
+
+    def summarize(self, request: VideoSummaryRequest) ->VideoSummaryResponse:
+        pass 
+
+class VideoChunkSummaryCombiner:
     USER_PROMPT = """
     Please combine this given transcript summary of same transcript with .
     Highlight any any actionable advice, references to research, examples, or specific techniques mentioned.
@@ -189,7 +193,28 @@ class VideoChunkSumaryCombiner:
     \"""{transcript}\"""
     """
     
-    def __init__(self, llm_model: LLMModel):
+    def __init__(self, llm_model: LLMModel, transcript_chunks):
         self.llm_model = LLMModel
-    
+        self.transcript_chunks = transcript_chunks 
 
+class TextSplitter: 
+
+    def __init__(self, text, words_per_chunk):
+        self.text = text
+        self.words_per_chunk = words_per_chunk
+
+    def split_text(self):
+        words = self.text.split()
+        chunks = [" ".join(words[i:i + self.words_per_chunk]) for i in range(0, len(words), self.words_per_chunk)]
+        return chunks
+
+
+if __name__ == "__main__":
+    splitter = TextSplitter("Bu bir örnek metindir ve parçalara bölünecektir.", 2)
+    chunks=splitter.split_text()
+    print(chunks)
+
+
+    splitter = TextSplitter("Bu bir örnek metindir ve parçalara bölünecektir.", 6)
+    chunks=splitter.split_text()
+    print(chunks)
