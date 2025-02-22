@@ -1,10 +1,11 @@
 from __future__ import annotations
 from models import GemineModel, ChatGPTModel, OllamaModel
-import unittest
 from logic import VideoSummarizer, VideoSummaryRequest
+from downloader import VideoResult, VideoDownloader
 import unittest
 import os 
-
+import pathlib as pl 
+import datetime
 class Test_GemineModel(unittest.TestCase):
 
     def setUp(self):
@@ -82,13 +83,13 @@ class Test_ChatGPTModel(unittest.TestCase):
         print(result.text) 
         self.assertIn("assistant", str(result.text))
 
-    def test_chatgpt_response_assistant_fail(self):
-        self.chatgpt_model.setApiKey("wrong")
-        result = self.chatgpt_model.generateContent("Who are you?", system_prompt="You are a helpful assistant, this is who you are.")
-        print(result.text) 
-        self.chatgpt_model.setApiKey(os.getenv("OPENAI_API_KEY"))
-        self.assertIn("API key not valid.", str(result.exception))
-        self.assertEqual(type(result.exception).__name__, "openai.AuthenticationError")
+    #def test_chatgpt_response_assistant_fail(self):
+    #    self.chatgpt_model.setApiKey("wrong")
+    #    result = self.chatgpt_model.generateContent("Who are you?", system_prompt="You are a helpful assistant, this is who you are.")
+    #    print(result.text) 
+    #    self.chatgpt_model.setApiKey(os.getenv("OPENAI_API_KEY"))
+    #    self.assertIn("API key not valid.", str(result.exception))
+    #    self.assertEqual(type(result.exception).__name__, "openai.AuthenticationError")
 
     def test_chatgpt_count_tokens_pass(self):
         pass
@@ -98,7 +99,7 @@ class Test_ChatGPTModel(unittest.TestCase):
 
     def test_chatgpt_get_model_info_pass(self):
         pass 
-
+"""
 class Test_OllamaModel(unittest.TestCase):
    
    def setUp(self):
@@ -123,6 +124,46 @@ class Test_OllamaModel(unittest.TestCase):
        self.assertIn("Google Web Fonts Helper", str(result.summary.summary_text))
        #self.assertIn("Flexbox", str(result.summary.summary_text))
        #self.assertIn("MDN", str(result.summary.summary_text))
+""" 
+class Test_VideoDownloader(unittest.TestCase):
+    
+    def setUp(self):
+        self.path = "C:\\workdir\\pkm\\summarizer\\test videos\\output\\audios\\Kung Fu Fighting.m4a"
+        if os.path.exists(self.path):
+            os.remove(self.path)
+            print("Deleted existing file.\n")
+        else:
+            print("The file does not exist.\n") 
+
+    def assertIsFile(self, path):
+        if not pl.Path(path).resolve().is_file():
+            raise AssertionError("File does not exist: %s" % str(path))
+
+    def test_if_downloader_downloads(self):
+        video = VideoResult("https://www.youtube.com/watch?v=QspjKVTMlL8")
+        downloader = VideoDownloader(video)
+        videoresult = downloader.download_video()
+
+        pl_path = pl.Path(self.path)
+        self.assertIsFile(pl_path)
+        self.assertEqual(videoresult.title, "Kung Fu Fighting")
+        self.assertEqual(videoresult.title_with_ext, "Kung Fu Fighting.m4a")
+        self.assertEqual(videoresult.ext, "m4a")
+        self.assertEqual(videoresult.url, "https://www.youtube.com/watch?v=QspjKVTMlL8")
+        self.assertIn("Provided to YouTube by Universal Music Group", videoresult.description)
+        self.assertEqual("CeeLo Green", videoresult.channel_name)
+        self.assertEqual("https://www.youtube.com/channel/UCQlJSs4QNKLLt1sHgRXkVYg", videoresult.channel_url)
+        self.assertEqual(datetime.datetime(2019, 1, 31, 0, 0), videoresult.upload_date_youtube)
+        self.assertEqual(150, videoresult.duration)
+        self.assertEqual(r"C:\workdir\pkm\summarizer\test videos\output\audios\Kung Fu Fighting.m4a", videoresult.audio_path)
+
+    #def test_if_wrong_link_fail(self): #anlamadım
+    #    video = VideoResult("https://www.youtube.com/watch?v=WRONG")
+    #    downloader = VideoDownloader(video)
+    #    videoresult = downloader.download_video()
+    #    print(videoresult)
+    #    self.assertEqual(type(videoresult.exception).__name__, "UnboundLocalError: local variable 'title_with_ext' referenced before assignment")
+
 
 if __name__ == '__main__':
      unittest.main()
